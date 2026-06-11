@@ -18,8 +18,8 @@ export const iletisimPage = {
     {
       id: "email",
       label: "E-posta",
-      value: "info@kiwiagency.com",
-      href: "mailto:info@kiwiagency.com",
+      value: "info@kiwimarketingagency.com",
+      href: "mailto:info@kiwimarketingagency.com",
       description: "Detaylı brief ve dosyalar için.",
     },
     {

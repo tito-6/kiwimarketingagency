@@ -2,7 +2,7 @@ export const site = {
   name: "Kiwi",
   tagline: "Marketing Agency",
   fullName: "Kiwi Agency",
-  email: "info@kiwiagency.com",
+  email: "info@kiwimarketingagency.com",
   phone: "+90 532 630 57 13",
   phoneTel: "+905326305713",
   year: new Date().getFullYear(),
