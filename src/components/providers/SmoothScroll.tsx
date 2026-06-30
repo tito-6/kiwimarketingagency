@@ -8,7 +8,8 @@ import { useEffect } from "react";
 export function SmoothScroll({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (prefersReduced) return;
+    const isTouch = window.matchMedia("(pointer: coarse)").matches;
+    if (prefersReduced || isTouch) return;
 
     const lenis = new Lenis({
       duration: 1.2,

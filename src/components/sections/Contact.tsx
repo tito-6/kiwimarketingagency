@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative overflow-hidden border-t border-white/10 py-32 md:py-40">
+    <section id="contact" className="relative overflow-hidden border-t border-white/10 py-20 md:py-28">
       <motion.div
         className="pointer-events-none absolute inset-0"
         animate={{
@@ -58,6 +58,17 @@ export function Contact() {
               whileHover={{ scale: 1.02, color: "#a9cb18" }}
             >
               {site.phone}
+            </motion.span>
+          </Link>
+          <Link
+            href={`mailto:${site.email}`}
+            className="group mt-4 block"
+          >
+            <motion.span
+              className="text-lg text-white/55 transition-colors group-hover:text-kiwi-400 md:text-xl"
+              whileHover={{ scale: 1.01 }}
+            >
+              {site.email}
             </motion.span>
           </Link>
         </motion.div>

@@ -17,4 +17,11 @@ export const images = {
     "/images/projects/project-3.jpg",
     "/images/projects/project-4.jpg",
   ],
+  videos: {
+    showreel: {
+      mp4: "/videos/kiwi-showreel.mp4",
+      webm: "/videos/kiwi-showreel.webm",
+      poster: "/videos/kiwi-showreel-poster.jpg",
+    },
+  },
 } as const;

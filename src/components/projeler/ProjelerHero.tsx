@@ -27,7 +27,7 @@ export function ProjelerHero() {
   return (
     <section
       ref={ref}
-      className="relative flex min-h-screen flex-col justify-end overflow-hidden pb-16 pt-28"
+      className="relative flex min-h-[82svh] flex-col justify-end overflow-hidden pb-14 pt-28"
     >
       <div className="absolute inset-0">
         {projectItems.map((p, i) => (

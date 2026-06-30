@@ -73,7 +73,7 @@ export function Hero() {
         <motion.div style={{ y: titleY }} className="mt-8">
           <h1 className="text-[clamp(2.75rem,14vw,15rem)] font-bold leading-[0.88] tracking-tighter sm:leading-[0.82]">
             <span className="block text-white">
-              <CharacterSplit text={hero.title} delay={0.35} stagger={0.07} />
+              <CharacterSplit text={hero.title} delay={0.25} stagger={0.05} />
             </span>
             <motion.span
               className="mt-1 block"
@@ -137,7 +137,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.4 }}
-          className="mt-16 flex items-center justify-between border-t border-white/10 pt-6 sm:mt-24"
+          className="mt-20 flex items-center justify-between border-t border-white/10 pt-6 sm:mt-16"
         >
           <span className="text-xs text-white/25">{site.fullName}®</span>
           <motion.div className="flex items-center gap-2">

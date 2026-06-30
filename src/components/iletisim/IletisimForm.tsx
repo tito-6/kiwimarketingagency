@@ -9,19 +9,77 @@ import { FormEvent, useState } from "react";
 
 const fields = [
   { name: "name", label: "İsminiz", type: "text", required: true },
-  { name: "phone", label: "Telefon", type: "tel", required: true },
+  {
+    name: "phone",
+    label: "Telefon",
+    type: "tel",
+    required: true,
+    hint: "Başında 0 olmadan 10 haneli girin (örn: 532 630 57 13)",
+    maxLength: 10,
+    inputMode: "numeric" as const,
+  },
   { name: "email", label: "E-posta", type: "email", required: true },
   { name: "company", label: "Şirket", type: "text", required: false },
 ];
 
+type Status = "idle" | "submitting" | "success" | "error";
+
 export function IletisimForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
   const [focused, setFocused] = useState<string | null>(null);
   const [values, setValues] = useState<Record<string, string>>({});
 
-  function handleSubmit(e: FormEvent) {
+  const submitted = status === "success";
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const phone = (values.phone ?? "").replace(/\D/g, "");
+
+    if (phone.length !== 10) {
+      setStatus("error");
+      setErrorMsg("Lütfen başında 0 olmadan 10 haneli telefon numarası girin.");
+      return;
+    }
+
+    setStatus("submitting");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.get("name"),
+          phone,
+          email: formData.get("email"),
+          company: formData.get("company"),
+          service: formData.get("service"),
+          message: formData.get("message"),
+        }),
+      });
+
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || "Mesaj gönderilemedi.");
+      }
+
+      setStatus("success");
+    } catch (err) {
+      setStatus("error");
+      setErrorMsg(
+        err instanceof Error && err.message
+          ? err.message
+          : "Mesaj gönderilemedi. Lütfen tekrar deneyin veya bize doğrudan yazın."
+      );
+    }
+  }
+
+  function handlePhoneChange(value: string) {
+    const digits = value.replace(/\D/g, "").slice(0, 10);
+    setValues((v) => ({ ...v, phone: digits }));
   }
 
   return (
@@ -119,12 +177,28 @@ export function IletisimForm() {
                             type={field.type}
                             value={values[field.name] || ""}
                             onChange={(e) =>
-                              setValues((v) => ({ ...v, [field.name]: e.target.value }))
+                              field.name === "phone"
+                                ? handlePhoneChange(e.target.value)
+                                : setValues((v) => ({ ...v, [field.name]: e.target.value }))
                             }
                             onFocus={() => setFocused(field.name)}
                             onBlur={() => setFocused(null)}
-                            className="w-full rounded-xl border border-white/10 bg-black/20 px-4 pb-3 pt-8 text-white focus:border-kiwi-400 focus:outline-none"
+                            maxLength={"maxLength" in field ? field.maxLength : undefined}
+                            inputMode={"inputMode" in field ? field.inputMode : undefined}
+                            pattern={field.name === "phone" ? "[0-9]{10}" : undefined}
+                            title={
+                              field.name === "phone"
+                                ? "10 haneli telefon numarası (başında 0 olmadan)"
+                                : undefined
+                            }
+                            placeholder={
+                              field.name === "phone" ? "532 630 57 13" : undefined
+                            }
+                            className="w-full rounded-xl border border-white/10 bg-black/20 px-4 pb-3 pt-8 text-white placeholder:text-white/20 focus:border-kiwi-400 focus:outline-none"
                           />
+                          {"hint" in field && field.hint && (
+                            <p className="mt-2 text-xs text-white/35">{field.hint}</p>
+                          )}
                           <motion.div
                             className="absolute bottom-0 left-0 h-0.5 bg-kiwi-400"
                             initial={{ width: "0%" }}
@@ -170,9 +244,10 @@ export function IletisimForm() {
                     <motion.button
                       type="submit"
                       data-cursor="pointer"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="relative mt-8 w-full overflow-hidden rounded-full bg-kiwi-400 py-4 text-sm font-semibold uppercase tracking-wider text-[#1a1a1a]"
+                      disabled={status === "submitting"}
+                      whileHover={status === "submitting" ? undefined : { scale: 1.02 }}
+                      whileTap={status === "submitting" ? undefined : { scale: 0.98 }}
+                      className="relative mt-8 w-full overflow-hidden rounded-full bg-kiwi-400 py-4 text-sm font-semibold uppercase tracking-wider text-[#1a1a1a] disabled:cursor-not-allowed disabled:opacity-70"
                     >
                       <motion.span
                         className="absolute inset-0 bg-white/20"
@@ -180,8 +255,19 @@ export function IletisimForm() {
                         whileHover={{ x: "100%" }}
                         transition={{ duration: 0.5 }}
                       />
-                      <span className="relative">Mesaj Gönder</span>
+                      <span className="relative">
+                        {status === "submitting" ? "Gönderiliyor..." : "Mesaj Gönder"}
+                      </span>
                     </motion.button>
+
+                    {status === "error" && errorMsg && (
+                      <p
+                        role="alert"
+                        className="mt-4 rounded-xl border border-red-500/30 bg-red-500/10 px-4 py-3 text-center text-sm text-red-300"
+                      >
+                        {errorMsg}
+                      </p>
+                    )}
                     <p className="mt-4 text-center text-xs text-white/30">
                       Göndererek{" "}
                       <a href="/hizmet-sartlari" className="underline hover:text-white/50">

@@ -20,7 +20,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="relative overflow-hidden border-y border-white/10 py-20 sm:py-32 md:py-48">
+    <section className="relative overflow-hidden border-y border-white/10 py-16 md:py-20">
       <motion.div
         className="pointer-events-none absolute left-0 top-0 h-full w-1/2"
         style={{
@@ -42,7 +42,7 @@ export function Testimonials() {
         </ScrollReveal>
 
         <motion.div
-          className="mt-20 cursor-grab active:cursor-grabbing"
+          className="mt-12 cursor-grab active:cursor-grabbing"
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={0.2}

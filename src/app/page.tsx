@@ -5,7 +5,6 @@ import { DualMarquee } from "@/components/ui/DualMarquee";
 import { HomeShowreel } from "@/components/home/HomeShowreel";
 import { About } from "@/components/sections/About";
 import { HomeManifesto } from "@/components/home/HomeManifesto";
-import { ImageShowcase } from "@/components/sections/ImageShowcase";
 import { ServicesPreview } from "@/components/sections/ServicesPreview";
 import { WhyChoose } from "@/components/sections/WhyChoose";
 import { Stack } from "@/components/sections/Stack";
@@ -23,11 +22,10 @@ export default function Home() {
         <div>
           <Hero />
           <DualMarquee />
-          <HomeShowreel />
+          <ServicesPreview />
           <About />
           <HomeManifesto />
-          <ImageShowcase />
-          <ServicesPreview />
+          <HomeShowreel />
           <WhyChoose />
           <Stack />
           <PinnedProjects />

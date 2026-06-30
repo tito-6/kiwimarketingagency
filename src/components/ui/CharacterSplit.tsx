@@ -30,7 +30,7 @@ export function CharacterSplit({
             initial={{ y: "110%", rotateX: -80 }}
             animate={{ y: 0, rotateX: 0 }}
             transition={{
-              duration: 0.9,
+              duration: 0.65,
               delay: delay + i * stagger,
               ease: [0.22, 1, 0.36, 1],
             }}

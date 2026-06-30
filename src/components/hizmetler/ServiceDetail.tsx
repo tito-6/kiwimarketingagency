@@ -3,7 +3,7 @@
 import { services } from "@/data/content";
 import { ParallaxImage } from "@/components/ui/ParallaxImage";
 import { TextReveal } from "@/components/ui/TextReveal";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
@@ -26,11 +26,6 @@ function ServiceBlock({
   index: number;
 }) {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-  const numberX = useTransform(scrollYProgress, [0, 1], [index % 2 === 0 ? -80 : 80, 0]);
   const isEven = index % 2 === 0;
 
   return (
@@ -40,10 +35,16 @@ function ServiceBlock({
       className="relative border-t border-white/10 py-24 md:py-32"
     >
       <div className="mx-auto grid max-w-[1440px] gap-12 px-6 md:grid-cols-2 md:gap-20 md:px-10">
-        <div className={cn("flex flex-col justify-center", !isEven && "md:order-2")}>
+        <div className={cn("flex flex-col justify-center overflow-hidden", !isEven && "md:order-2")}>
           <motion.span
-            style={{ x: numberX }}
-            className="font-mono text-[clamp(4rem,12vw,10rem)] font-bold leading-none text-white/[0.04]"
+            initial={{ opacity: 0, x: isEven ? -48 : 48 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className={cn(
+              "block font-mono text-[clamp(4rem,12vw,10rem)] font-bold leading-none text-white/[0.04]",
+              isEven ? "translate-x-6 md:translate-x-10" : "translate-x-0"
+            )}
           >
             {service.id}
           </motion.span>

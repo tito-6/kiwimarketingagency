@@ -22,7 +22,7 @@ function MarqueeRow({
         {items.map((item, i) => (
           <span
             key={`${item}-${i}`}
-            className="flex items-center gap-16 text-[clamp(1.5rem,4vw,3rem)] font-bold uppercase tracking-tighter text-white/[0.07]"
+            className="flex items-center gap-16 text-[clamp(1.5rem,4vw,3rem)] font-bold uppercase tracking-tighter text-white/[0.18]"
           >
             {item}
             <span className="text-kiwi-400/40">◆</span>
@@ -36,8 +36,8 @@ function MarqueeRow({
 export function DualMarquee() {
   return (
     <section className="relative overflow-hidden border-y border-white/10 py-4">
-      <MarqueeRow speed={35} />
-      <MarqueeRow reverse speed={28} />
+      <MarqueeRow speed={55} />
+      <MarqueeRow reverse speed={65} />
     </section>
   );
 }

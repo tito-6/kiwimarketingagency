@@ -32,8 +32,8 @@ export function TextReveal({
             initial={{ y: "110%", rotate: 4 }}
             animate={isInView ? { y: 0, rotate: 0 } : { y: "110%", rotate: 4 }}
             transition={{
-              duration: 0.7,
-              delay: delay + i * 0.04,
+              duration: 0.55,
+              delay: delay + i * 0.03,
               ease: [0.22, 1, 0.36, 1],
             }}
           >

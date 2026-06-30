@@ -22,10 +22,10 @@ export default function BlogPage() {
         <main>
           <BlogHero />
           <BlogTicker />
+          <BlogJournal />
           <div id="theater">
             <BlogScrollTheater />
           </div>
-          <BlogJournal />
           <BlogScrollStrip />
           <BlogNewsletter />
           <BlogCTA />

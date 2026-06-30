@@ -35,7 +35,7 @@ function StatCard({ stat, statLabel }: { stat: string; statLabel: string }) {
 
 export function WhyChoose() {
   return (
-    <section className="relative overflow-hidden border-y border-white/10 py-32 md:py-48">
+    <section className="relative overflow-hidden border-y border-white/10 py-16 md:py-20">
       <motion.div
         className="pointer-events-none absolute -right-32 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-kiwi-400/5 blur-[100px]"
         animate={{ scale: [1, 1.3, 1], opacity: [0.3, 0.6, 0.3] }}

@@ -82,6 +82,28 @@ metadata):
 NEXT_PUBLIC_SITE_URL=https://kiwimarketingagency.com
 ```
 
+### Contact form email (Resend)
+
+The contact form (`/iletisim`) posts to `/api/contact`, which sends the
+submission via [Resend](https://resend.com). Set the following env vars
+(in `.env.local` for local dev and in your host/Vercel dashboard for prod):
+
+```
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxxxxx
+CONTACT_TO_EMAIL=info@kiwimarketingagency.com
+# Optional — only after verifying your domain in Resend.
+# Until then the default onboarding@resend.dev sender is used.
+CONTACT_FROM_EMAIL=Kiwi Website <noreply@kiwimarketingagency.com>
+```
+
+Without `RESEND_API_KEY`, the form returns a clear error instead of silently
+failing, and the submission is logged server-side.
+
+### Social links
+
+Instagram / LinkedIn / Twitter(X) URLs live in `src/data/content.ts` under
+`site.social`. Update them there.
+
 ## Deployment
 
 The app is a standard Next.js Node server (`npm run build` then `npm start`),

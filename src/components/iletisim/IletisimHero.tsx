@@ -94,6 +94,21 @@ export function IletisimHero() {
 
         <AnimatedPhone />
 
+        <motion.a
+          href={`mailto:${site.email}`}
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2 }}
+          className="group mt-6 inline-block"
+        >
+          <span className="text-lg text-white/55 transition-colors group-hover:text-kiwi-400 md:text-xl">
+            {site.email}
+          </span>
+          <span className="mt-2 block text-xs uppercase tracking-[0.25em] text-white/35 group-hover:text-kiwi-400">
+            E-posta gönder →
+          </span>
+        </motion.a>
+
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

@@ -66,6 +66,39 @@ body {
   padding-top: max(0px, env(safe-area-inset-top));
 }
 
+/* Navbar: a single fixed 80px-tall flex row, everything centered top-to-bottom */
+.site-header {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  min-height: 5rem;
+}
+
+.site-header .nav-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.site-header .nav-menu {
+  align-items: center;
+}
+
+.site-header .logo-link,
+.site-header .nav-link,
+.site-header .contact-button,
+.site-header .menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1;
+  transform: none;
+}
+
 ::selection {
   background: color-mix(in srgb, var(--kiwi) 40%, transparent);
   color: white;

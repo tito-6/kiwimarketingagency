@@ -19,7 +19,7 @@ export function About() {
   const imageRotate = useTransform(scrollYProgress, [0, 1], [-2, 2]);
 
   return (
-    <section id="about" ref={ref} className="relative py-32 md:py-48">
+    <section id="about" ref={ref} className="relative py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <ScrollReveal blur>
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-kiwi-400">
@@ -34,19 +34,15 @@ export function About() {
               className="text-[clamp(2rem,5vw,4rem)] font-light leading-tight tracking-tight text-white"
             />
             <SplitLine className="mt-10" />
-            <ScrollReveal className="mt-10">
-              <p className="text-lg font-light leading-relaxed text-white/50">
-                {about.description}
-              </p>
-              <motion.p
-                className="mt-8 font-mono text-sm text-kiwi-400/80"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-              >
-                {about.tagline}
-              </motion.p>
+            <ScrollReveal className="mt-10 space-y-6">
+              {about.paragraphs.map((paragraph) => (
+                <p
+                  key={paragraph.slice(0, 40)}
+                  className="text-base font-light leading-relaxed text-white/50 md:text-lg"
+                >
+                  {paragraph}
+                </p>
+              ))}
             </ScrollReveal>
           </div>
 

@@ -28,23 +28,27 @@ export function Header() {
     <>
       <header
         className={cn(
-          "fixed top-0 z-50 w-full transition-all duration-500",
+          "site-header fixed top-0 z-50 h-20 w-full transition-all duration-500",
           scrolled
             ? "border-b border-white/10 bg-[#1a1a1a]/90 backdrop-blur-xl"
             : "bg-transparent"
         )}
       >
-        <div className="mx-auto flex max-w-[1440px] items-center justify-between px-4 py-4 safe-top sm:px-6 sm:py-5 md:px-10">
-          <Link href="/" aria-label={site.name} className="group flex items-center">
-            <Logo className="h-5 w-auto text-white transition-colors group-hover:text-kiwi-400 sm:h-6" />
+        <div className="nav-wrapper mx-auto flex h-full max-w-[1440px] items-center justify-between px-4 sm:px-6 md:px-10">
+          <Link
+            href="/"
+            aria-label={site.name}
+            className="logo-link flex shrink-0 items-center"
+          >
+            <Logo className="block h-6 w-auto text-white transition-colors hover:text-kiwi-400" />
           </Link>
 
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="nav-menu hidden items-center gap-1 lg:flex">
             {nav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-xs font-medium uppercase tracking-[0.15em] text-white/60 transition-colors hover:text-white"
+                className="nav-link flex h-11 items-center justify-center rounded-lg px-5 text-[15px] font-bold uppercase leading-none tracking-[0.1em] text-white/85 transition-colors hover:bg-white/[0.08] hover:text-kiwi-400"
               >
                 {item.label}
               </Link>
@@ -53,7 +57,7 @@ export function Header() {
 
           <Link
             href="/#contact"
-            className="hidden rounded-full border border-white/20 px-5 py-2 text-xs font-medium uppercase tracking-wider text-white transition-all hover:border-kiwi-400 hover:bg-kiwi-400/10 md:inline-flex"
+            className="contact-button hidden h-11 shrink-0 items-center justify-center rounded-full border border-white/25 px-6 text-[15px] font-bold uppercase leading-none tracking-[0.1em] text-white transition-all hover:border-kiwi-400 hover:bg-kiwi-400/10 hover:text-kiwi-400 md:flex"
           >
             İletişim
           </Link>
@@ -61,7 +65,7 @@ export function Header() {
           <button
             type="button"
             aria-label="Menü"
-            className="relative z-50 flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
+            className="menu-toggle flex size-10 shrink-0 flex-col items-center justify-center gap-1.5 lg:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             <span

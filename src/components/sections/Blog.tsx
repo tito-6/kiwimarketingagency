@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export function Blog() {
   return (
-    <section id="blog" className="py-32 md:py-48">
+    <section id="blog" className="py-20 md:py-32">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <ScrollReveal>
@@ -25,7 +25,7 @@ export function Blog() {
           </ScrollReveal>
           <motion.div whileHover={{ x: 8 }}>
             <Link
-              href="/blog"
+              href="/blog#journal"
               data-cursor="pointer"
               className="text-sm uppercase tracking-wider text-white/50 transition-colors hover:text-kiwi-400"
             >

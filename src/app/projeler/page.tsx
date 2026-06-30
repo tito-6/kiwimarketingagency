@@ -21,8 +21,8 @@ export default function ProjelerPage() {
         <main>
           <ProjelerHero />
           <ProjelerMarquee />
-          <ProjectShowcase />
           <ProjelerStats />
+          <ProjectShowcase />
           <ProjectArchive />
           <ProjelerCTA />
         </main>

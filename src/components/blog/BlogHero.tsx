@@ -134,7 +134,7 @@ export function BlogHero() {
 
         <div className="mt-10 flex justify-center gap-4">
           <MagneticButton href="#theater">Okuma Modu</MagneticButton>
-          <MagneticButton href="#journal" variant="outline">
+          <MagneticButton href="/blog#journal" variant="outline">
             Tüm Yazılar
           </MagneticButton>
         </div>

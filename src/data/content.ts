@@ -6,6 +6,11 @@ export const site = {
   phone: "+90 532 630 57 13",
   phoneTel: "+905326305713",
   year: new Date().getFullYear(),
+  social: {
+    instagram: "https://www.instagram.com/kiwimarketingagency/",
+    linkedin: "https://www.linkedin.com/company/kiwi-marketing-agency/",
+    twitter: "https://x.com/kiwimarketingagency",
+  },
 };
 
 import { images } from "./images";
@@ -46,16 +51,20 @@ export const hero = {
   title: "KIWI",
   subtitle: "Marketing Agency®",
   description:
-    "Markaların dijital dünyada güçlenmesi için yaratıcı çözümler üreten bir ajansız. Markalarınıza değer katmak için buradayız.",
-  cta: "Tanışalım!",
+    "Dijital pazarlama, sosyal medya, kreatif tasarım, prodüksiyon ve web çözümlerini tek çatı altında sunuyoruz. Markaların dijital dünyada sadece var olması değil, doğru şekilde konumlanması gerektiğine inanıyoruz.",
+  cta: "Tanışalım mı?",
 };
 
 export const about = {
   label: "HAKKIMIZDA",
   title: "Çünkü sizin başarınızı kendi başarımız gibi sahipleniyoruz.",
-  description:
-    "İşlevsellik, hız ve netliğe odaklanarak, her projenin gereksiz karmaşıklıktan arınmış, net bir amaca hizmet etmesini sağlıyoruz.",
-  tagline: "// Veri odaklı strateji. İnsan odaklı yaratıcılık.",
+  paragraphs: [
+    "2017 yılından bu yana dijital pazarlama sektöründe aktif olarak çalışmalar yürüten Kurucumuz Yasin Adıbelli, farklı sektörlerden birçok markanın dijital büyüme süreçlerinde görev almıştır.",
+    "Medya Planlama, Performans Reklamcılığı, Marka Konumlandırma, Sosyal Medya Yönetimi ve Dijital Strateji alanlarında edindiği deneyimlerle; yüksek bütçeli dijital pazarlama yönetimi süreçlerinde aktif sorumluluk üstlenmiştir.",
+    "Kariyeri boyunca Kanal D, Demirören, Misli.com, Mercedes-Benz, Lösev, Milli Piyango, Doğuş Oto, Katılım Emeklilik, Hupa-Lupa, Model Sanayi&Kuyum Merkezi ve DAP Yapı başta olmak üzere birçok markayla çalışma fırsatı bulmuştur.",
+    "KIWI Marketing Agency'nin temel yaklaşımı da bu deneyimden beslenmektedir:",
+    "Yaratıcılığı veriyle birleştiren, estetik kadar performansa da önem veren güçlü dijital çözümler üretmek.",
+  ],
 };
 
 export const services = [

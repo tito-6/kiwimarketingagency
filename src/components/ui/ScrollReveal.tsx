@@ -30,7 +30,7 @@ export function ScrollReveal({
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start 0.9", "start 0.25"],
+    offset: ["start 0.88", "start 0.35"],
   });
 
   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
@@ -45,7 +45,7 @@ export function ScrollReveal({
     [0, 1],
     [directionMap[direction].x, 0]
   );
-  const blurVal = useTransform(scrollYProgress, [0, 1], blur ? [12, 0] : [0, 0]);
+  const blurVal = useTransform(scrollYProgress, [0, 1], blur ? [6, 0] : [0, 0]);
   const filter = useTransform(blurVal, (v) => `blur(${v}px)`);
 
   return (

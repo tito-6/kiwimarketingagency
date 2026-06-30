@@ -14,31 +14,27 @@ import { useRef } from "react";
 export function ServicesPreview() {
   const sectionRef = useRef(null);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({ target: sectionRef, offset: ["start end", "end start"] });
-  const headingX = useTransform(scrollYProgress, [0, 1], [0, -60]);
 
   const { scrollXProgress } = useScroll({ container: scrollRef });
   const barWidth = useTransform(scrollXProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section id="services" ref={sectionRef} className="overflow-hidden py-32 md:py-48">
+    <section id="services" ref={sectionRef} className="overflow-hidden py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
-        <motion.div style={{ x: headingX }}>
-          <ScrollReveal>
-            <p className="text-xs font-medium uppercase tracking-[0.3em] text-kiwi-400">
-              / HİZMETLER
-            </p>
-          </ScrollReveal>
-          <div className="mt-6 flex flex-wrap items-end justify-between gap-6">
-            <TextReveal
-              text="Geleceğe hazır dijital hizmetler"
-              className="max-w-2xl text-[clamp(2rem,5vw,4rem)] font-light leading-tight text-white"
-            />
-            <MagneticButton href="/hizmetler" variant="outline">
-              Tüm Hizmetler
-            </MagneticButton>
-          </div>
-        </motion.div>
+        <ScrollReveal>
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-kiwi-400">
+            / HİZMETLER
+          </p>
+        </ScrollReveal>
+        <div className="mt-6 flex flex-wrap items-end justify-between gap-6">
+          <TextReveal
+            text="Geleceğe hazır dijital hizmetler"
+            className="max-w-2xl text-[clamp(2rem,5vw,4rem)] font-light leading-tight text-white"
+          />
+          <MagneticButton href="/hizmetler" variant="outline">
+            Tüm Hizmetler
+          </MagneticButton>
+        </div>
         <SplitLine className="mt-10" />
 
         <div

@@ -2,6 +2,12 @@ import { nav, site } from "@/data/content";
 import { Logo } from "@/components/ui/Logo";
 import Link from "next/link";
 
+const socialLinks = [
+  { label: "Instagram", href: site.social.instagram },
+  { label: "LinkedIn", href: site.social.linkedin },
+  { label: "Twitter", href: site.social.twitter },
+] as const;
+
 export function Footer() {
   return (
     <footer className="border-t border-white/10 bg-[#141414]">
@@ -48,13 +54,15 @@ export function Footer() {
               Sosyal Medya
             </p>
             <ul className="mt-4 space-y-2">
-              {["Instagram", "LinkedIn", "Twitter"].map((social) => (
-                <li key={social}>
+              {socialLinks.map((social) => (
+                <li key={social.label}>
                   <a
-                    href="#"
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white/60 transition-colors hover:text-white"
                   >
-                    {social}
+                    {social.label}
                   </a>
                 </li>
               ))}

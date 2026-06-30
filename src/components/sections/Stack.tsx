@@ -33,7 +33,7 @@ export function Stack() {
   const row2 = stack.tools.slice(5);
 
   return (
-    <section className="overflow-hidden py-32 md:py-48">
+    <section className="overflow-hidden py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <ScrollReveal>
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-kiwi-400">
