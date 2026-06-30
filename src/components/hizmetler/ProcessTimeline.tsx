@@ -11,7 +11,7 @@ export function ProcessTimeline() {
   const lineHeight = useTransform(scrollYProgress, [0.1, 0.9], ["0%", "100%"]);
 
   return (
-    <section ref={ref} className="py-32 md:py-48">
+    <section ref={ref} className="py-16 md:py-24">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <TextReveal
           text="Nasıl çalışıyoruz?"

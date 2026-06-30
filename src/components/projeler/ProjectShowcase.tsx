@@ -49,7 +49,7 @@ export function ProjectShowcase() {
       id="showcase"
       ref={containerRef}
       className="relative"
-      style={{ height: `${projectItems.length * 55}vh` }}
+      style={{ height: `${projectItems.length * 45}vh` }}
     >
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="relative flex h-full">

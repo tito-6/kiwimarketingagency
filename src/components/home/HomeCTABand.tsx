@@ -13,7 +13,7 @@ export function HomeCTABand() {
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.9, 1, 0.95]);
 
   return (
-    <section ref={ref} className="relative py-24 md:py-32">
+    <section ref={ref} className="relative py-16 md:py-20">
       <motion.div
         style={{ scale }}
         className="mx-auto max-w-[1440px] px-4 sm:px-4 sm:px-6 md:px-10"

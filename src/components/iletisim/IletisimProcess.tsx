@@ -11,7 +11,7 @@ export function IletisimProcess() {
   const lineHeight = useTransform(scrollYProgress, [0.15, 0.85], ["0%", "100%"]);
 
   return (
-    <section ref={ref} className="border-t border-white/10 py-24 md:py-32">
+    <section ref={ref} className="border-t border-white/10 py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <TextReveal
           text="Sonraki adımlar"

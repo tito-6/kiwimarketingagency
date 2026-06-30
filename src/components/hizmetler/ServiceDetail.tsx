@@ -32,7 +32,7 @@ function ServiceBlock({
     <article
       id={service.slug}
       ref={ref}
-      className="relative border-t border-white/10 py-24 md:py-32"
+      className="relative border-t border-white/10 py-16 md:py-24"
     >
       <div className="mx-auto grid max-w-[1440px] gap-12 px-6 md:grid-cols-2 md:gap-20 md:px-10">
         <div className={cn("flex flex-col justify-center overflow-hidden", !isEven && "md:order-2")}>

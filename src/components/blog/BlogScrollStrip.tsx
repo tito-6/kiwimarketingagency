@@ -17,7 +17,7 @@ export function BlogScrollStrip() {
   const row2 = [...blogPosts].reverse().slice(0, 5);
 
   return (
-    <section ref={ref} className="overflow-hidden py-28">
+    <section ref={ref} className="overflow-hidden py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <ClipReveal>
           <p className="text-xs uppercase tracking-[0.3em] text-kiwi-400">Hızlı keşif</p>

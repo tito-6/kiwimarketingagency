@@ -43,7 +43,7 @@ export function BlogScrollTheater() {
     <section
       ref={containerRef}
       className="relative"
-      style={{ height: `${blogPosts.length * 55}vh` }}
+      style={{ height: `${blogPosts.length * 45}vh` }}
     >
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">

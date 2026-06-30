@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export function Blog() {
   return (
-    <section id="blog" className="py-20 md:py-32">
+    <section id="blog" className="py-16 md:py-24">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <ScrollReveal>

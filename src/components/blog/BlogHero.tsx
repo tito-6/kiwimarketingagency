@@ -18,7 +18,7 @@ export function BlogHero() {
   const bgRotate = useTransform(scrollYProgress, [0, 1], [0, 15]);
 
   return (
-    <section ref={ref} className="relative min-h-screen overflow-hidden pt-28 pb-16">
+    <section ref={ref} className="relative min-h-[88vh] overflow-hidden pt-28 pb-12">
       <motion.div
         style={{ rotate: bgRotate }}
         className="pointer-events-none absolute -right-[20%] top-[10%] select-none font-bold leading-none text-white/[0.025]"

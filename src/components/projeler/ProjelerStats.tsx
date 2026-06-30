@@ -37,7 +37,7 @@ function StatItem({ value, label }: { value: string; label: string }) {
 
 export function ProjelerStats() {
   return (
-    <section id="stats" className="border-y border-white/10 py-24 md:py-32">
+    <section id="stats" className="border-y border-white/10 py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <div className="mb-16 text-center">
           <TextReveal

@@ -31,7 +31,7 @@ export function BlogJournal() {
   );
 
   return (
-    <section id="journal" className="py-24 md:py-32">
+    <section id="journal" className="py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <ClipReveal>
           <TextReveal

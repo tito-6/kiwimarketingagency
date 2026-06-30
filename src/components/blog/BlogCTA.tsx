@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function BlogCTA() {
   return (
-    <section className="py-32">
+    <section className="py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-6 text-center md:px-10">
         <TextReveal
           text="Okumak yetmez — uygulayalım."

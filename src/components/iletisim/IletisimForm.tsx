@@ -83,7 +83,7 @@ export function IletisimForm() {
   }
 
   return (
-    <section id="form" className="py-24 md:py-32">
+    <section id="form" className="py-16 md:py-24">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <div className="grid gap-16 lg:grid-cols-[1fr,1.1fr]">
           <div>

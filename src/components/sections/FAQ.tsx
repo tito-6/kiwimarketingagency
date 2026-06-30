@@ -11,7 +11,7 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="py-20 md:py-32">
+    <section className="py-16 md:py-24">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <ScrollReveal>
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-kiwi-400">
