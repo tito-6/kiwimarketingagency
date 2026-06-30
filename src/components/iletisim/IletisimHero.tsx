@@ -15,7 +15,7 @@ function AnimatedPhone() {
     <Link
       href={`tel:${site.phoneTel}`}
       data-cursor="pointer"
-      className="group mt-10 inline-block"
+      className="group inline-block"
     >
       <div className="flex flex-wrap gap-x-1 gap-y-2">
         {digits.map((char, i) => (
@@ -92,22 +92,24 @@ export function IletisimHero() {
           {iletisimPage.description}
         </motion.p>
 
-        <AnimatedPhone />
+        <div className="mt-10 flex flex-wrap items-end gap-x-12 gap-y-6 md:gap-x-16">
+          <AnimatedPhone />
 
-        <motion.a
-          href={`mailto:${site.email}`}
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2 }}
-          className="group mt-6 inline-block"
-        >
-          <span className="text-lg text-white/55 transition-colors group-hover:text-kiwi-400 md:text-xl">
-            {site.email}
-          </span>
-          <span className="mt-2 block text-xs uppercase tracking-[0.25em] text-white/35 group-hover:text-kiwi-400">
-            E-posta gönder →
-          </span>
-        </motion.a>
+          <motion.a
+            href={`mailto:${site.email}`}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.2 }}
+            className="group inline-block"
+          >
+            <span className="text-lg text-white/55 transition-colors group-hover:text-kiwi-400 md:text-xl">
+              {site.email}
+            </span>
+            <span className="mt-2 block text-xs uppercase tracking-[0.25em] text-white/35 group-hover:text-kiwi-400">
+              E-posta gönder →
+            </span>
+          </motion.a>
+        </div>
 
         <motion.div
           initial={{ opacity: 0 }}
