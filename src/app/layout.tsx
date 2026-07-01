@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Syne } from "next/font/google";
+import Script from "next/script";
 import { JsonLd } from "@/components/seo/JsonLd";
 import "./globals.css";
+
+const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_ID ?? "G-CZ94H8NH3F";
 
 const syne = Syne({
   variable: "--font-syne",
@@ -53,6 +57,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "onS2Dx5D4PhB0GCESXKUotBv-DTpEcVxt54Vcm79dhE",
+  },
 };
 
 export default function RootLayout({
@@ -65,6 +72,18 @@ export default function RootLayout({
       <body className="min-h-screen bg-[#1a1a1a] text-white antialiased">
         <JsonLd />
         {children}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
