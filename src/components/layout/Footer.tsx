@@ -5,7 +5,6 @@ import Link from "next/link";
 const socialLinks = [
   { label: "Instagram", href: site.social.instagram },
   { label: "LinkedIn", href: site.social.linkedin },
-  { label: "Twitter", href: site.social.twitter },
 ] as const;
 
 export function Footer() {

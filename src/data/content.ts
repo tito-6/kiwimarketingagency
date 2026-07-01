@@ -8,8 +8,7 @@ export const site = {
   year: new Date().getFullYear(),
   social: {
     instagram: "https://www.instagram.com/kiwimarketingagency/",
-    linkedin: "https://www.linkedin.com/company/kiwi-marketing-agency/",
-    twitter: "https://x.com/kiwimarketingagency",
+    linkedin: "https://www.linkedin.com/company/kiwi-marketingagency/",
   },
 };
 
