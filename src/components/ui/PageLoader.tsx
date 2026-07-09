@@ -15,6 +15,7 @@ export function PageLoader() {
     const isTouch = window.matchMedia("(pointer: coarse)").matches;
     if (prefersReduced || isTouch) {
       setLoading(false);
+      window.dispatchEvent(new CustomEvent("kiwi:pageloaded"));
       return;
     }
 
@@ -25,7 +26,10 @@ export function PageLoader() {
     const timeout = setTimeout(() => {
       clearInterval(interval);
       setCount(100);
-      setTimeout(() => setLoading(false), 600);
+      setTimeout(() => {
+        setLoading(false);
+        window.dispatchEvent(new CustomEvent("kiwi:pageloaded"));
+      }, 600);
     }, 1800);
 
     return () => {
