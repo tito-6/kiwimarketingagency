@@ -35,9 +35,11 @@ export function Hero() {
       className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden pb-16 pt-24 sm:min-h-[110vh] sm:pb-20 sm:pt-28 md:pb-24 md:pt-32"
     >
       <HeroVideoBackground />
-      <AuroraBackground />
+      <div className="pointer-events-none absolute inset-0 z-[1]">
+        <AuroraBackground />
+      </div>
 
-      <MouseParallax strength={14} className="absolute inset-0">
+      <MouseParallax strength={14} className="absolute inset-0 z-[2]">
         <FloatingImages />
       </MouseParallax>
 
