@@ -3,6 +3,7 @@
 import { hero, site } from "@/data/content";
 import { CharacterSplit } from "@/components/ui/CharacterSplit";
 import { AuroraBackground } from "@/components/ui/AuroraBackground";
+import { HeroVideoBackground } from "@/components/ui/HeroVideoBackground";
 import { FloatingImages } from "@/components/ui/FloatingImages";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { MouseParallax } from "@/components/ui/MouseParallax";
@@ -33,6 +34,7 @@ export function Hero() {
       ref={ref}
       className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden pb-16 pt-24 sm:min-h-[110vh] sm:pb-20 sm:pt-28 md:pb-24 md:pt-32"
     >
+      <HeroVideoBackground />
       <AuroraBackground />
 
       <MouseParallax strength={14} className="absolute inset-0">
