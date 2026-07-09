@@ -56,11 +56,11 @@ export function ServicesPreview() {
                   transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
                 >
                   <Image
-                    src={service.image}
-                    alt={service.title}
+                    src={service.imageTall}
+                    alt={service.imageAlt}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    sizes="440px"
+                    sizes="(max-width: 640px) 88vw, 440px"
                   />
                 </motion.div>
                 <motion.div

@@ -72,6 +72,8 @@ export const services = [
     slug: "kreatif-tasarim",
     title: "Kreatif Tasarım",
     image: images.services.creative,
+    imageTall: images.servicesTall.creative,
+    imageAlt: "Kreatif tasarım hizmeti — kurumsal kimlik ve görsel tasarım çalışması, Kiwi Agency",
     description:
       "Markanızın ruhunu yansıtan özgün ve etkili tasarımlar üreterek güçlü bir görsel kimlik oluşturuyoruz.",
     longDescription:
@@ -91,6 +93,8 @@ export const services = [
     slug: "sosyal-medya",
     title: "Sosyal Medya Yönetimi",
     image: images.services.social,
+    imageTall: images.servicesTall.social,
+    imageAlt: "Sosyal medya yönetimi hizmeti — içerik üretimi ve topluluk yönetimi, Kiwi Agency",
     description:
       "Stratejik içerik planlaması ve yaratıcı üretimle markanızı sosyal medyada öne çıkarıyor, topluluğunuzla bağ kuruyoruz.",
     longDescription:
@@ -107,6 +111,8 @@ export const services = [
     slug: "dijital-pazarlama",
     title: "Dijital Pazarlama",
     image: images.services.marketing,
+    imageTall: images.servicesTall.marketing,
+    imageAlt: "Dijital pazarlama hizmeti — veri odaklı reklam ve performans kampanyaları, Kiwi Agency",
     description:
       "Hedeflerinize en hızlı ve ölçülebilir şekilde ulaşmanız için veri odaklı reklam stratejileri sunuyoruz.",
     longDescription:
@@ -126,6 +132,8 @@ export const services = [
     slug: "web-yazilim",
     title: "Web Yazılım",
     image: images.services.web,
+    imageTall: images.servicesTall.web,
+    imageAlt: "Web yazılım geliştirme hizmeti — mobil uyumlu ve SEO destekli web siteleri, Kiwi Agency",
     description:
       "Kullanıcı deneyimini ve dönüşüm oranlarını artıran, mobil uyumlu ve SEO destekli web siteleri geliştiriyoruz.",
     longDescription:
@@ -143,6 +151,8 @@ export const services = [
     slug: "seo",
     title: "SEO Optimizasyonu",
     image: images.services.seo,
+    imageTall: images.servicesTall.seo,
+    imageAlt: "SEO optimizasyonu hizmeti — arama motorlarında organik görünürlük, Kiwi Agency",
     description:
       "Sitenizin arama motorlarında görünürlüğünü artırmak için SEO çalışmaları yürütüyoruz.",
     longDescription:

@@ -5,11 +5,18 @@ export const images = {
     "/images/hero/hero-3.jpg",
   ],
   services: {
-    creative: "/images/services/service-creative.jpg",
-    social: "/images/services/service-social.jpg",
-    marketing: "/images/services/service-marketing.jpg",
-    web: "/images/services/service-web.jpg",
-    seo: "/images/services/service-seo.jpg",
+    creative: "/images/services/kreatif-tasarim-hizmeti.webp",
+    social: "/images/services/sosyal-medya-yonetimi-hizmeti.webp",
+    marketing: "/images/services/dijital-pazarlama-ajansi-hizmeti.webp",
+    web: "/images/services/web-yazilim-gelistirme-hizmeti.webp",
+    seo: "/images/services/seo-optimizasyonu-hizmeti.webp",
+  },
+  servicesTall: {
+    creative: "/images/services/kreatif-tasarim-hizmeti-dikey.webp",
+    social: "/images/services/sosyal-medya-yonetimi-hizmeti-dikey.webp",
+    marketing: "/images/services/dijital-pazarlama-ajansi-hizmeti-dikey.webp",
+    web: "/images/services/web-yazilim-gelistirme-hizmeti-dikey.webp",
+    seo: "/images/services/seo-optimizasyonu-hizmeti-dikey.webp",
   },
   projects: [
     "/images/projects/project-1.jpg",

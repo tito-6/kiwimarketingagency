@@ -107,7 +107,7 @@ function ServiceBlock({
           >
             <ParallaxImage
               src={service.image}
-              alt={service.title}
+              alt={service.imageAlt}
               className="absolute inset-0 h-full"
               speed={0.2}
             />
