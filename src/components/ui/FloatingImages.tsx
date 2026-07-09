@@ -11,6 +11,12 @@ const positions = [
   { className: "right-[4%] bottom-[18%] w-44 md:w-56 rotate-12 z-10", delay: 1, speed: 0.9 },
 ];
 
+const floatingImages = [
+  images.servicesTall.creative,
+  images.servicesTall.social,
+  images.servicesTall.marketing,
+];
+
 // Decorative photo cards that drift on the right side of the hero with a
 // parallax + idle-float motion. They live behind the headline (the hero text
 // is raised above them) and are hidden on small screens to keep things calm.
@@ -22,7 +28,7 @@ export function FloatingImages() {
   return (
     <div ref={ref} className="pointer-events-none absolute inset-0 hidden lg:block">
       <motion.div style={{ y: parallaxY }} className="absolute inset-0">
-        {images.hero.map((src, i) => (
+        {floatingImages.map((src, i) => (
           <motion.div
             key={src}
             initial={{ opacity: 0, scale: 0.7, y: 80, rotate: positions[i].className.includes("rotate") ? 20 : -20 }}

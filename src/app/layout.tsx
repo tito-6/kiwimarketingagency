@@ -18,9 +18,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000");
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://kiwimarketingagency.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -47,11 +45,21 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     siteName: "Kiwi Agency",
+    url: siteUrl,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Kiwi Agency — Dijital Pazarlama Ajansı",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kiwi Agency",
     description: "Dijital pazarlama, tasarım ve yazılım ajansı.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
