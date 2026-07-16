@@ -5,7 +5,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID =
-  process.env.NEXT_PUBLIC_GA_ID ?? "G-CZ94H8NH3F";
+  process.env.NEXT_PUBLIC_GA_ID ?? "G-B5K344HP8G";
+
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID ?? "GTM-M473PR6W";
 
 const syne = Syne({
   variable: "--font-syne",
@@ -78,8 +80,26 @@ export default function RootLayout({
   return (
     <html lang="tr" className={`${syne.variable} ${geistMono.variable} scroll-smooth`}>
       <body className="min-h-screen bg-[#1a1a1a] text-white antialiased">
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <JsonLd />
         {children}
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','${GTM_ID}');
+          `}
+        </Script>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
           strategy="afterInteractive"
