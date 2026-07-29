@@ -2,7 +2,6 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { iletisimPage } from "@/data/iletisim";
-import { TextReveal } from "@/components/ui/TextReveal";
 import { CountryCodeSelect, DEFAULT_COUNTRY, type CountryOption } from "@/components/ui/CountryCodeSelect";
 import { motion, AnimatePresence } from "framer-motion";
 import { FormEvent, useState } from "react";
@@ -99,38 +98,22 @@ export function IletisimForm() {
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <div className="grid gap-16 lg:grid-cols-[1fr,1.1fr]">
           <div>
-            <TextReveal
-              text={formT.title}
-              className="text-[clamp(2rem,5vw,4rem)] font-light text-neutral-900"
-            />
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className="mt-6 text-neutral-900/50"
-            >
+            <h2 className="text-[clamp(2rem,5vw,4rem)] font-light text-neutral-900 leading-tight">
+              {formT.title}
+            </h2>
+            <p className="mt-6 text-neutral-900/60 font-medium">
               {formT.response}
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mt-10 space-y-4"
-            >
-              <p className="text-sm text-neutral-900/40">{iletisimPage.address}</p>
-              <p className="text-sm text-neutral-900/40">{iletisimPage.hours}</p>
-            </motion.div>
+            </p>
+            <div className="mt-10 space-y-4">
+              <p className="text-sm text-neutral-900/50">{iletisimPage.address}</p>
+              <p className="text-sm text-neutral-900/50">{iletisimPage.hours}</p>
+            </div>
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          >
+          <div className="w-full">
             <form
               onSubmit={handleSubmit}
-              className="relative overflow-hidden rounded-3xl border border-neutral-900/10 bg-gradient-to-br from-white/90 via-white/70 to-neutral-50/50 p-6 shadow-xl backdrop-blur-xl sm:p-8 md:p-12"
+              className="relative overflow-hidden rounded-3xl border border-neutral-900/10 bg-gradient-to-br from-white/90 via-white/80 to-neutral-50/60 p-6 shadow-xl backdrop-blur-xl sm:p-8 md:p-12"
               noValidate
             >
               <motion.div
@@ -155,8 +138,8 @@ export function IletisimForm() {
               </div>
 
               <AnimatePresence mode="wait">
-                <motion.div key="form" initial={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                  <p className="mb-8 text-sm font-medium text-neutral-900/60">
+                <div key="form" className="opacity-100">
+                  <p className="mb-8 text-sm font-semibold text-neutral-900/70">
                     {formT.subtitle}
                   </p>
                   <div className="space-y-6">
@@ -182,7 +165,7 @@ export function IletisimForm() {
                         onFocus={() => setFocused("name")}
                         onBlur={() => setFocused(null)}
                         autoComplete="name"
-                        className="w-full rounded-xl border border-neutral-900/15 bg-white/70 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-500 focus:bg-white focus:outline-none"
+                        className="w-full rounded-xl border border-neutral-900/15 bg-white/80 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                       />
                     </div>
 
@@ -208,7 +191,7 @@ export function IletisimForm() {
                         onFocus={() => setFocused("email")}
                         onBlur={() => setFocused(null)}
                         autoComplete="email"
-                        className="w-full rounded-xl border border-neutral-900/15 bg-white/70 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-500 focus:bg-white focus:outline-none"
+                        className="w-full rounded-xl border border-neutral-900/15 bg-white/80 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                       />
                     </div>
 
@@ -233,7 +216,7 @@ export function IletisimForm() {
                         onFocus={() => setFocused("company")}
                         onBlur={() => setFocused(null)}
                         autoComplete="organization"
-                        className="w-full rounded-xl border border-neutral-900/15 bg-white/70 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-500 focus:bg-white focus:outline-none"
+                        className="w-full rounded-xl border border-neutral-900/15 bg-white/80 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                       />
                     </div>
 
@@ -265,11 +248,11 @@ export function IletisimForm() {
                             onBlur={() => setFocused(null)}
                             autoComplete="tel-national"
                             placeholder={formT.phonePlaceholder}
-                            className="w-full rounded-r-xl border border-neutral-900/15 bg-white/70 px-4 pb-3 pt-8 text-neutral-900 placeholder:text-neutral-900/20 focus:border-kiwi-500 focus:bg-white focus:outline-none"
+                            className="w-full rounded-r-xl border border-neutral-900/15 bg-white/80 px-4 pb-3 pt-8 text-neutral-900 placeholder:text-neutral-900/30 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                           />
                         </div>
                       </div>
-                      <p className="mt-2 text-xs text-neutral-900/40">
+                      <p className="mt-2 text-xs text-neutral-900/50">
                         {formT.phoneHint}
                       </p>
                     </div>
@@ -277,7 +260,7 @@ export function IletisimForm() {
                     {/* Service */}
                     <select
                       name="service"
-                      className="w-full rounded-xl border border-neutral-900/15 bg-white/70 px-4 py-4 text-neutral-900/80 focus:border-kiwi-500 focus:bg-white focus:outline-none"
+                      className="w-full rounded-xl border border-neutral-900/15 bg-white/80 px-4 py-4 text-neutral-900/90 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                       defaultValue=""
                     >
                       <option value="" disabled>
@@ -297,7 +280,7 @@ export function IletisimForm() {
                       placeholder={formT.messagePlaceholder}
                       onFocus={() => setFocused("message")}
                       onBlur={() => setFocused(null)}
-                      className="w-full resize-none rounded-xl border border-neutral-900/15 bg-white/70 px-4 py-4 text-neutral-900 placeholder:text-neutral-900/30 focus:border-kiwi-500 focus:bg-white focus:outline-none"
+                      className="w-full resize-none rounded-xl border border-neutral-900/15 bg-white/80 px-4 py-4 text-neutral-900 placeholder:text-neutral-900/40 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                     />
                   </div>
 
@@ -321,7 +304,7 @@ export function IletisimForm() {
                       {errorMsg}
                     </p>
                   )}
-                  <p className="mt-4 text-center text-xs text-neutral-900/40">
+                  <p className="mt-4 text-center text-xs text-neutral-900/50">
                     {formT.termsPrefix}
                     <a href="/hizmet-sartlari" className="underline hover:text-neutral-900">
                       {formT.termsLink}
@@ -332,10 +315,10 @@ export function IletisimForm() {
                     </a>
                     {formT.termsSuffix}
                   </p>
-                </motion.div>
+                </div>
               </AnimatePresence>
             </form>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
