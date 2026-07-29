@@ -7,21 +7,12 @@ const LITE_CLASS = "lite-motion";
 export function detectLiteMotion() {
   if (typeof window === "undefined") return false;
 
-  const ua = navigator.userAgent;
-  const isSafari =
-    /Safari/i.test(ua) &&
-    !/Chrome|Chromium|CriOS|Edg|OPR|Firefox|FxiOS/i.test(ua);
-  const isIOS =
-    /iPad|iPhone|iPod/.test(ua) ||
-    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const saveData =
     "connection" in navigator &&
     Boolean((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData);
-  const lowCores =
-    typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
 
-  return isSafari || isIOS || prefersReduced || saveData || lowCores;
+  return prefersReduced || saveData;
 }
 
 export function detectIOSSafari() {
@@ -53,7 +44,7 @@ function subscribeLite(cb: () => void) {
   return () => obs.disconnect();
 }
 
-/** True on Safari / iOS / reduced-motion — prefer this over useState(false) so we never mount the heavy path first. */
+/** True ONLY if user explicitly requested reduced motion or saveData. */
 export function useLiteMotion() {
   return useSyncExternalStore(subscribeLite, readLiteFlag, () => false);
 }
@@ -62,7 +53,7 @@ export function isLiteMotionClient() {
   return readLiteFlag();
 }
 
-/** Call once on the client to stamp html.lite-motion as early as possible. */
+/** Call once on the client to stamp html.lite-motion if prefers-reduced-motion is true. */
 export function applyLiteMotionClass() {
   if (typeof document === "undefined") return;
   if (detectLiteMotion()) {
