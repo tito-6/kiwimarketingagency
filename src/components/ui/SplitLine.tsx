@@ -9,7 +9,7 @@ export function SplitLine({ className }: { className?: string }) {
   const isInView = useInView(ref, { once: true, margin: "-40px" });
 
   return (
-    <div ref={ref} className={cn("h-px w-full overflow-hidden bg-white/5", className)}>
+    <div ref={ref} className={cn("h-px w-full overflow-hidden bg-neutral-900/10", className)}>
       <motion.div
         className="h-full origin-left bg-gradient-to-r from-kiwi-400/80 via-kiwi-400/40 to-transparent"
         initial={{ scaleX: 0 }}

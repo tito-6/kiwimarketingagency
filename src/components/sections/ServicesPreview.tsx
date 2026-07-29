@@ -29,7 +29,7 @@ export function ServicesPreview() {
         <div className="mt-6 flex flex-wrap items-end justify-between gap-6">
           <TextReveal
             text="Geleceğe hazır dijital hizmetler"
-            className="max-w-2xl text-[clamp(2rem,5vw,4rem)] font-light leading-tight text-white"
+            className="max-w-2xl text-[clamp(2rem,5vw,4rem)] font-light leading-tight text-neutral-900"
           />
           <MagneticButton href="/hizmetler" variant="outline">
             Tüm Hizmetler
@@ -46,7 +46,7 @@ export function ServicesPreview() {
               <Link
                 href={`/hizmetler#${service.slug}`}
                 data-cursor="pointer"
-                className="group relative block aspect-[3/4] overflow-hidden rounded-3xl border border-white/10"
+                className="group relative block aspect-[3/4] overflow-hidden rounded-3xl border border-neutral-900/10"
               >
                 <motion.div
                   className="absolute inset-0"
@@ -113,7 +113,7 @@ export function ServicesPreview() {
           ))}
         </div>
 
-        <div className="mt-4 h-px w-full overflow-hidden rounded-full bg-white/10">
+        <div className="mt-4 h-px w-full overflow-hidden rounded-full bg-neutral-900/10">
           <motion.div className="h-full bg-kiwi-400" style={{ width: barWidth }} />
         </div>
       </div>

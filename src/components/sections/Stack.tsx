@@ -18,7 +18,7 @@ function ToolRow({ tools, reverse = false }: { tools: string[]; reverse?: boolea
         {doubled.map((tool, i) => (
           <span
             key={`${tool}-${i}`}
-            className="rounded-full border border-white/10 bg-white/[0.03] px-6 py-3 text-sm text-white/60"
+            className="rounded-full border border-neutral-900/10 bg-neutral-900/[0.03] px-6 py-3 text-sm text-neutral-900/60"
           >
             {tool}
           </span>
@@ -41,7 +41,7 @@ export function Stack() {
           </p>
           <TextReveal
             text={stack.title}
-            className="mt-6 text-[clamp(2rem,5vw,4rem)] font-light text-white"
+            className="mt-6 text-[clamp(2rem,5vw,4rem)] font-light text-neutral-900"
           />
         </ScrollReveal>
 

@@ -20,14 +20,14 @@ export function Blog() {
             </p>
             <TextReveal
               text={blog.title}
-              className="mt-6 max-w-2xl text-[clamp(1.75rem,4vw,3.5rem)] font-light leading-tight text-white"
+              className="mt-6 max-w-2xl text-[clamp(1.75rem,4vw,3.5rem)] font-light leading-tight text-neutral-900"
             />
           </ScrollReveal>
           <motion.div whileHover={{ x: 8 }}>
             <Link
               href="/blog#journal"
               data-cursor="pointer"
-              className="text-sm uppercase tracking-wider text-white/50 transition-colors hover:text-kiwi-400"
+              className="text-sm uppercase tracking-wider text-neutral-900/50 transition-colors hover:text-kiwi-400"
             >
               Hepsini İncele →
             </Link>
@@ -46,7 +46,7 @@ export function Blog() {
               <TiltCard>
                 <article className="group">
                   <Link href="/blog" data-cursor="pointer" className="block">
-                    <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10">
+                    <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-neutral-900/10">
                       <Image
                         src={images.projects[i % images.projects.length]}
                         alt=""
@@ -67,11 +67,11 @@ export function Blog() {
                     >
                       {post.category}
                     </motion.p>
-                    <h3 className="mt-2 text-xl font-medium text-white transition-colors group-hover:text-kiwi-400">
+                    <h3 className="mt-2 text-xl font-medium text-neutral-900 transition-colors group-hover:text-kiwi-400">
                       {post.title}
                     </h3>
-                    <p className="mt-2 line-clamp-2 text-sm text-white/50">{post.excerpt}</p>
-                    <time className="mt-4 block text-xs text-white/30">{post.date}</time>
+                    <p className="mt-2 line-clamp-2 text-sm text-neutral-900/50">{post.excerpt}</p>
+                    <time className="mt-4 block text-xs text-neutral-900/30">{post.date}</time>
                   </Link>
                 </article>
               </TiltCard>

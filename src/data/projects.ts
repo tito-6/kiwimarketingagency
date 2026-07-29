@@ -1,7 +1,7 @@
 import { images } from "./images";
 
 export const projelerPage = {
-  label: "Referanslarımız",
+  label: "Projeler",
   title: "Seçilmiş",
   titleAccent: "işler.",
   description:

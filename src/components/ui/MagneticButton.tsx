@@ -27,10 +27,10 @@ export function MagneticButton({
   const springY = useSpring(y, { stiffness: 300, damping: 20 });
 
   const variants = {
-    primary: "bg-kiwi-400 text-[#1a1a1a] hover:shadow-[0_0_40px_rgba(169,203,24,0.4)]",
+    primary: "bg-kiwi-400 text-neutral-900 hover:shadow-[0_0_40px_rgba(169,203,24,0.4)]",
     outline:
-      "border border-white/20 text-white hover:border-kiwi-400 hover:bg-kiwi-400/10",
-    ghost: "text-white/70 hover:text-white",
+      "border border-neutral-900/20 text-neutral-900 hover:border-kiwi-400 hover:bg-kiwi-400/10",
+    ghost: "text-neutral-900/70 hover:text-neutral-900",
   };
 
   function handleMove(e: React.MouseEvent) {

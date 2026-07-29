@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #1b1b1b;
-  --foreground: #cccaca;
+  --background: #ffffff;
+  --foreground: #1a1a1a;
   --kiwi: #a9cb18;
   --kiwi-dim: #8aab14;
-  --kiwi-gray: #cccaca;
+  --kiwi-gray: #5c5c5c;
 }
 
 @theme inline {
@@ -101,7 +101,7 @@ body {
 
 ::selection {
   background: color-mix(in srgb, var(--kiwi) 40%, transparent);
-  color: white;
+  color: #1a1a1a;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -113,3 +113,17 @@ body {
     perspective: 1000px;
   }
 }
+
+/* Safari / iOS fast path — stamped by the blocking head script. */
+html.lite-motion .backdrop-blur-xl,
+html.lite-motion .backdrop-blur-md,
+html.lite-motion .backdrop-blur-sm {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+html.lite-motion .home-defer {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 720px;
+}
+

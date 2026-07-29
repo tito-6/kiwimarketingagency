@@ -21,7 +21,7 @@ export function HomeManifesto() {
         className="pointer-events-none absolute inset-0 flex items-center"
       >
         <span
-          className="whitespace-nowrap font-bold uppercase tracking-tighter text-white/[0.02]"
+          className="whitespace-nowrap font-bold uppercase tracking-tighter text-neutral-900/[0.03]"
           style={{ fontSize: "clamp(5rem, 18vw, 16rem)" }}
         >
           KIWI AGENCY · DIGITAL · CREATIVE ·
@@ -41,14 +41,14 @@ function ManifestoLine({ text, index }: { text: string; index: number }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start 0.85", "start 0.55"] });
   const opacity = useTransform(scrollYProgress, [0, 1], [0.55, 1]);
-  const x = useTransform(scrollYProgress, [0, 1], [index % 2 === 0 ? 40 : -40, 0]);
+  const x = useTransform(scrollYProgress, [0, 1], [index % 2 === 0 ? 16 : -16, 0]);
 
   return (
     <motion.h2
       ref={ref}
       style={{ opacity, x }}
-      className={`border-b border-white/10 py-5 text-[clamp(2.5rem,8vw,7rem)] font-bold leading-[0.95] tracking-tighter md:py-6 ${
-        index === 1 ? "text-kiwi-400" : "text-white"
+      className={`break-words border-b border-neutral-900/10 py-4 text-[clamp(1.75rem,8vw,7rem)] font-bold leading-[1.05] tracking-tighter sm:py-5 md:py-6 ${
+        index === 1 ? "text-kiwi-400" : "text-neutral-900"
       }`}
     >
       {text}

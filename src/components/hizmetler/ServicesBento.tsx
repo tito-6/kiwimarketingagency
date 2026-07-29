@@ -23,7 +23,7 @@ export function ServicesBento() {
               <TiltCard key={service.id} className={spans}>
                 <Link
                   href={`#${service.slug}`}
-                  className="relative block h-full overflow-hidden rounded-3xl border border-white/10"
+                  className="relative block h-full overflow-hidden rounded-3xl border border-neutral-900/10"
                 >
                   <Image
                     src={service.image}
@@ -38,13 +38,13 @@ export function ServicesBento() {
                     whileHover={{ paddingBottom: "2rem" }}
                   >
                     <span className="font-mono text-xs text-kiwi-400">{service.id}</span>
-                    <h3 className="mt-1 text-lg font-medium text-white md:text-xl">
+                    <h3 className="mt-1 text-lg font-medium text-neutral-900 md:text-xl">
                       {service.title}
                     </h3>
                     <motion.p
                       initial={{ opacity: 0, height: 0 }}
                       whileHover={{ opacity: 1, height: "auto" }}
-                      className="mt-2 line-clamp-2 text-xs text-white/60"
+                      className="mt-2 line-clamp-2 text-xs text-neutral-900/60"
                     >
                       {service.description}
                     </motion.p>

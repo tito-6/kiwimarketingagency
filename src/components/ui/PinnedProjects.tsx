@@ -9,14 +9,14 @@ import Link from "next/link";
 
 export function PinnedProjects() {
   return (
-    <section className="overflow-hidden border-t border-white/10 py-16 md:py-20">
+    <section className="overflow-hidden border-t border-neutral-900/10 py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-kiwi-400">{projects.label}</p>
             <TextReveal
               text={projects.title}
-              className="mt-4 text-[clamp(1.75rem,5vw,3.5rem)] font-light text-white"
+              className="mt-4 text-[clamp(1.75rem,5vw,3.5rem)] font-light text-neutral-900"
             />
           </div>
           <MagneticButton href="/projeler#stats" variant="outline">
@@ -57,7 +57,7 @@ function ProjectCard({
       <Link
         href="/projeler#stats"
         data-cursor="pointer"
-        className="group relative block h-full overflow-hidden rounded-3xl border border-white/10"
+        className="group relative block h-full overflow-hidden rounded-3xl border border-neutral-900/10"
       >
         <Image
           src={project.image}

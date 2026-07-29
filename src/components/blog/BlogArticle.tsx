@@ -69,7 +69,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
       <AnimatePresence>
         {!entered && (
           <motion.div
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0a0a0a]"
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-white"
             exit={{ clipPath: "inset(0% 0% 100% 0%)" }}
             transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
           >
@@ -89,7 +89,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
           style={{ scaleX, backgroundColor: post.accent }}
         />
 
-        <header className="relative min-h-[100vh] overflow-hidden">
+        <header className="relative min-h-[70svh] overflow-hidden sm:min-h-[85svh] md:min-h-[100vh]">
           <motion.div
             className="absolute inset-0"
             style={{ scale: heroScale, opacity: heroOpacity }}
@@ -102,18 +102,18 @@ export function BlogArticle({ post }: { post: BlogPost }) {
             >
               <Image src={post.image} alt="" fill priority className="object-cover" sizes="100vw" />
             </motion.div>
-            <div className={`absolute inset-0 bg-gradient-to-b ${post.gradient} via-[#1a1a1a]/50 to-[#1a1a1a]`} />
+            <div className={`absolute inset-0 bg-gradient-to-b ${post.gradient} via-black/55 to-black/90`} />
           </motion.div>
 
           <motion.div
             style={{ y: titleY }}
-            className="relative z-10 mx-auto flex min-h-[100vh] max-w-[1440px] flex-col justify-end px-6 pb-24 pt-32 md:px-10"
+            className="relative z-10 mx-auto flex min-h-[70svh] max-w-[1440px] flex-col justify-end px-4 pb-16 pt-28 sm:min-h-[85svh] sm:px-6 sm:pb-20 sm:pt-32 md:min-h-[100vh] md:px-10 md:pb-24"
           >
             <ClipReveal direction="left">
               <Link
                 href="/blog"
                 data-cursor="pointer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/30 px-4 py-2 text-xs uppercase tracking-wider text-white/50 backdrop-blur-md transition-colors hover:text-white"
+                className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/30 px-4 py-2 text-xs uppercase tracking-wider text-white/70 backdrop-blur-md transition-colors hover:text-white"
               >
                 ← Journal
               </Link>
@@ -123,13 +123,13 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3 }}
-              className="mt-10 inline-flex w-fit rounded-full border px-4 py-1.5 text-xs uppercase tracking-wider backdrop-blur-md"
+              className="mt-8 inline-flex w-fit rounded-full border px-4 py-1.5 text-xs uppercase tracking-wider backdrop-blur-md sm:mt-10"
               style={{ borderColor: `${post.accent}50`, color: post.accent }}
             >
               {post.category}
             </motion.span>
 
-            <h1 className="mt-8 max-w-4xl text-[clamp(2rem,6vw,4.25rem)] font-bold leading-[1.05] tracking-tight text-white">
+            <h1 className="mt-6 max-w-4xl break-words text-[clamp(1.75rem,7.5vw,4.25rem)] font-bold leading-[1.1] tracking-tight text-white sm:mt-8">
               <CharacterSplit text={post.title} delay={0.4} stagger={0.025} />
             </h1>
 
@@ -137,31 +137,23 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
-              className="mt-10 flex flex-wrap items-center gap-8 text-sm text-white/40"
+              className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-white/65 sm:mt-10 sm:gap-x-6 sm:text-sm"
             >
               <span>{post.author}</span>
               <span>{post.date}</span>
               <span>{post.readTime} okuma</span>
             </motion.div>
-
-            <motion.div
-              animate={{ y: [0, 8, 0] }}
-              transition={{ repeat: Infinity, duration: 2 }}
-              className="absolute bottom-10 left-1/2 -translate-x-1/2"
-            >
-              <div className="h-12 w-px bg-gradient-to-b from-transparent via-white/40 to-transparent" />
-            </motion.div>
           </motion.div>
         </header>
 
-        <div className="relative mx-auto max-w-[1440px] px-6 py-20 md:px-10">
-          <div className="grid gap-16 lg:grid-cols-[260px_1fr]">
+        <div className="relative mx-auto min-w-0 max-w-[1440px] px-4 py-12 sm:px-6 sm:py-16 md:px-10 md:py-20">
+          <div className="grid min-w-0 gap-10 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-16">
             <aside className="hidden lg:block">
               <div className="sticky top-28 space-y-8">
                 <ReadingRing accent={post.accent} containerRef={containerRef} />
 
                 <nav>
-                  <p className="text-[10px] uppercase tracking-[0.3em] text-white/30">İçindekiler</p>
+                  <p className="text-[10px] uppercase tracking-[0.3em] text-neutral-900/30">İçindekiler</p>
                   <ul className="mt-4 space-y-2">
                     {headings.map((h) =>
                       h.type === "h2" ? (
@@ -171,7 +163,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
                             className={`block py-1 text-sm transition-colors ${
                               activeSection === h.id
                                 ? "font-medium"
-                                : "text-white/35 hover:text-white/70"
+                                : "text-neutral-900/35 hover:text-neutral-900/70"
                             }`}
                             style={activeSection === h.id ? { color: post.accent } : {}}
                           >
@@ -183,15 +175,15 @@ export function BlogArticle({ post }: { post: BlogPost }) {
                   </ul>
                 </nav>
 
-                <div className="rounded-2xl border border-white/10 p-4">
-                  <p className="text-[10px] uppercase tracking-wider text-white/30">Paylaş</p>
+                <div className="rounded-2xl border border-neutral-900/10 p-4">
+                  <p className="text-[10px] uppercase tracking-wider text-neutral-900/30">Paylaş</p>
                   <div className="mt-3 flex gap-2">
                     {["X", "in", "↗"].map((icon) => (
                       <motion.button
                         key={icon}
                         type="button"
                         whileHover={{ scale: 1.1, borderColor: post.accent }}
-                        className="flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-xs text-white/50"
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-neutral-900/15 text-xs text-neutral-900/50"
                       >
                         {icon}
                       </motion.button>
@@ -201,11 +193,11 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               </div>
             </aside>
 
-            <div className="max-w-3xl lg:max-w-none">
+            <div className="min-w-0 max-w-3xl lg:max-w-none">
               <BlogArticleContent blocks={blocks} post={post} />
 
               <ClipReveal direction="center" className="mt-20">
-                <div className="relative aspect-[16/10] overflow-hidden rounded-3xl border border-white/10">
+                <div className="relative aspect-[16/10] overflow-hidden rounded-3xl border border-neutral-900/10">
                   <Image
                     src={secondaryImage}
                     alt=""
@@ -220,9 +212,9 @@ export function BlogArticle({ post }: { post: BlogPost }) {
           </div>
         </div>
 
-        <section className="border-t border-white/10 py-24">
+        <section className="border-t border-neutral-900/10 py-24">
           <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
-            <TextReveal text="İlgili yazılar" className="text-3xl font-light text-white" />
+            <TextReveal text="İlgili yazılar" className="text-3xl font-light text-neutral-900" />
             <RelatedGrid currentSlug={post.slug} accent={post.accent} />
             <div className="mt-12 text-center">
               <MagneticButton href="/blog" variant="outline">
@@ -255,7 +247,7 @@ function RelatedGrid({ currentSlug, accent }: { currentSlug: string; accent: str
           <Link
             href={`/blog/${p.slug}`}
             data-cursor="pointer"
-            className="group block overflow-hidden rounded-2xl border border-white/10"
+            className="group block overflow-hidden rounded-2xl border border-neutral-900/10"
           >
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image
@@ -274,7 +266,7 @@ function RelatedGrid({ currentSlug, accent }: { currentSlug: string; accent: str
               <p className="text-xs uppercase tracking-wider" style={{ color: p.accent }}>
                 {p.category}
               </p>
-              <h3 className="mt-2 font-medium text-white group-hover:text-kiwi-400">{p.title}</h3>
+              <h3 className="mt-2 font-medium text-neutral-900 group-hover:text-kiwi-400">{p.title}</h3>
             </div>
           </Link>
         </motion.div>

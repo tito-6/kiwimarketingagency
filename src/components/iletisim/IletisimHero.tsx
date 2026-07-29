@@ -29,7 +29,7 @@ function AnimatedPhone() {
               ease: [0.22, 1, 0.36, 1],
             }}
             whileHover={{ y: -8, color: "#a9cb18" }}
-            className="inline-block text-[clamp(1.5rem,4vw,2.75rem)] font-light text-white"
+            className="inline-block text-[clamp(1.5rem,4vw,2.75rem)] font-light text-neutral-900"
             style={{ transformOrigin: "bottom" }}
           >
             {char === " " ? "\u00A0" : char}
@@ -37,7 +37,7 @@ function AnimatedPhone() {
         ))}
       </div>
       <motion.span
-        className="mt-3 block text-xs uppercase tracking-[0.25em] text-white/35 group-hover:text-kiwi-400"
+        className="mt-3 block text-xs uppercase tracking-[0.25em] text-neutral-900/35 group-hover:text-kiwi-400"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
@@ -58,7 +58,7 @@ export function IletisimHero() {
           transition={{ repeat: Infinity, duration: 6 }}
         />
         <motion.div
-          className="absolute -right-20 top-20 font-bold text-white/[0.02]"
+          className="absolute -right-20 top-20 font-bold text-neutral-900/[0.02]"
           style={{ fontSize: "clamp(6rem, 20vw, 14rem)" }}
           animate={{ rotate: [0, 5, 0] }}
           transition={{ repeat: Infinity, duration: 15 }}
@@ -75,10 +75,10 @@ export function IletisimHero() {
         </ClipReveal>
 
         <h1 className="mt-8 max-w-4xl">
-          <span className="block text-[clamp(3rem,10vw,7rem)] font-bold leading-[0.95] tracking-tighter text-white">
+          <span className="block text-[clamp(3rem,10vw,7rem)] font-bold leading-[0.95] tracking-tighter text-neutral-900">
             <CharacterSplit text={iletisimPage.title} delay={0.2} stagger={0.05} />
           </span>
-          <span className="mt-2 block text-[clamp(2rem,6vw,5rem)] font-light text-white/25">
+          <span className="mt-2 block text-[clamp(2rem,6vw,5rem)] font-light text-neutral-900/25">
             <CharacterSplit text={iletisimPage.titleAccent} delay={0.55} stagger={0.04} />
           </span>
         </h1>
@@ -87,7 +87,7 @@ export function IletisimHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="mt-8 max-w-xl text-lg text-white/45"
+          className="mt-8 max-w-xl text-lg text-neutral-900/45"
         >
           {iletisimPage.description}
         </motion.p>
@@ -102,10 +102,10 @@ export function IletisimHero() {
             transition={{ delay: 1.2 }}
             className="group inline-block"
           >
-            <span className="text-lg text-white/55 transition-colors group-hover:text-kiwi-400 md:text-xl">
+            <span className="text-lg text-neutral-900/55 transition-colors group-hover:text-kiwi-400 md:text-xl">
               {site.email}
             </span>
-            <span className="mt-2 block text-xs uppercase tracking-[0.25em] text-white/35 group-hover:text-kiwi-400">
+            <span className="mt-2 block text-xs uppercase tracking-[0.25em] text-neutral-900/35 group-hover:text-kiwi-400">
               E-posta gönder →
             </span>
           </motion.a>

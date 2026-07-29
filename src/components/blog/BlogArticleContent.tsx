@@ -14,7 +14,7 @@ export function BlogArticleContent({
   post: BlogPost;
 }) {
   return (
-    <div className="space-y-12">
+    <div className="min-w-0 space-y-8 sm:space-y-12">
       {blocks.map((block, i) => (
         <BlockRenderer key={`${block.type}-${i}`} block={block} post={post} index={i} />
       ))}
@@ -35,7 +35,7 @@ function BlockRenderer({
     case "lead":
       return (
         <ClipReveal delay={index * 0.05}>
-          <p className="text-2xl font-light leading-relaxed text-white/75 md:text-3xl md:leading-snug">
+          <p className="text-xl font-light leading-relaxed break-words text-neutral-900/75 sm:text-2xl md:text-3xl md:leading-snug">
             {block.text}
           </p>
         </ClipReveal>
@@ -48,7 +48,7 @@ function BlockRenderer({
             <span className="font-mono text-xs uppercase tracking-widest" style={{ color: post.accent }}>
               {block.id}
             </span>
-            <span className="mt-2 block text-3xl font-medium text-white md:text-4xl">{block.text}</span>
+            <span className="mt-2 block break-words text-2xl font-medium text-neutral-900 sm:text-3xl md:text-4xl">{block.text}</span>
             <motion.div
               className="mt-4 h-px max-w-xs"
               style={{ background: `linear-gradient(90deg, ${post.accent}, transparent)` }}
@@ -64,7 +64,7 @@ function BlockRenderer({
     case "p":
       return (
         <motion.p
-          className="text-lg leading-[1.85] text-white/55"
+          className="text-lg leading-[1.85] text-neutral-900/55"
           initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           viewport={{ once: true, margin: "-60px" }}
@@ -78,7 +78,7 @@ function BlockRenderer({
       return (
         <ClipReveal direction="center">
           <blockquote
-            className="relative my-8 overflow-hidden rounded-3xl border p-10 md:p-14"
+            className="relative my-6 overflow-hidden rounded-2xl border p-6 sm:my-8 sm:rounded-3xl sm:p-10 md:p-14"
             style={{ borderColor: `${post.accent}30`, background: `${post.accent}08` }}
           >
             <motion.span
@@ -87,11 +87,11 @@ function BlockRenderer({
             >
               &ldquo;
             </motion.span>
-            <p className="relative text-xl font-light italic leading-relaxed text-white/85 md:text-2xl">
+            <p className="relative text-xl font-light italic leading-relaxed text-neutral-900/85 md:text-2xl">
               {block.text}
             </p>
             {block.author && (
-              <footer className="relative mt-6 text-sm text-white/40">— {block.author}</footer>
+              <footer className="relative mt-6 text-sm text-neutral-900/40">— {block.author}</footer>
             )}
           </blockquote>
         </ClipReveal>
@@ -100,8 +100,8 @@ function BlockRenderer({
     case "image":
       return (
         <ClipReveal direction="center">
-          <figure className="group relative -mx-6 overflow-hidden rounded-3xl md:-mx-0">
-            <div className="relative aspect-[21/9] min-h-[240px]">
+          <figure className="group relative -mx-4 overflow-hidden rounded-2xl sm:-mx-0 sm:rounded-3xl">
+            <div className="relative aspect-[16/10] min-h-[180px] sm:aspect-[21/9] sm:min-h-[240px]">
               <motion.div
                 className="absolute inset-0"
                 initial={{ scale: 1.15 }}
@@ -114,7 +114,7 @@ function BlockRenderer({
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
             </div>
             {block.caption && (
-              <figcaption className="mt-3 text-center text-xs text-white/35">{block.caption}</figcaption>
+              <figcaption className="mt-3 text-center text-xs text-neutral-900/35">{block.caption}</figcaption>
             )}
           </figure>
         </ClipReveal>
@@ -139,7 +139,7 @@ function BlockRenderer({
                 hidden: { opacity: 0, x: -20 },
                 show: { opacity: 1, x: 0 },
               }}
-              className="flex gap-4 text-lg text-white/55"
+              className="flex gap-3 text-base break-words text-neutral-900/55 sm:gap-4 sm:text-lg"
             >
               <span style={{ color: post.accent }}>→</span>
               {item}
@@ -159,12 +159,12 @@ function BlockRenderer({
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               whileHover={{ y: -6 }}
-              className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 text-center"
+              className="rounded-2xl border border-neutral-900/10 bg-neutral-900/[0.02] p-6 text-center"
             >
               <p className="text-3xl font-light" style={{ color: post.accent }}>
                 {stat.value}
               </p>
-              <p className="mt-1 text-[10px] uppercase tracking-wider text-white/40">{stat.label}</p>
+              <p className="mt-1 text-[10px] uppercase tracking-wider text-neutral-900/40">{stat.label}</p>
             </motion.div>
           ))}
         </div>

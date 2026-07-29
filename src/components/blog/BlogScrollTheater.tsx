@@ -48,7 +48,7 @@ export function BlogScrollTheater() {
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <motion.span
-            className="select-none font-bold text-white/[0.02]"
+            className="select-none font-bold text-neutral-900/[0.02]"
             style={{ fontSize: "clamp(6rem, 20vw, 18rem)" }}
             animate={{ x: [0, -20, 0] }}
             transition={{ repeat: Infinity, duration: 12 }}
@@ -79,7 +79,7 @@ export function BlogScrollTheater() {
               />
               <motion.span
                 animate={{ opacity: active === i ? 1 : 0, x: active === i ? 0 : -8 }}
-                className="whitespace-nowrap text-xs text-white/60"
+                className="whitespace-nowrap text-xs text-neutral-900/60"
               >
                 {p.title.slice(0, 28)}…
               </motion.span>
@@ -93,9 +93,9 @@ export function BlogScrollTheater() {
           <div>
             <TextReveal
               text="Okuma modu"
-              className="text-sm uppercase tracking-[0.3em] text-white/30"
+              className="text-sm uppercase tracking-[0.3em] text-neutral-900/30"
             />
-            <p className="mt-1 font-mono text-xs text-white/40">
+            <p className="mt-1 font-mono text-xs text-neutral-900/40">
               {String(active + 1).padStart(2, "0")} / {String(blogPosts.length).padStart(2, "0")}
             </p>
           </div>
@@ -153,7 +153,7 @@ function TheaterSlide({ post, index }: { post: BlogPost; index: number }) {
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-6 max-w-4xl text-[clamp(2rem,6vw,5rem)] font-bold leading-[0.95] tracking-tight text-white"
+          className="mt-6 max-w-4xl text-[clamp(2rem,6vw,5rem)] font-bold leading-[0.95] tracking-tight text-neutral-900"
         >
           {post.title}
         </motion.h2>
@@ -162,7 +162,7 @@ function TheaterSlide({ post, index }: { post: BlogPost; index: number }) {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.25 }}
-          className="mt-6 max-w-xl text-lg text-white/50"
+          className="mt-6 max-w-xl text-lg text-neutral-900/50"
         >
           {post.excerpt}
         </motion.p>
@@ -171,7 +171,7 @@ function TheaterSlide({ post, index }: { post: BlogPost; index: number }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="mt-8 flex gap-6 text-sm text-white/35"
+          className="mt-8 flex gap-6 text-sm text-neutral-900/35"
         >
           <span>{post.readTime}</span>
           <span>{post.date}</span>

@@ -35,7 +35,7 @@ function ShowcaseImage({
     <motion.div
       ref={ref}
       style={{ y, scale }}
-      className={`group relative overflow-hidden rounded-2xl border border-white/10 ${span}`}
+      className={`group relative overflow-hidden rounded-2xl border border-neutral-900/10 ${span}`}
       whileHover={{ scale: 1.02 }}
       transition={{ type: "spring", stiffness: 300 }}
     >
@@ -62,7 +62,7 @@ export function ImageShowcase() {
           <p className="text-xs uppercase tracking-[0.3em] text-kiwi-400">Önizleme</p>
           <TextReveal
             text="Çalışmalarımızdan kareler"
-            className="mt-4 justify-center text-3xl font-light text-white md:text-5xl"
+            className="mt-4 justify-center text-3xl font-light text-neutral-900 md:text-5xl"
           />
         </ScrollReveal>
 

@@ -27,6 +27,8 @@ export const images = {
   videos: {
     showreel: {
       mp4: "/videos/kiwi-showreel.mp4",
+      mp4720: "/videos/kiwi-showreel-720.mp4",
+      mp4480: "/videos/kiwi-showreel-480.mp4",
       webm: "/videos/kiwi-showreel.webm",
       poster: "/videos/kiwi-showreel-poster.jpg",
     },

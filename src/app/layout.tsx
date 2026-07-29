@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist_Mono, Syne } from "next/font/google";
 import Script from "next/script";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID =
@@ -79,8 +80,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className={`${syne.variable} ${geistMono.variable} scroll-smooth`}>
-      <body className="min-h-screen bg-[#1a1a1a] text-white antialiased">
-        {/* Google Tag Manager (noscript) */}
+      <head>
+        {/* Stamp html.lite-motion BEFORE hydration so Safari never mounts the heavy path. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var ua=navigator.userAgent;var safari=/Safari/i.test(ua)&&!/Chrome|Chromium|CriOS|Edg|OPR|Firefox|FxiOS/i.test(ua);var ios=/iPad|iPhone|iPod/.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(safari||ios||reduce)document.documentElement.classList.add("lite-motion");}catch(e){}})();`,
+          }}
+        />
+        {/* Google Tag Manager — as high in <head> as possible */}
+        <Script id="google-tag-manager" strategy="lazyOnload">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${GTM_ID}');`}
+        </Script>
+        {/* Google tag (gtag.js) — G-B5K344HP8G */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="lazyOnload"
+        />
+        <Script id="google-analytics" strategy="lazyOnload">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_MEASUREMENT_ID}');`}
+        </Script>
+      </head>
+      <body className="min-h-screen bg-white text-neutral-900 antialiased">
+        {/* Google Tag Manager (noscript) — immediately after <body> */}
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
@@ -90,28 +118,7 @@ export default function RootLayout({
           />
         </noscript>
         <JsonLd />
-        {children}
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','${GTM_ID}');
-          `}
-        </Script>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
-          `}
-        </Script>
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

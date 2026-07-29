@@ -19,7 +19,7 @@ export function FAQ() {
           </p>
           <TextReveal
             text={faqs.title}
-            className="mt-6 text-[clamp(2rem,5vw,3.5rem)] font-light text-white"
+            className="mt-6 text-[clamp(2rem,5vw,3.5rem)] font-light text-neutral-900"
           />
         </ScrollReveal>
 
@@ -31,7 +31,7 @@ export function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-20px" }}
               transition={{ delay: i * 0.06 }}
-              className="border-b border-white/10"
+              className="border-b border-neutral-900/10"
             >
               <button
                 type="button"
@@ -39,14 +39,14 @@ export function FAQ() {
                 data-cursor="pointer"
                 className="flex w-full items-start justify-between gap-4 py-7 text-left"
               >
-                <span className="text-lg font-medium text-white md:text-xl">{item.q}</span>
+                <span className="text-lg font-medium text-neutral-900 md:text-xl">{item.q}</span>
                 <motion.span
                   animate={{ rotate: open === i ? 45 : 0 }}
                   className={cn(
                     "mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border text-lg",
                     open === i
                       ? "border-kiwi-400 text-kiwi-400"
-                      : "border-white/20 text-white/50"
+                      : "border-neutral-900/20 text-neutral-900/50"
                   )}
                 >
                   +
@@ -61,7 +61,7 @@ export function FAQ() {
                     transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                     className="overflow-hidden"
                   >
-                    <p className="pb-7 max-w-3xl text-white/50">{item.a}</p>
+                    <p className="pb-7 max-w-3xl text-neutral-900/50">{item.a}</p>
                   </motion.div>
                 )}
               </AnimatePresence>

@@ -3,17 +3,17 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Logo } from "@/components/ui/Logo";
+import { isLiteMotionClient } from "@/lib/motion";
 
-// Full-screen intro overlay shown on first paint: brand logo, a fake loading
-// counter, then it slides up out of the way. Skipped for reduced-motion users.
+// Full-screen intro overlay. Skipped on Safari/iOS/touch/reduced-motion so
+// the hero can paint immediately instead of waiting ~2s behind a fake counter.
 export function PageLoader() {
   const [loading, setLoading] = useState(true);
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const isTouch = window.matchMedia("(pointer: coarse)").matches;
-    if (prefersReduced || isTouch) {
+    if (isLiteMotionClient() || isTouch) {
       setLoading(false);
       window.dispatchEvent(new CustomEvent("kiwi:pageloaded"));
       return;
@@ -29,8 +29,8 @@ export function PageLoader() {
       setTimeout(() => {
         setLoading(false);
         window.dispatchEvent(new CustomEvent("kiwi:pageloaded"));
-      }, 600);
-    }, 1800);
+      }, 400);
+    }, 1100);
 
     return () => {
       clearInterval(interval);
@@ -44,7 +44,7 @@ export function PageLoader() {
         <motion.div
           className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#0a0a0a]"
           exit={{ y: "-100%" }}
-          transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
+          transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}

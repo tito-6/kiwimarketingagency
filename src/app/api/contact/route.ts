@@ -1,124 +1,156 @@
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
+import {
+  checkDuplicate,
+  escapeHtml,
+  markSubmitted,
+  sanitizeHeaderValue,
+  validateContact,
+  type ContactInput,
+} from "@/lib/contact-validation";
 
 export const runtime = "nodejs";
 
-type ContactPayload = {
-  name?: string;
-  phone?: string;
-  email?: string;
-  company?: string;
-  service?: string;
-  message?: string;
-};
+const TO_EMAIL =
+  process.env.CONTACT_TO_EMAIL ?? "yasin@kiwimarketingagency.com";
+const SMTP_USER =
+  process.env.SMTP_USER ?? "ahmadalkhalid533@gmail.com";
+const SMTP_PASS = (process.env.SMTP_PASS ?? "").replace(/\s+/g, "");
+const FROM_NAME = process.env.CONTACT_FROM_NAME ?? "Kiwi Website";
 
-const TO_EMAIL = process.env.CONTACT_TO_EMAIL ?? "info@kiwimarketingagency.com";
-// Until a custom domain is verified in Resend, the safe default sender is
-// onboarding@resend.dev. Set CONTACT_FROM_EMAIL once the domain is verified.
-const FROM_EMAIL =
-  process.env.CONTACT_FROM_EMAIL ?? "Kiwi Website <onboarding@resend.dev>";
-
-function isValidEmail(value: string) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
-}
-
-function escapeHtml(value: string) {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+function createTransport() {
+  if (!SMTP_PASS) {
+    throw new Error("SMTP_PASS is not configured");
+  }
+  return nodemailer.createTransport({
+    host: process.env.SMTP_HOST ?? "smtp.gmail.com",
+    port: Number(process.env.SMTP_PORT ?? 465),
+    secure: true,
+    auth: {
+      user: SMTP_USER,
+      pass: SMTP_PASS,
+    },
+  });
 }
 
 export async function POST(request: Request) {
-  let data: ContactPayload;
+  // Origin verification
+  const origin = request.headers.get("origin");
+  const host = request.headers.get("host");
+
+  if (origin && host) {
+    try {
+      const originHost = new URL(origin).host;
+      if (
+        originHost !== host &&
+        !originHost.endsWith("kiwimarketingagency.com") &&
+        !originHost.includes("localhost") &&
+        !originHost.includes("127.0.0.1")
+      ) {
+        return NextResponse.json({ error: "Yetkisiz istek / Unauthorized request" }, { status: 403 });
+      }
+    } catch {
+      // Ignore URL parse error
+    }
+  }
+
+  let data: ContactInput;
   try {
-    data = (await request.json()) as ContactPayload;
+    data = (await request.json()) as ContactInput;
   } catch {
-    return NextResponse.json({ error: "Geçersiz istek." }, { status: 400 });
+    return NextResponse.json({ error: "Geçersiz istek / Invalid payload." }, { status: 400 });
   }
 
-  const name = (data.name ?? "").trim();
-  const phone = (data.phone ?? "").replace(/\D/g, "");
-  const email = (data.email ?? "").trim();
-  const company = (data.company ?? "").trim();
-  const service = (data.service ?? "").trim();
-  const message = (data.message ?? "").trim();
+  const validated = validateContact(data);
+  if (!validated.ok) {
+    return NextResponse.json({ error: validated.error }, { status: 422 });
+  }
 
-  if (!name) {
-    return NextResponse.json({ error: "İsim zorunludur." }, { status: 422 });
-  }
-  if (phone.length !== 10) {
+  const lead = validated.value;
+
+  if (checkDuplicate(lead.fingerprint)) {
     return NextResponse.json(
-      { error: "Telefon numarası 10 haneli olmalıdır (başında 0 olmadan)." },
-      { status: 422 }
-    );
-  }
-  if (!isValidEmail(email)) {
-    return NextResponse.json(
-      { error: "Geçerli bir e-posta adresi girin." },
-      { status: 422 }
+      {
+        error:
+          "Bu bilgilerle son 2 saat içinde zaten bir talep gönderildi. Lütfen biraz bekleyin veya bizi doğrudan arayın.",
+      },
+      { status: 429 }
     );
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    // No email provider configured yet. Log so the submission is not lost and
-    // surface a clear error instead of pretending it was delivered.
-    console.error("[contact] RESEND_API_KEY is not set. Submission:", {
-      name,
-      phone,
-      email,
-      company,
-      service,
-      message,
+  if (!SMTP_PASS) {
+    console.error("[contact] SMTP_PASS missing. Lead:", {
+      name: lead.name,
+      email: lead.email,
+      phone: lead.phoneE164,
     });
     return NextResponse.json(
-      { error: "E-posta servisi yapılandırılmamış. Lütfen doğrudan bize ulaşın." },
+      {
+        error:
+          "E-posta servisi yapılandırılmamış. Lütfen +90 532 630 57 13 numarasından bize ulaşın.",
+      },
       { status: 503 }
     );
   }
 
+  const safeName = sanitizeHeaderValue(lead.name);
+  const safeEmail = sanitizeHeaderValue(lead.email);
+  const safeService = sanitizeHeaderValue(lead.service);
+
   const html = `
-    <h2>Yeni İletişim Formu</h2>
-    <p><strong>İsim:</strong> ${escapeHtml(name)}</p>
-    <p><strong>Telefon:</strong> 0${escapeHtml(phone)}</p>
-    <p><strong>E-posta:</strong> ${escapeHtml(email)}</p>
-    ${company ? `<p><strong>Şirket:</strong> ${escapeHtml(company)}</p>` : ""}
-    ${service ? `<p><strong>Hizmet:</strong> ${escapeHtml(service)}</p>` : ""}
-    ${message ? `<p><strong>Mesaj:</strong><br/>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>` : ""}
+    <div style="font-family:Inter,Arial,sans-serif;max-width:560px;margin:0 auto;color:#1a1a1a">
+      <h2 style="margin:0 0 8px;font-weight:600">Yeni web sitesi lead’i</h2>
+      <p style="margin:0 0 20px;color:#666;font-size:14px">kiwimarketingagency.com/iletisim</p>
+      <table style="width:100%;border-collapse:collapse;font-size:15px">
+        <tr><td style="padding:8px 0;color:#666;width:120px">İsim</td><td style="padding:8px 0"><strong>${escapeHtml(safeName)}</strong></td></tr>
+        <tr><td style="padding:8px 0;color:#666">Telefon</td><td style="padding:8px 0"><a href="tel:${escapeHtml(lead.phoneE164)}">${escapeHtml(lead.phoneDisplay)}</a></td></tr>
+        <tr><td style="padding:8px 0;color:#666">E-posta</td><td style="padding:8px 0"><a href="mailto:${escapeHtml(safeEmail)}">${escapeHtml(safeEmail)}</a></td></tr>
+        ${lead.company ? `<tr><td style="padding:8px 0;color:#666">Şirket</td><td style="padding:8px 0">${escapeHtml(lead.company)}</td></tr>` : ""}
+        ${lead.service ? `<tr><td style="padding:8px 0;color:#666">Hizmet</td><td style="padding:8px 0">${escapeHtml(lead.service)}</td></tr>` : ""}
+      </table>
+      ${
+        lead.message
+          ? `<div style="margin-top:20px;padding:16px;background:#f6f7f2;border-radius:12px"><p style="margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#888">Mesaj</p><p style="margin:0;line-height:1.6">${escapeHtml(lead.message).replace(/\n/g, "<br/>")}</p></div>`
+          : ""
+      }
+    </div>
   `;
 
+  const text = [
+    `Yeni lead — ${safeName}`,
+    `Telefon: ${lead.phoneDisplay}`,
+    `E-posta: ${safeEmail}`,
+    lead.company ? `Şirket: ${lead.company}` : "",
+    lead.service ? `Hizmet: ${safeService}` : "",
+    lead.message ? `Mesaj: ${lead.message}` : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
+
   try {
-    const res = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from: FROM_EMAIL,
-        to: [TO_EMAIL],
-        reply_to: email,
-        subject: `Yeni İletişim Formu — ${name}`,
-        html,
-      }),
+    const transporter = createTransport();
+    await transporter.sendMail({
+      from: `"${FROM_NAME}" <${SMTP_USER}>`,
+      to: TO_EMAIL,
+      replyTo: `${safeName} <${safeEmail}>`,
+      subject: `Yeni Lead — ${safeName}${safeService ? ` · ${safeService}` : ""}`,
+      text,
+      html,
     });
 
-    if (!res.ok) {
-      const detail = await res.text();
-      console.error("[contact] Resend error:", res.status, detail);
-      return NextResponse.json(
-        { error: "Mesaj gönderilemedi. Lütfen tekrar deneyin." },
-        { status: 502 }
-      );
-    }
+    markSubmitted(lead.fingerprint);
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({
+      ok: true,
+      message:
+        "Teşekkürler! Mesajınız bize ulaştı. Ekibimiz en kısa sürede sizinle iletişime geçecek.",
+      redirectUrl: "/tesekkurler",
+    });
   } catch (err) {
-    console.error("[contact] Unexpected error:", err);
+    console.error("[contact] Nodemailer error:", err);
     return NextResponse.json(
-      { error: "Beklenmeyen bir hata oluştu." },
-      { status: 500 }
+      { error: "Mesaj gönderilemedi. Lütfen tekrar deneyin veya bizi arayın." },
+      { status: 502 }
     );
   }
 }

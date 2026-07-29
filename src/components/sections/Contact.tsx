@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative overflow-hidden border-t border-white/10 py-20 md:py-28">
+    <section id="contact" className="relative overflow-hidden border-t border-neutral-900/10 py-20 md:py-28">
       <motion.div
         className="pointer-events-none absolute inset-0"
         animate={{
@@ -29,7 +29,7 @@ export function Contact() {
           </p>
           <TextReveal
             text="Hazır mısınız?"
-            className="mt-6 justify-center text-[clamp(2.5rem,6vw,5rem)] font-light text-white"
+            className="mt-6 justify-center text-[clamp(2.5rem,6vw,5rem)] font-light text-neutral-900"
           />
         </ScrollReveal>
 
@@ -37,7 +37,7 @@ export function Contact() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mx-auto mt-6 max-w-lg text-white/45"
+          className="mx-auto mt-6 max-w-lg text-neutral-900/45"
         >
           {contact.subtitle} — {contact.response}
         </motion.p>
@@ -54,7 +54,7 @@ export function Contact() {
             className="group inline-block"
           >
             <motion.span
-              className="text-[clamp(1.5rem,4vw,2.5rem)] font-light text-white"
+              className="text-[clamp(1.5rem,4vw,2.5rem)] font-light text-neutral-900"
               whileHover={{ scale: 1.02, color: "#a9cb18" }}
             >
               {site.phone}
@@ -65,7 +65,7 @@ export function Contact() {
             className="group mt-4 block"
           >
             <motion.span
-              className="text-lg text-white/55 transition-colors group-hover:text-kiwi-400 md:text-xl"
+              className="text-lg text-neutral-900/55 transition-colors group-hover:text-kiwi-400 md:text-xl"
               whileHover={{ scale: 1.01 }}
             >
               {site.email}

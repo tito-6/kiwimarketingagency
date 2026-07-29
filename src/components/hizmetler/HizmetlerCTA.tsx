@@ -21,13 +21,13 @@ export function HizmetlerCTA() {
       <div className="relative mx-auto max-w-[1440px] px-6 text-center md:px-10">
         <TextReveal
           text="Projenizi birlikte büyütelim."
-          className="text-[clamp(2rem,6vw,5rem)] font-light text-white justify-center"
+          className="text-[clamp(2rem,6vw,5rem)] font-light text-neutral-900 justify-center"
         />
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mx-auto mt-6 max-w-xl text-white/50"
+          className="mx-auto mt-6 max-w-xl text-neutral-900/50"
         >
           24 saat içinde yanıt veriyoruz. Keşif görüşmesi ücretsiz.
         </motion.p>

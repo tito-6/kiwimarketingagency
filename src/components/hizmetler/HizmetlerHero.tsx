@@ -44,14 +44,14 @@ export function HizmetlerHero() {
 
         <TextReveal
           text={hizmetlerPage.headline}
-          className="mt-8 text-[clamp(2.5rem,8vw,7rem)] font-bold leading-[0.95] tracking-tighter text-white"
+          className="mt-8 break-words text-[clamp(2rem,8vw,7rem)] font-bold leading-[0.95] tracking-tighter text-white"
           as="h1"
         />
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-4 text-[clamp(1.5rem,4vw,3.5rem)] font-light text-white/30"
+          className="mt-4 break-words text-[clamp(1.25rem,4vw,3.5rem)] font-light text-white/35"
         >
           {hizmetlerPage.headlineAccent}
         </motion.p>
@@ -60,7 +60,7 @@ export function HizmetlerHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="mt-10 max-w-2xl text-lg text-white/50"
+          className="mt-8 max-w-2xl text-base text-white/60 sm:mt-10 sm:text-lg"
         >
           {hizmetlerPage.description}
         </motion.p>

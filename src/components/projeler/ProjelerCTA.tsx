@@ -22,13 +22,13 @@ export function ProjelerCTA() {
       <div className="relative mx-auto max-w-[1440px] px-6 text-center md:px-10">
         <TextReveal
           text="Sıradaki proje sizin mi?"
-          className="justify-center text-[clamp(2rem,6vw,5rem)] font-light text-white"
+          className="justify-center text-[clamp(2rem,6vw,5rem)] font-light text-neutral-900"
         />
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mx-auto mt-6 max-w-lg text-white/50"
+          className="mx-auto mt-6 max-w-lg text-neutral-900/50"
         >
           Markanızı dijitalde öne çıkaracak bir sonraki başarı hikayesini birlikte yazalım.
         </motion.p>

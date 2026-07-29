@@ -219,7 +219,7 @@ export const stack = {
 };
 
 export const projects = {
-  label: "Referanslarımız",
+  label: "Projeler",
   title: "Dijitalde öne çıkan işlerimiz",
   items: [
     {

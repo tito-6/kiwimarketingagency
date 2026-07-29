@@ -1,18 +1,18 @@
 "use client";
 
 import Lenis from "lenis";
+import { isLiteMotionClient } from "@/lib/motion";
 import { useEffect } from "react";
 
-// Wraps the app in Lenis-powered smooth scrolling. Bails out entirely when the
-// visitor prefers reduced motion so we fall back to native scrolling.
+// Lenis smooth scrolling. Disabled for Safari/iOS/reduced-motion — Lenis +
+// scroll-linked Framer transforms is a common Safari jank source.
 export function SmoothScroll({ children }: { children: React.ReactNode }) {
   useEffect(() => {
-    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const isTouch = window.matchMedia("(pointer: coarse)").matches;
-    if (prefersReduced || isTouch) return;
+    if (isLiteMotionClient()) return;
+    if (window.matchMedia("(pointer: coarse)").matches) return;
 
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1.05,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
       touchMultiplier: 1.5,

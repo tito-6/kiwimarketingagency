@@ -82,8 +82,8 @@ function ProjectIndexNav({
   const lineHeight = useTransform(progress, [0, 1], ["0%", "100%"]);
 
   return (
-    <nav className="relative z-30 hidden w-56 shrink-0 flex-col justify-center border-r border-white/10 bg-[#1a1a1a]/60 px-6 backdrop-blur-xl lg:flex">
-      <p className="mb-8 text-[10px] uppercase tracking-[0.35em] text-white/30">Index</p>
+    <nav className="relative z-30 hidden w-56 shrink-0 flex-col justify-center border-r border-neutral-900/10 bg-white/60 px-6 backdrop-blur-xl lg:flex">
+      <p className="mb-8 text-[10px] uppercase tracking-[0.35em] text-neutral-900/30">Index</p>
       <div className="relative">
         <div className="absolute left-0 top-0 h-full w-px bg-white/10">
           <motion.div className="w-full bg-kiwi-400" style={{ height: lineHeight }} />
@@ -106,14 +106,14 @@ function ProjectIndexNav({
                 />
                 <span
                   className={`font-mono text-xs transition-colors ${
-                    active === i ? "text-kiwi-400" : "text-white/25 group-hover:text-white/60"
+                    active === i ? "text-kiwi-400" : "text-neutral-900/25 group-hover:text-neutral-900/60"
                   }`}
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <span
                   className={`truncate text-sm transition-colors ${
-                    active === i ? "text-white" : "text-white/35 group-hover:text-white/70"
+                    active === i ? "text-neutral-900" : "text-neutral-900/35 group-hover:text-neutral-900/70"
                   }`}
                 >
                   {p.title}
@@ -157,7 +157,7 @@ function ProjectSlide({ project, index }: { project: ProjectItem; index: number 
       </motion.div>
 
       <motion.span
-        className="pointer-events-none absolute -right-8 top-1/4 select-none font-bold text-white/[0.03]"
+        className="pointer-events-none absolute -right-8 top-1/4 select-none font-bold text-neutral-900/[0.03]"
         style={{ fontSize: "clamp(8rem, 25vw, 22rem)", lineHeight: 0.85 }}
         initial={{ x: 80, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -179,8 +179,8 @@ function ProjectSlide({ project, index }: { project: ProjectItem; index: number 
           >
             {project.category}
           </span>
-          <span className="text-xs text-white/40">{project.year}</span>
-          <span className="text-xs text-white/30">· {project.client}</span>
+          <span className="text-xs text-neutral-900/40">{project.year}</span>
+          <span className="text-xs text-neutral-900/30">· {project.client}</span>
         </motion.div>
 
         <div className="max-w-3xl">
@@ -188,7 +188,7 @@ function ProjectSlide({ project, index }: { project: ProjectItem; index: number 
             initial={{ y: 80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(2.5rem,8vw,6rem)] font-bold leading-[0.92] tracking-tighter text-white"
+            className="text-[clamp(2.5rem,8vw,6rem)] font-bold leading-[0.92] tracking-tighter text-neutral-900"
           >
             {project.title}
           </motion.h2>
@@ -197,7 +197,7 @@ function ProjectSlide({ project, index }: { project: ProjectItem; index: number 
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="mt-6 max-w-xl text-base leading-relaxed text-white/55 md:text-lg"
+            className="mt-6 max-w-xl text-base leading-relaxed text-neutral-900/55 md:text-lg"
           >
             {project.description}
           </motion.p>
@@ -213,7 +213,7 @@ function ProjectSlide({ project, index }: { project: ProjectItem; index: number 
                 <p className="text-2xl font-light md:text-3xl" style={{ color: project.accent }}>
                   {r.value}
                 </p>
-                <p className="text-[10px] uppercase tracking-wider text-white/40">{r.label}</p>
+                <p className="text-[10px] uppercase tracking-wider text-neutral-900/40">{r.label}</p>
               </div>
             ))}
           </motion.div>
@@ -227,7 +227,7 @@ function ProjectSlide({ project, index }: { project: ProjectItem; index: number 
             {project.services.map((s) => (
               <span
                 key={s}
-                className="rounded-full border border-white/15 bg-black/30 px-3 py-1 text-xs text-white/60 backdrop-blur-sm"
+                className="rounded-full border border-neutral-900/15 bg-neutral-900/5 px-3 py-1 text-xs text-neutral-900/60 backdrop-blur-sm"
               >
                 {s}
               </span>
@@ -261,7 +261,7 @@ function ProgressRail({
 }) {
   return (
     <div className="absolute bottom-8 left-6 right-6 z-20 flex items-center gap-4 md:left-12 md:right-12">
-      <span className="font-mono text-xs text-white/40">
+      <span className="font-mono text-xs text-neutral-900/40">
         {String(active + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}
       </span>
       <div className="h-px flex-1 overflow-hidden rounded-full bg-white/10">
@@ -278,7 +278,7 @@ function ProgressRail({
               width: active === i ? 48 : 24,
               opacity: active === i ? 1 : 0.35,
             }}
-            className="relative h-8 w-12 shrink-0 overflow-hidden rounded-md border border-white/15"
+            className="relative h-8 w-12 shrink-0 overflow-hidden rounded-md border border-neutral-900/15"
           >
             <Image src={p.image} alt="" fill className="object-cover" sizes="48px" />
           </motion.div>

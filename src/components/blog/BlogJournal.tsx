@@ -36,7 +36,7 @@ export function BlogJournal() {
         <ClipReveal>
           <TextReveal
             text="Tüm yazılar"
-            className="text-[clamp(2.5rem,6vw,5rem)] font-bold tracking-tighter text-white"
+            className="text-[clamp(2.5rem,6vw,5rem)] font-bold tracking-tighter text-neutral-900"
           />
         </ClipReveal>
 
@@ -59,7 +59,7 @@ export function BlogJournal() {
                 )}
                 <span
                   className={`relative z-10 ${
-                    active === cat ? "font-semibold text-[#1a1a1a]" : "text-white/50 hover:text-white"
+                    active === cat ? "font-semibold text-neutral-900" : "text-neutral-900/50 hover:text-neutral-900"
                   }`}
                 >
                   {cat}
@@ -86,7 +86,7 @@ export function BlogJournal() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
-              className="mt-20 text-center text-white/40"
+              className="mt-20 text-center text-neutral-900/40"
             >
               Bu kategoride henüz yazı yok.
             </motion.p>
@@ -135,7 +135,7 @@ function BlogCard({
         data-cursor="pointer"
         onMouseMove={onMove}
         onMouseLeave={() => setSpot({ x: 50, y: 50 })}
-        className="relative flex h-full min-h-[300px] flex-col overflow-hidden rounded-3xl border border-white/10 bg-[#111]"
+        className="relative flex h-full min-h-[300px] flex-col overflow-hidden rounded-3xl border border-neutral-900/10 bg-neutral-50"
       >
         <motion.div
           className="pointer-events-none absolute inset-0 z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -171,7 +171,7 @@ function BlogCard({
           </motion.div>
 
           <motion.div
-            className="absolute right-5 top-5 z-20 flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-black/50 text-xl backdrop-blur-md"
+            className="absolute right-5 top-5 z-20 flex h-14 w-14 items-center justify-center rounded-full border border-neutral-900/20 bg-white/80 text-xl backdrop-blur-md"
             initial={{ scale: 0, rotate: -90 }}
             whileInView={{ scale: 1, rotate: 0 }}
             viewport={{ once: true }}
@@ -182,16 +182,16 @@ function BlogCard({
         </div>
 
         <div className="relative z-20 p-6">
-          <div className="flex gap-3 text-[10px] uppercase tracking-wider text-white/35">
+          <div className="flex gap-3 text-[10px] uppercase tracking-wider text-neutral-900/35">
             <time>{post.date}</time>
             <span>·</span>
             <span>{post.readTime}</span>
           </div>
 
-          <h3 className="mt-3 text-xl font-medium leading-snug text-white md:text-2xl">
+          <h3 className="mt-3 text-xl font-medium leading-snug text-neutral-900 md:text-2xl">
             {post.title}
           </h3>
-          <p className="mt-2 line-clamp-2 text-sm text-white/40">{post.excerpt}</p>
+          <p className="mt-2 line-clamp-2 text-sm text-neutral-900/40">{post.excerpt}</p>
 
           <motion.div
             className="mt-5 h-0.5 origin-left bg-kiwi-400"

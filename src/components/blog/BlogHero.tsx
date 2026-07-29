@@ -21,13 +21,13 @@ export function BlogHero() {
     <section ref={ref} className="relative min-h-[88vh] overflow-hidden pt-28 pb-12">
       <motion.div
         style={{ rotate: bgRotate }}
-        className="pointer-events-none absolute -right-[20%] top-[10%] select-none font-bold leading-none text-white/[0.025]"
+        className="pointer-events-none absolute -right-[20%] top-[10%] select-none font-bold leading-none text-neutral-900/[0.025]"
       >
         <span style={{ fontSize: "clamp(12rem, 35vw, 28rem)" }}>BLOG</span>
       </motion.div>
 
       <motion.div
-        className="pointer-events-none absolute -left-[10%] bottom-[20%] select-none font-bold text-white/[0.02]"
+        className="pointer-events-none absolute -left-[10%] bottom-[20%] select-none font-bold text-neutral-900/[0.02]"
         animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
         transition={{ repeat: Infinity, duration: 14, ease: "easeInOut" }}
         style={{ fontSize: "clamp(4rem, 12vw, 10rem)" }}
@@ -42,29 +42,29 @@ export function BlogHero() {
           </p>
         </ClipReveal>
 
-        <h1 className="mt-8 max-w-5xl">
-          <span className="block text-[clamp(2.5rem,8vw,6rem)] font-light leading-[1] text-white">
+        <h1 className="mt-6 max-w-5xl sm:mt-8">
+          <span className="block break-words text-[clamp(1.85rem,8vw,6rem)] font-light leading-[1.08] text-neutral-900">
             <CharacterSplit text={blogPage.title} delay={0.15} stagger={0.04} />
           </span>
-          <span className="mt-2 block text-[clamp(2.5rem,8vw,6rem)] font-bold leading-[1] tracking-tighter">
-            <span className="bg-gradient-to-r from-kiwi-400/80 to-white/20 bg-clip-text text-transparent">
+          <span className="mt-2 block break-words text-[clamp(1.85rem,8vw,6rem)] font-bold leading-[1.08] tracking-tighter">
+            <span className="bg-gradient-to-r from-kiwi-400/80 to-neutral-900/40 bg-clip-text text-transparent">
               <CharacterSplit text={blogPage.titleAccent} delay={0.5} stagger={0.05} />
             </span>
           </span>
         </h1>
 
         <ClipReveal delay={0.3}>
-          <p className="mt-8 max-w-lg text-lg text-white/45">{blogPage.description}</p>
+          <p className="mt-6 max-w-lg text-base text-neutral-900/45 sm:mt-8 sm:text-lg">{blogPage.description}</p>
         </ClipReveal>
       </motion.div>
 
-      <div className="relative z-10 mx-auto mt-14 max-w-[1440px] px-6 md:mt-20 md:px-10">
+      <div className="relative z-10 mx-auto mt-10 max-w-[1440px] px-4 sm:mt-14 sm:px-6 md:mt-20 md:px-10">
         <MouseParallax strength={8}>
           <ClipReveal direction="center" delay={0.2}>
             <Link
               href={`/blog/${featuredPost.slug}`}
               data-cursor="pointer"
-              className="group relative block overflow-hidden rounded-3xl border border-white/10"
+              className="group relative block overflow-hidden rounded-3xl border border-neutral-900/10"
             >
               <div className="grid lg:grid-cols-2">
                 <div className="relative min-h-[320px] lg:min-h-[480px]">
@@ -88,7 +88,7 @@ export function BlogHero() {
                   />
                 </div>
 
-                <div className="relative flex flex-col justify-center bg-[#111] p-8 md:p-14">
+                <div className="relative flex flex-col justify-center bg-neutral-50 p-8 md:p-14">
                   <motion.div
                     animate={{
                       boxShadow: [
@@ -109,13 +109,13 @@ export function BlogHero() {
                     Editörün Seçimi
                   </motion.div>
 
-                  <h2 className="mt-6 text-2xl font-medium leading-snug text-white transition-colors group-hover:text-kiwi-400 md:text-4xl">
+                  <h2 className="mt-6 text-2xl font-medium leading-snug text-neutral-900 transition-colors group-hover:text-kiwi-400 md:text-4xl">
                     {featuredPost.title}
                   </h2>
-                  <p className="mt-4 text-white/45">{featuredPost.excerpt}</p>
+                  <p className="mt-4 text-neutral-900/45">{featuredPost.excerpt}</p>
 
-                  <div className="mt-10 flex items-center justify-between border-t border-white/10 pt-6">
-                    <span className="text-xs text-white/35">
+                  <div className="mt-10 flex items-center justify-between border-t border-neutral-900/10 pt-6">
+                    <span className="text-xs text-neutral-900/35">
                       {featuredPost.category} · {featuredPost.readTime}
                     </span>
                     <motion.span

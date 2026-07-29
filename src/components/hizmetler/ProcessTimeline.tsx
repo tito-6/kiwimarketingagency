@@ -15,7 +15,7 @@ export function ProcessTimeline() {
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <TextReveal
           text="Nasıl çalışıyoruz?"
-          className="text-[clamp(2rem,5vw,4rem)] font-light text-white"
+          className="text-[clamp(2rem,5vw,4rem)] font-light text-neutral-900"
         />
 
         <div className="relative mt-20">
@@ -42,12 +42,12 @@ export function ProcessTimeline() {
                   <span className="font-mono text-5xl font-bold text-kiwi-400/30">
                     {step.step}
                   </span>
-                  <h3 className="mt-2 text-2xl font-medium text-white md:text-3xl">
+                  <h3 className="mt-2 text-2xl font-medium text-neutral-900 md:text-3xl">
                     {step.title}
                   </h3>
                 </div>
                 <div className={`flex items-center ${i % 2 === 1 ? "md:justify-end" : ""}`}>
-                  <p className="max-w-md text-white/50">{step.desc}</p>
+                  <p className="max-w-md text-neutral-900/50">{step.desc}</p>
                 </div>
                 <motion.div
                   className="absolute left-4 hidden h-3 w-3 -translate-x-1/2 rounded-full bg-kiwi-400 md:left-1/2 md:block"

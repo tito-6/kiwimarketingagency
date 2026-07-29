@@ -20,7 +20,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="relative overflow-hidden border-y border-white/10 py-16 md:py-20">
+    <section className="relative overflow-hidden border-y border-neutral-900/10 py-16 md:py-20">
       <motion.div
         className="pointer-events-none absolute left-0 top-0 h-full w-1/2"
         style={{
@@ -32,12 +32,12 @@ export function Testimonials() {
 
       <div className="relative mx-auto max-w-[1440px] px-4 sm:px-4 sm:px-6 md:px-10">
         <ScrollReveal>
-          <p className="text-xs font-medium uppercase tracking-[0.3em] text-white/40">
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-900/40">
             {testimonials.label}
           </p>
           <TextReveal
             text={testimonials.title}
-            className="mt-6 max-w-3xl text-[clamp(2rem,5vw,3.5rem)] font-light leading-tight text-white"
+            className="mt-6 max-w-3xl text-[clamp(2rem,5vw,3.5rem)] font-light leading-tight text-neutral-900"
           />
         </ScrollReveal>
 
@@ -63,13 +63,13 @@ export function Testimonials() {
               style={{ perspective: 1200 }}
               className="max-w-4xl"
             >
-              <blockquote className="text-xl font-light leading-relaxed text-white sm:text-2xl md:text-4xl lg:text-5xl">
+              <blockquote className="text-xl font-light leading-relaxed text-neutral-900 sm:text-2xl md:text-4xl lg:text-5xl">
                 &ldquo;{item.quote}&rdquo;
               </blockquote>
               <footer className="mt-12 flex flex-wrap items-end justify-between gap-6">
                 <div>
-                  <p className="font-medium text-white">{item.author}</p>
-                  <p className="text-sm text-white/50">
+                  <p className="font-medium text-neutral-900">{item.author}</p>
+                  <p className="text-sm text-neutral-900/50">
                     {item.role}, {item.company}
                   </p>
                 </div>
@@ -82,7 +82,7 @@ export function Testimonials() {
                   >
                     {item.stat}
                   </motion.p>
-                  <p className="text-xs uppercase tracking-wider text-white/40">
+                  <p className="text-xs uppercase tracking-wider text-neutral-900/40">
                     {item.statLabel}
                   </p>
                 </div>
@@ -111,7 +111,7 @@ export function Testimonials() {
               onClick={goPrev}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-neutral-900/20 text-neutral-900"
             >
               ←
             </motion.button>
@@ -120,7 +120,7 @@ export function Testimonials() {
               onClick={goNext}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-white"
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-neutral-900/20 text-neutral-900"
             >
               →
             </motion.button>

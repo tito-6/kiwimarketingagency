@@ -11,7 +11,7 @@ export function MobileProjectNav({
   onSelect: (i: number) => void;
 }) {
   return (
-    <div className="fixed bottom-6 left-1/2 z-50 flex -translate-x-1/2 gap-2 rounded-full border border-white/15 bg-[#1a1a1a]/90 p-2 backdrop-blur-xl lg:hidden">
+    <div className="fixed bottom-6 left-1/2 z-50 flex -translate-x-1/2 gap-2 rounded-full border border-neutral-900/15 bg-white/90 p-2 backdrop-blur-xl lg:hidden">
       {projectItems.map((p, i) => (
         <motion.button
           key={p.slug}

@@ -8,14 +8,75 @@ import { FloatingImages } from "@/components/ui/FloatingImages";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { MouseParallax } from "@/components/ui/MouseParallax";
 import { RotatingBadge } from "@/components/ui/RotatingBadge";
+import { useLiteMotion } from "@/lib/motion";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 import { useRef } from "react";
 
-// Landing hero. As the user scrolls the whole block drifts down and fades
-// (`y`/`opacity`/`scale`) while the headline keeps a slightly slower parallax
-// (`titleY`) for depth. The text is anchored left and layered above the
-// floating photos on the right.
+function HeroLite() {
+  return (
+    <section
+      id="home"
+      className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden pb-16 pt-24"
+    >
+      <HeroVideoBackground />
+
+      <div className="relative z-30 mr-auto w-full min-w-0 max-w-[1440px] px-4 sm:px-6 md:max-w-[62%] md:px-10">
+        <p className="text-xs font-medium uppercase tracking-[0.3em] text-kiwi-400">
+          {hero.eyebrow}
+        </p>
+
+        <h1 className="mt-8 text-[clamp(2.75rem,14vw,15rem)] font-bold leading-[0.88] tracking-tighter">
+          <span className="block text-white">{hero.title}</span>
+          <span className="mt-1 block text-kiwi-400/90">AGENCY</span>
+        </h1>
+
+        <div className="mt-8 h-px max-w-lg bg-gradient-to-r from-kiwi-400 via-white/30 to-transparent" />
+
+        <div className="mt-8 flex flex-col gap-8 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
+          <p className="max-w-lg text-base font-light leading-relaxed text-white/55 sm:text-lg">
+            {hero.description}
+          </p>
+          <div className="flex w-full flex-col gap-4 sm:w-auto sm:items-end">
+            <div className="flex items-center gap-3 rounded-full border border-white/15 bg-black/25 px-4 py-2">
+              <span className="h-2 w-2 rounded-full bg-kiwi-400" />
+              <span className="text-xs uppercase tracking-wider text-white/55">
+                {hero.subtitle}
+              </span>
+            </div>
+            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
+              <Link
+                href="/iletisim"
+                className="inline-flex min-h-11 items-center justify-center rounded-full bg-kiwi-400 px-6 py-3 text-xs font-semibold uppercase tracking-wider text-neutral-900"
+              >
+                {hero.cta} →
+              </Link>
+              <Link
+                href="/projeler"
+                className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/25 px-6 py-3 text-xs font-semibold uppercase tracking-wider text-white"
+              >
+                Projeler →
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-16 flex items-center justify-between border-t border-white/10 pt-6">
+          <span className="text-xs text-white/25">{site.fullName}®</span>
+          <span className="text-xs text-white/30">Scroll</span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function Hero() {
+  const lite = useLiteMotion();
+  if (lite) return <HeroLite />;
+  return <HeroFull />;
+}
+
+function HeroFull() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -59,8 +120,6 @@ export function Hero() {
         </motion.span>
       </motion.div>
 
-      {/* z-30 keeps the copy above the floating cards; mr-auto pins it to the
-          left edge so there's no dead space beside the headline. */}
       <motion.div
         style={{ y, opacity, scale }}
         className="relative z-30 mr-auto w-full min-w-0 max-w-[1440px] px-4 sm:px-6 md:max-w-[62%] md:px-10"
@@ -112,20 +171,12 @@ export function Hero() {
             {hero.description}
           </p>
           <div className="flex w-full flex-col gap-4 sm:w-auto sm:items-end">
-            <motion.div
-              className="flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 backdrop-blur-md"
-              animate={{ borderColor: ["rgba(255,255,255,0.1)", "rgba(169,203,24,0.3)", "rgba(255,255,255,0.1)"] }}
-              transition={{ repeat: Infinity, duration: 3 }}
-            >
-              <motion.span
-                className="h-2 w-2 rounded-full bg-kiwi-400"
-                animate={{ scale: [1, 1.5, 1] }}
-                transition={{ repeat: Infinity, duration: 1.5 }}
-              />
+            <div className="flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 backdrop-blur-md">
+              <span className="h-2 w-2 rounded-full bg-kiwi-400" />
               <span className="text-xs uppercase tracking-wider text-white/50">
                 {hero.subtitle}
               </span>
-            </motion.div>
+            </div>
             <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
               <MagneticButton href="/iletisim" className="w-full justify-center sm:w-auto">
                 {hero.cta}
@@ -144,20 +195,7 @@ export function Hero() {
           className="mt-20 flex items-center justify-between border-t border-white/10 pt-6 sm:mt-16"
         >
           <span className="text-xs text-white/25">{site.fullName}®</span>
-          <motion.div className="flex items-center gap-2">
-            <motion.span
-              className="text-xs text-white/30"
-              animate={{ opacity: [0.3, 1, 0.3] }}
-              transition={{ repeat: Infinity, duration: 2 }}
-            >
-              Scroll
-            </motion.span>
-            <motion.div
-              animate={{ y: [0, 6, 0] }}
-              transition={{ repeat: Infinity, duration: 1.5 }}
-              className="h-8 w-px bg-kiwi-400/60"
-            />
-          </motion.div>
+          <span className="text-xs text-white/30">Scroll</span>
         </motion.div>
       </motion.div>
     </section>

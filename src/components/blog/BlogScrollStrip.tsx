@@ -21,7 +21,7 @@ export function BlogScrollStrip() {
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <ClipReveal>
           <p className="text-xs uppercase tracking-[0.3em] text-kiwi-400">Hızlı keşif</p>
-          <h2 className="mt-4 text-3xl font-light text-white md:text-5xl">
+          <h2 className="mt-4 text-3xl font-light text-neutral-900 md:text-5xl">
             Kaydır, oku, ilham al.
           </h2>
         </ClipReveal>
@@ -53,7 +53,7 @@ function StripCard({
     <Link
       href={`/blog/${post.slug}`}
       data-cursor="pointer"
-      className={`group relative shrink-0 overflow-hidden rounded-2xl border border-white/10 ${
+      className={`group relative shrink-0 overflow-hidden rounded-2xl border border-neutral-900/10 ${
         tall ? "h-[300px] w-[min(75vw,260px)] sm:h-[380px]" : "h-[260px] w-[min(70vw,220px)] sm:h-[300px]"
       }`}
     >
@@ -77,9 +77,9 @@ function StripCard({
         >
           {post.category}
         </motion.span>
-        <p className="mt-2 line-clamp-3 text-sm font-medium leading-snug text-white">{post.title}</p>
+        <p className="mt-2 line-clamp-3 text-sm font-medium leading-snug text-neutral-900">{post.title}</p>
         <motion.span
-          className="mt-3 inline-block text-xs text-white/40"
+          className="mt-3 inline-block text-xs text-neutral-900/40"
           initial={{ x: 0 }}
           whileHover={{ x: 6 }}
         >

@@ -34,7 +34,7 @@ function ArchiveRow({
   const isEven = index % 2 === 0;
 
   return (
-    <article ref={ref} id={project.slug} className="border-t border-white/10 py-20 md:py-28">
+    <article ref={ref} id={project.slug} className="border-t border-neutral-900/10 py-20 md:py-28">
       <div className="mx-auto grid max-w-[1440px] items-center gap-10 px-6 md:grid-cols-2 md:gap-16 md:px-10">
         <motion.div
           style={{ x: isEven ? imageX : textX }}
@@ -44,7 +44,7 @@ function ArchiveRow({
             <Link
               href={`#${project.slug}`}
               data-cursor="pointer"
-              className="group relative block aspect-[16/10] overflow-hidden rounded-3xl border border-white/10"
+              className="group relative block aspect-[16/10] overflow-hidden rounded-3xl border border-neutral-900/10"
             >
               <Image
                 src={project.image}
@@ -54,7 +54,7 @@ function ArchiveRow({
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-40 mix-blend-multiply`} />
-              <div className="absolute inset-0 bg-black/20 opacity-0 transition-opacity group-hover:opacity-100" />
+              <div className="absolute inset-0 bg-neutral-900/5 opacity-0 transition-opacity group-hover:opacity-100" />
               <motion.div
                 className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover:opacity-100"
                 whileHover={{ scale: 1.05 }}
@@ -77,18 +77,18 @@ function ArchiveRow({
           <span className="font-mono text-sm text-kiwi-400/60">
             {String(index + 1).padStart(2, "0")}
           </span>
-          <h3 className="mt-4 text-3xl font-light text-white md:text-5xl">{project.title}</h3>
-          <p className="mt-2 text-sm uppercase tracking-wider text-white/40">
+          <h3 className="mt-4 text-3xl font-light text-neutral-900 md:text-5xl">{project.title}</h3>
+          <p className="mt-2 text-sm uppercase tracking-wider text-neutral-900/40">
             {project.category} · {project.year}
           </p>
-          <p className="mt-6 leading-relaxed text-white/50">{project.description}</p>
+          <p className="mt-6 leading-relaxed text-neutral-900/50">{project.description}</p>
           <div className="mt-8 flex flex-wrap gap-6">
             {project.results.map((r) => (
               <div key={r.label}>
                 <p className="text-xl font-light" style={{ color: project.accent }}>
                   {r.value}
                 </p>
-                <p className="text-[10px] uppercase tracking-wider text-white/35">{r.label}</p>
+                <p className="text-[10px] uppercase tracking-wider text-neutral-900/35">{r.label}</p>
               </div>
             ))}
           </div>
@@ -104,9 +104,9 @@ export function ProjectArchive() {
       <div className="mx-auto max-w-[1440px] px-6 pt-24 md:px-10">
         <TextReveal
           text="Tüm projeler arşivi"
-          className="text-[clamp(2rem,5vw,3.5rem)] font-light text-white"
+          className="text-[clamp(2rem,5vw,3.5rem)] font-light text-neutral-900"
         />
-        <p className="mt-4 max-w-lg text-white/45">
+        <p className="mt-4 max-w-lg text-neutral-900/45">
           Her iş, ölçülebilir sonuçlarla tamamlanan özenli bir sürecin ürünü.
         </p>
       </div>

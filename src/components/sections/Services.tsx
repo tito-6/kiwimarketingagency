@@ -24,19 +24,19 @@ function ServiceCard({
     <motion.article
       ref={ref}
       style={{ scale, opacity }}
-      className="sticky top-24 mb-8 rounded-3xl border border-white/10 bg-[#222] p-8 md:p-12 lg:top-32"
+      className="sticky top-24 mb-8 rounded-3xl border border-neutral-900/10 bg-neutral-100 p-8 md:p-12 lg:top-32"
     >
       <div className="flex items-start justify-between gap-4">
-        <span className="font-mono text-sm text-white/30">{service.id}</span>
-        <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/50">
+        <span className="font-mono text-sm text-neutral-900/30">{service.id}</span>
+        <span className="rounded-full border border-neutral-900/10 px-3 py-1 text-xs text-neutral-900/50">
           {service.count}
         </span>
       </div>
 
-      <h3 className="mt-8 text-3xl font-light text-white md:text-5xl">
+      <h3 className="mt-8 text-3xl font-light text-neutral-900 md:text-5xl">
         {service.title}
       </h3>
-      <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/50">
+      <p className="mt-4 max-w-2xl text-base leading-relaxed text-neutral-900/50">
         {service.description}
       </p>
 
@@ -44,7 +44,7 @@ function ServiceCard({
         {service.tags.map((tag) => (
           <span
             key={tag}
-            className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/60"
+            className="rounded-full border border-neutral-900/10 bg-neutral-900/5 px-4 py-2 text-xs text-neutral-900/60"
           >
             {tag}
           </span>
@@ -52,7 +52,7 @@ function ServiceCard({
       </div>
 
       <div className="mt-12 flex justify-end">
-        <span className="text-8xl font-bold text-white/5 md:text-9xl">
+        <span className="text-8xl font-bold text-neutral-900/5 md:text-9xl">
           {String(index + 1).padStart(2, "0")}
         </span>
       </div>
@@ -68,14 +68,14 @@ export function Services() {
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-kiwi-400">
             / HİZMETLER
           </p>
-          <h2 className="mt-6 max-w-3xl text-[clamp(2rem,5vw,4.5rem)] font-light leading-tight tracking-tight text-white">
+          <h2 className="mt-6 max-w-3xl text-[clamp(2rem,5vw,4.5rem)] font-light leading-tight tracking-tight text-neutral-900">
             Geleceğe hazır dijital hizmetler,{" "}
-            <span className="text-white/40">strateji ile güçlendirilmiş.</span>
+            <span className="text-neutral-900/40">strateji ile güçlendirilmiş.</span>
           </h2>
         </FadeIn>
 
         <div className="relative mt-20">
-          <p className="mb-4 text-right font-mono text-sm text-white/20">
+          <p className="mb-4 text-right font-mono text-sm text-neutral-900/20">
             {services.length} hizmet
           </p>
           {services.map((service, i) => (

@@ -15,7 +15,7 @@ function StatItem({ value, label }: { value: string; label: string }) {
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-      className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-8 text-center"
+      className="relative overflow-hidden rounded-2xl border border-neutral-900/10 bg-neutral-900/[0.02] p-8 text-center"
     >
       <motion.div
         className="pointer-events-none absolute -right-8 -top-8 h-32 w-32 rounded-full bg-kiwi-400/10 blur-3xl"
@@ -30,19 +30,19 @@ function StatItem({ value, label }: { value: string; label: string }) {
       >
         {value}
       </motion.p>
-      <p className="relative mt-2 text-xs uppercase tracking-[0.2em] text-white/40">{label}</p>
+      <p className="relative mt-2 text-xs uppercase tracking-[0.2em] text-neutral-900/40">{label}</p>
     </motion.div>
   );
 }
 
 export function ProjelerStats() {
   return (
-    <section id="stats" className="border-y border-white/10 py-16 md:py-20">
+    <section id="stats" className="border-y border-neutral-900/10 py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <div className="mb-16 text-center">
           <TextReveal
             text="Rakamlarla Kiwi"
-            className="justify-center text-3xl font-light text-white md:text-4xl"
+            className="justify-center text-3xl font-light text-neutral-900 md:text-4xl"
           />
         </div>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">

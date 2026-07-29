@@ -22,7 +22,7 @@ function StatCard({ stat, statLabel }: { stat: string; statLabel: string }) {
         {stat}
       </motion.p>
       <motion.p
-        className="mt-1 text-xs uppercase tracking-wider text-white/40"
+        className="mt-1 text-xs uppercase tracking-wider text-neutral-900/40"
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : {}}
         transition={{ delay: 0.2 }}
@@ -35,7 +35,7 @@ function StatCard({ stat, statLabel }: { stat: string; statLabel: string }) {
 
 export function WhyChoose() {
   return (
-    <section className="relative overflow-hidden border-y border-white/10 py-16 md:py-20">
+    <section className="relative overflow-hidden border-y border-neutral-900/10 py-16 md:py-20">
       <motion.div
         className="pointer-events-none absolute -right-32 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-kiwi-400/5 blur-[100px]"
         animate={{ scale: [1, 1.3, 1], opacity: [0.3, 0.6, 0.3] }}
@@ -44,12 +44,12 @@ export function WhyChoose() {
 
       <div className="relative mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <ScrollReveal blur>
-          <p className="text-xs font-medium uppercase tracking-[0.3em] text-white/40">
+          <p className="text-xs font-medium uppercase tracking-[0.3em] text-neutral-900/40">
             {whyChoose.label}
           </p>
           <TextReveal
             text={whyChoose.title}
-            className="mt-6 max-w-4xl text-[clamp(2rem,5vw,4rem)] font-light leading-tight text-white"
+            className="mt-6 max-w-4xl text-[clamp(2rem,5vw,4rem)] font-light leading-tight text-neutral-900"
           />
         </ScrollReveal>
         <SplitLine className="mt-12" />
@@ -63,7 +63,7 @@ export function WhyChoose() {
               viewport={{ once: true, margin: "-40px" }}
               transition={{ delay: i * 0.1, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               whileHover={{ y: -8 }}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] p-8"
+              className="group relative overflow-hidden rounded-2xl border border-neutral-900/10 bg-neutral-900/[0.02] p-8"
             >
               <motion.div
                 className="absolute inset-0 bg-gradient-to-br from-kiwi-400/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100"
@@ -73,8 +73,8 @@ export function WhyChoose() {
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ repeat: Infinity, duration: 3 + i }}
               />
-              <h3 className="relative text-lg font-medium text-white">{item.title}</h3>
-              <p className="relative mt-4 text-sm leading-relaxed text-white/50">
+              <h3 className="relative text-lg font-medium text-neutral-900">{item.title}</h3>
+              <p className="relative mt-4 text-sm leading-relaxed text-neutral-900/50">
                 {item.description}
               </p>
               <StatCard stat={item.stat} statLabel={item.statLabel} />

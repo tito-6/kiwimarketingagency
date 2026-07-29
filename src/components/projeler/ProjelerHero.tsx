@@ -58,11 +58,11 @@ export function ProjelerHero() {
             >
               {projelerPage.label}
             </motion.p>
-            <h1 className="mt-6 text-[clamp(3.5rem,12vw,9rem)] font-bold leading-[0.9] tracking-tighter">
+            <h1 className="mt-6 max-w-full break-words text-[clamp(2.5rem,12vw,9rem)] font-bold leading-[0.95] tracking-tighter">
               <span className="block text-white">
                 <CharacterSplit text={projelerPage.title} delay={0.2} stagger={0.05} />
               </span>
-              <span className="mt-1 block text-white/25">
+              <span className="mt-1 block text-white/35">
                 <CharacterSplit text={projelerPage.titleAccent} delay={0.55} stagger={0.06} />
               </span>
             </h1>
@@ -77,7 +77,7 @@ export function ProjelerHero() {
             <p className="font-mono text-6xl font-light text-kiwi-400 md:text-8xl">
               {String(projectItems.length).padStart(2, "0")}
             </p>
-            <p className="mt-1 text-xs uppercase tracking-[0.2em] text-white/40">seçili proje</p>
+            <p className="mt-1 text-xs uppercase tracking-[0.2em] text-white/50">seçili proje</p>
           </motion.div>
         </div>
 
@@ -85,7 +85,7 @@ export function ProjelerHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9 }}
-          className="mt-10 max-w-xl text-lg font-light text-white/50"
+          className="mt-10 max-w-xl text-base font-light text-white/65 sm:text-lg"
         >
           {projelerPage.description}
         </motion.p>
@@ -95,12 +95,12 @@ export function ProjelerHero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mt-12 flex flex-wrap items-center gap-6 border-t border-white/10 pt-8"
+          className="mt-10 flex flex-wrap items-center gap-4 border-t border-white/15 pt-6 sm:mt-12 sm:gap-6 sm:pt-8"
         >
-          <div>
-            <p className="text-xs uppercase tracking-wider text-white/35">Önizleme</p>
-            <p className="mt-1 text-xl text-white">{current.title}</p>
-            <p className="text-sm text-white/45">
+          <div className="min-w-0">
+            <p className="text-xs uppercase tracking-wider text-white/40">Önizleme</p>
+            <p className="mt-1 text-lg text-white sm:text-xl">{current.title}</p>
+            <p className="text-sm text-white/50">
               {current.category} · {current.year}
             </p>
           </div>

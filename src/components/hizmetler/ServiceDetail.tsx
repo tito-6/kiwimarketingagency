@@ -32,7 +32,7 @@ function ServiceBlock({
     <article
       id={service.slug}
       ref={ref}
-      className="relative border-t border-white/10 py-16 md:py-24"
+      className="relative border-t border-neutral-900/10 py-16 md:py-24"
     >
       <div className="mx-auto grid max-w-[1440px] gap-12 px-6 md:grid-cols-2 md:gap-20 md:px-10">
         <div className={cn("flex flex-col justify-center overflow-hidden", !isEven && "md:order-2")}>
@@ -42,7 +42,7 @@ function ServiceBlock({
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className={cn(
-              "block font-mono text-[clamp(4rem,12vw,10rem)] font-bold leading-none text-white/[0.04]",
+              "block font-mono text-[clamp(4rem,12vw,10rem)] font-bold leading-none text-neutral-900/[0.04]",
               isEven ? "translate-x-6 md:translate-x-10" : "translate-x-0"
             )}
           >
@@ -51,7 +51,7 @@ function ServiceBlock({
 
           <TextReveal
             text={service.title}
-            className="mt-4 text-4xl font-light text-white md:text-5xl"
+            className="mt-4 text-4xl font-light text-neutral-900 md:text-5xl"
             delay={0.1}
           />
 
@@ -60,7 +60,7 @@ function ServiceBlock({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="mt-6 text-lg leading-relaxed text-white/50"
+            className="mt-6 text-lg leading-relaxed text-neutral-900/50"
           >
             {service.longDescription}
           </motion.p>
@@ -75,7 +75,7 @@ function ServiceBlock({
             {service.tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-white/60 transition-colors hover:border-kiwi-400/50 hover:text-white"
+                className="rounded-full border border-neutral-900/10 bg-neutral-900/5 px-4 py-2 text-xs text-neutral-900/60 transition-colors hover:border-kiwi-400/50 hover:text-neutral-900"
               >
                 {tag}
               </span>
@@ -103,7 +103,7 @@ function ServiceBlock({
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="group relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/10"
+            className="group relative aspect-[4/5] overflow-hidden rounded-3xl border border-neutral-900/10"
           >
             <ParallaxImage
               src={service.image}
@@ -112,9 +112,9 @@ function ServiceBlock({
               speed={0.2}
             />
             <div className="absolute inset-0 z-10 flex items-end p-8">
-              <div className="rounded-2xl border border-white/10 bg-black/40 p-4 backdrop-blur-md">
+              <div className="rounded-2xl border border-neutral-900/10 bg-white/80 p-4 backdrop-blur-md">
                 <span className="text-3xl font-light text-kiwi-400">{service.count}</span>
-                <p className="text-xs text-white/50">alt kategori</p>
+                <p className="text-xs text-neutral-900/50">alt kategori</p>
               </div>
             </div>
             <motion.div

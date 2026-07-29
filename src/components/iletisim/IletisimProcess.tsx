@@ -11,11 +11,11 @@ export function IletisimProcess() {
   const lineHeight = useTransform(scrollYProgress, [0.15, 0.85], ["0%", "100%"]);
 
   return (
-    <section ref={ref} className="border-t border-white/10 py-16 md:py-20">
+    <section ref={ref} className="border-t border-neutral-900/10 py-16 md:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <TextReveal
           text="Sonraki adımlar"
-          className="text-3xl font-light text-white md:text-4xl"
+          className="text-3xl font-light text-neutral-900 md:text-4xl"
         />
 
         <div className="relative mt-16">
@@ -34,7 +34,7 @@ export function IletisimProcess() {
                 className="relative flex gap-8 md:gap-12"
               >
                 <motion.div
-                  className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-kiwi-400/50 bg-[#1a1a1a] font-mono text-sm text-kiwi-400"
+                  className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-kiwi-400/50 bg-white font-mono text-sm text-kiwi-400"
                   whileInView={{ scale: [0, 1.2, 1] }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.2 + i * 0.1 }}
@@ -42,8 +42,8 @@ export function IletisimProcess() {
                   {step.num}
                 </motion.div>
                 <div>
-                  <h3 className="text-xl font-medium text-white md:text-2xl">{step.title}</h3>
-                  <p className="mt-2 max-w-lg text-white/45">{step.desc}</p>
+                  <h3 className="text-xl font-medium text-neutral-900 md:text-2xl">{step.title}</h3>
+                  <p className="mt-2 max-w-lg text-neutral-900/45">{step.desc}</p>
                 </div>
               </motion.div>
             ))}

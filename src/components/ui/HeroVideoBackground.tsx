@@ -1,6 +1,7 @@
 "use client";
 
 import { images } from "@/data/images";
+import { useLiteMotion } from "@/lib/motion";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -10,72 +11,85 @@ function tryPlay(video: HTMLVideoElement) {
   video.muted = true;
   video.defaultMuted = true;
   video.playsInline = true;
+  video.setAttribute("muted", "");
+  video.setAttribute("playsinline", "");
   video.setAttribute("webkit-playsinline", "true");
-  return video.play().catch(() => {});
+  return video.play().catch(() => undefined);
+}
+
+function pickSource() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const effectiveWidth = window.innerWidth * dpr;
+  if (effectiveWidth <= 1100) return showreel.mp4480;
+  if (effectiveWidth <= 1800) return showreel.mp4720;
+  return showreel.mp4;
+}
+
+function PosterOnly() {
+  return (
+    <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden" aria-hidden>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={showreel.poster}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover opacity-80"
+        decoding="async"
+        fetchPriority="high"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/55 via-[#1a1a1a]/20 to-[#1a1a1a]/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/70 via-[#1a1a1a]/20 to-transparent" />
+    </div>
+  );
 }
 
 export function HeroVideoBackground() {
+  const lite = useLiteMotion();
+  // Safari/iOS: never decode video on first paint — static poster only.
+  // Video decode + GPU upload is the #1 Safari homepage stall.
+  if (lite) return <PosterOnly />;
+
+  return <HeroVideoFull />;
+}
+
+function HeroVideoFull() {
   const ref = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [reducedMotion, setReducedMotion] = useState(false);
+  const [videoSrc, setVideoSrc] = useState<string | null>(null);
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    setVideoSrc(pickSource());
+  }, []);
 
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
-  const fade = useTransform(scrollYProgress, [0, 0.75], [1, 0.2]);
+  const fade = useTransform(scrollYProgress, [0, 0.8], [1, 0.25]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.04]);
 
   const play = useCallback(() => {
     const video = videoRef.current;
-    if (!video || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    void tryPlay(video);
+    if (video) void tryPlay(video);
   }, []);
 
-  const setVideoRef = useCallback(
-    (node: HTMLVideoElement | null) => {
-      videoRef.current = node;
-      if (node) void tryPlay(node);
-    },
-    []
-  );
-
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const update = () => setReducedMotion(mq.matches);
-    update();
-    mq.addEventListener("change", update);
-    return () => mq.removeEventListener("change", update);
+  const setVideoRef = useCallback((node: HTMLVideoElement | null) => {
+    videoRef.current = node;
+    if (node) void tryPlay(node);
   }, []);
 
   useEffect(() => {
-    if (reducedMotion) return;
-
+    if (!videoSrc) return;
     play();
-
     const onPageLoaded = () => play();
     const onInteract = () => play();
-    const onVisible = () => {
-      if (document.visibilityState === "visible") play();
-    };
-
     window.addEventListener("kiwi:pageloaded", onPageLoaded);
-    window.addEventListener("load", onPageLoaded);
-    document.addEventListener("visibilitychange", onVisible);
     document.addEventListener("pointerdown", onInteract, { once: true });
-
-    const retries = window.setInterval(play, 2000);
-    const stopRetries = window.setTimeout(() => window.clearInterval(retries), 20000);
-
     return () => {
       window.removeEventListener("kiwi:pageloaded", onPageLoaded);
-      window.removeEventListener("load", onPageLoaded);
-      document.removeEventListener("visibilitychange", onVisible);
       document.removeEventListener("pointerdown", onInteract);
-      window.clearInterval(retries);
-      window.clearTimeout(stopRetries);
     };
-  }, [play, reducedMotion]);
+  }, [play, videoSrc]);
 
   return (
     <motion.div
@@ -83,41 +97,50 @@ export function HeroVideoBackground() {
       className="pointer-events-none absolute inset-0 z-0 overflow-hidden"
       style={{ opacity: fade }}
     >
-      {reducedMotion ? (
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${showreel.poster})` }}
-          aria-hidden
+      <motion.div
+        className="absolute inset-[-4%] h-[108%] w-[108%]"
+        style={{ scale }}
+        aria-hidden
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={showreel.poster}
+          alt=""
+          className="absolute inset-0 h-full w-full object-cover"
+          decoding="async"
+          fetchPriority="high"
         />
-      ) : (
-        <motion.div
-          className="absolute inset-[-6%] h-[112%] w-[112%]"
-          style={{ scale }}
-          aria-hidden
-        >
+        {videoSrc && (
           <video
+            key={videoSrc}
             ref={setVideoRef}
-            src={showreel.mp4}
-            className="absolute inset-0 h-full w-full object-cover opacity-55"
+            src={videoSrc}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+              ready ? "opacity-75" : "opacity-0"
+            }`}
             poster={showreel.poster}
             muted
             loop
             playsInline
             autoPlay
-            preload="auto"
+            preload="metadata"
             disablePictureInPicture
+            onLoadedData={() => {
+              setReady(true);
+              play();
+            }}
+            onCanPlay={play}
             aria-hidden
           />
-        </motion.div>
-      )}
+        )}
+      </motion.div>
 
-      <div className="absolute inset-0 bg-[#1a1a1a]/25" aria-hidden />
       <div
-        className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/60 via-[#1a1a1a]/30 to-[#1a1a1a]/80"
+        className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/55 via-[#1a1a1a]/15 to-[#1a1a1a]/75"
         aria-hidden
       />
       <div
-        className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/75 via-[#1a1a1a]/25 to-transparent"
+        className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/65 via-[#1a1a1a]/15 to-transparent"
         aria-hidden
       />
     </motion.div>

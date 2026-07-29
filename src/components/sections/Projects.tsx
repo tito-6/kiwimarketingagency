@@ -14,7 +14,7 @@ export function Projects() {
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-kiwi-400">
             {projects.label}
           </p>
-          <h2 className="mt-6 text-[clamp(2rem,5vw,4rem)] font-light leading-tight text-white">
+          <h2 className="mt-6 text-[clamp(2rem,5vw,4rem)] font-light leading-tight text-neutral-900">
             {projects.title}
           </h2>
         </FadeIn>
@@ -27,7 +27,7 @@ export function Projects() {
                   href="#"
                   whileHover={{ y: -8 }}
                   transition={{ duration: 0.3 }}
-                  className="group relative block aspect-[4/3] overflow-hidden rounded-3xl border border-white/10"
+                  className="group relative block aspect-[4/3] overflow-hidden rounded-3xl border border-neutral-900/10"
                 >
                   <Image
                     src={project.image}
@@ -39,14 +39,14 @@ export function Projects() {
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${project.gradient} mix-blend-multiply`}
                   />
-                  <div className="absolute inset-0 bg-[#1a1a1a]/50 transition-colors group-hover:bg-[#1a1a1a]/30" />
+                  <div className="absolute inset-0 bg-white/50 transition-colors group-hover:bg-white/30" />
                   <div className="relative flex h-full flex-col justify-between p-8">
-                    <span className="text-xs uppercase tracking-wider text-white/70">
+                    <span className="text-xs uppercase tracking-wider text-neutral-900/70">
                       {project.category} · {project.year}
                     </span>
                     <div>
                       <motion.h3
-                        className="text-3xl font-light text-white md:text-4xl"
+                        className="text-3xl font-light text-neutral-900 md:text-4xl"
                         initial={{ x: 0 }}
                         whileHover={{ x: 8 }}
                       >
