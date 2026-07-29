@@ -3,13 +3,16 @@
 import { useLanguage } from "@/context/LanguageContext";
 import { site } from "@/data/content";
 import { Logo } from "@/components/ui/Logo";
+import { FlagIcon } from "@/components/ui/FlagIcon";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export function Header() {
   const { lang, setLang, t } = useLanguage();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -26,6 +29,11 @@ export function Header() {
     };
   }, [menuOpen]);
 
+  // Determine if header should render dark text or light text.
+  // Home page top has dark video hero; all inner pages (like /iletisim, /hizmetler) or scrolled header have light background.
+  const isLightPage = pathname !== "/";
+  const isDarkThemeHeader = !isLightPage && !scrolled && !menuOpen;
+
   const navItems = [
     { label: t.nav.home, href: "/" },
     { label: t.nav.services, href: "/hizmetler" },
@@ -39,7 +47,7 @@ export function Header() {
       <header
         className={cn(
           "site-header fixed top-0 z-50 h-20 w-full transition-all duration-500",
-          scrolled
+          scrolled || isLightPage
             ? "border-b border-neutral-900/10 bg-white/95 backdrop-blur-xl"
             : "bg-transparent"
         )}
@@ -53,7 +61,7 @@ export function Header() {
             <Logo
               className={cn(
                 "block h-6 w-auto transition-colors hover:text-kiwi-400",
-                scrolled || menuOpen ? "text-neutral-900" : "text-white"
+                isDarkThemeHeader ? "text-white" : "text-neutral-900"
               )}
             />
           </Link>
@@ -65,7 +73,7 @@ export function Header() {
                 href={item.href}
                 className={cn(
                   "nav-link flex h-11 items-center justify-center rounded-lg px-5 text-[15px] font-bold uppercase leading-none tracking-[0.1em] transition-colors hover:bg-neutral-900/[0.05] hover:text-kiwi-400",
-                  scrolled ? "text-neutral-900/85" : "text-white/85"
+                  isDarkThemeHeader ? "text-white/85" : "text-neutral-900/85"
                 )}
               >
                 {item.label}
@@ -75,44 +83,51 @@ export function Header() {
 
           <div className="hidden items-center gap-4 lg:flex">
             {/* Language Switcher Toggle */}
-            <div className="flex items-center rounded-full border border-neutral-900/10 bg-neutral-900/5 p-1 backdrop-blur-md">
+            <div className={cn(
+              "flex items-center gap-1 rounded-full border p-1 backdrop-blur-md transition-colors",
+              isDarkThemeHeader
+                ? "border-white/20 bg-white/10"
+                : "border-neutral-900/15 bg-neutral-900/5"
+            )}>
               <button
                 type="button"
                 onClick={() => setLang("tr")}
                 className={cn(
-                  "rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider transition-all",
+                  "flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider transition-all",
                   lang === "tr"
                     ? "bg-kiwi-400 text-neutral-900 shadow-sm"
-                    : scrolled
-                      ? "text-neutral-700 hover:text-neutral-900"
-                      : "text-white/70 hover:text-white"
+                    : isDarkThemeHeader
+                      ? "text-white/80 hover:text-white"
+                      : "text-neutral-700 hover:text-neutral-900"
                 )}
               >
-                TR 🇹🇷
+                <FlagIcon code="TR" className="h-3 w-4 rounded-xs shrink-0" />
+                <span>TR</span>
               </button>
               <button
                 type="button"
                 onClick={() => setLang("en")}
                 className={cn(
-                  "rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider transition-all",
+                  "flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider transition-all",
                   lang === "en"
                     ? "bg-kiwi-400 text-neutral-900 shadow-sm"
-                    : scrolled
-                      ? "text-neutral-700 hover:text-neutral-900"
-                      : "text-white/70 hover:text-white"
+                    : isDarkThemeHeader
+                      ? "text-white/80 hover:text-white"
+                      : "text-neutral-700 hover:text-neutral-900"
                 )}
               >
-                EN 🇬🇧
+                <FlagIcon code="GB" className="h-3 w-4 rounded-xs shrink-0" />
+                <span>EN</span>
               </button>
             </div>
 
             <Link
               href="/iletisim"
               className={cn(
-                "contact-button h-11 shrink-0 items-center justify-center rounded-full border px-6 text-[15px] font-bold uppercase leading-none tracking-[0.1em] transition-all hover:border-kiwi-400 hover:bg-kiwi-400/10 hover:text-kiwi-400 flex",
-                scrolled
-                  ? "border-neutral-900/25 text-neutral-900"
-                  : "border-white/25 text-white"
+                "contact-button flex h-11 shrink-0 items-center justify-center rounded-full border px-6 text-[15px] font-bold uppercase leading-none tracking-[0.1em] transition-all hover:border-kiwi-400 hover:bg-kiwi-400/10 hover:text-kiwi-400",
+                isDarkThemeHeader
+                  ? "border-white/25 text-white"
+                  : "border-neutral-900/25 text-neutral-900"
               )}
             >
               {t.header.contactButton}
@@ -121,34 +136,39 @@ export function Header() {
 
           <div className="flex items-center gap-3 lg:hidden">
             {/* Mobile Language Selector Toggle */}
-            <div className="flex items-center rounded-full border border-neutral-900/10 bg-neutral-900/5 p-0.5">
+            <div className={cn(
+              "flex items-center gap-0.5 rounded-full border p-0.5",
+              isDarkThemeHeader ? "border-white/20 bg-white/10" : "border-neutral-900/15 bg-neutral-900/5"
+            )}>
               <button
                 type="button"
                 onClick={() => setLang("tr")}
                 className={cn(
-                  "rounded-full px-2.5 py-1 text-[11px] font-bold uppercase transition-all",
+                  "flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-bold uppercase transition-all",
                   lang === "tr"
                     ? "bg-kiwi-400 text-neutral-900"
-                    : scrolled || menuOpen
-                      ? "text-neutral-700"
-                      : "text-white"
+                    : isDarkThemeHeader
+                      ? "text-white"
+                      : "text-neutral-800"
                 )}
               >
-                TR
+                <FlagIcon code="TR" className="h-2.5 w-3.5 rounded-2xs shrink-0" />
+                <span>TR</span>
               </button>
               <button
                 type="button"
                 onClick={() => setLang("en")}
                 className={cn(
-                  "rounded-full px-2.5 py-1 text-[11px] font-bold uppercase transition-all",
+                  "flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-bold uppercase transition-all",
                   lang === "en"
                     ? "bg-kiwi-400 text-neutral-900"
-                    : scrolled || menuOpen
-                      ? "text-neutral-700"
-                      : "text-white"
+                    : isDarkThemeHeader
+                      ? "text-white"
+                      : "text-neutral-800"
                 )}
               >
-                EN
+                <FlagIcon code="GB" className="h-2.5 w-3.5 rounded-2xs shrink-0" />
+                <span>EN</span>
               </button>
             </div>
 
@@ -161,21 +181,21 @@ export function Header() {
               <span
                 className={cn(
                   "h-0.5 w-6 transition-all",
-                  scrolled || menuOpen ? "bg-neutral-900" : "bg-white",
+                  isDarkThemeHeader ? "bg-white" : "bg-neutral-900",
                   menuOpen && "translate-y-2 rotate-45"
                 )}
               />
               <span
                 className={cn(
                   "h-0.5 w-6 transition-all",
-                  scrolled || menuOpen ? "bg-neutral-900" : "bg-white",
+                  isDarkThemeHeader ? "bg-white" : "bg-neutral-900",
                   menuOpen && "opacity-0"
                 )}
               />
               <span
                 className={cn(
                   "h-0.5 w-6 transition-all",
-                  scrolled || menuOpen ? "bg-neutral-900" : "bg-white",
+                  isDarkThemeHeader ? "bg-white" : "bg-neutral-900",
                   menuOpen && "-translate-y-2 -rotate-45"
                 )}
               />
@@ -228,25 +248,27 @@ export function Header() {
                     type="button"
                     onClick={() => setLang("tr")}
                     className={cn(
-                      "rounded-full px-4 py-2 text-xs font-bold uppercase transition-all",
+                      "flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold uppercase transition-all",
                       lang === "tr"
                         ? "bg-kiwi-400 text-neutral-900"
                         : "text-neutral-600"
                     )}
                   >
-                    Türkçe 🇹🇷
+                    <FlagIcon code="TR" className="h-3 w-4 rounded-xs shrink-0" />
+                    <span>Türkçe</span>
                   </button>
                   <button
                     type="button"
                     onClick={() => setLang("en")}
                     className={cn(
-                      "rounded-full px-4 py-2 text-xs font-bold uppercase transition-all",
+                      "flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold uppercase transition-all",
                       lang === "en"
                         ? "bg-kiwi-400 text-neutral-900"
                         : "text-neutral-600"
                     )}
                   >
-                    English 🇬🇧
+                    <FlagIcon code="GB" className="h-3 w-4 rounded-xs shrink-0" />
+                    <span>English</span>
                   </button>
                 </div>
               </motion.div>

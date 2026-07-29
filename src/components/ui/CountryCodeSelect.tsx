@@ -2,47 +2,36 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import { FlagIcon } from "@/components/ui/FlagIcon";
 
 export type CountryOption = {
   code: string; // ISO 2-letter
   dial: string; // Dial code e.g. +90
-  flag: string; // Emoji flag
   nameTr: string;
   nameEn: string;
 };
 
 export const COUNTRIES: CountryOption[] = [
-  { code: "TR", dial: "+90", flag: "🇹🇷", nameTr: "Türkiye", nameEn: "Turkey" },
-  { code: "US", dial: "+1", flag: "🇺🇸", nameTr: "Amerika Birleşik Devletleri", nameEn: "United States" },
-  { code: "GB", dial: "+44", flag: "🇬🇧", nameTr: "Birleşik Krallık", nameEn: "United Kingdom" },
-  { code: "DE", dial: "+49", flag: "🇩🇪", nameTr: "Almanya", nameEn: "Germany" },
-  { code: "NL", dial: "+31", flag: "🇳🇱", nameTr: "Hollanda", nameEn: "Netherlands" },
-  { code: "FR", dial: "+33", flag: "🇫🇷", nameTr: "Fransa", nameEn: "France" },
-  { code: "AE", dial: "+971", flag: "🇦🇪", nameTr: "Birleşik Arap Emirlikleri", nameEn: "United Arab Emirates" },
-  { code: "SA", dial: "+966", flag: "🇸🇦", nameTr: "Suudi Arabistan", nameEn: "Saudi Arabia" },
-  { code: "QA", dial: "+974", flag: "🇶🇦", nameTr: "Katar", nameEn: "Qatar" },
-  { code: "AZ", dial: "+994", flag: "🇦🇿", nameTr: "Azerbaycan", nameEn: "Azerbaijan" },
-  { code: "CH", dial: "+41", flag: "🇨🇭", nameTr: "İsviçre", nameEn: "Switzerland" },
-  { code: "AT", dial: "+43", flag: "🇦🇹", nameTr: "Avusturya", nameEn: "Austria" },
-  { code: "BE", dial: "+32", flag: "🇧🇪", nameTr: "Belçika", nameEn: "Belgium" },
-  { code: "IT", dial: "+39", flag: "🇮🇹", nameTr: "İtalya", nameEn: "Italy" },
-  { code: "ES", dial: "+34", flag: "🇪🇸", nameTr: "İspanya", nameEn: "Spain" },
-  { code: "SE", dial: "+46", flag: "🇸🇪", nameTr: "İsveç", nameEn: "Sweden" },
-  { code: "NO", dial: "+47", flag: "🇳🇴", nameTr: "Norveç", nameEn: "Norway" },
-  { code: "DK", dial: "+45", flag: "🇩🇰", nameTr: "Danimarka", nameEn: "Denmark" },
-  { code: "AU", dial: "+61", flag: "🇦🇺", nameTr: "Avustralya", nameEn: "Australia" },
-  { code: "CA", dial: "+1", flag: "🇨🇦", nameTr: "Kanada", nameEn: "Canada" },
-  { code: "RU", dial: "+7", flag: "🇷🇺", nameTr: "Rusya", nameEn: "Russia" },
-  { code: "IR", dial: "+98", flag: "🇮🇷", nameTr: "İran", nameEn: "Iran" },
-  { code: "IQ", dial: "+964", flag: "🇮🇶", nameTr: "Irak", nameEn: "Iraq" },
-  { code: "EG", dial: "+20", flag: "🇪🇬", nameTr: "Mısır", nameEn: "Egypt" },
-  { code: "KW", dial: "+965", flag: "🇰🇼", nameTr: "Kuveyt", nameEn: "Kuwait" },
-  { code: "OM", dial: "+968", flag: "🇴🇲", nameTr: "Umman", nameEn: "Oman" },
-  { code: "BH", dial: "+973", flag: "🇧🇭", nameTr: "Bahreyn", nameEn: "Bahrain" },
-  { code: "CY", dial: "+357", flag: "🇨🇾", nameTr: "Kıbrıs", nameEn: "Cyprus" },
-  { code: "GE", dial: "+995", flag: "🇬🇪", nameTr: "Gürcistan", nameEn: "Georgia" },
-  { code: "KZ", dial: "+7", flag: "🇰🇿", nameTr: "Kazakistan", nameEn: "Kazakhstan" },
-  { code: "UZ", dial: "+998", flag: "🇺🇿", nameTr: "Özbekistan", nameEn: "Uzbekistan" },
+  { code: "TR", dial: "+90", nameTr: "Türkiye", nameEn: "Turkey" },
+  { code: "US", dial: "+1", nameTr: "Amerika Birleşik Devletleri", nameEn: "United States" },
+  { code: "GB", dial: "+44", nameTr: "Birleşik Krallık", nameEn: "United Kingdom" },
+  { code: "DE", dial: "+49", nameTr: "Almanya", nameEn: "Germany" },
+  { code: "NL", dial: "+31", nameTr: "Hollanda", nameEn: "Netherlands" },
+  { code: "FR", dial: "+33", nameTr: "Fransa", nameEn: "France" },
+  { code: "AE", dial: "+971", nameTr: "Birleşik Arap Emirlikleri", nameEn: "United Arab Emirates" },
+  { code: "SA", dial: "+966", nameTr: "Suudi Arabistan", nameEn: "Saudi Arabia" },
+  { code: "QA", dial: "+974", nameTr: "Katar", nameEn: "Qatar" },
+  { code: "AZ", dial: "+994", nameTr: "Azerbaycan", nameEn: "Azerbaijan" },
+  { code: "CH", dial: "+41", nameTr: "İsviçre", nameEn: "Switzerland" },
+  { code: "AT", dial: "+43", nameTr: "Avusturya", nameEn: "Austria" },
+  { code: "BE", dial: "+32", nameTr: "Belçika", nameEn: "Belgium" },
+  { code: "IT", dial: "+39", nameTr: "İtalya", nameEn: "Italy" },
+  { code: "ES", dial: "+34", nameTr: "İspanya", nameEn: "Spain" },
+  { code: "SE", dial: "+46", nameTr: "İsveç", nameEn: "Sweden" },
+  { code: "NO", dial: "+47", nameTr: "Norveç", nameEn: "Norway" },
+  { code: "DK", dial: "+45", nameTr: "Danimarka", nameEn: "Denmark" },
+  { code: "AU", dial: "+61", nameTr: "Avustralya", nameEn: "Australia" },
+  { code: "CA", dial: "+1", nameTr: "Kanada", nameEn: "Canada" },
 ];
 
 export const DEFAULT_COUNTRY = COUNTRIES[0]; // +90 Türkiye
@@ -95,7 +84,7 @@ export function CountryCodeSelect({ selected, onChange }: Props) {
         onClick={() => setOpen((prev) => !prev)}
         className="flex h-full items-center gap-2 rounded-l-xl border border-r-0 border-neutral-900/10 bg-neutral-900/5 px-3 py-4.5 text-sm font-medium text-neutral-900 transition-colors hover:bg-neutral-900/10 focus:outline-none focus:ring-1 focus:ring-kiwi-400"
       >
-        <span className="text-base sm:text-lg">{selected.flag}</span>
+        <FlagIcon code={selected.code} className="w-5 h-3.5 rounded-sm object-cover shrink-0" />
         <span className="font-semibold text-neutral-900">{selected.dial}</span>
         <svg
           className={`h-4 w-4 text-neutral-500 transition-transform ${open ? "rotate-180" : ""}`}
@@ -145,7 +134,7 @@ export function CountryCodeSelect({ selected, onChange }: Props) {
                     }`}
                   >
                     <div className="flex items-center gap-2 truncate">
-                      <span className="text-base">{country.flag}</span>
+                      <FlagIcon code={country.code} className="w-5 h-3.5 rounded-sm shrink-0" />
                       <span className="truncate">{name}</span>
                     </div>
                     <span className="ml-2 shrink-0 font-mono font-medium text-neutral-600">

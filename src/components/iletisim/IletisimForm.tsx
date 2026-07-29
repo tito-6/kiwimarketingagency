@@ -2,11 +2,10 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { iletisimPage } from "@/data/iletisim";
-import { ClipReveal } from "@/components/blog/ui/ClipReveal";
 import { TextReveal } from "@/components/ui/TextReveal";
-import { CountryCodeSelect, COUNTRIES, DEFAULT_COUNTRY, type CountryOption } from "@/components/ui/CountryCodeSelect";
+import { CountryCodeSelect, DEFAULT_COUNTRY, type CountryOption } from "@/components/ui/CountryCodeSelect";
 import { motion, AnimatePresence } from "framer-motion";
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -28,7 +27,7 @@ function pushContactFormSuccess() {
 }
 
 export function IletisimForm() {
-  const { lang, t } = useLanguage();
+  const { t } = useLanguage();
   const router = useRouter();
 
   const [status, setStatus] = useState<Status>("idle");
@@ -96,7 +95,7 @@ export function IletisimForm() {
   }
 
   return (
-    <section id="form" className="py-16 md:py-24">
+    <section id="form" className="scroll-mt-24 py-16 md:py-24">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <div className="grid gap-16 lg:grid-cols-[1fr,1.1fr]">
           <div>
@@ -123,14 +122,19 @@ export function IletisimForm() {
             </motion.div>
           </div>
 
-          <ClipReveal direction="center">
-            <motion.form
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <form
               onSubmit={handleSubmit}
-              className="relative overflow-hidden rounded-3xl border border-neutral-900/10 bg-gradient-to-br from-white/[0.04] to-transparent p-6 sm:p-8 md:p-12"
+              className="relative overflow-hidden rounded-3xl border border-neutral-900/10 bg-gradient-to-br from-white/90 via-white/70 to-neutral-50/50 p-6 shadow-xl backdrop-blur-xl sm:p-8 md:p-12"
               noValidate
             >
               <motion.div
-                className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-kiwi-400/10 blur-3xl"
+                className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-kiwi-400/15 blur-3xl"
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ repeat: Infinity, duration: 4 }}
               />
@@ -152,21 +156,16 @@ export function IletisimForm() {
 
               <AnimatePresence mode="wait">
                 <motion.div key="form" initial={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                  <p className="mb-8 text-sm text-neutral-900/50 font-medium">
+                  <p className="mb-8 text-sm font-medium text-neutral-900/60">
                     {formT.subtitle}
                   </p>
                   <div className="space-y-6">
                     {/* Name */}
-                    <motion.div
-                      initial={{ opacity: 0, x: 24 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      className="relative"
-                    >
+                    <div className="relative">
                       <label
                         className={`pointer-events-none absolute left-4 text-xs uppercase tracking-wider transition-all ${
                           values.name || focused === "name"
-                            ? "top-2 text-kiwi-500 font-semibold opacity-100"
+                            ? "top-2 font-semibold text-kiwi-600 opacity-100"
                             : "top-[18px] text-neutral-900/40"
                         }`}
                       >
@@ -183,21 +182,16 @@ export function IletisimForm() {
                         onFocus={() => setFocused("name")}
                         onBlur={() => setFocused(null)}
                         autoComplete="name"
-                        className="w-full rounded-xl border border-neutral-900/10 bg-neutral-900/5 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-400 focus:outline-none"
+                        className="w-full rounded-xl border border-neutral-900/15 bg-white/70 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                       />
-                    </motion.div>
+                    </div>
 
                     {/* Email */}
-                    <motion.div
-                      initial={{ opacity: 0, x: 24 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      className="relative"
-                    >
+                    <div className="relative">
                       <label
                         className={`pointer-events-none absolute left-4 text-xs uppercase tracking-wider transition-all ${
                           values.email || focused === "email"
-                            ? "top-2 text-kiwi-500 font-semibold opacity-100"
+                            ? "top-2 font-semibold text-kiwi-600 opacity-100"
                             : "top-[18px] text-neutral-900/40"
                         }`}
                       >
@@ -214,21 +208,16 @@ export function IletisimForm() {
                         onFocus={() => setFocused("email")}
                         onBlur={() => setFocused(null)}
                         autoComplete="email"
-                        className="w-full rounded-xl border border-neutral-900/10 bg-neutral-900/5 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-400 focus:outline-none"
+                        className="w-full rounded-xl border border-neutral-900/15 bg-white/70 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                       />
-                    </motion.div>
+                    </div>
 
                     {/* Company */}
-                    <motion.div
-                      initial={{ opacity: 0, x: 24 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      className="relative"
-                    >
+                    <div className="relative">
                       <label
                         className={`pointer-events-none absolute left-4 text-xs uppercase tracking-wider transition-all ${
                           values.company || focused === "company"
-                            ? "top-2 text-kiwi-500 font-semibold opacity-100"
+                            ? "top-2 font-semibold text-kiwi-600 opacity-100"
                             : "top-[18px] text-neutral-900/40"
                         }`}
                       >
@@ -244,17 +233,12 @@ export function IletisimForm() {
                         onFocus={() => setFocused("company")}
                         onBlur={() => setFocused(null)}
                         autoComplete="organization"
-                        className="w-full rounded-xl border border-neutral-900/10 bg-neutral-900/5 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-400 focus:outline-none"
+                        className="w-full rounded-xl border border-neutral-900/15 bg-white/70 px-4 pb-3 pt-8 text-neutral-900 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                       />
-                    </motion.div>
+                    </div>
 
                     {/* Phone + Country Selector */}
-                    <motion.div
-                      initial={{ opacity: 0, x: 24 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      className="relative"
-                    >
+                    <div>
                       <div className="flex items-stretch">
                         <CountryCodeSelect
                           selected={selectedCountry}
@@ -264,7 +248,7 @@ export function IletisimForm() {
                           <label
                             className={`pointer-events-none absolute left-4 text-xs uppercase tracking-wider transition-all ${
                               localPhone || focused === "phone"
-                                ? "top-2 text-kiwi-500 font-semibold opacity-100"
+                                ? "top-2 font-semibold text-kiwi-600 opacity-100"
                                 : "top-[18px] text-neutral-900/40"
                             }`}
                           >
@@ -281,19 +265,19 @@ export function IletisimForm() {
                             onBlur={() => setFocused(null)}
                             autoComplete="tel-national"
                             placeholder={formT.phonePlaceholder}
-                            className="w-full rounded-r-xl border border-neutral-900/10 bg-neutral-900/5 px-4 pb-3 pt-8 text-neutral-900 placeholder:text-neutral-900/20 focus:border-kiwi-400 focus:outline-none"
+                            className="w-full rounded-r-xl border border-neutral-900/15 bg-white/70 px-4 pb-3 pt-8 text-neutral-900 placeholder:text-neutral-900/20 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                           />
                         </div>
                       </div>
                       <p className="mt-2 text-xs text-neutral-900/40">
                         {formT.phoneHint}
                       </p>
-                    </motion.div>
+                    </div>
 
                     {/* Service */}
                     <select
                       name="service"
-                      className="w-full rounded-xl border border-neutral-900/10 bg-neutral-900/5 px-4 py-4 text-neutral-900/70 focus:border-kiwi-400 focus:outline-none"
+                      className="w-full rounded-xl border border-neutral-900/15 bg-white/70 px-4 py-4 text-neutral-900/80 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                       defaultValue=""
                     >
                       <option value="" disabled>
@@ -313,14 +297,14 @@ export function IletisimForm() {
                       placeholder={formT.messagePlaceholder}
                       onFocus={() => setFocused("message")}
                       onBlur={() => setFocused(null)}
-                      className="w-full resize-none rounded-xl border border-neutral-900/10 bg-neutral-900/5 px-4 py-4 text-neutral-900 placeholder:text-neutral-900/25 focus:border-kiwi-400 focus:outline-none"
+                      className="w-full resize-none rounded-xl border border-neutral-900/15 bg-white/70 px-4 py-4 text-neutral-900 placeholder:text-neutral-900/30 focus:border-kiwi-500 focus:bg-white focus:outline-none"
                     />
                   </div>
 
                   <motion.button
                     type="submit"
                     disabled={status === "submitting"}
-                    whileHover={status === "submitting" ? undefined : { scale: 1.02 }}
+                    whileHover={status === "submitting" ? undefined : { scale: 1.01 }}
                     whileTap={status === "submitting" ? undefined : { scale: 0.98 }}
                     className="relative mt-8 w-full overflow-hidden rounded-full bg-kiwi-400 py-4 text-sm font-semibold uppercase tracking-wider text-neutral-900 shadow-md transition-all hover:bg-kiwi-500 disabled:cursor-not-allowed disabled:opacity-70"
                   >
@@ -350,8 +334,8 @@ export function IletisimForm() {
                   </p>
                 </motion.div>
               </AnimatePresence>
-            </motion.form>
-          </ClipReveal>
+            </form>
+          </motion.div>
         </div>
       </div>
     </section>
