@@ -32,15 +32,9 @@ export function Header() {
     };
   }, [menuOpen]);
 
-  const isServicePage =
-    pathname.startsWith("/kreatif-tasarim-ajansi") ||
-    pathname.startsWith("/dijital-pazarlama-ajansi") ||
-    pathname.startsWith("/sosyal-medya-ajansi") ||
-    pathname.startsWith("/web-yazilim-ajansi");
-  const isLightPage = pathname !== "/" || isServicePage;
-  // Home hero is dark; service heroes are also dark at top.
-  const isDarkThemeHeader =
-    (pathname === "/" || isServicePage) && !scrolled && !menuOpen;
+  const isLightPage = pathname !== "/";
+  // Only the homepage video hero uses a dark transparent header at the top.
+  const isDarkThemeHeader = pathname === "/" && !scrolled && !menuOpen;
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";

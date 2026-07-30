@@ -135,8 +135,8 @@ function TheaterSlide({ post, index }: { post: BlogPost; index: number }) {
         className="absolute inset-0"
       >
         <Image src={post.image} alt="" fill className="object-cover" sizes="100vw" priority />
-        <div className={`absolute inset-0 bg-gradient-to-br ${post.gradient} mix-blend-multiply opacity-60`} />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a] via-[#1a1a1a]/70 to-[#1a1a1a]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/92 to-white/70" />
+        <div className={`absolute inset-0 bg-gradient-to-br ${post.gradient} mix-blend-multiply opacity-25`} />
       </motion.div>
 
       <div className="relative z-10 flex h-full flex-col justify-center px-4 pb-28 pt-20 sm:px-6 md:px-20 md:pb-0 md:pt-0 lg:pl-72">

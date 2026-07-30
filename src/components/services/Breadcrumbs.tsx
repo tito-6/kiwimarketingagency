@@ -26,9 +26,9 @@ export function Breadcrumbs({ items }: Props) {
 
   return (
     <>
-      <nav aria-label="Breadcrumb" className="bg-neutral-950 pt-24 md:pt-28">
+      <nav aria-label="Breadcrumb" className="bg-white pt-24 md:pt-28">
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
-          <ol className="flex flex-wrap items-center gap-2 text-sm text-white/45">
+          <ol className="flex flex-wrap items-center gap-2 text-sm text-neutral-900/45">
             {items.map((item, index) => {
               const isLast = index === items.length - 1;
               return (
@@ -37,14 +37,14 @@ export function Breadcrumbs({ items }: Props) {
                   {item.href && !isLast ? (
                     <Link
                       href={item.href}
-                      className="transition-colors hover:text-kiwi-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950"
+                      className="transition-colors hover:text-kiwi-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400 focus-visible:ring-offset-2"
                     >
                       {item.label}
                     </Link>
                   ) : (
                     <span
                       aria-current={isLast ? "page" : undefined}
-                      className={isLast ? "text-white/75" : undefined}
+                      className={isLast ? "text-neutral-900/70" : undefined}
                     >
                       {item.label}
                     </span>

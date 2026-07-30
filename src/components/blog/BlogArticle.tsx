@@ -89,31 +89,20 @@ export function BlogArticle({ post }: { post: BlogPost }) {
           style={{ scaleX, backgroundColor: post.accent }}
         />
 
-        <header className="relative min-h-[70svh] overflow-hidden sm:min-h-[85svh] md:min-h-[100vh]">
+        <header className="relative overflow-hidden bg-white pt-28 pb-10 sm:pt-32 sm:pb-14">
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(169,203,24,0.1),transparent_55%)]"
+          />
           <motion.div
-            className="absolute inset-0"
-            style={{ scale: heroScale, opacity: heroOpacity }}
-          >
-            <motion.div
-              initial={{ clipPath: "inset(0% 100% 0% 0%)" }}
-              animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
-              transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute inset-0"
-            >
-              <Image src={post.image} alt="" fill priority className="object-cover" sizes="100vw" />
-            </motion.div>
-            <div className={`absolute inset-0 bg-gradient-to-b ${post.gradient} via-black/55 to-black/90`} />
-          </motion.div>
-
-          <motion.div
-            style={{ y: titleY }}
-            className="relative z-10 mx-auto flex min-h-[70svh] max-w-[1440px] flex-col justify-end px-4 pb-16 pt-28 sm:min-h-[85svh] sm:px-6 sm:pb-20 sm:pt-32 md:min-h-[100vh] md:px-10 md:pb-24"
+            style={{ y: titleY, opacity: heroOpacity }}
+            className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10"
           >
             <ClipReveal direction="left">
               <Link
                 href="/blog"
                 data-cursor="pointer"
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/30 px-4 py-2 text-xs uppercase tracking-wider text-white/70 backdrop-blur-md transition-colors hover:text-white"
+                className="inline-flex items-center gap-2 rounded-full border border-neutral-900/15 bg-neutral-50 px-4 py-2 text-xs uppercase tracking-wider text-neutral-900/60 transition-colors hover:border-kiwi-400 hover:text-kiwi-500"
               >
                 ← Journal
               </Link>
@@ -123,13 +112,13 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3 }}
-              className="mt-8 inline-flex w-fit rounded-full border px-4 py-1.5 text-xs uppercase tracking-wider backdrop-blur-md sm:mt-10"
+              className="mt-8 inline-flex w-fit rounded-full border px-4 py-1.5 text-xs uppercase tracking-wider sm:mt-10"
               style={{ borderColor: `${post.accent}50`, color: post.accent }}
             >
               {post.category}
             </motion.span>
 
-            <h1 className="mt-6 max-w-4xl break-words text-[clamp(1.75rem,7.5vw,4.25rem)] font-bold leading-[1.1] tracking-tight text-white sm:mt-8">
+            <h1 className="mt-6 max-w-4xl break-words text-[clamp(1.75rem,7.5vw,4.25rem)] font-bold leading-[1.1] tracking-tight text-neutral-900 sm:mt-8">
               <CharacterSplit text={post.title} delay={0.4} stagger={0.025} />
             </h1>
 
@@ -137,11 +126,28 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1 }}
-              className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-white/65 sm:mt-10 sm:gap-x-6 sm:text-sm"
+              className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-neutral-900/50 sm:mt-8 sm:gap-x-6 sm:text-sm"
             >
               <span>{post.author}</span>
               <span>{post.date}</span>
               <span>{post.readTime} okuma</span>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="relative mt-10 aspect-[16/9] overflow-hidden rounded-3xl border border-neutral-900/10 sm:mt-12"
+              style={{ scale: heroScale }}
+            >
+              <Image
+                src={post.image}
+                alt=""
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 1440px) 100vw, 1440px"
+              />
             </motion.div>
           </motion.div>
         </header>
@@ -205,7 +211,6 @@ export function BlogArticle({ post }: { post: BlogPost }) {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 720px"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent" />
                 </div>
               </ClipReveal>
             </div>

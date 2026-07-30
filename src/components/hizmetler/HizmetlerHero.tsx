@@ -1,39 +1,19 @@
 "use client";
 
 import { hizmetlerPage } from "@/data/content";
-import { images } from "@/data/images";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { TextReveal } from "@/components/ui/TextReveal";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 export function HizmetlerHero() {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
-  const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
-
   return (
-    <section
-      ref={ref}
-      className="relative min-h-[85svh] overflow-hidden pt-24 pb-16 sm:min-h-[90vh] sm:pt-32 sm:pb-20"
-    >
-      <div className="absolute inset-0">
-        <motion.div style={{ y }} className="absolute inset-0">
-          <Image
-            src={images.services.marketing}
-            alt=""
-            fill
-            priority
-            className="object-cover opacity-30"
-            sizes="100vw"
-          />
-        </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/80 via-[#1a1a1a]/90 to-[#1a1a1a]" />
-      </div>
+    <section className="relative min-h-[70svh] overflow-hidden bg-white pt-28 pb-16 sm:min-h-[75vh] sm:pt-32 sm:pb-20">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(169,203,24,0.12),transparent_55%)]"
+      />
 
-      <motion.div style={{ opacity }} className="relative mx-auto max-w-[1440px] px-4 sm:px-4 sm:px-6 md:px-10">
+      <div className="relative mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
         <motion.p
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -44,14 +24,14 @@ export function HizmetlerHero() {
 
         <TextReveal
           text={hizmetlerPage.headline}
-          className="mt-8 break-words text-[clamp(2rem,8vw,7rem)] font-bold leading-[0.95] tracking-tighter text-white"
+          className="mt-8 break-words text-[clamp(2rem,8vw,5.5rem)] font-bold leading-[0.95] tracking-tighter text-neutral-900"
           as="h1"
         />
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-4 break-words text-[clamp(1.25rem,4vw,3.5rem)] font-light text-white/35"
+          className="mt-4 break-words text-[clamp(1.25rem,4vw,2.75rem)] font-light text-neutral-900/35"
         >
           {hizmetlerPage.headlineAccent}
         </motion.p>
@@ -60,7 +40,7 @@ export function HizmetlerHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7 }}
-          className="mt-8 max-w-2xl text-base text-white/60 sm:mt-10 sm:text-lg"
+          className="mt-8 max-w-2xl text-base text-neutral-900/55 sm:mt-10 sm:text-lg"
         >
           {hizmetlerPage.description}
         </motion.p>
@@ -71,7 +51,7 @@ export function HizmetlerHero() {
           transition={{ delay: 0.9 }}
           className="mt-10"
         >
-          <MagneticButton href="/#contact" variant="primary">
+          <MagneticButton href="/iletisim" variant="primary">
             Proje Başlat
           </MagneticButton>
         </motion.div>
@@ -80,9 +60,9 @@ export function HizmetlerHero() {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 1.1, duration: 1 }}
-          className="mt-20 h-px origin-left bg-gradient-to-r from-kiwi-400/50 to-transparent"
+          className="mt-16 h-px origin-left bg-gradient-to-r from-kiwi-400/50 to-transparent sm:mt-20"
         />
-      </motion.div>
+      </div>
     </section>
   );
 }

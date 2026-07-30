@@ -76,7 +76,13 @@ export function getArticleContent(post: BlogPost): ContentBlock[] {
 }
 
 export function getSecondaryImage(post: BlogPost): string {
-  const pool = [...images.projects, ...images.hero, images.services.creative];
+  const pool = [
+    images.services.web,
+    images.services.creative,
+    images.services.marketing,
+    images.services.social,
+    images.services.seo,
+  ];
   const idx = post.slug.length % pool.length;
   return pool[idx];
 }
