@@ -7,30 +7,36 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 const { showreel } = images.videos;
 
-function tryPlayVideo(video: HTMLVideoElement | null) {
-  if (!video) return;
+function prepareVideo(video: HTMLVideoElement) {
   video.muted = true;
   video.defaultMuted = true;
   video.playsInline = true;
+  video.autoplay = true;
+  video.loop = true;
   video.setAttribute("muted", "");
   video.setAttribute("playsinline", "");
   video.setAttribute("webkit-playsinline", "true");
+}
+
+function tryPlayVideo(video: HTMLVideoElement | null) {
+  if (!video) return;
+  prepareVideo(video);
 
   const promise = video.play();
-  if (promise !== undefined) {
-    promise.catch(() => {
-      // Retry playing on user interaction or scroll
-      const retry = () => {
-        video.play().catch(() => {});
-        window.removeEventListener("touchstart", retry);
-        window.removeEventListener("click", retry);
-        window.removeEventListener("scroll", retry);
-      };
-      window.addEventListener("touchstart", retry, { once: true, passive: true });
-      window.addEventListener("click", retry, { once: true, passive: true });
-      window.addEventListener("scroll", retry, { once: true, passive: true });
-    });
-  }
+  if (promise === undefined) return;
+
+  promise.catch(() => {
+    const retry = () => {
+      prepareVideo(video);
+      void video.play().catch(() => {});
+      window.removeEventListener("touchstart", retry);
+      window.removeEventListener("pointerdown", retry);
+      window.removeEventListener("scroll", retry);
+    };
+    window.addEventListener("touchstart", retry, { once: true, passive: true });
+    window.addEventListener("pointerdown", retry, { once: true, passive: true });
+    window.addEventListener("scroll", retry, { once: true, passive: true });
+  });
 }
 
 function PosterFallback() {
@@ -54,7 +60,7 @@ export function HeroVideoBackground() {
   const lite = useLiteMotion();
   const ref = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -63,36 +69,41 @@ export function HeroVideoBackground() {
   const fade = useTransform(scrollYProgress, [0, 0.8], [1, 0.25]);
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.04]);
 
-  const attemptPlay = useCallback(() => {
-    tryPlayVideo(videoRef.current);
-  }, []);
+  const markActive = useCallback(() => setIsActive(true), []);
+  const attemptPlay = useCallback(() => tryPlayVideo(videoRef.current), []);
 
   useEffect(() => {
     if (lite) return;
-    attemptPlay();
 
-    const handleLoaded = () => {
-      setVideoLoaded(true);
+    const video = videoRef.current;
+    if (!video) return;
+
+    prepareVideo(video);
+
+    const onReady = () => {
+      markActive();
       attemptPlay();
     };
 
-    const video = videoRef.current;
-    if (video) {
-      if (video.readyState >= 2) {
-        setVideoLoaded(true);
-        attemptPlay();
-      }
-      video.addEventListener("loadeddata", handleLoaded);
-      video.addEventListener("canplay", attemptPlay);
-    }
+    video.addEventListener("loadeddata", onReady);
+    video.addEventListener("canplay", onReady);
+    video.addEventListener("playing", markActive);
+
+    if (video.readyState >= 2) onReady();
+    attemptPlay();
+
+    const onVisibility = () => {
+      if (document.visibilityState === "visible") attemptPlay();
+    };
+    document.addEventListener("visibilitychange", onVisibility);
 
     return () => {
-      if (video) {
-        video.removeEventListener("loadeddata", handleLoaded);
-        video.removeEventListener("canplay", attemptPlay);
-      }
+      video.removeEventListener("loadeddata", onReady);
+      video.removeEventListener("canplay", onReady);
+      video.removeEventListener("playing", markActive);
+      document.removeEventListener("visibilitychange", onVisibility);
     };
-  }, [attemptPlay, lite]);
+  }, [attemptPlay, lite, markActive]);
 
   if (lite) {
     return <PosterFallback />;
@@ -109,26 +120,24 @@ export function HeroVideoBackground() {
         style={{ scale }}
         aria-hidden
       >
-        {/* Background Poster Image — visible while video loads */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={showreel.poster}
           alt=""
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-            videoLoaded ? "opacity-30" : "opacity-90"
+            isActive ? "opacity-20" : "opacity-90"
           }`}
           decoding="async"
           fetchPriority="high"
         />
 
-        {/* Video Player */}
         <video
           ref={(node) => {
             videoRef.current = node;
             if (node) tryPlayVideo(node);
           }}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
-            videoLoaded ? "opacity-80" : "opacity-0"
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+            isActive ? "opacity-90" : "opacity-0"
           }`}
           poster={showreel.poster}
           autoPlay
@@ -139,19 +148,24 @@ export function HeroVideoBackground() {
           disablePictureInPicture
           aria-hidden
         >
+          {/* Lighter sources first so autoplay starts quickly */}
+          {showreel.mp4720 ? (
+            <source src={showreel.mp4720} type="video/mp4" />
+          ) : null}
+          {showreel.mp4480 ? (
+            <source src={showreel.mp4480} type="video/mp4" />
+          ) : null}
           <source src={showreel.mp4} type="video/mp4" />
           <source src={showreel.webm} type="video/webm" />
-          {showreel.mp4720 && <source src={showreel.mp4720} type="video/mp4" />}
         </video>
       </motion.div>
 
-      {/* Dark overlay gradients for text readability */}
       <div
-        className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/60 via-[#1a1a1a]/20 to-[#1a1a1a]/80"
+        className="absolute inset-0 bg-gradient-to-b from-[#1a1a1a]/55 via-[#1a1a1a]/15 to-[#1a1a1a]/75"
         aria-hidden
       />
       <div
-        className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/70 via-[#1a1a1a]/20 to-transparent"
+        className="absolute inset-0 bg-gradient-to-r from-[#1a1a1a]/60 via-[#1a1a1a]/15 to-transparent"
         aria-hidden
       />
     </motion.div>
