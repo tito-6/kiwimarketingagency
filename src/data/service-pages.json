@@ -1,0 +1,1349 @@
+{
+  "heroServices": [
+    "Performans Pazarlama",
+    "Kreatif Tasarım",
+    "Prodüksiyon",
+    "Sosyal Medya Yönetimi",
+    "Web Tasarım Hizmetleri",
+    "SEO & GEO Yönetimi"
+  ],
+  "homeSolutions": [
+    {
+      "id": "kreatif-tasarim",
+      "title": "Kreatif Tasarım",
+      "href": "/kreatif-tasarim-ajansi",
+      "description": "Markanızın yalnızca güzel görünmesini değil; doğru algılanmasını, hatırlanmasını ve rakiplerinden ayrılmasını sağlıyoruz.",
+      "tags": [
+        "Kurumsal",
+        "Web",
+        "Katalog,",
+        "Sosyal"
+      ],
+      "cardTags": [
+        "Branding",
+        "UX/UI",
+        "Katalog"
+      ]
+    },
+    {
+      "id": "dijital-pazarlama",
+      "title": "Dijital Pazarlama",
+      "href": "/dijital-pazarlama-ajansi",
+      "description": "Markanızı yalnızca görünür hale getirmiyor; doğru hedef kitleye ulaştırıyor, ölçülebilir sonuçlarla büyütüyoruz.",
+      "tags": [
+        "Google",
+        "Meta",
+        "Performans",
+        "Sosyal"
+      ],
+      "cardTags": [
+        "Google Ads",
+        "Instagram Ads",
+        "Performance Marketing"
+      ]
+    },
+    {
+      "id": "sosyal-medya",
+      "title": "Sosyal Medya",
+      "href": "/sosyal-medya-ajansi",
+      "description": "Markanız için yalnızca içerik üretmiyor; hedef kitlenizle güçlü, düzenli ve sürdürülebilir bir iletişim kuruyoruz.",
+      "tags": [
+        "Sosyal",
+        "Sosyal",
+        "Sosyal",
+        "Reel"
+      ],
+      "cardTags": [
+        "Strategy",
+        "Content",
+        "Creative Design"
+      ]
+    },
+    {
+      "id": "web-yazilim",
+      "title": "Web Yazılım",
+      "href": "/web-yazilim-ajansi",
+      "description": "Markanız için yalnızca çalışan değil; hızlı, güvenilir, kullanıcı dostu ve iş hedeflerinizi destekleyen dijital sistemler geliştiriyoruz.",
+      "tags": [
+        "Kurumsal",
+        "E-Ticaret",
+        "Özel",
+        "Landing"
+      ],
+      "cardTags": [
+        "Corporate Website",
+        "E-Commerce",
+        "Custom Software"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "kreatif-tasarim",
+      "slug": "kreatif-tasarim-ajansi",
+      "navLabel": "Kreatif Tasarım",
+      "url": "/kreatif-tasarim-ajansi",
+      "seoTitle": "Kreatif Tasarım Ajansı İstanbul | Kiwi Marketing Agency",
+      "metaDescription": "Kiwi Marketing Agency; kurumsal kimlik, logo, sosyal medya tasarımı, reklam kreatifleri, UX/UI, katalog, ambalaj ve motion tasarım hizmetleri sunar.",
+      "h1": "Kreatif Tasarım Ajansı",
+      "intro": [
+        "Markanızın yalnızca güzel görünmesini değil; doğru algılanmasını, hatırlanmasını ve rakiplerinden ayrılmasını sağlıyoruz.",
+        "Kiwi Marketing Agency olarak tasarımı yalnızca estetik bir çalışma olarak görmüyoruz. Her görselin, markanızın hedef kitlesiyle kurduğu iletişimin önemli bir parçası olduğuna inanıyoruz. Bu nedenle tasarım sürecine başlamadan önce markanızı, sektörünüzü, rakiplerinizi ve hedef kitlenizin beklentilerini analiz ediyoruz.",
+        "Kurumsal kimlikten sosyal medya içeriklerine, reklam kreatiflerinden web arayüzlerine, katalog tasarımlarından hareketli içeriklere kadar markanızın ihtiyaç duyduğu tüm kreatif süreçleri tek bir çatı altında yönetiyoruz.",
+        "Amacımız; markanızın tüm temas noktalarında tutarlı, profesyonel ve dikkat çekici bir görsel dil oluşturmak. Ürettiğimiz her tasarımın yalnızca estetik açıdan güçlü olmasına değil, markanızın iletişim ve pazarlama hedeflerine katkı sağlamasına da önem veriyoruz."
+      ],
+      "servicesIntro": {
+        "title": "Markanız İçin Uçtan Uca Kreatif Tasarım Çözümleri",
+        "paragraphs": [
+          "Markaların dijital ve fiziksel dünyadaki görünümünü bütünsel bir yaklaşımla ele alıyoruz. Tek bir sosyal medya gönderisinden kapsamlı bir kurumsal kimlik projesine kadar her çalışmayı, markanın genel iletişim stratejisiyle uyumlu şekilde hazırlıyoruz.",
+          "Tasarımlarımızı farklı mecralarda kullanılabilecek esnek bir sistem içerisinde geliştiriyor, markanızın her platformda aynı güçlü algıyı oluşturmasını hedefliyoruz."
+        ]
+      },
+      "services": [
+        {
+          "title": "Kurumsal Kimlik ve Logo Tasarımı",
+          "slug": "kurumsal-kimlik-tasarimi",
+          "url": "/kreatif-tasarim-ajansi/kurumsal-kimlik-tasarimi",
+          "shortUrl": "/kurumsal-kimlik-tasarimi",
+          "description": [
+            "Markanızın hedef kitlesiyle kurduğu ilk iletişim, çoğu zaman görsel kimliğiyle başlar. Bu nedenle kurumsal kimlik tasarımını yalnızca bir logo çalışması olarak değil, markanın karakterini ve duruşunu yansıtan kapsamlı bir sistem olarak ele alıyoruz.",
+            "Markanızın sektörünü, hedef kitlesini, rekabet ortamını ve gelecek hedeflerini analiz ederek özgün bir görsel kimlik oluşturuyoruz. Logo tasarımı, renk paleti, tipografi, ikon kullanımı ve görsel dil gibi temel unsurları birbiriyle uyumlu şekilde planlıyoruz.",
+            "Hazırladığımız kurumsal kimlik çalışmalarının sosyal medya, web sitesi, ambalaj, katalog, sunum, reklam ve basılı materyaller gibi farklı alanlarda tutarlı şekilde uygulanabilmesine dikkat ediyoruz."
+          ],
+          "scope": "Logo tasarımı, logo yenileme, kurumsal renk paleti, tipografi sistemi, marka kullanım kılavuzu, kartvizit, antetli kâğıt, e-posta imzası, kurumsal sunum ve diğer marka materyalleri.",
+          "cardTags": "Branding · Logo · Marka Kimliği"
+        },
+        {
+          "title": "Web Arayüzü ve UX/UI Tasarımı",
+          "slug": "ux-ui-tasarimi",
+          "url": "/kreatif-tasarim-ajansi/ux-ui-tasarimi",
+          "shortUrl": "/ux-ui-tasarimi",
+          "description": [
+            "İyi bir web sitesi yalnızca modern görünmemeli; kullanıcıların aradığı bilgiye kolayca ulaşmasını, sayfa içerisinde rahatça ilerlemesini ve istenen aksiyonu gerçekleştirmesini sağlamalıdır.",
+            "Web sitesi ve dijital ürünler için kullanıcı deneyimini merkeze alan, sade, anlaşılır ve dönüşüm odaklı arayüzler tasarlıyoruz. Tasarım sürecinde ziyaretçilerin sayfa içerisindeki hareketlerini, bilgi ihtiyaçlarını ve karar verme süreçlerini dikkate alıyoruz.",
+            "Ana sayfa, hizmet sayfaları, ürün sayfaları, iletişim alanları ve dönüşüm formları gibi bölümleri kullanıcı yolculuğuna göre planlıyoruz. Masaüstü, tablet ve mobil cihazlarda tutarlı bir deneyim sunan responsive tasarımlar hazırlıyoruz.",
+            "Tasarımın yalnızca estetik açıdan değil; hız, kullanılabilirlik, okunabilirlik ve dönüşüm açısından da güçlü olmasını hedefliyoruz."
+          ],
+          "scope": "Web sitesi arayüz tasarımı, mobil uyumlu tasarım, landing page, ürün ve hizmet sayfası tasarımı, kullanıcı deneyimi analizi, wireframe, prototip, buton ve form tasarımları.",
+          "cardTags": "UX/UI · Web Arayüzü · Kullanıcı Deneyimi"
+        },
+        {
+          "title": "Katalog, Broşür ve Basılı Materyal Tasarımı",
+          "slug": "basili-materyal-tasarimi",
+          "url": "/kreatif-tasarim-ajansi/basili-materyal-tasarimi",
+          "shortUrl": "/basili-materyal-tasarimi",
+          "description": [
+            "Markanızın fiziksel dünyada kullandığı tüm materyaller, kurumsal algınızın önemli bir parçasıdır. Katalogdan broşüre, ambalajdan fuar materyallerine kadar her tasarımın markanızın görsel kimliğiyle uyumlu olması gerekir.",
+            "Ürünlerinizi, hizmetlerinizi ve marka hikâyenizi sade ve etkili bir görsel anlatımla sunan basılı materyaller tasarlıyoruz. İçerik yoğunluğunu, sayfa düzenini, görsel kullanımını ve okunabilirliği birlikte değerlendirerek profesyonel çalışmalar hazırlıyoruz.",
+            "Baskıya gönderilecek tasarımların teknik gerekliliklerini dikkate alıyor; ölçü, taşma payı, renk formatı, çözünürlük ve baskı kalitesi gibi detayları kontrol ederek kullanıma hazır dosyalar teslim ediyoruz."
+          ],
+          "scope": "Katalog, ürün kataloğu, broşür, el ilanı, afiş, kartvizit, menü, ambalaj, etiket, dosya, kurumsal sunum, fuar standı ve açık hava reklam materyalleri.",
+          "cardTags": "Katalog · Broşür · Ambalaj"
+        },
+        {
+          "title": "Sosyal Medya Tasarımı ve İçerik Üretimi",
+          "slug": "sosyal-medya-tasarimi",
+          "url": "/kreatif-tasarim-ajansi/sosyal-medya-tasarimi",
+          "shortUrl": "/sosyal-medya-tasarimi",
+          "description": [
+            "Sosyal medya, markaların hedef kitleleriyle en sık iletişim kurduğu alanlardan biridir. Ancak yalnızca düzenli paylaşım yapmak, güçlü bir marka algısı oluşturmak için yeterli değildir.",
+            "Markanızın kurumsal kimliğine, sektörüne ve hedef kitlesine uygun sosyal medya tasarımları hazırlıyoruz. İçeriklerin hem görsel açıdan dikkat çekmesine hem de marka bütünlüğünü korumasına önem veriyoruz.",
+            "Instagram, Facebook, LinkedIn ve diğer platformların içerik formatlarına uygun statik gönderiler, story tasarımları, carousel içerikler, reel kapakları ve kampanya duyuruları üretiyoruz.",
+            "Tüm içerikleri tek tek bağımsız tasarımlar olarak değil, markanızın genel sosyal medya görünümünü destekleyen bir içerik sistemi olarak planlıyoruz. Böylece profiliniz daha düzenli, profesyonel ve akılda kalıcı bir görünüme kavuşuyor."
+          ],
+          "scope": "Sosyal medya post tasarımı, story tasarımı, carousel içerik, reel kapak tasarımı, kampanya ve özel gün içerikleri, ürün tanıtım görselleri, kurumsal içerikler ve sosyal medya konsept tasarımı.",
+          "cardTags": "Social Media · Post · Story · Reel"
+        },
+        {
+          "title": "Reklam Kreatifi ve Kampanya Tasarımı",
+          "slug": "reklam-kreatifi-tasarimi",
+          "url": "/kreatif-tasarim-ajansi/reklam-kreatifi-tasarimi",
+          "shortUrl": "/reklam-kreatifi-tasarimi",
+          "description": [
+            "Dijital reklam performansında hedefleme ve bütçe kadar kullanılan kreatiflerin gücü de önemlidir. Doğru mesajı doğru görselle birleştirmeyen reklamlar, hedef kitlenin dikkatini çekmekte zorlanabilir.",
+            "Meta, Google, YouTube, LinkedIn ve diğer dijital reklam platformları için performans odaklı reklam kreatifleri tasarlıyoruz. Kampanyanın hedefini, hedef kitlesini ve kullanılacağı platformun dinamiklerini analiz ederek farklı formatlarda çalışmalar hazırlıyoruz.",
+            "Reklam görsellerinde ürün veya hizmetin faydasını net biçimde aktaran başlıklar, dikkat çekici görsel hiyerarşi ve güçlü harekete geçirici mesajlar kullanıyoruz.",
+            "Tek bir tasarıma bağlı kalmak yerine farklı başlık, görsel ve mesaj alternatifleri hazırlayarak reklam kampanyalarının test edilmesine ve optimize edilmesine katkı sağlıyoruz."
+          ],
+          "scope": "Meta reklam görselleri, Google Display bannerları, YouTube reklam tasarımları, carousel reklamlar, dark post kreatifleri, kampanya görselleri, ürün reklamları ve kreatif varyasyonlar.",
+          "cardTags": "Meta Ads · Google Ads · Performance Creative"
+        },
+        {
+          "title": "Motion Grafik ve Video Tasarımı",
+          "slug": "motion-grafik-video-tasarimi",
+          "url": "/kreatif-tasarim-ajansi/motion-grafik-video-tasarimi",
+          "shortUrl": "/motion-grafik-tasarimi",
+          "description": [
+            "Hareketli içerikler, markaların mesajlarını daha kısa sürede ve daha etkili şekilde aktarmasına yardımcı olur. Özellikle sosyal medya ve dijital reklam platformlarında video içerikler, kullanıcıların dikkatini çekmek için önemli bir avantaj sağlar.",
+            "Markanızın ürünlerini, hizmetlerini ve kampanyalarını anlatan motion grafik ve video içerikleri hazırlıyoruz. Tasarım, animasyon, metin kullanımı, müzik ve kurgu gibi tüm unsurları markanızın görsel diliyle uyumlu şekilde planlıyoruz.",
+            "Logo animasyonlarından ürün tanıtımlarına, sosyal medya videolarından reklam içeriklerine kadar farklı ihtiyaçlara yönelik hareketli tasarım çözümleri sunuyoruz.",
+            "Hazırladığımız içerikleri Instagram Reel, Story, YouTube, dijital reklamlar ve web sitesi gibi farklı kullanım alanlarına uygun ölçülerde ve formatlarda teslim ediyoruz."
+          ],
+          "scope": "Motion grafik, logo animasyonu, ürün tanıtım videosu, sosyal medya videosu, reklam videosu, kinetik tipografi, infografik animasyon ve video kurgu.",
+          "cardTags": "Motion · Animation · Video"
+        }
+      ],
+      "process": {
+        "title": "Fikirden Uygulamaya Kreatif Tasarım Sürecimiz",
+        "intro": [
+          "Her tasarım projesini markanızın hedefleri doğrultusunda planlıyor, süreci yalnızca görsel üretimle sınırlı tutmuyoruz. Projenin ihtiyaçlarını analiz ediyor, kreatif yönünü belirliyor, tasarımı geliştiriyor ve farklı mecralarda uygulanabilir hale getiriyoruz.",
+          "Bu yöntem sayesinde hem marka bütünlüğünü koruyor hem de tasarım sürecinin daha planlı ve verimli ilerlemesini sağlıyoruz."
+        ],
+        "steps": [
+          {
+            "number": "01",
+            "title": "Marka ve İhtiyaç Analizi",
+            "paragraphs": [
+              "Sürecin ilk aşamasında markanızı, ürünlerinizi, hizmetlerinizi ve hedeflerinizi dinliyoruz. Tasarımın hangi amaçla kullanılacağını, hangi hedef kitleye hitap edeceğini ve hangi mecralarda yayınlanacağını belirliyoruz.",
+              "Sektörünüzü ve rakiplerinizi inceleyerek markanızın farklılaşabileceği görsel alanları tespit ediyoruz. Mevcut kurumsal kimliğiniz varsa güçlü ve geliştirilmesi gereken yönlerini değerlendiriyoruz.",
+              "Bu analiz sonucunda tasarımın mesajını, tonunu, görsel yönünü ve proje kapsamını netleştiriyoruz."
+            ]
+          },
+          {
+            "number": "02",
+            "title": "Kreatif Konsept ve Görsel Yön",
+            "paragraphs": [
+              "Analiz aşamasında elde ettiğimiz bilgiler doğrultusunda markanıza özel bir kreatif yaklaşım oluşturuyoruz.",
+              "Renkler, tipografi, görsel kullanım biçimi, ikonlar, grafik öğeler ve tasarım dili gibi unsurları belirleyerek projenin genel yönünü oluşturuyoruz.",
+              "Tasarımın kullanılacağı platformları dikkate alarak farklı formatlara kolayca uyarlanabilecek bir sistem geliştiriyoruz. Böylece ortaya çıkan çalışma yalnızca tek bir tasarım olarak kalmıyor, markanızın ilerleyen dönemlerde kullanabileceği sürdürülebilir bir görsel yapıya dönüşüyor."
+            ]
+          },
+          {
+            "number": "03",
+            "title": "Tasarım, Sunum ve Revizyon",
+            "paragraphs": [
+              "Belirlenen kreatif yön doğrultusunda ilk tasarım çalışmalarını hazırlıyoruz. Tasarımları yalnızca görsel olarak sunmak yerine, kullanılan yaklaşımın markanıza nasıl katkı sağlayacağını da açıklıyoruz.",
+              "Geri bildirimlerinizi değerlendirerek gerekli revizyonları gerçekleştiriyor, tasarımın tüm detaylarını marka kimliği ve proje hedefleri doğrultusunda geliştiriyoruz.",
+              "Bu aşamada metin-görsel dengesi, okunabilirlik, renk kullanımı, teknik ölçüler ve platform uyumluluğu gibi unsurları kontrol ediyoruz."
+            ]
+          },
+          {
+            "number": "04",
+            "title": "Onay, Teslim ve Uygulama Desteği",
+            "paragraphs": [
+              "Tasarım onaylandıktan sonra çalışmaları kullanılacağı mecralara uygun formatlarda hazırlıyoruz.",
+              "Dijital çalışmalar için web ve sosyal medya formatlarını, basılı çalışmalar için baskıya uygun yüksek çözünürlüklü dosyaları teslim ediyoruz.",
+              "İhtiyaç halinde tasarımların sosyal medya hesaplarına, reklam kampanyalarına, web sitesine veya diğer iletişim alanlarına uygulanması konusunda destek sağlıyoruz.",
+              "Amacımız yalnızca tasarım dosyası teslim etmek değil, hazırlanan kreatif çalışmaların markanız tarafından doğru ve tutarlı biçimde kullanılmasını sağlamaktır."
+            ]
+          }
+        ]
+      },
+      "why": {
+        "items": [
+          {
+            "title": "Tasarımı Stratejiyle Birleştiriyoruz",
+            "paragraphs": [
+              "İyi tasarımın yalnızca estetik değil, işlevsel ve hedef odaklı olması gerektiğine inanıyoruz. Bu nedenle hazırladığımız çalışmaları markanızın pazarlama, iletişim ve satış hedefleriyle birlikte değerlendiriyoruz."
+            ]
+          },
+          {
+            "title": "Her Markaya Özel Tasarım Üretiyoruz",
+            "paragraphs": [
+              "Hazır şablonlar veya birbirine benzeyen tasarım kalıpları yerine, markanızın ihtiyaçlarına ve sektörüne özel kreatif çözümler geliştiriyoruz."
+            ]
+          },
+          {
+            "title": "Tüm Mecralarda Marka Bütünlüğünü Koruyoruz",
+            "paragraphs": [
+              "Sosyal medya, web sitesi, reklam, katalog ve diğer tüm temas noktalarında markanızın aynı görsel dili kullanmasını sağlıyoruz."
+            ]
+          },
+          {
+            "title": "Performans Odaklı Düşünüyoruz",
+            "paragraphs": [
+              "Özellikle reklam ve sosyal medya tasarımlarında yalnızca dikkat çekmeye değil, kullanıcıyı harekete geçirecek mesaj ve görsel yapılar oluşturmaya odaklanıyoruz."
+            ]
+          },
+          {
+            "title": "Tasarım ve Dijital Pazarlamayı Birlikte Yönetiyoruz",
+            "paragraphs": [
+              "Kiwi Marketing Agency bünyesinde tasarım, sosyal medya, reklam, web yazılım, SEO ve prodüksiyon hizmetlerini aynı strateji içerisinde yönetebiliyoruz. Böylece farklı ekipler arasında yaşanabilecek iletişim ve marka bütünlüğü sorunlarının önüne geçiyoruz."
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "title": "Markanızı Sıradan Tasarımlardan Ayırın",
+        "paragraphs": [
+          "Markanızın hedef kitlesiyle kurduğu iletişimi daha güçlü, profesyonel ve dikkat çekici hale getirelim.",
+          "Kurumsal kimliğinizden sosyal medya içeriklerinize, reklam kreatiflerinizden web sitenize kadar tüm görsel ihtiyaçlarınızı tek bir kreatif sistem içerisinde planlayalım.",
+          "İhtiyacınızı ve hedeflerinizi bizimle paylaşın, markanıza özel tasarım sürecini birlikte oluşturalım."
+        ],
+        "primary": "Projenizi Anlatın",
+        "secondary": "Kreatif Tasarım Teklifi Alın"
+      },
+      "seoContent": {
+        "title": "İstanbul Kreatif Tasarım Ajansı",
+        "paragraphs": [
+          "Kiwi Marketing Agency, İstanbul merkezli kreatif tasarım ve dijital pazarlama ajansı olarak markaların dijital ve fiziksel mecralarda ihtiyaç duyduğu tasarım çözümlerini tek bir çatı altında sunar.",
+          "Kurumsal kimlik tasarımı, logo tasarımı, sosyal medya tasarımı, reklam kreatifi, UX/UI tasarımı, katalog, broşür, ambalaj, motion grafik ve video tasarımı gibi farklı alanlarda markaya özel çalışmalar hazırlarız.",
+          "Her tasarım projesine markanın sektörü, hedef kitlesi, iletişim dili ve pazarlama hedeflerini analiz ederek başlarız. Ürettiğimiz tasarımların yalnızca estetik açıdan güçlü olmasına değil, markanın doğru mesajı vermesine ve hedef kitlesi üzerinde kalıcı bir etki oluşturmasına önem veririz.",
+          "İstanbul kreatif tasarım ajansı arayışında olan markalara; farklı platformlarda kullanılabilen, marka kimliğini güçlendiren ve iletişim hedeflerini destekleyen kreatif çözümler sunarız.",
+          "Sosyal medya tasarımlarından reklam kampanyalarına, kurumsal kimlikten web arayüzlerine kadar tüm çalışmaları birbiriyle uyumlu biçimde planlarız. Böylece markanızın Instagram, Facebook, LinkedIn, Google reklamları, web sitesi ve basılı materyaller gibi farklı alanlarda tutarlı bir görünüme sahip olmasını sağlarız.",
+          "Kreatif tasarım sürecini dijital pazarlama tecrübemizle birleştirerek hazırladığımız çalışmaların yalnızca görünürlük değil; etkileşim, marka bilinirliği ve dönüşüm hedeflerine de katkı sağlamasını amaçlarız."
+        ]
+      }
+    },
+    {
+      "id": "dijital-pazarlama",
+      "slug": "dijital-pazarlama-ajansi",
+      "navLabel": "Dijital Pazarlama",
+      "url": "/dijital-pazarlama-ajansi",
+      "seoTitle": "Dijital Pazarlama Ajansı İstanbul | Kiwi Marketing Agency",
+      "metaDescription": "Kiwi Marketing Agency; Google Ads, Meta reklamları, sosyal medya, SEO, GEO, içerik pazarlaması ve performans odaklı dijital pazarlama hizmetleri sunar.",
+      "h1": "Dijital Pazarlama Ajansı",
+      "intro": [
+        "Markanızı yalnızca görünür hale getirmiyor; doğru hedef kitleye ulaştırıyor, ölçülebilir sonuçlarla büyütüyoruz.",
+        "Kiwi Marketing Agency olarak dijital pazarlamayı birbirinden bağımsız reklam ve içerik çalışmalarından oluşan bir süreç olarak görmüyoruz. Markanızın hedeflerini, hedef kitlesini, sektörünü ve rekabet koşullarını analiz ederek tüm dijital kanalları ortak bir büyüme stratejisi içerisinde yönetiyoruz.",
+        "Google reklamlarından Meta kampanyalarına, sosyal medya yönetiminden SEO ve GEO çalışmalarına kadar markanızın ihtiyaç duyduğu dijital pazarlama hizmetlerini tek bir çatı altında sunuyoruz.",
+        "Amacımız yalnızca daha fazla gösterim, tıklama veya takipçi elde etmek değil; reklam bütçenizi doğru kullanarak potansiyel müşterilere ulaşmak, marka bilinirliğinizi artırmak ve sürdürülebilir satış fırsatları oluşturmaktır.",
+        "Her markaya aynı reklam planını uygulamak yerine; sektörünüze, hedef kitlenize, bütçenize ve büyüme hedeflerinize özel dijital pazarlama stratejileri hazırlıyoruz."
+      ],
+      "servicesIntro": {
+        "title": "Markanız İçin Uçtan Uca Dijital Pazarlama Çözümleri",
+        "paragraphs": [
+          "Dijital dünyada başarı, tek bir reklam kampanyası veya sosyal medya paylaşımıyla oluşmaz. Markanın doğru kanallarda, doğru mesajlarla ve tutarlı bir stratejiyle yer alması gerekir.",
+          "Kiwi Marketing Agency olarak reklam yönetimi, sosyal medya, kreatif üretim, SEO, içerik pazarlaması, web analitiği ve dönüşüm optimizasyonu süreçlerini birlikte yönetiyoruz.",
+          "Böylece farklı hizmetlerin birbirinden kopuk ilerlemesi yerine, markanızın tüm dijital kanallarda aynı hedefe yönelik hareket etmesini sağlıyoruz."
+        ]
+      },
+      "services": [
+        {
+          "title": "Google Ads Reklam Yönetimi",
+          "slug": "google-ads-reklam-yonetimi",
+          "url": "/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi",
+          "shortUrl": "/google-ads-reklam-yonetimi",
+          "description": [
+            "Google’da ürün veya hizmetlerinizi aktif olarak arayan potansiyel müşterilere ulaşmanızı sağlıyoruz.",
+            "Google Ads kampanyalarını yalnızca anahtar kelime belirleyip reklam yayınlamak şeklinde yönetmiyoruz. Kullanıcıların arama niyetlerini, rekabet seviyesini, sektör maliyetlerini ve dönüşüm potansiyelini analiz ederek markanıza özel reklam yapıları oluşturuyoruz.",
+            "Search, Display, YouTube, Performance Max ve yeniden pazarlama kampanyalarını markanızın hedeflerine göre planlıyor; reklam bütçenizin daha verimli kullanılması için kampanyaları sürekli takip ediyoruz.",
+            "Anahtar kelimelerden reklam metinlerine, hedefleme ayarlarından açılış sayfalarına kadar tüm süreci performans odaklı olarak yönetiyoruz."
+          ],
+          "scope": "Google Search reklamları, Google Display reklamları, Performance Max kampanyaları, YouTube reklamları, yeniden pazarlama, anahtar kelime analizi, reklam metni yazımı, negatif anahtar kelime yönetimi, bütçe optimizasyonu ve dönüşüm takibi.",
+          "cardTags": "Google Ads · Search · Display · YouTube"
+        },
+        {
+          "title": "Meta Reklam Yönetimi",
+          "slug": "meta-reklam-yonetimi",
+          "url": "/dijital-pazarlama-ajansi/meta-reklam-yonetimi",
+          "shortUrl": "/meta-reklam-yonetimi",
+          "description": [
+            "Instagram ve Facebook reklamlarıyla markanızı doğru hedef kitlelerle buluşturuyoruz.",
+            "Meta reklamlarının başarısı yalnızca hedefleme ayarlarına bağlı değildir. Kullanılan kreatifler, reklam mesajları, kampanya yapısı ve kullanıcıların yönlendirildiği sayfalar performans üzerinde doğrudan etkilidir.",
+            "Markanızın ürün veya hizmetlerine ilgi gösterebilecek hedef kitleleri analiz ediyor; bilinirlik, trafik, form toplama, mesaj, WhatsApp ve satış hedeflerine yönelik kampanyalar oluşturuyoruz.",
+            "Reklam performansını düzenli olarak takip ediyor, düşük performans gösteren kampanya ve kreatifleri optimize ediyor, yeni hedef kitle ve içerik alternatifleri test ediyoruz."
+          ],
+          "scope": "Instagram reklamları, Facebook reklamları, WhatsApp reklamları, form kampanyaları, trafik kampanyaları, satış kampanyaları, yeniden hedefleme, hedef kitle oluşturma, lookalike kitleler, kreatif testleri ve bütçe optimizasyonu.",
+          "cardTags": "Instagram Ads · Facebook Ads · WhatsApp"
+        },
+        {
+          "title": "Performans Pazarlaması",
+          "slug": "performans-pazarlamasi",
+          "url": "/dijital-pazarlama-ajansi/performans-pazarlamasi",
+          "shortUrl": "/performans-pazarlamasi",
+          "description": [
+            "Dijital pazarlama çalışmalarınızı yalnızca erişim ve görüntülenme rakamlarıyla değil, iş hedeflerinize sağladığı katkıyla değerlendiriyoruz.",
+            "Markanız için en önemli performans göstergelerini belirliyor; reklam, web sitesi, içerik ve dönüşüm verilerini birlikte analiz ediyoruz.",
+            "Maliyet başına tıklama, form maliyeti, mesaj maliyeti, edinme maliyeti ve reklam harcamasının geri dönüşü gibi metrikleri düzenli olarak takip ediyoruz.",
+            "Veriye dayalı optimizasyonlarla bütçenizin yüksek performans gösteren kampanya, hedef kitle ve kreatiflere yönlendirilmesini sağlıyoruz.",
+            "Amacımız kısa vadeli reklam sonuçlarının yanında, zaman içerisinde gelişen ve markanız için sürdürülebilir müşteri kazanımı sağlayan bir sistem oluşturmaktır."
+          ],
+          "scope": "Performans stratejisi, kampanya optimizasyonu, bütçe dağılımı, dönüşüm analizi, A/B testleri, hedef kitle analizi, kreatif performans analizi, dönüşüm maliyeti takibi ve reklam geri dönüşü analizi.",
+          "cardTags": "Performance Marketing · ROI · Conversion"
+        },
+        {
+          "title": "Sosyal Medya Yönetimi",
+          "slug": "sosyal-medya-yonetimi",
+          "url": "/dijital-pazarlama-ajansi/sosyal-medya-yonetimi",
+          "shortUrl": "/sosyal-medya-yonetimi",
+          "description": [
+            "Sosyal medya hesaplarınızı yalnızca paylaşım yapılan bir alan olmaktan çıkarıyor, markanızın hedef kitlesiyle düzenli iletişim kurduğu güçlü bir kanala dönüştürüyoruz.",
+            "Markanızın sektörünü, hedef kitlesini, rakiplerini ve iletişim dilini analiz ederek sosyal medya stratejisi oluşturuyoruz.",
+            "Instagram, Facebook, LinkedIn ve diğer platformlar için içerik planları hazırlıyor; statik gönderi, story, carousel ve reel içeriklerini markanızın görsel kimliğine uygun biçimde üretiyoruz.",
+            "İçeriklerin yalnızca estetik açıdan değil; bilgilendirme, etkileşim, güven oluşturma ve satış hedeflerine katkı sağlama açısından da güçlü olmasına önem veriyoruz.",
+            "Hesaplarınızı düzenli olarak takip ediyor, içerik performanslarını analiz ediyor ve hedef kitlenizin ilgisine göre içerik stratejisini geliştiriyoruz."
+          ],
+          "scope": "Sosyal medya stratejisi, içerik planlaması, post ve story tasarımı, reel içerikleri, caption yazımı, özel gün içerikleri, hesap düzenlemeleri, moderasyon, rakip analizi ve performans raporlaması.",
+          "cardTags": "Instagram · Facebook · LinkedIn · Content"
+        },
+        {
+          "title": "SEO ve GEO Hizmetleri",
+          "slug": "seo-geo-hizmetleri",
+          "url": "/dijital-pazarlama-ajansi/seo-geo-hizmetleri",
+          "shortUrl": "/seo-geo-hizmetleri",
+          "description": [
+            "Markanızın Google arama sonuçlarında ve yapay zekâ destekli arama platformlarında daha görünür hale gelmesini sağlıyoruz.",
+            "SEO çalışmalarını yalnızca anahtar kelime eklemek veya blog yazısı yayınlamak olarak ele almıyoruz. Web sitenizin teknik altyapısını, içerik yapısını, kullanıcı deneyimini ve arama niyetlerini birlikte değerlendiriyoruz.",
+            "Hedef kitlenizin ürün ve hizmetlerinize ulaşmak için yaptığı aramaları analiz ediyor, markanız için yüksek potansiyele sahip anahtar kelimeleri belirliyoruz.",
+            "Teknik SEO, sayfa içi SEO, içerik optimizasyonu ve bölgesel SEO çalışmalarıyla web sitenizin organik görünürlüğünü geliştirmeyi hedefliyoruz.",
+            "GEO çalışmalarıyla markanızın ChatGPT, Gemini ve diğer yapay zekâ destekli arama sistemleri tarafından daha doğru anlaşılmasına ve ilgili sorgularda kaynak olarak değerlendirilmesine katkı sağlıyoruz."
+          ],
+          "scope": "Teknik SEO, anahtar kelime analizi, sayfa içi SEO, içerik optimizasyonu, blog stratejisi, lokal SEO, Google Business Profile, rakip analizi, GEO ve yapay zekâ arama görünürlüğü çalışmaları.",
+          "cardTags": "SEO · GEO · Organic Search · AI Search"
+        },
+        {
+          "title": "İçerik Pazarlaması",
+          "slug": "icerik-pazarlamasi",
+          "url": "/dijital-pazarlama-ajansi/icerik-pazarlamasi",
+          "shortUrl": "/icerik-pazarlamasi",
+          "description": [
+            "Markanızı hedef kitleniz için yalnızca görünür değil, güvenilir ve tercih edilir hale getirecek içerikler üretiyoruz.",
+            "İçerik pazarlamasını yalnızca blog yazısı üretmekten ibaret görmüyoruz. Kullanıcıların sorularına cevap veren, markanızın uzmanlığını gösteren ve satın alma kararlarını destekleyen içerik sistemleri oluşturuyoruz.",
+            "Web sitesi metinleri, hizmet sayfaları, blog içerikleri, sosyal medya metinleri, reklam metinleri ve kampanya içeriklerini ortak bir marka dili içerisinde hazırlıyoruz.",
+            "İçeriklerin hem kullanıcı tarafından kolay anlaşılmasına hem de arama motorları tarafından doğru şekilde değerlendirilmesine önem veriyoruz."
+          ],
+          "scope": "Web sitesi metni, hizmet sayfası içerikleri, SEO uyumlu blog yazıları, sosyal medya metinleri, reklam metinleri, landing page içerikleri, e-posta pazarlama içerikleri ve içerik stratejisi.",
+          "cardTags": "Content Marketing · SEO Content · Copywriting"
+        },
+        {
+          "title": "Dönüşüm Optimizasyonu",
+          "slug": "donusum-optimizasyonu",
+          "url": "/dijital-pazarlama-ajansi/donusum-optimizasyonu",
+          "shortUrl": "/donusum-optimizasyonu",
+          "description": [
+            "Web sitenize veya açılış sayfanıza trafik getirmek tek başına yeterli değildir. Ziyaretçilerin form doldurması, iletişime geçmesi, WhatsApp butonuna tıklaması veya satın alma işlemi gerçekleştirmesi gerekir.",
+            "Reklam kampanyalarından gelen kullanıcıların web sitesi içerisindeki davranışlarını analiz ediyoruz.",
+            "Sayfa yapısı, başlıklar, açıklamalar, butonlar, formlar ve kullanıcı yönlendirmeleri gibi dönüşüm üzerinde etkili olan alanları değerlendiriyoruz.",
+            "Kullanıcıların işlem yapmasını zorlaştıran noktaları belirleyerek sayfaların daha sade, anlaşılır ve aksiyon odaklı hale gelmesini sağlıyoruz."
+          ],
+          "scope": "Landing page analizi, form optimizasyonu, buton ve CTA geliştirmeleri, kullanıcı yolculuğu analizi, mobil uyumluluk, A/B testleri, sayfa hızı değerlendirmesi ve dönüşüm oranı optimizasyonu.",
+          "cardTags": "CRO · Landing Page · Lead Generation"
+        },
+        {
+          "title": "Web Analitiği ve Raporlama",
+          "slug": "web-analitigi-raporlama",
+          "url": "/dijital-pazarlama-ajansi/web-analitigi-raporlama",
+          "shortUrl": "/web-analitigi-raporlama",
+          "description": [
+            "Dijital pazarlama çalışmalarının başarısını doğru verilerle ölçüyor, markanız için anlaşılır ve aksiyon alınabilir raporlar hazırlıyoruz.",
+            "Google Analytics, Google Tag Manager, Google Ads ve Meta verilerini inceleyerek kullanıcıların reklamdan web sitesine kadar olan yolculuğunu değerlendiriyoruz.",
+            "Hangi kampanyaların daha fazla trafik, form, mesaj veya satış sağladığını analiz ediyoruz.",
+            "Yalnızca rakamları sıralayan raporlar sunmak yerine; sonuçların nedenlerini, geliştirilmesi gereken alanları ve sonraki dönem için önerilerimizi paylaşıyoruz."
+          ],
+          "scope": "Google Analytics kurulumu, Google Tag Manager, dönüşüm takibi, form ve buton ölçümleme, reklam raporları, web sitesi trafik analizi, kullanıcı davranışı analizi ve aylık performans raporlaması.",
+          "cardTags": "Analytics · Tag Manager · Reporting"
+        }
+      ],
+      "process": {
+        "title": "Analizden Büyümeye Dijital Pazarlama Sürecimiz",
+        "intro": [
+          "Her markanın hedef kitlesi, rekabet ortamı, bütçesi ve büyüme hedefi farklıdır.",
+          "Bu nedenle hazır kampanya yapıları veya standart dijital pazarlama paketleri uygulamak yerine, markanıza özel bir yol haritası oluşturuyoruz.",
+          "Süreci analiz, strateji, uygulama, ölçümleme ve optimizasyon aşamalarıyla yönetiyoruz."
+        ],
+        "steps": [
+          {
+            "number": "01",
+            "title": "Marka, Rakip ve Hedef Kitle Analizi",
+            "paragraphs": [
+              "Sürecin ilk aşamasında markanızı, ürünlerinizi, hizmetlerinizi ve hedeflerinizi detaylı şekilde inceliyoruz.",
+              "Mevcut dijital varlıklarınızı, web sitenizi, sosyal medya hesaplarınızı ve reklam çalışmalarınızı değerlendiriyoruz.",
+              "Rakiplerinizin kullandığı reklam kanallarını, içerik stratejilerini, anahtar kelimeleri ve iletişim dillerini analiz ediyoruz.",
+              "Hedef kitlenizin demografik özelliklerini, ilgi alanlarını, ihtiyaçlarını ve satın alma davranışlarını belirleyerek stratejinin temelini oluşturuyoruz."
+            ]
+          },
+          {
+            "number": "02",
+            "title": "Dijital Pazarlama Stratejisinin Oluşturulması",
+            "paragraphs": [
+              "Analizlerden elde ettiğimiz verilere göre markanız için en doğru dijital kanalları belirliyoruz.",
+              "Google Ads, Meta reklamları, sosyal medya, SEO, içerik pazarlaması ve diğer kanalların hangi hedeflerle kullanılacağını planlıyoruz.",
+              "Bütçe dağılımını, kampanya hedeflerini, içerik ihtiyaçlarını ve performans göstergelerini oluşturuyoruz.",
+              "Hazırladığımız stratejinin kısa vadeli reklam sonuçlarıyla birlikte, markanızın uzun vadeli dijital büyümesini de desteklemesine önem veriyoruz."
+            ]
+          },
+          {
+            "number": "03",
+            "title": "Kampanya ve İçeriklerin Hazırlanması",
+            "paragraphs": [
+              "Belirlenen strateji doğrultusunda reklam kampanyalarını, hedef kitleleri, anahtar kelimeleri ve reklam metinlerini oluşturuyoruz.",
+              "Sosyal medya ve reklam çalışmalarında kullanılacak kreatif içerikleri hazırlıyoruz.",
+              "İhtiyaç halinde web sitesi, landing page ve içerik sayfaları üzerinde geliştirmeler planlıyoruz.",
+              "Tüm reklam ve içerik çalışmalarının aynı mesajı vermesine ve markanızın görsel kimliğiyle uyumlu olmasına dikkat ediyoruz."
+            ]
+          },
+          {
+            "number": "04",
+            "title": "Yayınlama, Ölçümleme ve Optimizasyon",
+            "paragraphs": [
+              "Kampanyaları yayına aldıktan sonra performanslarını düzenli olarak takip ediyoruz.",
+              "Tıklama, erişim, mesaj, form, dönüşüm maliyeti ve reklam getirisi gibi metrikleri analiz ediyoruz.",
+              "Düşük performans gösteren anahtar kelime, hedef kitle, reklam metni ve kreatifleri optimize ediyoruz.",
+              "Yüksek performans gösteren kampanyaların bütçesini ve erişimini kontrollü biçimde artırıyoruz.",
+              "Bu sayede kampanyaları sabit bırakmak yerine, elde edilen verilere göre sürekli geliştiren bir çalışma sistemi oluşturuyoruz."
+            ]
+          },
+          {
+            "number": "05",
+            "title": "Raporlama ve Yeni Dönem Planlaması",
+            "paragraphs": [
+              "Belirli dönemlerde kampanya ve dijital kanal performanslarını anlaşılır raporlarla sunuyoruz.",
+              "Hangi çalışmaların başarılı olduğunu, hangi alanlarda gelişim gerektiğini ve bütçenin nasıl kullanıldığını detaylı olarak paylaşıyoruz.",
+              "Sonraki dönem için yeni hedef kitle, kampanya, içerik ve bütçe önerileri hazırlıyoruz.",
+              "Bu yaklaşım sayesinde dijital pazarlama sürecini sürekli ölçülen ve geliştirilen bir büyüme modeline dönüştürüyoruz."
+            ]
+          }
+        ]
+      },
+      "why": {
+        "items": [
+          {
+            "title": "Tüm Dijital Kanalları Birlikte Yönetiyoruz",
+            "paragraphs": [
+              "Google Ads, Meta reklamları, sosyal medya, SEO, GEO, içerik, kreatif tasarım ve web geliştirme süreçlerini tek bir strateji içerisinde yönetiyoruz.",
+              "Bu sayede farklı ekipler arasında oluşabilecek iletişim sorunlarını azaltıyor ve markanızın tüm kanallarda tutarlı bir şekilde ilerlemesini sağlıyoruz."
+            ]
+          },
+          {
+            "title": "Hazır Paketler Yerine Markaya Özel Strateji Oluşturuyoruz",
+            "paragraphs": [
+              "Her markanın sektörü, hedef kitlesi ve bütçesi farklıdır.",
+              "Bu nedenle tüm markalara aynı kampanya yapısını uygulamak yerine, ihtiyaçlarınıza ve hedeflerinize göre özel bir dijital pazarlama planı hazırlıyoruz."
+            ]
+          },
+          {
+            "title": "Veriye Dayalı Kararlar Alıyoruz",
+            "paragraphs": [
+              "Kampanyaları kişisel tahminlerle değil, performans verileriyle yönetiyoruz.",
+              "Kullanıcı davranışlarını, reklam sonuçlarını ve dönüşüm verilerini analiz ederek bütçenizi en verimli alanlara yönlendiriyoruz."
+            ]
+          },
+          {
+            "title": "Kreatif ve Performansı Birlikte Düşünüyoruz",
+            "paragraphs": [
+              "Reklam performansının yalnızca hedefleme ayarlarından oluşmadığını biliyoruz.",
+              "Bu nedenle reklam stratejisi, metin, tasarım ve video içeriklerini birlikte ele alarak daha dikkat çekici ve dönüşüm odaklı kampanyalar hazırlıyoruz."
+            ]
+          },
+          {
+            "title": "Şeffaf Raporlama Sunuyoruz",
+            "paragraphs": [
+              "Reklam bütçenizin nasıl kullanıldığını ve çalışmaların hangi sonuçları sağladığını düzenli olarak raporluyoruz.",
+              "Sadece olumlu verileri değil, geliştirilmesi gereken alanları ve sonraki dönem önerilerimizi de açık biçimde paylaşıyoruz."
+            ]
+          },
+          {
+            "title": "Sürekli Takip ve Optimizasyon Sağlıyoruz",
+            "paragraphs": [
+              "Dijital reklam kampanyalarını yayına aldıktan sonra kendi haline bırakmıyoruz.",
+              "Performansı düzenli takip ediyor, hedef kitleleri, bütçeleri, kreatifleri ve reklam metinlerini sürekli optimize ediyoruz."
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "title": "Dijital Pazarlama Bütçenizi Sonuca Dönüştürün",
+        "paragraphs": [
+          "Markanızı doğru hedef kitleye ulaştıran, reklam bütçenizi verimli kullanan ve ölçülebilir sonuçlar üreten bir dijital pazarlama sistemi oluşturalım.",
+          "Google Ads, Meta reklamları, sosyal medya, SEO, GEO ve içerik pazarlaması çalışmalarınızı tek bir strateji içerisinde planlayalım.",
+          "Markanızın mevcut durumunu ve hedeflerini bizimle paylaşın, size özel dijital büyüme yol haritasını birlikte oluşturalım."
+        ],
+        "primary": "Dijital Stratejinizi Oluşturalım",
+        "secondary": "Ücretsiz Ön Analiz Talep Edin"
+      },
+      "seoContent": {
+        "title": "İstanbul Dijital Pazarlama Ajansı",
+        "paragraphs": [
+          "Kiwi Marketing Agency, İstanbul merkezli dijital pazarlama ajansı olarak markaların dijital dünyada doğru hedef kitlelere ulaşmasını ve ölçülebilir sonuçlarla büyümesini sağlar.",
+          "Google Ads, Meta reklam yönetimi, sosyal medya yönetimi, SEO, GEO, içerik pazarlaması, web analitiği ve dönüşüm optimizasyonu gibi farklı dijital pazarlama hizmetlerini tek bir strateji içerisinde sunarız.",
+          "Dijital pazarlama çalışmalarına başlamadan önce markanın sektörünü, hedef kitlesini, rakiplerini ve mevcut dijital performansını analiz ederiz.",
+          "Markanın hedeflerine göre kullanılacak reklam kanallarını, bütçe dağılımını, içerik stratejisini ve performans göstergelerini belirleriz.",
+          "Google reklamlarıyla ürün veya hizmetlerinizi aktif olarak arayan kullanıcılara ulaşırken, Instagram ve Facebook reklamlarıyla markanızı ilgi alanlarına ve davranışlarına göre belirlenen hedef kitlelerle buluştururuz.",
+          "Sosyal medya yönetimi ve kreatif içerik üretimiyle markanızın dijital görünümünü güçlendirir, SEO ve GEO çalışmalarıyla organik arama sonuçlarındaki görünürlüğünü artırmayı hedefleriz.",
+          "İstanbul dijital pazarlama ajansı arayışında olan markalara, yalnızca reklam yayını yapan değil; reklam, içerik, veri, tasarım ve teknoloji süreçlerini birlikte yöneten bütüncül çözümler sunarız.",
+          "Dijital pazarlama stratejilerimizi gösterim veya takipçi gibi tek başına iş sonucu oluşturmayan metriklerle sınırlamayız.",
+          "Form, telefon araması, WhatsApp mesajı, satış, rezervasyon ve teklif talebi gibi markanız için gerçek değer oluşturan dönüşümleri takip ederiz.",
+          "Kampanyaların performansını düzenli olarak analiz eder, elde edilen verilere göre anahtar kelimeleri, hedef kitleleri, reklam metinlerini, kreatifleri ve bütçe dağılımını optimize ederiz.",
+          "Böylece markanız için kısa süreli reklam kampanyaları yerine, zaman içerisinde gelişen ve sürdürülebilir müşteri kazanımı sağlayan bir dijital pazarlama sistemi oluşturmayı hedefleriz."
+        ]
+      }
+    },
+    {
+      "id": "sosyal-medya",
+      "slug": "sosyal-medya-ajansi",
+      "navLabel": "Sosyal Medya",
+      "url": "/sosyal-medya-ajansi",
+      "seoTitle": "Sosyal Medya Ajansı İstanbul | Kiwi Marketing Agency",
+      "metaDescription": "Kiwi Marketing Agency; sosyal medya yönetimi, içerik üretimi, reel çekimi, kreatif tasarım, moderasyon ve sosyal medya reklam hizmetleri sunar.",
+      "h1": "Sosyal Medya Ajansı",
+      "intro": [
+        "Markanız için yalnızca içerik üretmiyor; hedef kitlenizle güçlü, düzenli ve sürdürülebilir bir iletişim kuruyoruz.",
+        "Kiwi Marketing Agency olarak sosyal medya yönetimini belirli günlerde paylaşım yapmaktan ibaret görmüyoruz. Markanızın hedeflerini, sektörünü, hedef kitlesini ve rakiplerini analiz ederek size özel bir sosyal medya stratejisi oluşturuyoruz.",
+        "Instagram, Facebook, LinkedIn ve diğer sosyal medya platformlarında markanızın nasıl görünmesi, hangi konuları anlatması ve hedef kitlesiyle nasıl iletişim kurması gerektiğini planlıyoruz.",
+        "İçerik stratejisinden kreatif tasarıma, reel üretiminden metin yazımına, moderasyondan performans analizine kadar tüm sosyal medya süreçlerini tek bir çatı altında yönetiyoruz.",
+        "Amacımız yalnızca düzenli bir profil oluşturmak değil; markanızın bilinirliğini artıran, güven veren, etkileşim sağlayan ve satış hedeflerinizi destekleyen bir sosyal medya yapısı kurmaktır."
+      ],
+      "servicesIntro": {
+        "title": "Markanız İçin Uçtan Uca Sosyal Medya Yönetimi",
+        "paragraphs": [
+          "Sosyal medyada başarı yalnızca paylaşım sıklığıyla ölçülmez. Markanın doğru içeriklerle, tutarlı bir görsel kimlikle ve hedef kitlesine uygun bir iletişim diliyle görünür olması gerekir.",
+          "Kiwi Marketing Agency olarak strateji, içerik, tasarım, video, reklam ve topluluk yönetimi süreçlerini birlikte ele alıyoruz.",
+          "Markanızın sosyal medya hesaplarını yalnızca içerik yayınlanan alanlar olmaktan çıkararak hedef kitlenizle iletişim kurduğunuz, güven oluşturduğunuz ve yeni müşteriler kazandığınız güçlü bir dijital kanala dönüştürüyoruz."
+        ]
+      },
+      "services": [
+        {
+          "title": "Sosyal Medya Stratejisi",
+          "slug": "sosyal-medya-stratejisi",
+          "url": "/sosyal-medya-ajansi/sosyal-medya-stratejisi",
+          "shortUrl": "/sosyal-medya-stratejisi",
+          "description": [
+            "Başarılı bir sosyal medya yönetiminin temelinde doğru hazırlanmış bir strateji bulunur.",
+            "Markanızın mevcut sosyal medya hesaplarını, sektörünü, rakiplerini, hedef kitlesini ve iletişim dilini analiz ederek size özel bir sosyal medya yol haritası hazırlıyoruz.",
+            "Hangi platformlarda aktif olunması gerektiğini, hangi içerik türlerinin kullanılacağını, paylaşım sıklığını ve içeriklerin hangi hedeflere hizmet edeceğini belirliyoruz.",
+            "İçerik planını yalnızca ürün veya hizmet tanıtımına göre oluşturmuyor; bilgilendirme, güven oluşturma, etkileşim, marka bilinirliği ve satış odaklı içerikleri dengeli biçimde planlıyoruz.",
+            "Böylece sosyal medya hesabınızda rastgele içerikler yerine, birbirini destekleyen ve belirli bir amaca hizmet eden sürdürülebilir bir iletişim sistemi oluşturuyoruz."
+          ],
+          "scope": "Marka analizi, hedef kitle analizi, rakip analizi, platform seçimi, iletişim dili oluşturma, içerik kategorileri, aylık yayın planı, kampanya planlaması ve sosyal medya yol haritası.",
+          "cardTags": "Strategy · Target Audience · Competitor Analysis"
+        },
+        {
+          "title": "Sosyal Medya İçerik Üretimi",
+          "slug": "icerik-uretimi",
+          "url": "/sosyal-medya-ajansi/icerik-uretimi",
+          "shortUrl": "/sosyal-medya-icerik-uretimi",
+          "description": [
+            "Markanızın hedef kitlesine değer sunan, ilgisini çeken ve markanızla bağ kurmasını sağlayan içerikler hazırlıyoruz.",
+            "İçerik üretim sürecinde markanızın ürünlerini, hizmetlerini, avantajlarını ve uzmanlığını farklı içerik formatlarıyla anlatıyoruz.",
+            "Sosyal medya paylaşımlarını yalnızca ürün görsellerinden oluşturmak yerine; bilgilendirici, eğitici, eğlenceli, etkileşim odaklı ve satış destekleyici içerik türlerini bir arada kullanıyoruz.",
+            "Her içeriğin başlığını, alt mesajını, görsel yapısını ve harekete geçirici mesajını platformun kullanım alışkanlıklarına göre planlıyoruz.",
+            "Markanızın sosyal medya içeriklerini hedef kitlenizin ilgisini sürekli canlı tutacak şekilde çeşitlendiriyor, hesabınızın tekrar eden ve sıradan bir görünüme dönüşmesini engelliyoruz."
+          ],
+          "scope": "İçerik fikri geliştirme, aylık içerik planı, statik gönderi, carousel içerik, story, reel fikri, ürün ve hizmet tanıtımı, kampanya içeriği, özel gün paylaşımı ve etkileşim içerikleri.",
+          "cardTags": "Content · Post · Story · Carousel"
+        },
+        {
+          "title": "Sosyal Medya Tasarımı",
+          "slug": "sosyal-medya-tasarimi",
+          "url": "/sosyal-medya-ajansi/sosyal-medya-tasarimi",
+          "shortUrl": "/sosyal-medya-tasarimi",
+          "description": [
+            "Sosyal medya hesabınızın ilk bakışta markanızı yansıtmasını ve profesyonel bir görünüm sunmasını sağlıyoruz.",
+            "Markanızın kurumsal kimliğine, renklerine, tipografisine ve iletişim diline uygun özgün sosyal medya tasarımları hazırlıyoruz.",
+            "Statik gönderi, story, carousel, reel kapağı, kampanya duyurusu ve ürün tanıtımı gibi farklı formatların tamamında görsel bütünlüğü koruyoruz.",
+            "Her tasarımı birbirinden bağımsız görseller olarak değil, profilinizin genel görünümünü destekleyen bir tasarım sistemi içerisinde oluşturuyoruz.",
+            "Böylece kullanıcılar sosyal medya hesabınızı ziyaret ettiğinde düzenli, güvenilir ve markanıza özgü bir iletişim dünyasıyla karşılaşıyor.",
+            "Tasarımlarda yalnızca estetik görünüme değil; başlıkların okunabilirliği, mesajın anlaşılması ve kullanıcının istenen aksiyona yönlendirilmesine de önem veriyoruz."
+          ],
+          "scope": "Post tasarımı, story tasarımı, carousel tasarımı, reel kapakları, kampanya görselleri, ürün tanıtımları, sosyal medya şablonları, profil konsepti ve görsel kimlik oluşturma.",
+          "cardTags": "Creative Design · Feed · Story · Reel Cover"
+        },
+        {
+          "title": "Reel ve Video İçerik Üretimi",
+          "slug": "reel-video-icerik-uretimi",
+          "url": "/sosyal-medya-ajansi/reel-video-icerik-uretimi",
+          "shortUrl": "/reel-video-uretimi",
+          "description": [
+            "Kısa video içerikleriyle markanızın mesajını daha hızlı, dikkat çekici ve akılda kalıcı biçimde anlatıyoruz.",
+            "Instagram Reel, TikTok, YouTube Shorts ve sosyal medya reklamları için markanıza özel video fikirleri geliştiriyoruz.",
+            "İçeriklerin senaryo, akış, çekim planı, seslendirme, kurgu ve grafik ihtiyaçlarını birlikte planlıyoruz.",
+            "Ürün tanıtımı, hizmet anlatımı, uzman görüşü, ekip içeriği, müşteri deneyimi, kamera arkası ve bilgilendirici video gibi farklı içerik formatları oluşturuyoruz.",
+            "Her videonun ilk saniyelerinde dikkat çeken bir girişe sahip olmasına, mesajın kısa ve anlaşılır biçimde aktarılmasına ve izleyicinin içerik sonunda belirli bir aksiyona yönlendirilmesine önem veriyoruz.",
+            "Hazırlanan videoları platformların dikey format, süre ve çözünürlük gerekliliklerine uygun şekilde teslim ediyoruz."
+          ],
+          "scope": "Reel fikri, video senaryosu, seslendirme metni, prodüksiyon planı, çekim, video kurgu, altyazı, motion grafik, reel kapağı ve platforma özel video formatları.",
+          "cardTags": "Reels · Video Production · Shorts"
+        },
+        {
+          "title": "Sosyal Medya Metin Yazarlığı",
+          "slug": "sosyal-medya-metin-yazarligi",
+          "url": "/sosyal-medya-ajansi/sosyal-medya-metin-yazarligi",
+          "shortUrl": "/sosyal-medya-metin-yazarligi",
+          "description": [
+            "Sosyal medya içeriklerinin yalnızca görsel açıdan değil, kullanılan mesaj ve metin açısından da güçlü olmasını sağlıyoruz.",
+            "Markanızın iletişim diline uygun açıklamalar, başlıklar, kampanya metinleri ve harekete geçirici mesajlar hazırlıyoruz.",
+            "Her paylaşımın metnini içerik türüne, platforma ve hedef kitleye göre planlıyoruz.",
+            "Bilgilendirici içeriklerde sade ve anlaşılır bir anlatım kullanırken, reklam ve kampanya içeriklerinde kullanıcıyı iletişime geçmeye, ürün incelemeye veya satın almaya yönlendiren daha aksiyon odaklı metinler oluşturuyoruz.",
+            "Markanızın hedef kitlesiyle samimi, profesyonel, güvenilir veya enerjik bir iletişim kurmasını sağlayacak özgün bir dil geliştiriyoruz.",
+            "Hazırladığımız metinlerde gereksiz ve yapay ifadelerden kaçınıyor, markanızın gerçek bir insan gibi doğal ve tutarlı biçimde iletişim kurmasına önem veriyoruz."
+          ],
+          "scope": "Caption yazımı, sosyal medya başlıkları, reklam metni, kampanya açıklaması, story metni, reel seslendirme metni, CTA yazımı, slogan ve marka iletişim dili.",
+          "cardTags": "Copywriting · Caption · CTA · Script"
+        },
+        {
+          "title": "Sosyal Medya Moderasyonu",
+          "slug": "sosyal-medya-moderasyonu",
+          "url": "/sosyal-medya-ajansi/sosyal-medya-moderasyonu",
+          "shortUrl": "/sosyal-medya-moderasyonu",
+          "description": [
+            "Sosyal medya hesaplarınıza gelen yorum ve mesajları takip ederek markanızın hedef kitlesiyle olan iletişimini düzenli biçimde yönetiyoruz.",
+            "Kullanıcıların ürün, hizmet, fiyat, randevu, rezervasyon veya kampanyalarla ilgili sorularına markanızın iletişim diline uygun yanıtlar verilmesini sağlıyoruz.",
+            "Olumlu yorumları destekliyor, olumsuz geri bildirimleri kontrollü ve çözüm odaklı biçimde yönetiyoruz.",
+            "Markanız hakkında yapılan yorumları ve kullanıcıların sık sorduğu soruları analiz ederek içerik stratejiniz için yeni başlıklar oluşturuyoruz.",
+            "Moderasyon süreci sayesinde sosyal medya hesabınızın yalnızca paylaşım yapılan bir profil değil, kullanıcıların markanızla doğrudan iletişim kurabildiği aktif bir kanal olmasını sağlıyoruz."
+          ],
+          "scope": "Yorum takibi, mesaj takibi, kullanıcı sorularının yanıtlanması, olumsuz yorum yönetimi, spam kontrolü, yönlendirme, sık sorulan soruların belirlenmesi ve topluluk iletişimi.",
+          "cardTags": "Community Management · DM · Comment"
+        },
+        {
+          "title": "Sosyal Medya Reklam Yönetimi",
+          "slug": "sosyal-medya-reklam-yonetimi",
+          "url": "/sosyal-medya-ajansi/sosyal-medya-reklam-yonetimi",
+          "shortUrl": "/sosyal-medya-reklam-yonetimi",
+          "description": [
+            "Sosyal medya içeriklerinizi yalnızca mevcut takipçilerinize değil, markanızla ilgilenme ihtimali yüksek yeni kullanıcılara ulaştırıyoruz.",
+            "Instagram ve Facebook üzerinden marka bilinirliği, trafik, etkileşim, mesaj, WhatsApp, form ve satış hedeflerine yönelik reklam kampanyaları oluşturuyoruz.",
+            "Hedef kitlenizin yaş, konum, ilgi alanı ve davranışlarını analiz ederek reklam hedeflemelerini planlıyoruz.",
+            "Reklamlarda kullanılacak görsel, video, başlık ve metin alternatiflerini kampanyanın amacına göre hazırlıyoruz.",
+            "Reklam performansını düzenli olarak takip ediyor; düşük performans gösteren hedefleme, içerik ve kampanyaları optimize ediyoruz.",
+            "Sosyal medya yönetimiyle reklam yönetimini aynı strateji içerisinde ele alarak organik içeriklerin ve reklam kampanyalarının birbirini desteklemesini sağlıyoruz."
+          ],
+          "scope": "Instagram reklamları, Facebook reklamları, WhatsApp kampanyaları, form reklamları, etkileşim kampanyaları, trafik reklamları, yeniden hedefleme, hedef kitle oluşturma, kreatif testleri ve bütçe optimizasyonu.",
+          "cardTags": "Instagram Ads · Facebook Ads · Meta"
+        },
+        {
+          "title": "Sosyal Medya Analizi ve Raporlama",
+          "slug": "analiz-raporlama",
+          "url": "/sosyal-medya-ajansi/analiz-raporlama",
+          "shortUrl": "/sosyal-medya-raporlama",
+          "description": [
+            "Sosyal medya çalışmalarınızın performansını düzenli olarak analiz ediyor ve içerik stratejisini elde edilen verilere göre geliştiriyoruz.",
+            "Paylaşımların erişim, görüntülenme, izlenme süresi, etkileşim, profil ziyareti, bağlantı tıklaması ve takipçi gelişimi gibi metriklerini inceliyoruz.",
+            "Hangi içeriklerin hedef kitleniz tarafından daha fazla ilgi gördüğünü, hangi formatların daha iyi performans gösterdiğini ve hangi konuların geliştirilmesi gerektiğini belirliyoruz.",
+            "Yalnızca sayısal verileri sıralayan raporlar sunmak yerine, performansın nedenlerini ve sonraki dönem için uygulanabilecek aksiyonları paylaşıyoruz.",
+            "Bu sayede içerik planını sabit biçimde devam ettirmek yerine, kullanıcı davranışlarına göre sürekli gelişen bir sosyal medya stratejisi oluşturuyoruz."
+          ],
+          "scope": "İçerik performans analizi, erişim ve etkileşim raporu, takipçi analizi, reel izlenme analizi, profil hareketleri, rakip karşılaştırması, aylık raporlama ve yeni dönem içerik önerileri.",
+          "cardTags": "Analytics · Reporting · Optimization"
+        }
+      ],
+      "process": {
+        "title": "Analizden İçerik Üretimine Sosyal Medya Sürecimiz",
+        "intro": [
+          "Her markanın sosyal medyadaki hedefi ve iletişim ihtiyacı farklıdır.",
+          "Bu nedenle tüm markalara aynı içerik planını veya görsel şablonları uygulamıyoruz.",
+          "Markanızı analiz ediyor, size özel bir iletişim stratejisi oluşturuyor ve süreci planlama, üretim, yayınlama, takip ve optimizasyon aşamalarıyla yönetiyoruz."
+        ],
+        "steps": [
+          {
+            "number": "01",
+            "title": "Marka ve Hesap Analizi",
+            "paragraphs": [
+              "Sürecin ilk aşamasında markanızın ürünlerini, hizmetlerini, hedeflerini ve hedef kitlesini inceliyoruz.",
+              "Mevcut sosyal medya hesaplarınızın profil düzenini, içerik yapısını, görsel bütünlüğünü ve performansını analiz ediyoruz.",
+              "Rakiplerinizin sosyal medya hesaplarını, içerik kategorilerini, paylaşım sıklığını ve hedef kitleleriyle kurdukları iletişimi değerlendiriyoruz.",
+              "Markanızın sosyal medyada güçlü ve geliştirilmesi gereken yönlerini belirleyerek stratejinin temelini oluşturuyoruz."
+            ]
+          },
+          {
+            "number": "02",
+            "title": "Sosyal Medya Stratejisinin Oluşturulması",
+            "paragraphs": [
+              "Analiz sonuçlarına göre markanızın sosyal medyada nasıl konumlanacağını belirliyoruz.",
+              "Kullanılacak platformları, içerik kategorilerini, paylaşım sıklığını, iletişim dilini ve görsel yaklaşımı planlıyoruz.",
+              "İçeriklerin bilgilendirme, marka bilinirliği, etkileşim, güven ve satış hedefleri arasındaki dağılımını oluşturuyoruz.",
+              "Markanızın yalnızca kısa süreli kampanyalarla değil, uzun vadede tutarlı bir iletişimle büyümesini sağlayacak sosyal medya yol haritasını hazırlıyoruz."
+            ]
+          },
+          {
+            "number": "03",
+            "title": "Aylık İçerik Planının Hazırlanması",
+            "paragraphs": [
+              "Belirlenen strateji doğrultusunda aylık içerik takvimini oluşturuyoruz.",
+              "Statik gönderi, story, carousel ve reel içeriklerinin konu başlıklarını, yayın tarihlerini ve amaçlarını planlıyoruz.",
+              "Özel günleri, kampanyaları, ürün lansmanlarını ve markanıza özel gelişmeleri içerik planına dahil ediyoruz.",
+              "Her içeriğin başlığını, alt mesajını, görsel briefini, açıklamasını ve harekete geçirici mesajını hazırlıyoruz."
+            ]
+          },
+          {
+            "number": "04",
+            "title": "Tasarım ve Video Üretimi",
+            "paragraphs": [
+              "Onaylanan içerik planı doğrultusunda kreatif tasarımları ve video içeriklerini hazırlıyoruz.",
+              "Sosyal medya tasarımlarını markanızın kurumsal kimliğine uygun biçimde oluşturuyoruz.",
+              "Reel içerikleri için senaryo, çekim planı, seslendirme metni ve kurgu yapısını belirliyoruz.",
+              "İhtiyaç halinde profesyonel fotoğraf ve video çekimleri gerçekleştirerek markanıza özgü bir içerik arşivi oluşturuyoruz.",
+              "İçeriklerin farklı sosyal medya platformlarına uygun ölçü ve formatlarda hazırlanmasını sağlıyoruz."
+            ]
+          },
+          {
+            "number": "05",
+            "title": "Onay ve Yayınlama",
+            "paragraphs": [
+              "Hazırlanan içerikleri yayın öncesinde markanızın onayına sunuyoruz.",
+              "Geri bildirimler doğrultusunda gerekli düzenlemeleri gerçekleştiriyor, içerikleri yayın takvimine göre planlıyoruz.",
+              "Paylaşımların doğru tarih, saat, açıklama ve etiketlerle yayınlanmasını sağlıyoruz.",
+              "Kampanya ve özel gün içeriklerini ilgili tarihlere göre önceden planlayarak iletişim sürecinin kesintisiz ilerlemesini sağlıyoruz."
+            ]
+          },
+          {
+            "number": "06",
+            "title": "Moderasyon ve Hesap Takibi",
+            "paragraphs": [
+              "İçerikler yayınlandıktan sonra hesaba gelen yorum ve mesajları takip ediyoruz.",
+              "Kullanıcıların sorularını markanızın iletişim diline uygun biçimde yanıtlıyor veya ilgili departmanlara yönlendiriyoruz.",
+              "Olumsuz yorum ve geri bildirimlerde kontrollü, profesyonel ve çözüm odaklı bir iletişim yürütüyoruz.",
+              "Hedef kitlenizin içeriklere verdiği tepkileri takip ederek sonraki paylaşımlar için yeni içgörüler elde ediyoruz."
+            ]
+          },
+          {
+            "number": "07",
+            "title": "Performans Analizi ve Optimizasyon",
+            "paragraphs": [
+              "Aylık içerik performanslarını düzenli olarak analiz ediyoruz.",
+              "Yüksek erişim, etkileşim veya izlenme sağlayan içeriklerin ortak özelliklerini belirliyoruz.",
+              "Düşük performans gösteren içerik formatlarını, başlıkları ve yayın zamanlarını değerlendiriyoruz.",
+              "Elde edilen sonuçlara göre sonraki dönem içerik planını geliştiriyor, markanızın sosyal medya stratejisini sürekli optimize ediyoruz."
+            ]
+          }
+        ]
+      },
+      "why": {
+        "items": [
+          {
+            "title": "Strateji ve İçerik Üretimini Birlikte Yönetiyoruz",
+            "paragraphs": [
+              "Sosyal medya içeriklerini rastgele konu başlıklarıyla hazırlamıyoruz.",
+              "Her paylaşımı markanızın hedeflerine, hedef kitlesine ve genel iletişim stratejisine göre planlıyoruz."
+            ]
+          },
+          {
+            "title": "Hazır Şablonlar Kullanmıyoruz",
+            "paragraphs": [
+              "Her markanın sektörü, hedef kitlesi ve görsel dünyası farklıdır.",
+              "Bu nedenle birbirine benzeyen hazır tasarımlar yerine, markanıza özel bir sosyal medya konsepti oluşturuyoruz."
+            ]
+          },
+          {
+            "title": "Tasarım ve Video İçeriklerini Tek Ekipte Üretiyoruz",
+            "paragraphs": [
+              "Statik tasarım, reel, fotoğraf, video, kurgu ve motion grafik süreçlerini aynı kreatif ekip içerisinde yönetiyoruz.",
+              "Böylece tüm içeriklerde görsel bütünlüğü ve iletişim tutarlılığını koruyoruz."
+            ]
+          },
+          {
+            "title": "Organik İçerik ve Reklamı Birlikte Planlıyoruz",
+            "paragraphs": [
+              "Sosyal medya yönetimiyle reklam kampanyalarını birbirinden bağımsız ilerletmiyoruz.",
+              "Organik olarak iyi performans gösteren içerikleri reklam kampanyalarında değerlendiriyor, reklam sonuçlarını da içerik planlamasında kullanıyoruz."
+            ]
+          },
+          {
+            "title": "Markanızın Dilini İnsanlaştırıyoruz",
+            "paragraphs": [
+              "Yapay ve kurumsal kalıplar yerine, hedef kitlenizin anlayabileceği doğal ve etkili bir iletişim dili oluşturuyoruz.",
+              "Markanızın profesyonel görünürken aynı zamanda ulaşılabilir ve samimi kalmasını sağlıyoruz."
+            ]
+          },
+          {
+            "title": "Sürekli Takip ve Optimizasyon Sağlıyoruz",
+            "paragraphs": [
+              "Hazırlanan içerikleri yayınladıktan sonra süreci tamamlanmış kabul etmiyoruz.",
+              "İçerik performanslarını, yorumları, mesajları ve kullanıcı davranışlarını analiz ederek sosyal medya stratejinizi sürekli geliştiriyoruz."
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "title": "Sosyal Medyada Yalnızca Görünür Değil, Tercih Edilir Olun",
+        "paragraphs": [
+          "Markanız için hedef kitlenizin ilgisini çeken, güven oluşturan ve iletişim hedeflerinizi destekleyen bir sosyal medya sistemi oluşturalım.",
+          "İçerik stratejinizden kreatif tasarımlarınıza, reel üretiminden moderasyon ve reklam yönetimine kadar tüm süreci tek bir ekip içerisinde planlayalım.",
+          "Markanızın mevcut sosyal medya hesaplarını ve hedeflerini bizimle paylaşın, size özel sosyal medya yol haritasını birlikte oluşturalım."
+        ],
+        "primary": "Sosyal Medya Stratejinizi Oluşturalım",
+        "secondary": "Ücretsiz Hesap Analizi Talep Edin"
+      },
+      "seoContent": {
+        "title": "İstanbul Sosyal Medya Ajansı",
+        "paragraphs": [
+          "Kiwi Marketing Agency, İstanbul merkezli sosyal medya ajansı olarak markaların sosyal medya platformlarında güçlü, tutarlı ve profesyonel bir iletişim kurmasını sağlar.",
+          "Sosyal medya stratejisi, içerik üretimi, kreatif tasarım, reel ve video üretimi, metin yazarlığı, moderasyon, reklam yönetimi ve performans raporlaması gibi farklı hizmetleri tek bir çatı altında sunarız.",
+          "Sosyal medya yönetimi çalışmalarına başlamadan önce markanın sektörünü, hedef kitlesini, rakiplerini ve mevcut hesaplarını analiz ederiz.",
+          "Markanın Instagram, Facebook, LinkedIn, TikTok ve diğer sosyal medya platformlarında nasıl konumlanması gerektiğini belirleriz.",
+          "Aylık içerik planlarını markanın ürünleri, hizmetleri, kampanyaları ve hedef kitlesinin ilgi alanlarına göre oluştururuz.",
+          "Statik gönderi, story, carousel ve reel içeriklerini markanın kurumsal kimliğine ve iletişim diline uygun biçimde hazırlarız.",
+          "Sosyal medya içeriklerinin yalnızca estetik görünmesine değil; bilgi vermesine, güven oluşturmasına, etkileşim sağlamasına ve kullanıcıları harekete geçirmesine önem veririz.",
+          "Reel ve video içerikleri için fikir, senaryo, çekim, kurgu, altyazı ve hareketli grafik süreçlerini yönetiriz.",
+          "Instagram ve Facebook reklamlarıyla sosyal medya içeriklerini markanızla ilgilenme ihtimali yüksek hedef kitlelere ulaştırırız.",
+          "İstanbul sosyal medya ajansı arayışında olan markalara, yalnızca paylaşım yapan değil; strateji, tasarım, video, reklam ve veri süreçlerini birlikte yöneten bütüncül çözümler sunarız.",
+          "İçeriklerin erişim, etkileşim, izlenme, profil ziyareti ve bağlantı tıklaması gibi performans verilerini düzenli olarak analiz ederiz.",
+          "Elde ettiğimiz sonuçlara göre içerik türlerini, mesajları, kreatif yaklaşımı ve yayın planını geliştiririz.",
+          "Böylece sosyal medya hesaplarınızı sabit ve tekrar eden bir içerik düzeninden çıkararak, hedef kitlenizin davranışlarına göre sürekli gelişen bir iletişim kanalına dönüştürmeyi hedefleriz."
+        ]
+      }
+    },
+    {
+      "id": "web-yazilim",
+      "slug": "web-yazilim-ajansi",
+      "navLabel": "Yazılım",
+      "url": "/web-yazilim-ajansi",
+      "seoTitle": "Web Yazılım Ajansı İstanbul | Kiwi Marketing Agency",
+      "metaDescription": "Kiwi Marketing Agency; kurumsal web sitesi, e-ticaret, özel yazılım, CRM, gayrimenkul stok takip, SEO ve GEO uyumlu web altyapısı hizmetleri sunar.",
+      "h1": "Web Yazılım Ajansı",
+      "intro": [
+        "Markanız için yalnızca çalışan değil; hızlı, güvenilir, kullanıcı dostu ve iş hedeflerinizi destekleyen dijital sistemler geliştiriyoruz.",
+        "Kiwi Marketing Agency olarak web yazılım projelerini yalnızca tasarım ve kodlama sürecinden ibaret görmüyoruz. Bir web sitesinin markanızı doğru yansıtması, kullanıcıların ihtiyaç duyduğu bilgilere kolayca ulaşmasını sağlaması ve ziyaretçileri iletişim, teklif, rezervasyon veya satın alma gibi değerli aksiyonlara yönlendirmesi gerektiğine inanıyoruz.",
+        "Kurumsal web sitelerinden e-ticaret altyapılarına, özel web uygulamalarından CRM ve üçüncü taraf sistem entegrasyonlarına kadar markanızın ihtiyaç duyduğu dijital çözümleri tek bir çatı altında geliştiriyoruz.",
+        "Her projeye hazır bir sistem dayatmak yerine; markanızın çalışma biçimini, hedef kitlesini, operasyonel ihtiyaçlarını ve büyüme hedeflerini analiz ederek size özel bir yazılım mimarisi oluşturuyoruz.",
+        "Web sitelerini yalnızca bugünün ihtiyaçlarına göre değil, gelecekte eklenebilecek yeni hizmetler, modüller, kullanıcılar ve entegrasyonları da dikkate alarak geliştiriyoruz.",
+        "Amacımız yalnızca yayına alınan bir web sitesi teslim etmek değil; hızlı çalışan, mobil cihazlara uyumlu, kolay yönetilebilen, geliştirilebilir, SEO ve GEO altyapısı güçlü, dijital pazarlama çalışmalarınızı destekleyen sürdürülebilir bir sistem oluşturmaktır."
+      ],
+      "servicesIntro": {
+        "title": "Markanız İçin Uçtan Uca Web Yazılım Çözümleri",
+        "paragraphs": [
+          "Dijital dünyada güçlü bir marka deneyimi oluşturmak için web sitesinin yalnızca estetik görünmesi yeterli değildir. Teknik altyapının güvenilir, sayfaların hızlı, kullanıcı yolculuğunun anlaşılır ve yönetim süreçlerinin kolay olması gerekir.",
+          "Kiwi Marketing Agency olarak tasarım, yazılım, kullanıcı deneyimi, SEO altyapısı, GEO uyumluluğu, veri takibi ve dijital pazarlama ihtiyaçlarını birlikte değerlendiriyoruz.",
+          "Böylece markanız için yalnızca bugünün ihtiyaçlarını karşılayan değil, ilerleyen dönemlerde yeni özelliklerle geliştirilebilen esnek ve sürdürülebilir dijital platformlar oluşturuyoruz."
+        ]
+      },
+      "services": [
+        {
+          "title": "Kurumsal Web Sitesi Tasarımı ve Yazılımı",
+          "slug": "kurumsal-web-sitesi",
+          "url": "/web-yazilim-ajansi/kurumsal-web-sitesi",
+          "shortUrl": "/kurumsal-web-sitesi",
+          "description": [
+            "Markanızın dijital dünyadaki en önemli temsil alanlarından biri olan kurumsal web sitelerini, işletmenizin hedeflerine ve iletişim diline özel olarak geliştiriyoruz.",
+            "Hazır şablonlara bağlı kalmadan markanızın hizmetlerini, uzmanlığını, referanslarını ve farklılıklarını doğru şekilde anlatan özgün web sitesi yapıları oluşturuyoruz.",
+            "Ana sayfa, hakkımızda, hizmetler, referanslar, blog, iletişim ve teklif formu gibi temel sayfaları kullanıcıların ihtiyaç duyduğu bilgilere kolayca ulaşabileceği bir düzen içerisinde planlıyoruz.",
+            "Web sitesinin masaüstü, tablet ve mobil cihazlarda sorunsuz çalışmasını sağlıyor; sayfa hızı, okunabilirlik, teknik SEO, GEO uyumluluğu ve dönüşüm alanlarını proje sürecinin başından itibaren dikkate alıyoruz.",
+            "Kullanıcıların markanız hakkında hızlı şekilde bilgi edinmesini, hizmetlerinizi kolayca incelemesini ve iletişim kurmasını sağlayan sade ve anlaşılır bir kullanıcı yolculuğu oluşturuyoruz.",
+            "Yönetim paneli sayesinde metin, görsel, hizmet, proje ve blog içeriklerinin kolayca güncellenebilmesini sağlıyoruz."
+          ],
+          "scope": "Kurumsal web sitesi, hizmet sitesi, marka sitesi, şirket web sitesi, mobil uyumlu tasarım, yönetim paneli, iletişim ve teklif formları, referans alanları, blog altyapısı, teknik SEO ve GEO uyumlu sayfa yapıları.",
+          "cardTags": "Corporate Website · Responsive · CMS"
+        },
+        {
+          "title": "E-Ticaret Sitesi Yazılımı",
+          "slug": "e-ticaret-sitesi-yazilimi",
+          "url": "/web-yazilim-ajansi/e-ticaret-sitesi-yazilimi",
+          "shortUrl": "/e-ticaret-sitesi",
+          "description": [
+            "Ürünlerinizi dijital ortamda güvenli, kolay ve profesyonel biçimde satmanızı sağlayan e-ticaret altyapıları geliştiriyoruz.",
+            "E-ticaret projelerini yalnızca ürünlerin listelendiği ve ödeme alındığı sistemler olarak değerlendirmiyoruz. Kullanıcıların ürünleri kolayca keşfetmesini, karşılaştırmasını, sepete eklemesini ve satın alma sürecini sorunsuz şekilde tamamlamasını sağlayan bütüncül bir alışveriş deneyimi tasarlıyoruz.",
+            "Ürün kategorileri, filtreleme, kampanya yönetimi, kupon sistemleri, ödeme altyapıları, kargo entegrasyonları ve sipariş takibi gibi ihtiyaçları markanızın operasyon yapısına göre planlıyoruz.",
+            "Mobil kullanıcı deneyimine, sayfa hızına ve ödeme adımlarının sade olmasına özellikle önem veriyoruz. Kullanıcıların alışveriş sürecinde karşılaşabileceği engelleri azaltarak dönüşüm oranını destekleyen bir yapı oluşturuyoruz.",
+            "Ürün sayfalarını SEO ve GEO gerekliliklerine uygun biçimde planlıyor; ürün açıklamalarının, kategori yapılarının ve teknik verilerin arama sistemleri tarafından kolayca anlaşılmasını sağlıyoruz.",
+            "İhtiyaç halinde e-ticaret sitenizi stok, muhasebe, kargo, CRM, pazar yeri ve diğer üçüncü taraf sistemlerle entegre ediyoruz."
+          ],
+          "scope": "E-ticaret sitesi, ürün ve kategori yönetimi, sepet sistemi, ödeme altyapısı, kargo entegrasyonu, kampanya ve kupon yönetimi, sipariş takibi, stok entegrasyonu, üyelik sistemi, satış raporları ve SEO uyumlu ürün yapıları.",
+          "cardTags": "E-Commerce · Payment · Order Management"
+        },
+        {
+          "title": "Özel Web Yazılımı",
+          "slug": "ozel-web-yazilimi",
+          "url": "/web-yazilim-ajansi/ozel-web-yazilimi",
+          "shortUrl": "/ozel-web-yazilimi",
+          "description": [
+            "Hazır sistemlerin işletmenizin ihtiyaçlarını karşılamadığı durumlarda, çalışma modelinize özel web tabanlı yazılım çözümleri geliştiriyoruz.",
+            "İş süreçlerinizi, kullanıcı rollerinizi, veri akışınızı ve operasyonel ihtiyaçlarınızı analiz ederek yalnızca markanıza özel çalışan dijital sistemler oluşturuyoruz.",
+            "Teklif yönetimi, sipariş takibi, müşteri yönetimi, stok kontrolü, bayi sistemi, rezervasyon, başvuru, raporlama ve proje takibi gibi farklı süreçleri tek bir web uygulaması içerisinde bir araya getirebiliyoruz.",
+            "Geliştirilen yazılımın kullanıcı dostu, güvenli, hızlı ve ilerleyen dönemlerde yeni modüllerle geliştirilebilir olmasına önem veriyoruz.",
+            "Yetkilendirme sistemi sayesinde yöneticiler, çalışanlar, bayiler, müşteriler veya iş ortakları için farklı kullanıcı rolleri ve erişim seviyeleri oluşturabiliyoruz.",
+            "Amaç yalnızca manuel işlerin dijital ortama taşınması değil; zaman kaybını azaltan, veri hatalarını önleyen ve ekiplerin daha verimli çalışmasını sağlayan bir sistem oluşturmaktır."
+          ],
+          "scope": "Özel web uygulaması, müşteri portalı, bayi sistemi, teklif modülü, rezervasyon sistemi, başvuru sistemi, proje takip yazılımı, sipariş yönetimi, stok takibi, kullanıcı yetkilendirme ve özel yönetim panelleri.",
+          "cardTags": "Custom Software · Web App · Automation"
+        },
+        {
+          "title": "Landing Page ve Kampanya Sayfası",
+          "slug": "landing-page-tasarimi",
+          "url": "/web-yazilim-ajansi/landing-page-tasarimi",
+          "shortUrl": "/landing-page-tasarimi",
+          "description": [
+            "Reklam kampanyalarından gelen kullanıcıları doğrudan iletişim, form, teklif, rezervasyon veya satın alma aksiyonuna yönlendiren landing page tasarımları geliştiriyoruz.",
+            "Landing page çalışmalarını yalnızca tek sayfalık web siteleri olarak ele almıyoruz. Kullanıcının reklamı gördüğü andan form doldurduğu veya iletişime geçtiği ana kadar olan tüm yolculuğu planlıyoruz.",
+            "Başlıkları, hizmet anlatımlarını, fayda alanlarını, referansları, sık sorulan soruları, formları ve harekete geçirici mesajları kampanyanın hedefi doğrultusunda oluşturuyoruz.",
+            "Sayfanın gereksiz bilgi ve yönlendirmelerden arındırılmış, sade ve aksiyon odaklı olmasına dikkat ediyoruz.",
+            "Google Ads, Meta reklamları ve diğer dijital kampanyalar için farklı hedef kitlelere özel landing page alternatifleri hazırlayabiliyor, dönüşüm performansını artırmak için test edilebilir sayfa yapıları oluşturabiliyoruz.",
+            "Form gönderimi, WhatsApp tıklaması, telefon araması, rezervasyon ve teklif talebi gibi dönüşümlerin ölçümlenebilmesi için gerekli Google Analytics ve Google Tag Manager altyapılarını kuruyoruz."
+          ],
+          "scope": "Landing page, kampanya sayfası, ürün tanıtım sayfası, form sayfası, teklif toplama sayfası, rezervasyon sayfası, mobil uyumlu yapı, dönüşüm takibi ve A/B test altyapısı.",
+          "cardTags": "Landing Page · Lead Generation · CRO"
+        },
+        {
+          "title": "CRM ve Yönetim Paneli Geliştirme",
+          "slug": "crm-yazilimi",
+          "url": "/web-yazilim-ajansi/crm-yazilimi",
+          "shortUrl": "/crm-yazilimi",
+          "description": [
+            "Müşteri, teklif, satış ve operasyon süreçlerinizi tek bir panel üzerinden yönetmenizi sağlayan özel CRM ve yönetim sistemleri geliştiriyoruz.",
+            "İşletmenizin kullandığı Excel dosyaları, farklı yazılımlar ve manuel takip süreçlerini analiz ederek daha düzenli ve merkezi bir yapı oluşturuyoruz.",
+            "Müşteri bilgilerinin, görüşme notlarının, tekliflerin, satış aşamalarının, ödeme planlarının ve ekip görevlerinin tek bir sistem içerisinde takip edilmesini sağlıyoruz.",
+            "Kullanıcı rollerine göre farklı erişim seviyeleri oluşturuyor, her ekibin yalnızca ihtiyaç duyduğu bilgilere ulaşmasını sağlıyoruz.",
+            "Satış ekibinin potansiyel müşterileri hangi aşamada olduğunu takip edebileceği, yöneticilerin ekip performansını inceleyebileceği ve operasyon ekiplerinin iş süreçlerini yönetebileceği özel ekranlar geliştiriyoruz.",
+            "Raporlama ekranları sayesinde satış performansı, müşteri hareketleri, işlem durumu ve operasyonel verilerin kolayca takip edilmesine yardımcı oluyoruz."
+          ],
+          "scope": "CRM yazılımı, müşteri yönetimi, satış takibi, teklif sistemi, ödeme planı, görev yönetimi, kullanıcı rolleri, raporlama ekranları, bildirim sistemi ve özel yönetim paneli.",
+          "cardTags": "CRM · Sales Management · Dashboard"
+        },
+        {
+          "title": "Gayrimenkul Satış ve Stok Takip Yazılımı",
+          "slug": "gayrimenkul-stok-takip-yazilimi",
+          "url": "/web-yazilim-ajansi/gayrimenkul-stok-takip-yazilimi",
+          "shortUrl": "/gayrimenkul-stok-takip-yazilimi",
+          "description": [
+            "Gayrimenkul projelerinde bağımsız bölümlerin, stok durumlarının, ödeme planlarının ve satış süreçlerinin tek bir sistem üzerinden yönetilmesini sağlayan özel yazılım çözümleri geliştiriyoruz.",
+            "Projeye ait blok, kat, daire, villa, ofis veya ticari alanları sistem içerisinde tanımlıyor; her bağımsız bölümün satış durumunu anlık olarak takip edilebilir hale getiriyoruz.",
+            "Müsait, rezerve, opsiyonlu veya satılmış stokları farklı durumlarla göstererek satış ekiplerinin güncel bilgiye hızlıca ulaşmasını sağlıyoruz.",
+            "Daire tipi, metrekare, cephe, kat, fiyat, oda sayısı, bahçe, teras ve proje özellikleri gibi bilgileri filtrelenebilir bir sistem içerisinde sunuyoruz.",
+            "Kat planları ve vaziyet planları üzerinden bağımsız bölümlerin seçilebildiği interaktif alanlar oluşturabiliyoruz. Satış temsilcileri veya müşteriler, proje içerisindeki uygun daire ve villaları görsel plan üzerinden inceleyebiliyor.",
+            "Müşteriye özel ödeme planları hazırlayarak peşinat, taksit, ara ödeme ve vade seçeneklerinin otomatik hesaplanmasını sağlıyoruz.",
+            "Satış temsilcileri, satış ofisleri, bayiler ve yöneticiler için farklı kullanıcı yetkileri oluşturarak tüm satış sürecini kontrollü biçimde yönetiyoruz.",
+            "Müşteri kayıtları, görüşme notları, rezervasyon tarihleri, teklif süreçleri ve satış durumları tek bir panel üzerinden takip edilebiliyor."
+          ],
+          "scope": "Gayrimenkul stok takip sistemi, bağımsız bölüm yönetimi, blok ve kat planı, vaziyet planı, daire karşılaştırma, fiyat listesi, rezervasyon, opsiyon yönetimi, ödeme planı oluşturma, müşteri takibi, satış raporları ve bayi paneli.",
+          "cardTags": "Property Stock · Payment Plan · Floor Plan"
+        },
+        {
+          "title": "SEO ve GEO Uyumlu Web Altyapısı",
+          "slug": "seo-geo-uyumlu-web-altyapisi",
+          "url": "/web-yazilim-ajansi/seo-geo-uyumlu-web-altyapisi",
+          "shortUrl": "/seo-geo-uyumlu-web-altyapisi",
+          "description": [
+            "Web sitenizi yalnızca kullanıcıların rahatça gezebileceği şekilde değil; Google, Bing ve yapay zekâ destekli arama sistemlerinin içeriğinizi doğru anlayabileceği teknik bir altyapıyla geliştiriyoruz.",
+            "SEO çalışmalarının yalnızca içerik ve anahtar kelimelerden oluşmadığını biliyoruz. Web sitesinin kod yapısı, sayfa hızı, mobil uyumluluğu, URL düzeni, başlık hiyerarşisi ve teknik işaretlemeleri arama performansını doğrudan etkiler.",
+            "Bu nedenle web yazılım sürecinin başından itibaren SEO uyumlu sayfa yapıları oluşturuyor; her hizmet, ürün ve içerik sayfasının arama motorları tarafından kolayca taranmasını ve indekslenmesini sağlayacak teknik düzenlemeleri yapıyoruz.",
+            "Sayfa başlıkları, meta açıklamalar, H1-H2 yapıları, görsel alt metinleri, canonical etiketleri, site haritası, robots.txt dosyası ve yönlendirmeler gibi temel teknik SEO gerekliliklerini proje içerisinde planlıyoruz.",
+            "SEO uyumlu URL yapıları oluşturarak sayfa adreslerinin kısa, anlaşılır ve ilgili hizmeti açıklayan bir düzende olmasını sağlıyoruz.",
+            "Sayfa hızı, görsel optimizasyonu, mobil uyumluluk ve Core Web Vitals kriterleri üzerinde çalışmalar gerçekleştirerek hem kullanıcı deneyimini hem de organik arama performansını destekliyoruz.",
+            "GEO çalışmalarıyla web sitenizin yalnızca klasik arama motorları için değil; ChatGPT, Gemini, Copilot ve diğer yapay zekâ destekli arama platformları için de daha anlaşılır bir içerik ve veri yapısına sahip olmasını hedefliyoruz.",
+            "Markanızın hizmetlerini, uzmanlık alanlarını, lokasyonlarını, referanslarını ve sık sorulan sorularını açık bir bilgi mimarisi içerisinde sunuyoruz. Böylece yapay zekâ sistemlerinin markanızı doğru anlamasını, ilgili sorgularla eşleştirmesini ve güvenilir bir kaynak olarak değerlendirmesini destekliyoruz.",
+            "Yapılandırılmış veri işaretlemeleri kullanarak işletme, hizmet, ürün, makale, sık sorulan sorular, değerlendirme ve iletişim bilgileri gibi alanların arama motorlarına daha açık biçimde aktarılmasını sağlıyoruz.",
+            "SEO ve GEO altyapısını web sitesi yayına alındıktan sonra eklenen bağımsız bir çalışma olarak değil, tasarım ve yazılım sürecinin ayrılmaz bir parçası olarak ele alıyoruz."
+          ],
+          "scope": "Teknik SEO altyapısı, SEO uyumlu URL yapısı, başlık hiyerarşisi, meta alanları, site haritası, robots.txt, canonical etiketleri, 301 yönlendirmeleri, görsel optimizasyonu, sayfa hızı iyileştirmeleri, mobil uyumluluk, yapılandırılmış veri, Schema işaretlemeleri ve GEO uyumlu içerik mimarisi.",
+          "cardTags": "SEO · GEO · Schema · AI Search"
+        },
+        {
+          "title": "API ve Sistem Entegrasyonları",
+          "slug": "api-sistem-entegrasyonlari",
+          "url": "/web-yazilim-ajansi/api-sistem-entegrasyonlari",
+          "shortUrl": "/api-entegrasyonlari",
+          "description": [
+            "Web sitenizin ve özel yazılımlarınızın kullandığınız diğer sistemlerle veri alışverişi yapmasını sağlayan API ve entegrasyon çözümleri geliştiriyoruz.",
+            "Ödeme sistemleri, kargo firmaları, muhasebe yazılımları, CRM sistemleri, ERP altyapıları, pazar yerleri ve farklı üçüncü taraf servislerle entegrasyonlar gerçekleştiriyoruz.",
+            "Manuel veri girişini azaltarak ürün, stok, sipariş, müşteri ve ödeme bilgilerinin sistemler arasında otomatik olarak aktarılmasını sağlıyoruz.",
+            "Örneğin e-ticaret sitenizde oluşan siparişlerin muhasebe veya ERP sistemine aktarılması, kargo bilgilerinin otomatik oluşturulması ya da stok miktarlarının farklı platformlarda güncellenmesi gibi süreçleri otomatikleştirebiliyoruz.",
+            "Entegrasyon sürecinde veri güvenliği, hata yönetimi, bağlantı sürekliliği ve işlem kayıtları gibi teknik detayları dikkate alıyoruz.",
+            "İhtiyaç halinde markanıza ait sistemlerin diğer platformlarla iletişim kurabilmesi için özel API servisleri geliştiriyoruz."
+          ],
+          "scope": "Ödeme entegrasyonu, kargo entegrasyonu, CRM entegrasyonu, ERP entegrasyonu, muhasebe entegrasyonu, pazar yeri entegrasyonu, SMS ve e-posta servisleri, harita entegrasyonu ve özel API geliştirme.",
+          "cardTags": "API · ERP · CRM · Integration"
+        },
+        {
+          "title": "Web Sitesi Bakım ve Teknik Destek",
+          "slug": "web-sitesi-bakim-destek",
+          "url": "/web-yazilim-ajansi/web-sitesi-bakim-destek",
+          "shortUrl": "/web-sitesi-bakim-destek",
+          "description": [
+            "Web sitenizin yayına alınmasından sonra güvenli, güncel ve sorunsuz şekilde çalışmaya devam etmesini sağlıyoruz.",
+            "Yazılım güncellemeleri, güvenlik kontrolleri, yedekleme, performans iyileştirmeleri ve teknik hata çözümleri gibi süreçleri düzenli olarak yönetiyoruz.",
+            "Web sitenizde oluşabilecek form, bağlantı, görsel, mobil uyumluluk veya sayfa görüntüleme sorunlarını kontrol ediyoruz.",
+            "Yeni hizmet, ürün, kampanya veya içerik ihtiyaçlarında web sitenize gerekli eklemeleri gerçekleştiriyoruz.",
+            "SEO açısından kırık bağlantıları, yönlendirme hatalarını, indeksleme problemlerini ve sayfa performansını olumsuz etkileyebilecek teknik sorunları düzenli olarak kontrol ediyoruz.",
+            "Düzenli bakım sayesinde güvenlik açıklarının, veri kayıplarının ve kullanıcı deneyimini olumsuz etkileyen teknik problemlerin önüne geçmeyi hedefliyoruz."
+          ],
+          "scope": "Yazılım güncellemeleri, güvenlik kontrolleri, yedekleme, hata çözümü, performans iyileştirme, içerik güncellemeleri, yeni sayfa ekleme, form kontrolleri, SEO teknik kontrolleri ve teknik destek.",
+          "cardTags": "Maintenance · Security · Technical Support"
+        }
+      ],
+      "process": {
+        "title": "Fikirden Yayına Web Yazılım Sürecimiz",
+        "intro": [
+          "Her yazılım projesinin amacı, kapsamı ve teknik ihtiyacı farklıdır.",
+          "Bu nedenle projeye doğrudan tasarım veya kodlama ile başlamıyoruz. Öncelikle işletmenizin ihtiyaçlarını, kullanıcıların beklentilerini ve sistemin çözmesi gereken problemleri belirliyoruz.",
+          "Süreci analiz, planlama, tasarım, geliştirme, test, yayınlama ve teknik destek aşamalarıyla yönetiyoruz."
+        ],
+        "steps": [
+          {
+            "number": "01",
+            "title": "İhtiyaç ve Proje Analizi",
+            "paragraphs": [
+              "Sürecin ilk aşamasında markanızı, çalışma modelinizi ve proje hedeflerinizi detaylı biçimde inceliyoruz.",
+              "Web sitesinin veya yazılımın kimler tarafından kullanılacağını, hangi işlemleri gerçekleştirmesi gerektiğini ve hangi sistemlerle bağlantı kuracağını belirliyoruz.",
+              "Mevcut bir web sitesi veya yazılım bulunuyorsa teknik altyapıyı, kullanıcı deneyimini, SEO durumunu, güvenlik seviyesini ve geliştirilmesi gereken alanları analiz ediyoruz.",
+              "Proje kapsamını, sayfa yapılarını, modülleri, kullanıcı rollerini ve entegrasyon ihtiyaçlarını netleştiriyoruz."
+            ]
+          },
+          {
+            "number": "02",
+            "title": "Bilgi Mimarisi ve Teknik Planlama",
+            "paragraphs": [
+              "Analiz sonucunda web sitesinin sayfa yapısını veya yazılımın modül yapısını oluşturuyoruz.",
+              "Kullanıcıların sistem içerisinde nasıl ilerleyeceğini, hangi bilgilere ulaşacağını ve hangi işlemleri gerçekleştireceğini planlıyoruz.",
+              "SEO ve GEO açısından hizmetlerin, ürünlerin, kategorilerin, lokasyonların ve içeriklerin nasıl yapılandırılması gerektiğini belirliyoruz.",
+              "Proje için kullanılacak teknoloji, veri tabanı, yönetim paneli ve entegrasyon yapısını planlıyoruz.",
+              "Projenin ilerleyen dönemlerde büyüme ihtimalini dikkate alarak esnek ve geliştirilebilir bir teknik altyapı oluşturuyoruz."
+            ]
+          },
+          {
+            "number": "03",
+            "title": "UX/UI Tasarımı",
+            "paragraphs": [
+              "Belirlenen sayfa ve modül yapıları doğrultusunda kullanıcı deneyimi ve arayüz tasarımını hazırlıyoruz.",
+              "Kullanıcıların ihtiyaç duyduğu bilgilere kolayca ulaşmasını sağlayan sade, anlaşılır ve modern ekranlar oluşturuyoruz.",
+              "Web sitelerinde marka kimliği, görsel hiyerarşi, SEO başlık yapısı ve dönüşüm alanlarını birlikte değerlendiriyoruz.",
+              "Özel yazılımlarda ise kullanıcıların işlemlerini hızlı ve hatasız gerçekleştirebileceği pratik panel tasarımları geliştiriyoruz.",
+              "Masaüstü, tablet ve mobil cihazlarda kullanılabilecek responsive bir yapı oluşturuyoruz."
+            ]
+          },
+          {
+            "number": "04",
+            "title": "Yazılım Geliştirme",
+            "paragraphs": [
+              "Onaylanan tasarımları teknik altyapıya dönüştürüyor ve projenin yazılım geliştirme sürecine başlıyoruz.",
+              "Sayfaları, formları, kullanıcı hesaplarını, yönetim panellerini, ödeme sistemlerini ve proje kapsamındaki diğer modülleri geliştiriyoruz.",
+              "İhtiyaç duyulan üçüncü taraf servis ve API entegrasyonlarını sisteme bağlıyoruz.",
+              "SEO uyumlu URL yapıları, meta alanları, Schema işaretlemeleri, site haritası ve diğer teknik altyapıları yazılım sürecinde oluşturuyoruz.",
+              "Kod yapısının güvenli, hızlı, düzenli ve ileride geliştirilebilir olmasına önem veriyoruz."
+            ]
+          },
+          {
+            "number": "05",
+            "title": "Test ve Kalite Kontrol",
+            "paragraphs": [
+              "Proje yayınlanmadan önce tüm sayfaları, modülleri ve kullanıcı işlemlerini detaylı olarak test ediyoruz.",
+              "Mobil uyumluluk, tarayıcı uyumluluğu, form gönderimleri, kullanıcı girişleri, ödeme işlemleri ve entegrasyonları kontrol ediyoruz.",
+              "Sayfa hızını, bağlantıları, görsel görüntülemelerini, meta alanlarını, yönlendirmeleri ve olası hata senaryolarını değerlendiriyoruz.",
+              "SEO ve GEO altyapısının teknik olarak doğru çalıştığını, arama sistemlerinin sayfalara erişebildiğini ve yapılandırılmış verilerin doğru biçimde uygulandığını kontrol ediyoruz.",
+              "Tespit edilen sorunları gidererek sistemi yayına hazır hale getiriyoruz."
+            ]
+          },
+          {
+            "number": "06",
+            "title": "Yayına Alma ve Veri Aktarımı",
+            "paragraphs": [
+              "Testleri tamamlanan projeyi canlı sunucu ortamına taşıyoruz.",
+              "Alan adı, hosting, SSL sertifikası, güvenlik ve yönlendirme ayarlarını gerçekleştiriyoruz.",
+              "Mevcut web sitesinden yeni sisteme geçiş yapılıyorsa içerik, ürün, müşteri veya diğer verilerin aktarımını planlıyoruz.",
+              "SEO kaybı yaşanmaması için eski URL’lerden yeni sayfalara gerekli 301 yönlendirmelerini oluşturuyoruz.",
+              "Google Search Console, Google Analytics ve Google Tag Manager gibi ölçümleme araçlarının bağlantılarını kontrol ediyoruz."
+            ]
+          },
+          {
+            "number": "07",
+            "title": "Eğitim ve Kullanım Desteği",
+            "paragraphs": [
+              "Yönetim panelinin ve sistem özelliklerinin nasıl kullanılacağını ekibinize anlatıyoruz.",
+              "İçerik, ürün, fiyat, müşteri, sipariş veya stok bilgilerinin nasıl güncelleneceği konusunda gerekli yönlendirmeleri sağlıyoruz.",
+              "SEO başlıkları, meta açıklamalar, görseller ve blog içerikleri gibi alanların yönetim panelinden nasıl düzenlenebileceğini gösteriyoruz.",
+              "Kullanıcıların sistemi daha rahat kullanabilmesi için ihtiyaç halinde dokümantasyon veya video anlatımlar hazırlıyoruz."
+            ]
+          },
+          {
+            "number": "08",
+            "title": "Bakım ve Sürekli Geliştirme",
+            "paragraphs": [
+              "Proje yayına alındıktan sonra performansını ve teknik durumunu takip ediyoruz.",
+              "Güncelleme, güvenlik, yedekleme ve teknik destek süreçlerini yönetiyoruz.",
+              "Kullanıcı geri bildirimleri, SEO verileri, dönüşüm performansı ve yeni iş ihtiyaçları doğrultusunda sisteme yeni özellikler ekleyebiliyoruz.",
+              "Böylece yazılımın işletmenizle birlikte gelişmesini ve uzun süre verimli biçimde kullanılmasını sağlıyoruz."
+            ]
+          }
+        ]
+      },
+      "why": {
+        "items": [
+          {
+            "title": "Yazılımı İş Hedeflerinizle Birlikte Planlıyoruz",
+            "paragraphs": [
+              "Projeyi yalnızca teknik bir geliştirme süreci olarak değerlendirmiyoruz.",
+              "Web sitesinin veya yazılımın markanıza nasıl katkı sağlayacağını, hangi problemi çözeceğini ve hangi iş hedefini destekleyeceğini belirliyoruz.",
+              "Her modülü gerçek bir iş ihtiyacına göre planlıyor, gereksiz özelliklerle sistemi karmaşık hale getirmiyoruz."
+            ]
+          },
+          {
+            "title": "Tasarım ve Yazılımı Aynı Süreçte Yönetiyoruz",
+            "paragraphs": [
+              "UX/UI tasarımını ve yazılım geliştirmeyi farklı ekiplerin birbirinden kopuk süreçleri olarak ilerletmiyoruz.",
+              "Tasarım ve teknik ekiplerin birlikte çalışmasını sağlayarak uygulanabilir, kullanıcı dostu ve tutarlı dijital deneyimler oluşturuyoruz."
+            ]
+          },
+          {
+            "title": "SEO, GEO ve Dijital Pazarlama Altyapısını Baştan Kuruyoruz",
+            "paragraphs": [
+              "Web sitelerini SEO, GEO, Google Ads, Meta reklamları ve içerik pazarlaması çalışmalarına uygun biçimde geliştiriyoruz.",
+              "Teknik SEO gerekliliklerini proje tamamlandıktan sonra eklenen ayrı bir çalışma olarak değil, web yazılım sürecinin temel parçalarından biri olarak değerlendiriyoruz.",
+              "SEO uyumlu URL yapıları, doğru başlık hiyerarşisi, meta alanları, site haritası, yönlendirmeler, yapılandırılmış veri işaretlemeleri ve sayfa hızı optimizasyonlarını yazılım aşamasında planlıyoruz.",
+              "GEO altyapısıyla web sitenizdeki marka, hizmet, ürün ve uzmanlık bilgilerinin yapay zekâ destekli arama sistemleri tarafından daha kolay anlaşılmasını hedefliyoruz.",
+              "Formlar, WhatsApp butonları, telefon tıklamaları, rezervasyonlar, başvurular ve satın alma işlemleri gibi önemli kullanıcı aksiyonlarının ölçümlenebilmesi için Google Analytics ve Google Tag Manager altyapılarını da kuruyoruz."
+            ]
+          },
+          {
+            "title": "Hazır Sistemlerle Sınırlı Kalmıyoruz",
+            "paragraphs": [
+              "İhtiyacınız hazır altyapılarla karşılanabiliyorsa en verimli çözümü kullanıyor, özel bir geliştirme gerekiyorsa markanıza özel yazılım oluşturuyoruz.",
+              "Teknolojiyi proje ihtiyacına göre belirliyor, işletmenizi gereksiz ve karmaşık sistemlere yönlendirmiyoruz."
+            ]
+          },
+          {
+            "title": "Güvenlik ve Performansa Önem Veriyoruz",
+            "paragraphs": [
+              "Yazılım projelerinde veri güvenliği, sayfa hızı, yedekleme ve sistem kararlılığını temel gereklilikler olarak değerlendiriyoruz.",
+              "Kullanıcı deneyimini olumsuz etkileyen teknik sorunları azaltmak için projeyi farklı cihaz, tarayıcı ve kullanım senaryolarında test ediyoruz."
+            ]
+          },
+          {
+            "title": "Geliştirilebilir Sistemler Kuruyoruz",
+            "paragraphs": [
+              "Bugünkü ihtiyaçlarınıza cevap verirken gelecekte ortaya çıkabilecek yeni modül, kullanıcı ve entegrasyon ihtiyaçlarını da dikkate alıyoruz.",
+              "İşletmeniz büyüdükçe geliştirilebilecek esnek sistemler oluşturmaya önem veriyoruz."
+            ]
+          },
+          {
+            "title": "Teknik Destek Sunuyoruz",
+            "paragraphs": [
+              "Projeyi yayına aldıktan sonra iletişimi sonlandırmıyoruz.",
+              "Bakım, güncelleme, teknik destek, SEO kontrolleri ve yeni özellik geliştirme süreçlerinde markanızın yanında olmaya devam ediyoruz."
+            ]
+          }
+        ]
+      },
+      "cta": {
+        "title": "Dijital Altyapınızı Markanızla Birlikte Büyütün",
+        "paragraphs": [
+          "Markanız için hızlı, güvenilir, kullanıcı dostu, SEO ve GEO uyumlu bir web sitesi veya özel yazılım geliştirelim.",
+          "Kurumsal web sitesinden e-ticaret altyapısına, CRM sisteminden gayrimenkul stok takip yazılımına kadar tüm dijital ihtiyaçlarınızı tek bir ekip içerisinde planlayalım.",
+          "Projenizi, ihtiyaçlarınızı ve hedeflerinizi bizimle paylaşın; size özel yazılım yol haritasını birlikte oluşturalım."
+        ],
+        "primary": "Projenizi Anlatın",
+        "secondary": "Web Yazılım Teklifi Alın"
+      },
+      "seoContent": {
+        "title": "İstanbul Web Yazılım Ajansı",
+        "paragraphs": [
+          "Kiwi Marketing Agency, İstanbul merkezli web yazılım ajansı olarak markaların ihtiyaç duyduğu kurumsal web sitesi, e-ticaret sitesi, özel yazılım, CRM, yönetim paneli, gayrimenkul stok takip ve dijital platform çözümlerini geliştirir.",
+          "Web yazılım projelerine başlamadan önce markanın hedeflerini, iş süreçlerini, kullanıcı ihtiyaçlarını ve mevcut teknik altyapısını analiz ederiz.",
+          "Kurumsal web sitelerini markanın hizmetlerini doğru şekilde anlatan, hedef kitlenin ihtiyaç duyduğu bilgilere kolayca ulaşmasını sağlayan ve kullanıcıları iletişime yönlendiren bir yapıda hazırlarız.",
+          "E-ticaret sitelerinde ürün yönetimi, ödeme altyapısı, kargo entegrasyonu, stok takibi, sipariş yönetimi ve kampanya modüllerini markanın satış süreçlerine göre planlarız.",
+          "Hazır sistemlerin yeterli olmadığı projelerde işletmenin operasyonlarına özel web yazılımları ve yönetim panelleri geliştiririz.",
+          "Müşteri takibi, teklif yönetimi, rezervasyon, stok kontrolü, ödeme planı, kullanıcı yetkilendirme ve raporlama gibi ihtiyaçları tek bir dijital sistem içerisinde bir araya getiririz.",
+          "Gayrimenkul projeleri için bağımsız bölüm, blok, kat, daire, villa ve ticari alanların takip edilebildiği stok yönetim sistemleri oluştururuz.",
+          "Kat planları, vaziyet planları, fiyat listeleri, ödeme seçenekleri, rezervasyon durumları ve satış süreçlerinin tek panel üzerinden yönetilmesini sağlarız.",
+          "Web sitelerini ve özel yazılımları CRM, ERP, muhasebe, ödeme, kargo, pazar yeri ve diğer üçüncü taraf sistemlerle entegre ederiz.",
+          "İstanbul web yazılım ajansı arayışında olan markalara yalnızca kodlama hizmeti değil; analiz, kullanıcı deneyimi, tasarım, yazılım, entegrasyon, SEO, GEO, test ve teknik destek süreçlerini kapsayan uçtan uca çözümler sunarız.",
+          "Geliştirdiğimiz web sitelerinin mobil uyumlu, hızlı, güvenli ve teknik SEO gerekliliklerine uygun olmasına önem veririz.",
+          "SEO uyumlu URL yapıları, doğru başlık hiyerarşisi, meta açıklamalar, site haritası, yapılandırılmış veri ve sayfa hızı optimizasyonlarıyla web sitesinin arama motorları tarafından daha kolay taranmasını sağlarız.",
+          "GEO uyumlu içerik ve veri mimarisiyle markanın hizmetlerinin, ürünlerinin ve uzmanlık alanlarının yapay zekâ destekli arama sistemleri tarafından daha doğru anlaşılmasını hedefleriz.",
+          "Google Analytics, Google Tag Manager ve reklam dönüşüm takip altyapılarıyla kullanıcıların form, telefon, WhatsApp, rezervasyon veya satın alma gibi aksiyonlarının ölçümlenmesini sağlarız.",
+          "Projeleri yayına aldıktan sonra bakım, güvenlik, yedekleme, SEO teknik kontrolü ve sürekli geliştirme desteği sunarak dijital altyapının işletmeyle birlikte büyümesini hedefleriz."
+        ]
+      }
+    }
+  ],
+  "shortRedirects": [
+    {
+      "source": "/kurumsal-kimlik-tasarimi",
+      "destination": "/kreatif-tasarim-ajansi/kurumsal-kimlik-tasarimi"
+    },
+    {
+      "source": "/ux-ui-tasarimi",
+      "destination": "/kreatif-tasarim-ajansi/ux-ui-tasarimi"
+    },
+    {
+      "source": "/basili-materyal-tasarimi",
+      "destination": "/kreatif-tasarim-ajansi/basili-materyal-tasarimi"
+    },
+    {
+      "source": "/sosyal-medya-tasarimi",
+      "destination": "/kreatif-tasarim-ajansi/sosyal-medya-tasarimi"
+    },
+    {
+      "source": "/reklam-kreatifi-tasarimi",
+      "destination": "/kreatif-tasarim-ajansi/reklam-kreatifi-tasarimi"
+    },
+    {
+      "source": "/motion-grafik-tasarimi",
+      "destination": "/kreatif-tasarim-ajansi/motion-grafik-video-tasarimi"
+    },
+    {
+      "source": "/google-ads-reklam-yonetimi",
+      "destination": "/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi"
+    },
+    {
+      "source": "/meta-reklam-yonetimi",
+      "destination": "/dijital-pazarlama-ajansi/meta-reklam-yonetimi"
+    },
+    {
+      "source": "/performans-pazarlamasi",
+      "destination": "/dijital-pazarlama-ajansi/performans-pazarlamasi"
+    },
+    {
+      "source": "/sosyal-medya-yonetimi",
+      "destination": "/dijital-pazarlama-ajansi/sosyal-medya-yonetimi"
+    },
+    {
+      "source": "/seo-geo-hizmetleri",
+      "destination": "/dijital-pazarlama-ajansi/seo-geo-hizmetleri"
+    },
+    {
+      "source": "/icerik-pazarlamasi",
+      "destination": "/dijital-pazarlama-ajansi/icerik-pazarlamasi"
+    },
+    {
+      "source": "/donusum-optimizasyonu",
+      "destination": "/dijital-pazarlama-ajansi/donusum-optimizasyonu"
+    },
+    {
+      "source": "/web-analitigi-raporlama",
+      "destination": "/dijital-pazarlama-ajansi/web-analitigi-raporlama"
+    },
+    {
+      "source": "/sosyal-medya-stratejisi",
+      "destination": "/sosyal-medya-ajansi/sosyal-medya-stratejisi"
+    },
+    {
+      "source": "/sosyal-medya-icerik-uretimi",
+      "destination": "/sosyal-medya-ajansi/icerik-uretimi"
+    },
+    {
+      "source": "/reel-video-uretimi",
+      "destination": "/sosyal-medya-ajansi/reel-video-icerik-uretimi"
+    },
+    {
+      "source": "/sosyal-medya-metin-yazarligi",
+      "destination": "/sosyal-medya-ajansi/sosyal-medya-metin-yazarligi"
+    },
+    {
+      "source": "/sosyal-medya-moderasyonu",
+      "destination": "/sosyal-medya-ajansi/sosyal-medya-moderasyonu"
+    },
+    {
+      "source": "/sosyal-medya-reklam-yonetimi",
+      "destination": "/sosyal-medya-ajansi/sosyal-medya-reklam-yonetimi"
+    },
+    {
+      "source": "/sosyal-medya-raporlama",
+      "destination": "/sosyal-medya-ajansi/analiz-raporlama"
+    },
+    {
+      "source": "/kurumsal-web-sitesi",
+      "destination": "/web-yazilim-ajansi/kurumsal-web-sitesi"
+    },
+    {
+      "source": "/e-ticaret-sitesi",
+      "destination": "/web-yazilim-ajansi/e-ticaret-sitesi-yazilimi"
+    },
+    {
+      "source": "/ozel-web-yazilimi",
+      "destination": "/web-yazilim-ajansi/ozel-web-yazilimi"
+    },
+    {
+      "source": "/landing-page-tasarimi",
+      "destination": "/web-yazilim-ajansi/landing-page-tasarimi"
+    },
+    {
+      "source": "/crm-yazilimi",
+      "destination": "/web-yazilim-ajansi/crm-yazilimi"
+    },
+    {
+      "source": "/gayrimenkul-stok-takip-yazilimi",
+      "destination": "/web-yazilim-ajansi/gayrimenkul-stok-takip-yazilimi"
+    },
+    {
+      "source": "/seo-geo-uyumlu-web-altyapisi",
+      "destination": "/web-yazilim-ajansi/seo-geo-uyumlu-web-altyapisi"
+    },
+    {
+      "source": "/api-entegrasyonlari",
+      "destination": "/web-yazilim-ajansi/api-sistem-entegrasyonlari"
+    },
+    {
+      "source": "/web-sitesi-bakim-destek",
+      "destination": "/web-yazilim-ajansi/web-sitesi-bakim-destek"
+    }
+  ]
+}

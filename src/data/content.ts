@@ -15,19 +15,20 @@ export const site = {
 import { images } from "./images";
 
 export const nav = [
-  { label: "Anasayfa", href: "/" },
-  { label: "Hizmetler", href: "/hizmetler" },
-  { label: "Projeler", href: "/projeler" },
-  { label: "Blog", href: "/blog" },
-  { label: "İletişim", href: "/iletisim" },
+  { label: "Ana Sayfa", href: "/" },
+  { label: "Kreatif Tasarım", href: "/kreatif-tasarim-ajansi" },
+  { label: "Dijital Pazarlama", href: "/dijital-pazarlama-ajansi" },
+  { label: "Sosyal Medya", href: "/sosyal-medya-ajansi" },
+  { label: "Yazılım", href: "/web-yazilim-ajansi" },
 ];
 
 export const sideNav = [
-  { num: "1.0", label: "Studio", href: "/#about" },
-  { num: "2.0", label: "Projeler", href: "/projeler" },
-  { num: "3.0", label: "Hizmetler", href: "/hizmetler" },
-  { num: "4.0", label: "Blog", href: "/blog" },
-  { num: "5.0", label: "İletişim", href: "/iletisim" },
+  { num: "1.0", label: "Ana Sayfa", href: "/" },
+  { num: "2.0", label: "Kreatif Tasarım", href: "/kreatif-tasarim-ajansi" },
+  { num: "3.0", label: "Dijital Pazarlama", href: "/dijital-pazarlama-ajansi" },
+  { num: "4.0", label: "Sosyal Medya", href: "/sosyal-medya-ajansi" },
+  { num: "5.0", label: "Yazılım", href: "/web-yazilim-ajansi" },
+  { num: "6.0", label: "İletişim", href: "/iletisim" },
 ];
 
 export const hizmetlerPage = {

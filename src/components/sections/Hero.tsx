@@ -1,10 +1,12 @@
 "use client";
 
 import { hero, site } from "@/data/content";
+import { heroServices } from "@/data/service-pages";
+import { CONTACT_HREF } from "@/data/service-pages";
+import { HeroServiceList } from "@/components/home/HeroServiceList";
 import { CharacterSplit } from "@/components/ui/CharacterSplit";
 import { AuroraBackground } from "@/components/ui/AuroraBackground";
 import { HeroVideoBackground } from "@/components/ui/HeroVideoBackground";
-import { FloatingImages } from "@/components/ui/FloatingImages";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { MouseParallax } from "@/components/ui/MouseParallax";
 import { RotatingBadge } from "@/components/ui/RotatingBadge";
@@ -20,6 +22,7 @@ function HeroLite() {
       className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden pb-16 pt-24"
     >
       <HeroVideoBackground />
+      <HeroServiceList />
 
       <div className="relative z-30 mr-auto w-full min-w-0 max-w-[1440px] px-4 sm:px-6 md:max-w-[62%] md:px-10">
         <p className="text-xs font-medium uppercase tracking-[0.3em] text-kiwi-400">
@@ -44,24 +47,27 @@ function HeroLite() {
                 {hero.subtitle}
               </span>
             </div>
-            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-              <Link
-                href="/iletisim"
-                className="inline-flex min-h-11 items-center justify-center rounded-full bg-kiwi-400 px-6 py-3 text-xs font-semibold uppercase tracking-wider text-neutral-900"
-              >
-                {hero.cta} →
-              </Link>
-              <Link
-                href="/projeler"
-                className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/25 px-6 py-3 text-xs font-semibold uppercase tracking-wider text-white"
-              >
-                Projeler →
-              </Link>
-            </div>
+            <Link
+              href={CONTACT_HREF}
+              className="inline-flex min-h-11 items-center justify-center rounded-full bg-kiwi-400 px-6 py-3 text-xs font-semibold uppercase tracking-wider text-neutral-900"
+            >
+              {hero.cta} →
+            </Link>
           </div>
         </div>
 
-        <div className="mt-16 flex items-center justify-between border-t border-white/10 pt-6">
+        <ul className="mt-10 grid grid-cols-1 gap-2 border-t border-white/10 pt-6 sm:grid-cols-2 lg:hidden">
+          {heroServices.map((label) => (
+            <li
+              key={label}
+              className="text-sm font-light tracking-tight text-white/70"
+            >
+              {label}
+            </li>
+          ))}
+        </ul>
+
+        <div className="mt-10 flex items-center justify-between border-t border-white/10 pt-6 lg:mt-16">
           <span className="text-xs text-white/25">{site.fullName}®</span>
           <span className="text-xs text-white/30">Scroll</span>
         </div>
@@ -101,9 +107,10 @@ function HeroFull() {
       </div>
 
       <MouseParallax strength={14} className="absolute inset-0 z-[2]">
-        <FloatingImages />
+        <div className="hidden" aria-hidden />
       </MouseParallax>
 
+      <HeroServiceList />
       <RotatingBadge />
 
       <motion.div
@@ -177,22 +184,31 @@ function HeroFull() {
                 {hero.subtitle}
               </span>
             </div>
-            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-              <MagneticButton href="/iletisim" className="w-full justify-center sm:w-auto">
-                {hero.cta}
-              </MagneticButton>
-              <MagneticButton href="/projeler" variant="outline" className="w-full justify-center sm:w-auto">
-                Projeler
-              </MagneticButton>
-            </div>
+            <MagneticButton href={CONTACT_HREF} className="w-full justify-center sm:w-auto">
+              {hero.cta}
+            </MagneticButton>
           </div>
         </motion.div>
+
+        <ul className="mt-10 grid grid-cols-1 gap-2 border-t border-white/10 pt-6 sm:grid-cols-2 lg:hidden">
+          {heroServices.map((label, i) => (
+            <motion.li
+              key={label}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.1 + i * 0.05 }}
+              className="text-sm font-light tracking-tight text-white/70"
+            >
+              {label}
+            </motion.li>
+          ))}
+        </ul>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.4 }}
-          className="mt-20 flex items-center justify-between border-t border-white/10 pt-6 sm:mt-16"
+          className="mt-12 flex items-center justify-between border-t border-white/10 pt-6 sm:mt-16"
         >
           <span className="text-xs text-white/25">{site.fullName}®</span>
           <span className="text-xs text-white/30">Scroll</span>

@@ -1,18 +1,25 @@
 "use client";
 
-import { useLanguage } from "@/context/LanguageContext";
+import { primaryNav, CONTACT_HREF } from "@/data/service-pages";
 import { site } from "@/data/content";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export function SideNav() {
-  const { t } = useLanguage();
+  const pathname = usePathname();
 
   const sideNavItems = [
-    { num: "1.0", label: t.sideNav.studio, href: "/#about" },
-    { num: "2.0", label: t.sideNav.projects, href: "/projeler" },
-    { num: "3.0", label: t.sideNav.services, href: "/hizmetler" },
-    { num: "4.0", label: t.sideNav.blog, href: "/blog" },
-    { num: "5.0", label: t.sideNav.contact, href: "/iletisim" },
+    ...primaryNav.map((item, index) => ({
+      num: `${index + 1}.0`,
+      label: item.label,
+      href: item.href,
+    })),
+    {
+      num: `${primaryNav.length + 1}.0`,
+      label: "İletişim",
+      href: CONTACT_HREF,
+    },
   ];
 
   return (
@@ -20,20 +27,37 @@ export function SideNav() {
       <div className="mb-4 rotate-90 text-[10px] font-medium uppercase tracking-[0.3em] text-neutral-900/30">
         {site.name}®
       </div>
-      {sideNavItems.map((item) => (
-        <Link
-          key={item.href}
-          href={item.href}
-          className="group flex items-center gap-3 text-right"
-        >
-          <span className="text-[10px] text-neutral-900/30 transition-colors group-hover:text-kiwi-400">
-            {item.num}
-          </span>
-          <span className="text-xs font-medium text-neutral-900/50 transition-colors group-hover:text-neutral-900">
-            {item.label}
-          </span>
-        </Link>
-      ))}
+      {sideNavItems.map((item) => {
+        const active =
+          item.href === "/"
+            ? pathname === "/"
+            : pathname === item.href || pathname.startsWith(`${item.href}/`);
+        return (
+          <Link
+            key={item.href}
+            href={item.href}
+            aria-current={active ? "page" : undefined}
+            className="group flex items-center gap-3 text-right focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400 focus-visible:ring-offset-2"
+          >
+            <span
+              className={cn(
+                "text-[10px] transition-colors group-hover:text-kiwi-400",
+                active ? "text-kiwi-400" : "text-neutral-900/30"
+              )}
+            >
+              {item.num}
+            </span>
+            <span
+              className={cn(
+                "text-xs font-medium transition-colors group-hover:text-neutral-900",
+                active ? "text-neutral-900" : "text-neutral-900/50"
+              )}
+            >
+              {item.label}
+            </span>
+          </Link>
+        );
+      })}
     </aside>
   );
 }

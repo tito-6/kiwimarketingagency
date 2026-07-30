@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { shortRedirects } from "./src/data/service-pages";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
@@ -7,6 +8,25 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000,
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [64, 96, 128, 256, 384],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/projeler",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/projeler/:path*",
+        destination: "/",
+        permanent: true,
+      },
+      ...shortRedirects.map((item) => ({
+        source: item.source,
+        destination: item.destination,
+        permanent: true,
+      })),
+    ];
   },
   headers: async () => [
     {

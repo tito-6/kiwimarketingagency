@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/context/LanguageContext";
+import { primaryNav, CONTACT_HREF } from "@/data/service-pages";
 import { site } from "@/data/content";
 import { Logo } from "@/components/ui/Logo";
 import Link from "next/link";
@@ -14,11 +15,9 @@ export function Footer() {
   const { t } = useLanguage();
 
   const navItems = [
-    { label: t.nav.home, href: "/" },
-    { label: t.nav.services, href: "/hizmetler" },
-    { label: t.nav.projects, href: "/projeler" },
+    ...primaryNav,
     { label: t.nav.blog, href: "/blog" },
-    { label: t.nav.contact, href: "/iletisim" },
+    { label: t.header.contactButton, href: CONTACT_HREF },
   ];
 
   return (
@@ -31,13 +30,13 @@ export function Footer() {
             </p>
             <a
               href={`tel:${site.phoneTel}`}
-              className="mt-4 block text-2xl font-light text-neutral-900 hover:text-kiwi-400"
+              className="mt-4 block text-2xl font-light text-neutral-900 hover:text-kiwi-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400 focus-visible:ring-offset-2"
             >
               {site.phone}
             </a>
             <a
               href={`mailto:${site.email}`}
-              className="mt-2 block text-lg text-neutral-900/70 hover:text-kiwi-400"
+              className="mt-2 block text-lg text-neutral-900/70 hover:text-kiwi-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400 focus-visible:ring-offset-2"
             >
               {site.email}
             </a>
@@ -52,7 +51,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-neutral-900/60 transition-colors hover:text-neutral-900"
+                    className="text-neutral-900/60 transition-colors hover:text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400 focus-visible:ring-offset-2"
                   >
                     {item.label}
                   </Link>
@@ -72,7 +71,7 @@ export function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-neutral-900/60 transition-colors hover:text-neutral-900"
+                    className="text-neutral-900/60 transition-colors hover:text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400 focus-visible:ring-offset-2"
                   >
                     {social.label}
                   </a>
@@ -95,7 +94,9 @@ export function Footer() {
         </div>
 
         <div className="mt-16 border-t border-neutral-900/10 pt-8 text-center text-xs text-neutral-900/40">
-          <p>© {site.year} {site.fullName}. {t.footer.rights}</p>
+          <p>
+            © {site.year} {site.fullName}. {t.footer.rights}
+          </p>
         </div>
       </div>
     </footer>

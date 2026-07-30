@@ -6,6 +6,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
+const serviceHrefs: Record<string, string> = {
+  "kreatif-tasarim": "/kreatif-tasarim-ajansi",
+  "sosyal-medya": "/sosyal-medya-ajansi",
+  "dijital-pazarlama": "/dijital-pazarlama-ajansi",
+  "web-yazilim": "/web-yazilim-ajansi",
+  seo: "/dijital-pazarlama-ajansi/seo-geo-hizmetleri",
+};
+
 export function ServicesBento() {
   return (
     <section className="py-20">
@@ -22,7 +30,7 @@ export function ServicesBento() {
             return (
               <TiltCard key={service.id} className={spans}>
                 <Link
-                  href={`#${service.slug}`}
+                  href={serviceHrefs[service.slug] ?? `#${service.slug}`}
                   className="relative block h-full overflow-hidden rounded-3xl border border-neutral-900/10"
                 >
                   <Image
