@@ -4,7 +4,6 @@ import { useLanguage } from "@/context/LanguageContext";
 import { CONTACT_HREF, primaryNav } from "@/data/service-pages";
 import { site } from "@/data/content";
 import { Logo } from "@/components/ui/Logo";
-import { FlagIcon } from "@/components/ui/FlagIcon";
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -12,7 +11,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 
 export function Header() {
-  const { lang, setLang, t } = useLanguage();
+  const { t } = useLanguage();
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -83,48 +82,6 @@ export function Header() {
           </nav>
 
           <div className="hidden items-center gap-4 xl:flex">
-            <div
-              className={cn(
-                "flex items-center gap-1 rounded-full border p-1 backdrop-blur-md transition-colors",
-                isDarkThemeHeader
-                  ? "border-white/20 bg-white/10"
-                  : "border-neutral-900/15 bg-neutral-900/5"
-              )}
-            >
-              <button
-                type="button"
-                onClick={() => setLang("tr")}
-                aria-pressed={lang === "tr"}
-                className={cn(
-                  "flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400",
-                  lang === "tr"
-                    ? "bg-kiwi-400 text-neutral-900 shadow-sm"
-                    : isDarkThemeHeader
-                      ? "text-white/80 hover:text-white"
-                      : "text-neutral-700 hover:text-neutral-900"
-                )}
-              >
-                <FlagIcon code="TR" className="h-3 w-4 shrink-0 rounded-xs" />
-                <span>TR</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => setLang("en")}
-                aria-pressed={lang === "en"}
-                className={cn(
-                  "flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400",
-                  lang === "en"
-                    ? "bg-kiwi-400 text-neutral-900 shadow-sm"
-                    : isDarkThemeHeader
-                      ? "text-white/80 hover:text-white"
-                      : "text-neutral-700 hover:text-neutral-900"
-                )}
-              >
-                <FlagIcon code="GB" className="h-3 w-4 shrink-0 rounded-xs" />
-                <span>EN</span>
-              </button>
-            </div>
-
             <Link
               href={CONTACT_HREF}
               className={cn(
@@ -139,48 +96,6 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-3 xl:hidden">
-            <div
-              className={cn(
-                "flex items-center gap-0.5 rounded-full border p-0.5",
-                isDarkThemeHeader
-                  ? "border-white/20 bg-white/10"
-                  : "border-neutral-900/15 bg-neutral-900/5"
-              )}
-            >
-              <button
-                type="button"
-                onClick={() => setLang("tr")}
-                aria-pressed={lang === "tr"}
-                className={cn(
-                  "flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-bold uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400",
-                  lang === "tr"
-                    ? "bg-kiwi-400 text-neutral-900"
-                    : isDarkThemeHeader
-                      ? "text-white"
-                      : "text-neutral-800"
-                )}
-              >
-                <FlagIcon code="TR" className="h-2.5 w-3.5 shrink-0 rounded-2xs" />
-                <span>TR</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => setLang("en")}
-                aria-pressed={lang === "en"}
-                className={cn(
-                  "flex items-center gap-1 rounded-full px-2.5 py-1 text-[11px] font-bold uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400",
-                  lang === "en"
-                    ? "bg-kiwi-400 text-neutral-900"
-                    : isDarkThemeHeader
-                      ? "text-white"
-                      : "text-neutral-800"
-                )}
-              >
-                <FlagIcon code="GB" className="h-2.5 w-3.5 shrink-0 rounded-2xs" />
-                <span>EN</span>
-              </button>
-            </div>
-
             <button
               type="button"
               ref={closeRef}
@@ -253,7 +168,7 @@ export function Header() {
                 initial={{ opacity: 0, x: -24 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: primaryNav.length * 0.08 }}
-                className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-neutral-900/10 pt-6"
+                className="mt-6 border-t border-neutral-900/10 pt-6"
               >
                 <Link
                   href={CONTACT_HREF}
@@ -262,37 +177,6 @@ export function Header() {
                 >
                   {t.header.contactButton}
                 </Link>
-
-                <div className="flex items-center rounded-full border border-neutral-900/10 bg-neutral-100 p-1">
-                  <button
-                    type="button"
-                    onClick={() => setLang("tr")}
-                    aria-pressed={lang === "tr"}
-                    className={cn(
-                      "flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400",
-                      lang === "tr"
-                        ? "bg-kiwi-400 text-neutral-900"
-                        : "text-neutral-600"
-                    )}
-                  >
-                    <FlagIcon code="TR" className="h-3 w-4 shrink-0 rounded-xs" />
-                    <span>Türkçe</span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setLang("en")}
-                    aria-pressed={lang === "en"}
-                    className={cn(
-                      "flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold uppercase transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-kiwi-400",
-                      lang === "en"
-                        ? "bg-kiwi-400 text-neutral-900"
-                        : "text-neutral-600"
-                    )}
-                  >
-                    <FlagIcon code="GB" className="h-3 w-4 shrink-0 rounded-xs" />
-                    <span>English</span>
-                  </button>
-                </div>
               </motion.div>
             </nav>
           </motion.div>
