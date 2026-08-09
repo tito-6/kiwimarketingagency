@@ -1,8 +1,6 @@
 "use client";
 
 import type { BlogPost } from "@/data/blog";
-import { ClipReveal } from "@/components/blog/ui/ClipReveal";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -27,36 +25,48 @@ export function BlogArticleNav({
   );
 }
 
-function NavCard({ post, direction }: { post: BlogPost; direction: "prev" | "next" }) {
+function NavCard({
+  post,
+  direction,
+}: {
+  post: BlogPost;
+  direction: "prev" | "next";
+}) {
   const isNext = direction === "next";
 
   return (
-    <ClipReveal direction={isNext ? "right" : "left"}>
-      <Link
-        href={`/blog/${post.slug}`}
-        data-cursor="pointer"
-        className={`group relative flex min-h-[160px] min-w-0 flex-col justify-end overflow-hidden border-neutral-900/10 p-6 sm:min-h-[200px] sm:p-8 md:min-h-[280px] md:p-12 ${
-          isNext ? "border-t md:border-l md:border-t-0 md:items-end md:text-right" : "border-b md:border-b-0 md:border-r"
-        }`}
-      >
-        <div className="absolute inset-0">
-          <Image src={post.image} alt="" fill className="object-cover opacity-20 transition-opacity group-hover:opacity-40" sizes="(max-width: 768px) 100vw, 50vw" />
-          <div className={`absolute inset-0 bg-gradient-to-${isNext ? "l" : "r"} from-black/80 via-black/50 to-transparent`} />
-        </div>
+    <Link
+      href={`/blog/${post.slug}`}
+      data-cursor="pointer"
+      className={`group relative flex min-h-[140px] min-w-0 flex-col justify-end overflow-hidden border-neutral-900/10 p-6 sm:min-h-[160px] sm:p-8 md:p-10 ${
+        isNext
+          ? "border-t md:border-l md:border-t-0 md:items-end md:text-right"
+          : "border-b md:border-b-0 md:border-r"
+      }`}
+    >
+      <div className="absolute inset-0">
+        <Image
+          src={post.image}
+          alt=""
+          fill
+          className="object-cover opacity-20 transition-opacity group-hover:opacity-35"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
+      </div>
 
-        <div className="relative min-w-0">
-          <motion.span
-            className="text-xs uppercase tracking-[0.25em]"
-            style={{ color: post.accent }}
-            whileHover={{ x: isNext ? 6 : -6 }}
-          >
-            {isNext ? "Sonraki yazı →" : "← Önceki yazı"}
-          </motion.span>
-          <h3 className="mt-3 max-w-sm break-words text-lg font-medium text-neutral-900 transition-colors group-hover:text-kiwi-400 sm:text-xl md:text-2xl">
-            {post.title}
-          </h3>
-        </div>
-      </Link>
-    </ClipReveal>
+      <div className="relative min-w-0">
+        <span
+          className="text-xs uppercase tracking-[0.25em]"
+          style={{ color: post.accent }}
+        >
+          {isNext ? "Sonraki" : "Önceki"}
+        </span>
+        <h3 className="mt-2 line-clamp-2 text-lg font-medium text-white sm:text-xl">
+          {post.title}
+        </h3>
+      </div>
+    </Link>
   );
 }

@@ -30,9 +30,9 @@ function unlockAndPlay(video: HTMLVideoElement) {
 }
 
 /**
- * Homepage hero background video.
- * On iOS/Safari (lite-motion): poster-first, deferred src, preload=none —
- * avoids multi‑MB auto download that freezes Safari.
+ * Homepage hero background.
+ * iOS/Safari: poster image only — never download the video (major jank source).
+ * Desktop: muted looping 720p showreel.
  */
 export function HeroVideoBackground() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -40,42 +40,20 @@ export function HeroVideoBackground() {
   const [shouldLoad, setShouldLoad] = useState(false);
 
   useEffect(() => {
-    if (!lite) {
-      setShouldLoad(true);
-      return;
-    }
-
-    // Defer video network work on constrained engines (iOS/Safari).
-    let idleId: number | undefined;
-    let timeoutId: ReturnType<typeof setTimeout> | undefined;
-
-    const enable = () => setShouldLoad(true);
-
-    if ("requestIdleCallback" in window) {
-      idleId = window.requestIdleCallback(enable, { timeout: 2800 });
-    } else {
-      timeoutId = setTimeout(enable, 1500);
-    }
-
-    return () => {
-      if (idleId !== undefined && "cancelIdleCallback" in window) {
-        window.cancelIdleCallback(idleId);
-      }
-      if (timeoutId) clearTimeout(timeoutId);
-    };
+    // Never stream video on iOS/Safari lite path.
+    if (lite) return;
+    setShouldLoad(true);
   }, [lite]);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video || !shouldLoad) return;
 
-    // Attach src only when we intend to play (critical for iOS).
     if (!video.src) {
       video.src = VIDEO_SRC;
     }
 
     const play = unlockAndPlay(video);
-
     const onReady = () => play();
     video.addEventListener("loadeddata", onReady);
     video.addEventListener("canplay", onReady);
@@ -117,7 +95,7 @@ export function HeroVideoBackground() {
         <img
           src={showreel.poster}
           alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
+          className={`absolute inset-0 h-full w-full object-cover ${lite ? "opacity-70" : "opacity-40"}`}
           decoding="async"
           fetchPriority="high"
         />
@@ -131,7 +109,7 @@ export function HeroVideoBackground() {
             muted
             loop
             playsInline
-            preload={lite ? "none" : "metadata"}
+            preload="metadata"
             disablePictureInPicture
             controls={false}
           />

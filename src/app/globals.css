@@ -124,6 +124,16 @@ html.lite-motion .backdrop-blur-sm {
 
 html.lite-motion .home-defer {
   content-visibility: auto;
-  contain-intrinsic-size: 1px 720px;
+  contain-intrinsic-size: auto 320px;
+}
+
+/* Kill expensive paint/filter work on constrained engines */
+html.lite-motion * {
+  scroll-behavior: auto !important;
+}
+
+html.lite-motion .animate-marquee,
+html.lite-motion [class*="animate-marquee"] {
+  animation: none !important;
 }
 

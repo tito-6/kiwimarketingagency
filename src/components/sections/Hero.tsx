@@ -19,7 +19,7 @@ function HeroLite() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden pb-16 pt-24"
+      className="relative flex min-h-[85svh] flex-col justify-end overflow-hidden pb-12 pt-24 sm:min-h-[90svh] sm:pb-16"
     >
       <HeroVideoBackground />
       <HeroServiceList />
