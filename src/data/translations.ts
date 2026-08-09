@@ -193,10 +193,10 @@ export const translations: Record<Language, TranslationDictionary> = {
       services: "Services",
       projects: "Projects",
       blog: "Blog",
-      contact: "Contact",
+      contact: "İletişim",
     },
     header: {
-      contactButton: "Contact",
+      contactButton: "İletişim",
       menuAria: "Menu",
     },
     sideNav: {
@@ -204,7 +204,7 @@ export const translations: Record<Language, TranslationDictionary> = {
       projects: "Projects",
       services: "Services",
       blog: "Blog",
-      contact: "Contact",
+      contact: "İletişim",
     },
     hero: {
       eyebrow: "Digital Marketing Agency",
@@ -282,7 +282,7 @@ export const translations: Record<Language, TranslationDictionary> = {
       exploreServices: "Explore Services",
     },
     footer: {
-      contactHeader: "Contact",
+      contactHeader: "İletişim",
       navHeader: "Navigation",
       socialHeader: "Social Media",
       privacy: "Privacy Policy",

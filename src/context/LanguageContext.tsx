@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext } from "react";
 import { translations, type Language, type TranslationDictionary } from "@/data/translations";
 
 type LanguageContextType = {
@@ -11,41 +11,16 @@ type LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+/** Site is Turkish-only — language toggle removed from the navbar. */
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLangState] = useState<Language>("tr");
-
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem("kiwi_lang") as Language | null;
-      if (stored === "tr" || stored === "en") {
-        setLangState(stored);
-      } else {
-        const navLang = navigator.language || "";
-        if (navLang.toLowerCase().startsWith("en")) {
-          setLangState("en");
-        }
-      }
-    } catch {
-      // Ignore localStorage errors
-    }
-  }, []);
-
-  const setLang = (newLang: Language) => {
-    setLangState(newLang);
-    try {
-      localStorage.setItem("kiwi_lang", newLang);
-      document.documentElement.lang = newLang;
-    } catch {
-      // Ignore
-    }
+  const value: LanguageContextType = {
+    lang: "tr",
+    setLang: () => {},
+    t: translations.tr,
   };
 
-  const t: TranslationDictionary = translations[lang] || translations.tr;
-
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t }}>
-      {children}
-    </LanguageContext.Provider>
+    <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>
   );
 }
 
