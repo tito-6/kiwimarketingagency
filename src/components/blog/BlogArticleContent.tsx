@@ -3,6 +3,8 @@
 import type { BlogPost } from "@/data/blog";
 import type { ContentBlock } from "@/data/blog-content";
 import { ClipReveal } from "@/components/blog/ui/ClipReveal";
+import { RichText } from "@/components/blog/RichText";
+import { useLiteMotion } from "@/lib/motion";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -13,10 +15,18 @@ export function BlogArticleContent({
   blocks: ContentBlock[];
   post: BlogPost;
 }) {
+  const lite = useLiteMotion();
+
   return (
     <div className="min-w-0 space-y-8 sm:space-y-12">
       {blocks.map((block, i) => (
-        <BlockRenderer key={`${block.type}-${i}`} block={block} post={post} index={i} />
+        <BlockRenderer
+          key={`${block.type}-${i}`}
+          block={block}
+          post={post}
+          index={i}
+          lite={lite}
+        />
       ))}
     </div>
   );
@@ -26,17 +36,19 @@ function BlockRenderer({
   block,
   post,
   index,
+  lite,
 }: {
   block: ContentBlock;
   post: BlogPost;
   index: number;
+  lite: boolean;
 }) {
   switch (block.type) {
     case "lead":
       return (
         <ClipReveal delay={index * 0.05}>
           <p className="text-xl font-light leading-relaxed break-words text-neutral-900/75 sm:text-2xl md:text-3xl md:leading-snug">
-            {block.text}
+            <RichText text={block.text} />
           </p>
         </ClipReveal>
       );
@@ -62,15 +74,22 @@ function BlockRenderer({
       );
 
     case "p":
+      if (lite) {
+        return (
+          <p className="text-lg leading-[1.85] text-neutral-900/55">
+            <RichText text={block.text} />
+          </p>
+        );
+      }
       return (
         <motion.p
           className="text-lg leading-[1.85] text-neutral-900/55"
-          initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
-          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-          {block.text}
+          <RichText text={block.text} />
         </motion.p>
       );
 
@@ -88,7 +107,7 @@ function BlockRenderer({
               &ldquo;
             </motion.span>
             <p className="relative text-xl font-light italic leading-relaxed text-neutral-900/85 md:text-2xl">
-              {block.text}
+              <RichText text={block.text} />
             </p>
             {block.author && (
               <footer className="relative mt-6 text-sm text-neutral-900/40">— {block.author}</footer>
@@ -142,7 +161,9 @@ function BlockRenderer({
               className="flex gap-3 text-base break-words text-neutral-900/55 sm:gap-4 sm:text-lg"
             >
               <span style={{ color: post.accent }}>→</span>
-              {item}
+              <span>
+                <RichText text={item} />
+              </span>
             </motion.li>
           ))}
         </motion.ul>

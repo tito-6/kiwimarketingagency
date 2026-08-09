@@ -1,10 +1,10 @@
 "use client";
 
 import type { BlogPost } from "@/data/blog";
-import { blogPosts } from "@/data/blog";
 import {
   getAdjacentPosts,
   getArticleContent,
+  getRelatedPosts,
   getSecondaryImage,
 } from "@/data/blog-content";
 import { BlogArticleContent } from "@/components/blog/BlogArticleContent";
@@ -220,7 +220,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
         <section className="border-t border-neutral-900/10 py-24">
           <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-10">
             <TextReveal text="İlgili yazılar" className="text-3xl font-light text-neutral-900" />
-            <RelatedGrid currentSlug={post.slug} accent={post.accent} />
+            <RelatedGrid post={post} accent={post.accent} />
             <div className="mt-12 text-center">
               <MagneticButton href="/blog" variant="outline">
                 Tüm Yazılar
@@ -235,8 +235,8 @@ export function BlogArticle({ post }: { post: BlogPost }) {
   );
 }
 
-function RelatedGrid({ currentSlug, accent }: { currentSlug: string; accent: string }) {
-  const related = blogPosts.filter((p) => p.slug !== currentSlug).slice(0, 3);
+function RelatedGrid({ post, accent }: { post: BlogPost; accent: string }) {
+  const related = getRelatedPosts(post, 3);
 
   return (
     <div className="mt-12 grid gap-6 md:grid-cols-3">

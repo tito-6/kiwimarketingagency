@@ -1,4 +1,5 @@
 import { images } from "./images";
+import seoBlogs from "./seo-blogs.json";
 
 export const blogPage = {
   label: "Kiwi Journal",
@@ -6,6 +7,21 @@ export const blogPage = {
   titleAccent: "ve her şey arasında.",
   description:
     "Dijital büyüme, tasarım stratejisi ve pazarlama dünyasından en taze düşünceler. Okumaya değer.",
+};
+
+export const blogCategories = [
+  "Tümü",
+  "Web Stratejisi",
+  "Tasarım",
+  "Dijital Pazarlama",
+  "SEO",
+  "Trendler",
+  "Sosyal Medya",
+] as const;
+
+export type RelatedServiceLink = {
+  href: string;
+  label: string;
 };
 
 export type BlogPost = {
@@ -20,19 +36,39 @@ export type BlogPost = {
   gradient: string;
   featured?: boolean;
   author: string;
+  keyword?: string;
+  keywords?: string[];
+  relatedServices?: RelatedServiceLink[];
+  relatedSlugs?: string[];
 };
 
-export const blogCategories = [
-  "Tümü",
-  "Web Stratejisi",
-  "Tasarım",
-  "Dijital Pazarlama",
-  "SEO",
-  "Trendler",
-  "Sosyal Medya",
-] as const;
+const imageByKey = {
+  social: images.services.social,
+  marketing: images.services.marketing,
+  seo: images.services.seo,
+  creative: images.services.creative,
+  web: images.services.web,
+} as const;
 
-export const blogPosts: BlogPost[] = [
+const seoPosts: BlogPost[] = seoBlogs.map((p) => ({
+  slug: p.slug,
+  title: p.title,
+  excerpt: p.excerpt,
+  category: p.category,
+  date: p.date,
+  readTime: p.readTime,
+  image: imageByKey[p.imageKey as keyof typeof imageByKey] ?? images.services.marketing,
+  accent: p.accent,
+  gradient: p.gradient,
+  featured: p.featured,
+  author: p.author,
+  keyword: p.keyword,
+  keywords: p.keywords,
+  relatedServices: p.relatedServices,
+  relatedSlugs: p.relatedSlugs,
+}));
+
+const legacyPosts: BlogPost[] = [
   {
     slug: "landing-page-vs-website",
     title: "Landing page mi, web sitesi mi? Fark sandığınızdan büyük.",
@@ -44,8 +80,12 @@ export const blogPosts: BlogPost[] = [
     image: images.services.web,
     accent: "#a9cb18",
     gradient: "from-emerald-600/40 to-lime-400/10",
-    featured: true,
     author: "Kiwi Editör",
+    relatedServices: [
+      { href: "/web-yazilim-ajansi/landing-page-tasarimi", label: "Landing Page Tasarımı" },
+      { href: "/web-yazilim-ajansi/kurumsal-web-sitesi", label: "Kurumsal Web Sitesi" },
+    ],
+    relatedSlugs: ["web-performance", "cro-playbook"],
   },
   {
     slug: "design-is-decision",
@@ -59,6 +99,10 @@ export const blogPosts: BlogPost[] = [
     accent: "#fda4af",
     gradient: "from-rose-500/35 to-orange-400/10",
     author: "Selin Arslan",
+    relatedServices: [
+      { href: "/kreatif-tasarim-ajansi", label: "Kreatif Tasarım Ajansı" },
+      { href: "/kreatif-tasarim-ajansi/kurumsal-kimlik-tasarimi", label: "Kurumsal Kimlik Tasarımı" },
+    ],
   },
   {
     slug: "digital-trends-2025",
@@ -72,6 +116,9 @@ export const blogPosts: BlogPost[] = [
     accent: "#c4b5fd",
     gradient: "from-violet-600/40 to-fuchsia-400/10",
     author: "Kiwi Research",
+    relatedServices: [
+      { href: "/dijital-pazarlama-ajansi", label: "Dijital Pazarlama Ajansı" },
+    ],
   },
   {
     slug: "meta-ads-2025",
@@ -85,6 +132,10 @@ export const blogPosts: BlogPost[] = [
     accent: "#93c5fd",
     gradient: "from-blue-600/35 to-indigo-400/10",
     author: "Emre Yıldız",
+    relatedServices: [
+      { href: "/dijital-pazarlama-ajansi/meta-reklam-yonetimi", label: "Meta Reklam Yönetimi" },
+    ],
+    relatedSlugs: ["google-ads-mi-meta-ads-mi"],
   },
   {
     slug: "seo-organic-growth",
@@ -98,6 +149,10 @@ export const blogPosts: BlogPost[] = [
     accent: "#67e8f9",
     gradient: "from-cyan-600/35 to-teal-400/10",
     author: "Deniz Korkmaz",
+    relatedServices: [
+      { href: "/dijital-pazarlama-ajansi/seo-geo-hizmetleri", label: "SEO & GEO Hizmetleri" },
+    ],
+    relatedSlugs: ["seo-ve-geo-arasindaki-fark", "yapay-zeka-aramalarinda-marka-gorunurlugu"],
   },
   {
     slug: "brand-voice-guide",
@@ -111,6 +166,9 @@ export const blogPosts: BlogPost[] = [
     accent: "#fcd34d",
     gradient: "from-amber-500/30 to-yellow-400/10",
     author: "Ayşe Demir",
+    relatedServices: [
+      { href: "/sosyal-medya-ajansi/sosyal-medya-metin-yazarligi", label: "Sosyal Medya Metin Yazarlığı" },
+    ],
   },
   {
     slug: "cro-playbook",
@@ -124,6 +182,9 @@ export const blogPosts: BlogPost[] = [
     accent: "#a78bfa",
     gradient: "from-purple-600/35 to-violet-400/10",
     author: "Kiwi Studio",
+    relatedServices: [
+      { href: "/dijital-pazarlama-ajansi/donusum-optimizasyonu", label: "Dönüşüm Optimizasyonu" },
+    ],
   },
   {
     slug: "social-algorithm",
@@ -137,6 +198,10 @@ export const blogPosts: BlogPost[] = [
     accent: "#f9a8d4",
     gradient: "from-pink-500/35 to-rose-400/10",
     author: "Zeynep Akın",
+    relatedServices: [
+      { href: "/sosyal-medya-ajansi", label: "Sosyal Medya Ajansı" },
+    ],
+    relatedSlugs: ["sosyal-medya-yonetimi-nedir"],
   },
   {
     slug: "web-performance",
@@ -150,7 +215,13 @@ export const blogPosts: BlogPost[] = [
     accent: "#86efac",
     gradient: "from-green-600/30 to-emerald-400/10",
     author: "Can Öztürk",
+    relatedServices: [
+      { href: "/web-yazilim-ajansi/seo-geo-uyumlu-web-altyapisi", label: "SEO Uyumlu Web Altyapısı" },
+    ],
   },
 ];
+
+/** Newest SEO posts first, then legacy archive. */
+export const blogPosts: BlogPost[] = [...seoPosts, ...legacyPosts];
 
 export const featuredPost = blogPosts.find((p) => p.featured) ?? blogPosts[0];

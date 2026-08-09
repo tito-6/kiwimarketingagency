@@ -12,19 +12,19 @@ import Link from "next/link";
 
 const homeBlogVisuals = [
   {
-    image: images.services.web,
-    imageAlt: "Web stratejisi ve landing page tasarımı — Kiwi Marketing Agency",
-    slug: "landing-page-vs-website",
-  },
-  {
-    image: images.services.creative,
-    imageAlt: "Kreatif tasarım ve marka kararları — Kiwi Marketing Agency",
-    slug: "design-is-decision",
+    image: images.services.social,
+    imageAlt: "Sosyal medya yönetimi — Kiwi Marketing Agency",
+    slug: "sosyal-medya-yonetimi-nedir",
   },
   {
     image: images.services.marketing,
-    imageAlt: "Dijital pazarlama trendleri ve strateji — Kiwi Marketing Agency",
-    slug: "digital-trends-2025",
+    imageAlt: "Google Ads ve Meta Ads karşılaştırması — Kiwi Marketing Agency",
+    slug: "google-ads-mi-meta-ads-mi",
+  },
+  {
+    image: images.services.seo,
+    imageAlt: "SEO ve GEO farkı — Kiwi Marketing Agency",
+    slug: "seo-ve-geo-arasindaki-fark",
   },
 ] as const;
 

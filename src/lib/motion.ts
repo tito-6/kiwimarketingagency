@@ -4,17 +4,6 @@ import { useEffect, useState, useSyncExternalStore } from "react";
 
 const LITE_CLASS = "lite-motion";
 
-export function detectLiteMotion() {
-  if (typeof window === "undefined") return false;
-
-  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const saveData =
-    "connection" in navigator &&
-    Boolean((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData);
-
-  return prefersReduced || saveData;
-}
-
 export function detectIOSSafari() {
   if (typeof window === "undefined") return false;
   const ua = navigator.userAgent;
@@ -24,7 +13,19 @@ export function detectIOSSafari() {
   const isSafari =
     /Safari/i.test(ua) &&
     !/Chrome|Chromium|CriOS|Edg|OPR|Firefox|FxiOS/i.test(ua);
+  // iOS WebViews / all Safari engines struggle with Lenis + heavy blur motion.
   return isIOS || isSafari;
+}
+
+export function detectLiteMotion() {
+  if (typeof window === "undefined") return false;
+
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const saveData =
+    "connection" in navigator &&
+    Boolean((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData);
+
+  return prefersReduced || saveData || detectIOSSafari();
 }
 
 function readLiteFlag() {
@@ -44,7 +45,7 @@ function subscribeLite(cb: () => void) {
   return () => obs.disconnect();
 }
 
-/** True ONLY if user explicitly requested reduced motion or saveData. */
+/** True for reduced-motion, saveData, iOS, or Safari — skips heavy motion chrome. */
 export function useLiteMotion() {
   return useSyncExternalStore(subscribeLite, readLiteFlag, () => false);
 }
@@ -53,7 +54,7 @@ export function isLiteMotionClient() {
   return readLiteFlag();
 }
 
-/** Call once on the client to stamp html.lite-motion if prefers-reduced-motion is true. */
+/** Call once on the client to stamp html.lite-motion if needed. */
 export function applyLiteMotionClass() {
   if (typeof document === "undefined") return;
   if (detectLiteMotion()) {

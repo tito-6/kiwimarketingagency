@@ -83,7 +83,7 @@ export default function RootLayout({
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(reduce)document.documentElement.classList.add("lite-motion");}catch(e){}})();`,
+            __html: `(function(){try{var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;var ua=navigator.userAgent;var ios=/iPad|iPhone|iPod/.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);var safari=/Safari/i.test(ua)&&!/Chrome|Chromium|CriOS|Edg|OPR|Firefox|FxiOS/i.test(ua);var save=navigator.connection&&navigator.connection.saveData;if(reduce||ios||safari||save)document.documentElement.classList.add("lite-motion");}catch(e){}})();`,
           }}
         />
         {/* Google Tag Manager — as high in <head> as possible */}

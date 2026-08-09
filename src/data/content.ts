@@ -284,25 +284,25 @@ export const blog = {
   title: "Dijital büyümenize yön verecek trendler ve stratejik içgörüler.",
   posts: [
     {
-      title: "Landing page mi, web sitesi mi? Fark sandığınızdan büyük.",
+      title: "Sosyal Medya Yönetimi Nedir, Markanıza Ne Kazandırır?",
       excerpt:
-        "Web'e ciddi bir yatırım yaptınız ama beklenen dönüşüm gelmiyor. Çoğu zaman sorun kalite değil, doğru aracı seçme meselesi.",
-      category: "Web Stratejisi",
-      date: "12 Haziran 2025",
+        "Sosyal medya yönetiminin kapsamını, markalara sağladığı avantajları ve profesyonel ajans desteğinin neden önemli olduğunu keşfedin.",
+      category: "Sosyal Medya",
+      date: "23 Temmuz 2026",
     },
     {
-      title: "Tasarım Zevk Değil, Karardır ve Premium Markalar Bunu Biliyor",
+      title: "Google Ads mi Meta Ads mi? İşletmeniz İçin Hangisi Daha Doğru?",
       excerpt:
-        "Bir web sitesine bakıp 'bu marka kaliteli' dediğiniz oluyor mu? Bu his tesadüf değil — stratejik tasarımın sonucu.",
-      category: "Tasarım",
-      date: "4 Haziran 2025",
+        "Google Ads ve Meta Ads arasındaki farkları, hangi işletmenin hangi reklam platformunu kullanması gerektiğini karşılaştırmalı olarak öğrenin.",
+      category: "Dijital Pazarlama",
+      date: "29 Temmuz 2026",
     },
     {
-      title: "Dijitalde Neler Oluyor? 2025 Trend Raporu",
+      title: "SEO ve GEO Arasındaki Fark Nedir?",
       excerpt:
-        "Sektörel ipuçları, yeni trendler ve en iyi stratejiler için güncel dijital pazarlama öngörüleri.",
-      category: "Trendler",
-      date: "24 Mayıs 2025",
+        "SEO ve GEO arasındaki farkları, ortak noktalarını ve markaların yapay zekâ destekli aramalarda nasıl görünür olabileceğini öğrenin.",
+      category: "SEO",
+      date: "31 Temmuz 2026",
     },
   ],
 };

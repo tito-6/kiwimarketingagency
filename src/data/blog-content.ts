@@ -1,6 +1,7 @@
 import type { BlogPost } from "./blog";
 import { blogPosts } from "./blog";
 import { images } from "./images";
+import seoBlogs from "./seo-blogs.json";
 
 export type ContentBlock =
   | { type: "lead"; text: string }
@@ -11,7 +12,15 @@ export type ContentBlock =
   | { type: "list"; items: string[] }
   | { type: "stats"; items: { label: string; value: string }[] };
 
-export function getArticleContent(post: BlogPost): ContentBlock[] {
+const seoBlocksBySlug = new Map(
+  seoBlogs.map((p) => [p.slug, p.blocks as ContentBlock[]])
+);
+
+function legacyArticleContent(post: BlogPost): ContentBlock[] {
+  const serviceLinks = (post.relatedServices ?? [])
+    .map((s) => `[${s.label}](${s.href})`)
+    .join(", ");
+
   return [
     { type: "lead", text: post.excerpt },
     {
@@ -22,14 +31,6 @@ export function getArticleContent(post: BlogPost): ContentBlock[] {
     {
       type: "p",
       text: `${post.category} alanında markalar artık sadece görünür olmakla yetinmiyor — ölçülebilir büyüme ve sürdürülebilir strateji arıyor. Kiwi Agency olarak yüzlerce projede gördüğümüz ortak desen: doğru araç, doğru mesaj ve doğru zamanda bir araya geldiğinde sonuçlar katlanarak artıyor.`,
-    },
-    {
-      type: "stats",
-      items: [
-        { label: "Ortalama ROI", value: "+142%" },
-        { label: "Uygulama süresi", value: post.readTime },
-        { label: "Sektör", value: post.category },
-      ],
     },
     {
       type: "h2",
@@ -50,11 +51,6 @@ export function getArticleContent(post: BlogPost): ContentBlock[] {
       ],
     },
     {
-      type: "image",
-      src: post.image,
-      caption: `${post.title} — Kiwi Agency görsel çalışması`,
-    },
-    {
       type: "quote",
       text: "Strateji olmadan tasarım süs, veri olmadan strateji tahmindir.",
       author: "Kiwi Studio",
@@ -68,11 +64,24 @@ export function getArticleContent(post: BlogPost): ContentBlock[] {
       type: "p",
       text: "Teoriyi sahaya indirmek için 48 saatlik sprint modeli kullanıyoruz: keşif, hipotez, üretim, test, ölçüm. Her döngüde bir varsayımı çürütüyor veya doğruluyoruz — böylece bütçe israfı minimize edilir.",
     },
-    {
-      type: "p",
-      text: "Markanızın dijital varlığını güçlendirmek için Kiwi ekibiyle çalışmak istiyorsanız, keşif görüşmesi ücretsiz. Birlikte yol haritanızı çizelim.",
-    },
+    ...(serviceLinks
+      ? ([
+          {
+            type: "h2" as const,
+            id: "ilgili-hizmetler",
+            text: "İlgili Kiwi hizmetleri",
+          },
+          {
+            type: "p" as const,
+            text: `Bu konuda derinlemesine destek için: ${serviceLinks}. Ücretsiz keşif için [iletişim](/iletisim) sayfamızı ziyaret edin.`,
+          },
+        ] as ContentBlock[])
+      : []),
   ];
+}
+
+export function getArticleContent(post: BlogPost): ContentBlock[] {
+  return seoBlocksBySlug.get(post.slug) ?? legacyArticleContent(post);
 }
 
 export function getSecondaryImage(post: BlogPost): string {
@@ -93,4 +102,22 @@ export function getAdjacentPosts(slug: string) {
     prev: idx > 0 ? blogPosts[idx - 1] : null,
     next: idx < blogPosts.length - 1 ? blogPosts[idx + 1] : null,
   };
+}
+
+export function getRelatedPosts(post: BlogPost, limit = 3): BlogPost[] {
+  const bySlug = new Map(blogPosts.map((p) => [p.slug, p]));
+  const preferred = (post.relatedSlugs ?? [])
+    .map((s) => bySlug.get(s))
+    .filter((p): p is BlogPost => Boolean(p));
+
+  if (preferred.length >= limit) return preferred.slice(0, limit);
+
+  const extras = blogPosts.filter(
+    (p) =>
+      p.slug !== post.slug &&
+      !preferred.some((r) => r.slug === p.slug) &&
+      (p.category === post.category || Boolean(p.relatedServices?.length))
+  );
+
+  return [...preferred, ...extras].slice(0, limit);
 }
