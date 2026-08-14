@@ -4,7 +4,7 @@ export const iletisimPage = {
   titleAccent: "Birlikte büyütelim.",
   description:
     "Projenizi dinlemek için sabırsızlanıyoruz. Formu doldurun veya doğrudan arayın — 24 saat içinde dönüş yapıyoruz.",
-  address: "İstanbul, Türkiye",
+  address: "İstanbul Anadolu Yakası, Türkiye",
   hours: "Pzt — Cuma, 09:00 — 18:00",
   response: "Ortalama yanıt süresi: 4 saat",
   channels: [

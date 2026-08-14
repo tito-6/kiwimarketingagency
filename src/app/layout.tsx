@@ -26,47 +26,69 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://kiwimarketingagency
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Kiwi Agency | Dijital Pazarlama Ajansı",
+    default: "Kiwi Agency | İstanbul Anadolu Yakası Dijital Pazarlama Ajansı",
     template: "%s | Kiwi Agency",
   },
   description:
-    "Markaların dijital dünyada güçlenmesi için yaratıcı çözümler üreten Kiwi Agency. Kreatif tasarım, dijital pazarlama, sosyal medya, web yazılım ve SEO.",
+    "İstanbul Anadolu Yakası dijital pazarlama ajansı. Kadıköy, Ataşehir, Maltepe ve çevresinde sosyal medya, Google Ads, Meta Ads, SEO–GEO, kreatif ve web yazılım.",
   keywords: [
-    "dijital pazarlama",
+    "İstanbul dijital pazarlama ajansı",
+    "Anadolu Yakası dijital pazarlama",
+    "Kadıköy sosyal medya ajansı",
+    "Ataşehir dijital pazarlama ajansı",
+    "Maltepe reklam ajansı",
+    "sosyal medya yönetimi",
+    "Google Ads",
+    "Meta Ads",
+    "SEO GEO",
     "kreatif tasarım",
-    "sosyal medya",
-    "SEO",
     "web yazılım",
-    "İstanbul",
-    "marketing agency",
+    "Kiwi Marketing Agency",
   ],
-  authors: [{ name: "Kiwi Agency" }],
+  authors: [{ name: "Kiwi Marketing Agency" }],
+  creator: "Kiwi Marketing Agency",
+  publisher: "Kiwi Marketing Agency",
+  category: "marketing",
   openGraph: {
-    title: "Kiwi Agency | Dijital Pazarlama Ajansı",
+    title: "Kiwi Agency | İstanbul Anadolu Yakası Dijital Pazarlama Ajansı",
     description:
-      "Markalarınıza değer katmak için yaratıcı dijital çözümler sunuyoruz.",
+      "Kadıköy’den Ataşehir’e Anadolu Yakası markaları için sosyal medya, performans reklamı, SEO ve kreatif büyüme.",
     type: "website",
     locale: "tr_TR",
-    siteName: "Kiwi Agency",
+    siteName: "Kiwi Marketing Agency",
     url: siteUrl,
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Kiwi Agency — Dijital Pazarlama Ajansı",
+        alt: "Kiwi Agency — İstanbul Anadolu Yakası Dijital Pazarlama Ajansı",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kiwi Agency",
-    description: "Dijital pazarlama, tasarım ve yazılım ajansı.",
+    title: "Kiwi Agency | İstanbul Dijital Pazarlama Ajansı",
+    description:
+      "Anadolu Yakası odaklı dijital pazarlama, sosyal medya, SEO ve kreatif ajans.",
     images: ["/og-image.png"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "tr-TR": "/",
+    },
   },
   verification: {
     google: "onS2Dx5D4PhB0GCESXKUotBv-DTpEcVxt54Vcm79dhE",

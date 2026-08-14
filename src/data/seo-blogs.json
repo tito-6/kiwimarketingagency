@@ -1,5 +1,3340 @@
 [
   {
+    "slug": "istanbul-dijital-pazarlama-ajansi",
+    "title": "İstanbul Dijital Pazarlama Ajansı Seçerken Nelere Dikkat Edilmeli?",
+    "excerpt": "İstanbul’da dijital pazarlama ajansı seçerken strateji, reklam yönetimi, kreatif üretim, SEO ve raporlama süreçlerinde nelere dikkat etmelisiniz?",
+    "category": "Dijital Pazarlama",
+    "date": "15 Ağustos 2026",
+    "dateIso": "2026-08-15",
+    "readTime": "5 dk",
+    "imageKey": "marketing",
+    "accent": "#a9cb18",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": true,
+    "author": "Kiwi Editör",
+    "keyword": "İstanbul dijital pazarlama ajansı",
+    "keywords": [
+      "İstanbul reklam ajansı",
+      "dijital pazarlama ajansı İstanbul",
+      "İstanbul performans ajansı"
+    ],
+    "relatedServices": [
+      {
+        "href": "/dijital-pazarlama-ajansi",
+        "label": "Dijital Pazarlama Ajansı"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/performans-pazarlamasi",
+        "label": "Performans Pazarlaması"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/seo-geo-hizmetleri",
+        "label": "SEO & GEO Hizmetleri"
+      }
+    ],
+    "relatedSlugs": [
+      "dijital-pazarlama-ajansi-ne-is-yapar",
+      "kadikoy-sosyal-medya-ajansi",
+      "atasehir-dijital-pazarlama-ajansi"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "İstanbul’da faaliyet gösteren bir işletme için dijital pazarlama artık yalnızca sosyal medyada düzenli paylaşım yapmak veya Google’da reklam vermek anlamına gelmiyor. Rekabetin yoğun olduğu bir şehirde kullanıcıların dikkatini çekmek, güven oluşturmak ve bu ilgiyi satışa dönüştürmek için farklı dijital kanalların birlikte çalışması gerekiyor."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle İstanbul dijital pazarlama ajansı seçerken yalnızca ajansın portföyüne veya aylık hizmet ücretine bakmak yeterli değildir. Markanın ihtiyaçlarını anlayan, doğru kanalları belirleyen ve çalışmaların sonucunu ölçebilen bir yapı aranmalıdır."
+      },
+      {
+        "type": "h2",
+        "id": "istanbul-da-dijital-rekabet-neden-farkli",
+        "text": "İstanbul’da dijital rekabet neden farklı?"
+      },
+      {
+        "type": "p",
+        "text": "İstanbul, aynı sektörde çok sayıda işletmenin aynı hedef kitle için yarıştığı bir pazar."
+      },
+      {
+        "type": "p",
+        "text": "Bir kullanıcı “diş kliniği”, “villa projesi”, “restoran”, “sosyal medya ajansı” veya “güzellik merkezi” aradığında karşısına onlarca alternatif çıkabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu noktada yalnızca görünür olmak yetmez."
+      },
+      {
+        "type": "p",
+        "text": "Markanın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Güven vermesi,",
+          "Rakiplerinden farklılaşması,",
+          "Profesyonel görünmesi,",
+          "Doğru zamanda doğru kullanıcıya ulaşması,",
+          "Kullanıcıyı iletişime geçmeye yönlendirmesi"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "gerekir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle İstanbul’da başarılı bir dijital pazarlama stratejisi yalnızca reklam yönetimi değil; reklam, sosyal medya, [web sitesi](/web-yazilim-ajansi), kreatif üretim, [SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) ve veri analizinin birlikte değerlendirilmesini gerektirir."
+      },
+      {
+        "type": "h2",
+        "id": "ajans-once-markanizi-anlamali",
+        "text": "Ajans önce markanızı anlamalı"
+      },
+      {
+        "type": "p",
+        "text": "Profesyonel bir ajansın ilk işi reklam hesabı açmak olmamalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Öncelikle markanın hedefleri anlaşılmalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin bir işletmenin hedefi marka bilinirliğini artırmak olabilirken başka bir işletme doğrudan WhatsApp talebi veya form dönüşümü isteyebilir."
+      },
+      {
+        "type": "p",
+        "text": "Bir gayrimenkul projesi için müşteri yolculuğu haftalar sürebilirken bir restoranda aynı gün rezervasyon hedeflenebilir."
+      },
+      {
+        "type": "p",
+        "text": "Dolayısıyla her markaya aynı reklam ve içerik planını uygulamak doğru değildir."
+      },
+      {
+        "type": "p",
+        "text": "Ajansın hedef kitlenizi, rakiplerinizi, ürün veya hizmet yapınızı ve satış sürecinizi analiz etmesi gerekir."
+      },
+      {
+        "type": "h2",
+        "id": "sosyal-medya-ve-reklam-birlikte-degerlendirilmeli",
+        "text": "Sosyal medya ve reklam birlikte değerlendirilmeli"
+      },
+      {
+        "type": "p",
+        "text": "Birçok işletme [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) ile dijital reklam yönetimini tamamen ayrı hizmetler olarak görür."
+      },
+      {
+        "type": "p",
+        "text": "Oysa kullanıcı reklamınızı gördükten sonra Instagram profilinizi ziyaret edebilir."
+      },
+      {
+        "type": "p",
+        "text": "Profilde eski, düzensiz veya markanın kalitesini yansıtmayan içeriklerle karşılaşırsa reklam başarılı olsa bile kullanıcı iletişime geçmeyebilir."
+      },
+      {
+        "type": "p",
+        "text": "Tam tersi durumda çok iyi bir sosyal medya hesabına sahip olup reklam kullanmamak, içeriklerin sınırlı bir kullanıcı kitlesine ulaşmasına neden olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) ve [performans reklam](/dijital-pazarlama-ajansi/performans-pazarlamasi)larının ortak bir stratejiyle yürütülmesi önemli bir avantaj sağlar."
+      },
+      {
+        "type": "h2",
+        "id": "kreatif-uretim-gucunu-inceleyin",
+        "text": "Kreatif üretim gücünü inceleyin"
+      },
+      {
+        "type": "p",
+        "text": "Dijital reklam performansında kreatiflerin etkisi büyüktür."
+      },
+      {
+        "type": "p",
+        "text": "Kullanıcının karşısına her gün yüzlerce içerik çıktığı için reklamın ilk saniyelerde dikkat çekebilmesi gerekir."
+      },
+      {
+        "type": "p",
+        "text": "Ajansın yalnızca reklam panelini yönetmesi değil, reklamda kullanılacak:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Video,",
+          "[Reel](/sosyal-medya-ajansi/reel-video-icerik-uretimi),",
+          "Statik tasarım,",
+          "Metin,",
+          "Başlık,",
+          "CTA"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "konularında da güçlü olması önemlidir."
+      },
+      {
+        "type": "p",
+        "text": "Özellikle sosyal medya reklamlarında farklı kreatiflerin düzenli olarak test edilmesi performansın gelişmesini sağlayabilir."
+      },
+      {
+        "type": "h2",
+        "id": "raporlama-yalnizca-rakam-gondermek-degildir",
+        "text": "Raporlama yalnızca rakam göndermek değildir"
+      },
+      {
+        "type": "p",
+        "text": "Profesyonel bir dijital pazarlama ajansı size yalnızca aylık gösterim veya tıklama sayısını göndermez."
+      },
+      {
+        "type": "p",
+        "text": "Asıl cevaplanması gereken sorular şunlardır:"
+      },
+      {
+        "type": "p",
+        "text": "Kaç potansiyel müşteri geldi?"
+      },
+      {
+        "type": "p",
+        "text": "Müşteri başına reklam maliyeti ne oldu?"
+      },
+      {
+        "type": "p",
+        "text": "Hangi kampanya daha iyi çalıştı?"
+      },
+      {
+        "type": "p",
+        "text": "Hangi kreatif daha fazla dönüşüm üretti?"
+      },
+      {
+        "type": "p",
+        "text": "Hangi reklam durdurulmalı?"
+      },
+      {
+        "type": "p",
+        "text": "Bir sonraki ay ne değiştirilecek?"
+      },
+      {
+        "type": "p",
+        "text": "Ajansın veriyi yorumlaması ve buna göre aksiyon alması gerekir."
+      },
+      {
+        "type": "h2",
+        "id": "istanbul-dijital-pazarlama-ajansi-secerken-fiyat-tek-kriter-",
+        "text": "İstanbul dijital pazarlama ajansı seçerken fiyat tek kriter olmamalı"
+      },
+      {
+        "type": "p",
+        "text": "Ajans fiyatları hizmet kapsamına göre önemli ölçüde değişebilir."
+      },
+      {
+        "type": "p",
+        "text": "Bazı teklifler yalnızca reklam yönetimini içerirken bazı paketlerde sosyal medya, prodüksiyon, kreatif tasarım ve raporlama birlikte sunulabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle iki teklifi karşılaştırırken sadece toplam rakama değil, kapsamına bakmak gerekir."
+      },
+      {
+        "type": "p",
+        "text": "Özellikle çekim, video üretimi, reklam kreatifi ve stratejik danışmanlık gibi hizmetlerin dahil olup olmadığı kontrol edilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "kiwi-marketing-agency-yaklasimi",
+        "text": "Kiwi Marketing Agency yaklaşımı"
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak dijital pazarlamayı birbirinden bağımsız hizmetlerden oluşan bir paket olarak görmüyoruz."
+      },
+      {
+        "type": "p",
+        "text": "[Sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi), [performans reklam](/dijital-pazarlama-ajansi/performans-pazarlamasi)ları, kreatif tasarım, [SEO–GEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri), web ve prodüksiyon çalışmalarını markanın satış ve büyüme hedefleri doğrultusunda birlikte değerlendiriyoruz."
+      },
+      {
+        "type": "p",
+        "text": "İstanbul’daki işletmeniz için hangi kanalların daha doğru olduğunu belirlemek, mevcut reklam ve sosyal medya çalışmalarınızı değerlendirmek için Kiwi Marketing Agency ile iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Dijital Pazarlama Ajansı](/dijital-pazarlama-ajansi)",
+          "[Performans Pazarlaması](/dijital-pazarlama-ajansi/performans-pazarlamasi)",
+          "[SEO & GEO Hizmetleri](/dijital-pazarlama-ajansi/seo-geo-hizmetleri)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "kadikoy-sosyal-medya-ajansi",
+    "title": "Kadıköy Sosyal Medya Ajansı: Markalar İçin Yerel Dijital Pazarlama Rehberi",
+    "excerpt": "Kadıköy’deki markalar için sosyal medya yönetimi, yerel reklam, içerik üretimi ve müşteri kazanma stratejileri.",
+    "category": "Sosyal Medya",
+    "date": "18 Ağustos",
+    "dateIso": "2026-08-18",
+    "readTime": "5 dk",
+    "imageKey": "social",
+    "accent": "#86efac",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Kadıköy Sosyal Medya Ajansı",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/sosyal-medya-ajansi",
+        "label": "Sosyal Medya Ajansı"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/sosyal-medya-yonetimi",
+        "label": "Sosyal Medya Yönetimi"
+      },
+      {
+        "href": "/sosyal-medya-ajansi/icerik-uretimi",
+        "label": "İçerik Üretimi"
+      }
+    ],
+    "relatedSlugs": [
+      "istanbul-dijital-pazarlama-ajansi",
+      "caddebostan-bagdat-caddesi-sosyal-medya",
+      "sosyal-medya-yonetimi-nedir"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "[Kadıköy](/dijital-pazarlama-ajansi), İstanbul’un en yoğun ticari ve sosyal bölgelerinden biri. Restoranlardan sağlık merkezlerine, butik markalardan profesyonel hizmet firmalarına kadar çok farklı sektör aynı bölgede faaliyet gösteriyor."
+      },
+      {
+        "type": "p",
+        "text": "Bu yoğunluk işletmeler için önemli bir müşteri potansiyeli yaratırken aynı zamanda güçlü bir rekabet oluşturuyor."
+      },
+      {
+        "type": "p",
+        "text": "[Kadıköy](/dijital-pazarlama-ajansi)’deki bir marka için sosyal medya yönetiminin temel amacı yalnızca daha fazla takipçi kazanmak değil; markayı çevresindeki alternatiflerden ayrıştırmak ve yakınındaki potansiyel müşterilerin tercih ettiği işletmelerden biri hâline getirmektir."
+      },
+      {
+        "type": "h2",
+        "id": "kadikoy-de-yerel-marka-olmak-avantaj-mi",
+        "text": "Kadıköy’de yerel marka olmak avantaj mı?"
+      },
+      {
+        "type": "p",
+        "text": "Kesinlikle."
+      },
+      {
+        "type": "p",
+        "text": "Yerel işletmelerin en önemli avantajlarından biri hedef kitlenin coğrafi olarak daha net olmasıdır."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin [Kadıköy](/dijital-pazarlama-ajansi)’de bulunan bir güzellik merkezi için Türkiye genelinde yüz binlerce kişiye ulaşmak yerine Kadıköy, Acıbadem, Koşuyolu, Göztepe ve yakın bölgelerde yaşayan potansiyel müşterilere ulaşmak daha değerlidir."
+      },
+      {
+        "type": "p",
+        "text": "Aynı yaklaşım restoran, veteriner, spor salonu, klinik veya hizmet işletmelerinde de uygulanabilir."
+      },
+      {
+        "type": "h2",
+        "id": "sosyal-medya-hesabi-dijital-vitrininizdir",
+        "text": "Sosyal medya hesabı dijital vitrininizdir"
+      },
+      {
+        "type": "p",
+        "text": "Potansiyel müşteriler bir işletmeyi gördüklerinde çoğu zaman önce Instagram hesabını inceler."
+      },
+      {
+        "type": "p",
+        "text": "Son paylaşımlar güncel mi?"
+      },
+      {
+        "type": "p",
+        "text": "Profesyonel görünüyor mu?"
+      },
+      {
+        "type": "p",
+        "text": "Hizmetler anlaşılır mı?"
+      },
+      {
+        "type": "p",
+        "text": "Müşteri yorumları var mı?"
+      },
+      {
+        "type": "p",
+        "text": "Mekân nasıl görünüyor?"
+      },
+      {
+        "type": "p",
+        "text": "Fiyat veya iletişim bilgilerine ulaşmak kolay mı?"
+      },
+      {
+        "type": "p",
+        "text": "Bu soruların cevapları kullanıcının kararını etkiler."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle profesyonel [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) yalnızca estetik tasarımdan ibaret değildir. Kullanıcının markaya güvenmesini sağlayacak içerik yapısı oluşturulmalıdır."
+      },
+      {
+        "type": "h2",
+        "id": "kadikoy-de-icerik-uretirken-yerellik-kullanilmali",
+        "text": "Kadıköy’de içerik üretirken yerellik kullanılmalı"
+      },
+      {
+        "type": "p",
+        "text": "Yerel işletmeler içeriklerinde bulundukları bölgenin avantajını kullanabilir."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin bir restoran yalnızca yemeklerini paylaşmak yerine [Kadıköy](/dijital-pazarlama-ajansi)’de hafta sonu planı yapan kullanıcılara yönelik içerikler oluşturabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bir klinik “[Kadıköy](/dijital-pazarlama-ajansi)’de…” sorgularıyla başlayan bilgilendirici içerikler hazırlayabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bir gayrimenkul veya mimarlık markası bölgenin yaşam kültürünü içeriğine dahil edebilir."
+      },
+      {
+        "type": "p",
+        "text": "Yerel bağlantı ne kadar güçlenirse kullanıcı markayı kendisine o kadar yakın hisseder."
+      },
+      {
+        "type": "h2",
+        "id": "meta-reklamlari-ile-bolgesel-hedefleme",
+        "text": "Meta reklamları ile bölgesel hedefleme"
+      },
+      {
+        "type": "p",
+        "text": "Instagram ve Facebook reklamlarında lokasyon hedeflemesi, yerel işletmeler açısından önemli bir araçtır."
+      },
+      {
+        "type": "p",
+        "text": "Ancak yalnızca [Kadıköy](/dijital-pazarlama-ajansi) lokasyonunu seçip reklam açmak yeterli değildir."
+      },
+      {
+        "type": "p",
+        "text": "Doğru kreatif ve mesaj gerekir."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin:"
+      },
+      {
+        "type": "p",
+        "text": "“[Kadıköy](/dijital-pazarlama-ajansi)’de lazer epilasyon hizmeti”"
+      },
+      {
+        "type": "p",
+        "text": "şeklinde düz bir reklam yerine kullanıcının ihtiyacını merkeze alan kreatifler daha etkili olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Reklam sonrasında kullanıcının WhatsApp, form veya telefon gibi net bir aksiyona yönlendirilmesi de önemlidir."
+      },
+      {
+        "type": "h2",
+        "id": "google-ads-de-unutulmamali",
+        "text": "Google Ads de unutulmamalı"
+      },
+      {
+        "type": "p",
+        "text": "Sosyal medya talep oluştururken [Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi) mevcut talebi yakalayabilir."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin kullanıcı doğrudan:"
+      },
+      {
+        "type": "p",
+        "text": "“[Kadıköy](/dijital-pazarlama-ajansi) veteriner”"
+      },
+      {
+        "type": "p",
+        "text": "“[Kadıköy](/dijital-pazarlama-ajansi) sosyal medya ajansı”"
+      },
+      {
+        "type": "p",
+        "text": "“[Kadıköy](/dijital-pazarlama-ajansi) güzellik merkezi”"
+      },
+      {
+        "type": "p",
+        "text": "gibi bir arama yapıyorsa satın alma niyeti sosyal medyada reklam gören kullanıcıdan daha yüksek olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle birçok yerel işletmede [Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi) ve [Meta Ads](/dijital-pazarlama-ajansi/meta-reklam-yonetimi) birlikte kullanılabilir."
+      },
+      {
+        "type": "h2",
+        "id": "bolgesel-seo-uzun-vadede-avantaj-saglar",
+        "text": "Bölgesel SEO uzun vadede avantaj sağlar"
+      },
+      {
+        "type": "p",
+        "text": "Google’da bölgesel aramalarda görünmek yalnızca reklamla mümkün değildir."
+      },
+      {
+        "type": "p",
+        "text": "[Web sitesi](/web-yazilim-ajansi)nde [Kadıköy](/dijital-pazarlama-ajansi) ve hizmetleri doğal biçimde anlatan sayfalar oluşturmak, Google İşletme Profilini güncel tutmak, müşteri yorumlarını artırmak ve web sitesini teknik olarak geliştirmek yerel [SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) çalışmalarının önemli parçalarıdır."
+      },
+      {
+        "type": "p",
+        "text": "Ancak yalnızca semt adını sürekli tekrar etmek yerine kullanıcıya gerçekten bilgi sağlayan içerikler hazırlanmalıdır."
+      },
+      {
+        "type": "h2",
+        "id": "kiwi-marketing-agency-ile-kadikoy-de-dijital-buyume",
+        "text": "Kiwi Marketing Agency ile Kadıköy’de dijital büyüme"
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak [Kadıköy](/dijital-pazarlama-ajansi) ve İstanbul’daki markalar için [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi), [performans reklam](/dijital-pazarlama-ajansi/performans-pazarlamasi)ları, profesyonel prodüksiyon, web, [SEO ve GEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) çalışmalarını tek bir strateji altında birleştiriyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Markanızın mevcut sosyal medya ve reklam yapısını değerlendirmek, [Kadıköy](/dijital-pazarlama-ajansi)’de daha fazla potansiyel müşteriye ulaşmak için bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Sosyal Medya Ajansı](/sosyal-medya-ajansi)",
+          "[Sosyal Medya Yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi)",
+          "[İçerik Üretimi](/sosyal-medya-ajansi/icerik-uretimi)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "sosyal-medya-yonetimi-fiyatlari-2026",
+    "title": "Sosyal Medya Yönetimi Fiyatları 2026: Ajans Ücretleri Neye Göre Belirlenir?",
+    "excerpt": "2026 sosyal medya yönetimi fiyatları hangi hizmetlere göre değişiyor? İçerik, reel, prodüksiyon, reklam ve ajans paketlerini inceleyin.",
+    "category": "Sosyal Medya",
+    "date": "20 Ağustos",
+    "dateIso": "2026-08-20",
+    "readTime": "5 dk",
+    "imageKey": "social",
+    "accent": "#f9a8d4",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Sosyal Medya Yönetimi Fiyatları 2026",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/sosyal-medya-ajansi",
+        "label": "Sosyal Medya Ajansı"
+      },
+      {
+        "href": "/sosyal-medya-ajansi/sosyal-medya-stratejisi",
+        "label": "Sosyal Medya Stratejisi"
+      },
+      {
+        "href": "/iletisim",
+        "label": "Ücretsiz Keşif Görüşmesi"
+      }
+    ],
+    "relatedSlugs": [
+      "sosyal-medya-ajansi-secerken",
+      "sosyal-medya-yonetimi-nedir",
+      "google-ads-yonetim-ucreti-2026"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "[Sosyal medya ajansı](/sosyal-medya-ajansi)yla çalışmayı düşünen işletmelerin ilk sorularından biri genellikle “[Sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) ne kadar?” oluyor."
+      },
+      {
+        "type": "p",
+        "text": "Ancak sosyal medya yönetiminde tek bir standart fiyat bulunmuyor."
+      },
+      {
+        "type": "p",
+        "text": "Ayda dört içerik hazırlayan bir paket ile profesyonel çekim, [reel](/sosyal-medya-ajansi/reel-video-icerik-uretimi) üretimi, reklam yönetimi, moderasyon ve strateji içeren kapsamlı bir çalışma doğal olarak aynı şekilde fiyatlandırılamaz."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) fiyatlarını değerlendirirken ilk olarak hizmet kapsamını anlamak gerekir."
+      },
+      {
+        "type": "h2",
+        "id": "icerik-sayisi-fiyati-etkiler",
+        "text": "İçerik sayısı fiyatı etkiler"
+      },
+      {
+        "type": "p",
+        "text": "Ajans tekliflerinde çoğu zaman aylık belirli bir içerik sayısı bulunur."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin:"
+      },
+      {
+        "type": "p",
+        "text": "8 statik \\+ 4 [reel](/sosyal-medya-ajansi/reel-video-icerik-uretimi),"
+      },
+      {
+        "type": "p",
+        "text": "6 statik \\+ 2 [reel](/sosyal-medya-ajansi/reel-video-icerik-uretimi)"
+      },
+      {
+        "type": "p",
+        "text": "veya tamamen video ağırlıklı planlar hazırlanabilir."
+      },
+      {
+        "type": "p",
+        "text": "İçerik sayısı arttıkça tasarım, metin yazımı ve operasyon süresi de artar."
+      },
+      {
+        "type": "p",
+        "text": "Ancak içerik sayısı tek başına doğru karşılaştırma yöntemi değildir."
+      },
+      {
+        "type": "p",
+        "text": "Ayda 20 zayıf içerik yerine 10 stratejik ve kaliteli içerik çok daha değerli olabilir."
+      },
+      {
+        "type": "h2",
+        "id": "reel-uretimi-ve-produksiyon-ayri-bir-maliyet-olusturabilir",
+        "text": "Reel üretimi ve prodüksiyon ayrı bir maliyet oluşturabilir"
+      },
+      {
+        "type": "p",
+        "text": "Video içeriklerin önemi arttıkça [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) paketlerinde prodüksiyon hizmeti daha sık yer almaya başladı."
+      },
+      {
+        "type": "p",
+        "text": "Profesyonel [reel](/sosyal-medya-ajansi/reel-video-icerik-uretimi) çekimi için:"
+      },
+      {
+        "type": "p",
+        "text": "kamera ekipmanı,"
+      },
+      {
+        "type": "p",
+        "text": "ışık,"
+      },
+      {
+        "type": "p",
+        "text": "mikrofon,"
+      },
+      {
+        "type": "p",
+        "text": "çekim ekibi,"
+      },
+      {
+        "type": "p",
+        "text": "senaryo,"
+      },
+      {
+        "type": "p",
+        "text": "kurgu"
+      },
+      {
+        "type": "p",
+        "text": "ve post prodüksiyon süreçleri gerekir."
+      },
+      {
+        "type": "p",
+        "text": "Bazı ajanslar aylık [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) fiyatına belirli bir çekim günü dahil ederken bazıları prodüksiyonu ayrı ücretlendirir."
+      },
+      {
+        "type": "p",
+        "text": "Teklif alırken bu detay mutlaka sorulmalıdır."
+      },
+      {
+        "type": "h2",
+        "id": "reklam-yonetimi-dahil-mi",
+        "text": "Reklam yönetimi dahil mi?"
+      },
+      {
+        "type": "p",
+        "text": "Bir diğer önemli fark [Meta Ads](/dijital-pazarlama-ajansi/meta-reklam-yonetimi) ve diğer reklam kanallarının pakete dahil olup olmamasıdır."
+      },
+      {
+        "type": "p",
+        "text": "[Sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) organik içeriklerin hazırlanmasını kapsarken reklam yönetimi ayrı bir uzmanlık gerektirir."
+      },
+      {
+        "type": "p",
+        "text": "Reklam tarafında:"
+      },
+      {
+        "type": "p",
+        "text": "kampanya kurulumu,"
+      },
+      {
+        "type": "p",
+        "text": "hedefleme,"
+      },
+      {
+        "type": "p",
+        "text": "dönüşüm takibi,"
+      },
+      {
+        "type": "p",
+        "text": "bütçe optimizasyonu,"
+      },
+      {
+        "type": "p",
+        "text": "kreatif testleri,"
+      },
+      {
+        "type": "p",
+        "text": "raporlama"
+      },
+      {
+        "type": "p",
+        "text": "gibi süreçler bulunur."
+      },
+      {
+        "type": "p",
+        "text": "Bazı ajanslar sosyal medya ve reklam yönetimini birlikte sunabilir."
+      },
+      {
+        "type": "p",
+        "text": "İşletmenin hedefi yalnızca marka algısı değil aynı zamanda potansiyel müşteri kazanmaksa reklam yönetiminin pakette bulunması önemlidir."
+      },
+      {
+        "type": "h2",
+        "id": "ajansin-ekip-yapisi-fiyati-etkiler",
+        "text": "Ajansın ekip yapısı fiyatı etkiler"
+      },
+      {
+        "type": "p",
+        "text": "Sosyal medya yönetimini tek kişinin yürüttüğü bir model ile stratejist, tasarımcı, reklam uzmanı, metin yazarı ve video ekibinin birlikte çalıştığı ajans yapısı aynı maliyete sahip olmayabilir."
+      },
+      {
+        "type": "p",
+        "text": "Burada işletmenin ihtiyacı önemlidir."
+      },
+      {
+        "type": "p",
+        "text": "Küçük bir yerel işletme daha sade bir paketle başlayabilirken ulusal ölçekte iletişim yapan bir marka daha kapsamlı bir ekibe ihtiyaç duyabilir."
+      },
+      {
+        "type": "h2",
+        "id": "en-ucuz-ajansi-secmek-mantikli-mi",
+        "text": "En ucuz ajansı seçmek mantıklı mı?"
+      },
+      {
+        "type": "p",
+        "text": "Her zaman değil."
+      },
+      {
+        "type": "p",
+        "text": "Ajans seçiminde fiyat önemli olmakla birlikte tek kriter olmamalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Çok düşük fiyatlı bir paket şu hizmetleri içermeyebilir:"
+      },
+      {
+        "type": "p",
+        "text": "profesyonel çekim,"
+      },
+      {
+        "type": "p",
+        "text": "reklam kreatifleri,"
+      },
+      {
+        "type": "p",
+        "text": "stratejik planlama,"
+      },
+      {
+        "type": "p",
+        "text": "rakip analizi,"
+      },
+      {
+        "type": "p",
+        "text": "aylık raporlama,"
+      },
+      {
+        "type": "p",
+        "text": "moderasyon,"
+      },
+      {
+        "type": "p",
+        "text": "reklam optimizasyonu."
+      },
+      {
+        "type": "p",
+        "text": "Dolayısıyla iki ajansı karşılaştırırken yalnızca fiyatı değil, teslim edilen toplam hizmeti karşılaştırmak gerekir."
+      },
+      {
+        "type": "h2",
+        "id": "sosyal-medya-yonetiminde-dogru-butce-nasil-belirlenir",
+        "text": "Sosyal medya yönetiminde doğru bütçe nasıl belirlenir?"
+      },
+      {
+        "type": "p",
+        "text": "İlk olarak hedef belirlenmelidir."
+      },
+      {
+        "type": "p",
+        "text": "Amaç yalnızca kurumsal bir Instagram vitrini oluşturmaksa daha sade bir içerik planı yeterli olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Ancak:"
+      },
+      {
+        "type": "p",
+        "text": "düzenli müşteri kazanmak,"
+      },
+      {
+        "type": "p",
+        "text": "reklam vermek,"
+      },
+      {
+        "type": "p",
+        "text": "profesyonel videolar üretmek,"
+      },
+      {
+        "type": "p",
+        "text": "marka bilinirliğini büyütmek,"
+      },
+      {
+        "type": "p",
+        "text": "satış artırmak"
+      },
+      {
+        "type": "p",
+        "text": "gibi hedefler varsa kapsam genişlemelidir."
+      },
+      {
+        "type": "p",
+        "text": "Bu durumda [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) bir “tasarım gideri” değil, pazarlama yatırımı olarak değerlendirilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "fiyat-kadar-sonuc-da-olculmeli",
+        "text": "Fiyat kadar sonuç da ölçülmeli"
+      },
+      {
+        "type": "p",
+        "text": "Ajansa aylık ödediğiniz rakamın yanında şu metriklere de bakmalısınız:"
+      },
+      {
+        "type": "p",
+        "text": "Kaç nitelikli talep geldi?"
+      },
+      {
+        "type": "p",
+        "text": "İçerikler ne kadar kişiye ulaştı?"
+      },
+      {
+        "type": "p",
+        "text": "Profil ziyaretleri arttı mı?"
+      },
+      {
+        "type": "p",
+        "text": "[Web sitesi](/web-yazilim-ajansi)ne trafik geliyor mu?"
+      },
+      {
+        "type": "p",
+        "text": "Reklamlardaki dönüşüm maliyeti nedir?"
+      },
+      {
+        "type": "p",
+        "text": "Markanın sosyal medya görünümü gelişti mi?"
+      },
+      {
+        "type": "p",
+        "text": "Amaç yalnızca daha düşük ajans ücreti ödemek değil, yapılan yatırımın markaya sağladığı değeri artırmaktır."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi), profesyonel içerik üretimi, prodüksiyon ve [performans reklam](/dijital-pazarlama-ajansi/performans-pazarlamasi)larını markanın ihtiyacına göre birlikte planlıyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Markanıza özel [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) kapsamı ve fiyatlandırması için bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Sosyal Medya Ajansı](/sosyal-medya-ajansi)",
+          "[Sosyal Medya Stratejisi](/sosyal-medya-ajansi/sosyal-medya-stratejisi)",
+          "[Ücretsiz Keşif Görüşmesi](/iletisim)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "atasehir-dijital-pazarlama-ajansi",
+    "title": "Ataşehir Dijital Pazarlama Ajansı: İşletmeler İçin Büyüme Stratejileri",
+    "excerpt": "Ataşehir’deki işletmeler için sosyal medya, Google Ads, Meta Ads, SEO ve kurumsal dijital pazarlama stratejileri.",
+    "category": "Dijital Pazarlama",
+    "date": "23 Ağustos",
+    "dateIso": "2026-08-23",
+    "readTime": "5 dk",
+    "imageKey": "marketing",
+    "accent": "#93c5fd",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Ataşehir Dijital Pazarlama Ajansı",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/dijital-pazarlama-ajansi",
+        "label": "Dijital Pazarlama Ajansı"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi",
+        "label": "Google Ads"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/meta-reklam-yonetimi",
+        "label": "Meta Ads"
+      }
+    ],
+    "relatedSlugs": [
+      "istanbul-dijital-pazarlama-ajansi",
+      "kadikoy-sosyal-medya-ajansi",
+      "maltepe-sosyal-medya-reklam-ajansi"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "[Ataşehir](/sosyal-medya-ajansi), İstanbul Anadolu Yakası’nın özellikle kurumsal işletmeler, finans kuruluşları, sağlık merkezleri, restoranlar ve profesyonel hizmet firmaları açısından öne çıkan bölgelerinden biri."
+      },
+      {
+        "type": "p",
+        "text": "Bölgedeki yüksek ticari yoğunluk, potansiyel müşteri sayısını artırırken dijital rekabeti de yükseltiyor."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle [Ataşehir](/sosyal-medya-ajansi)’de faaliyet gösteren markaların dijital pazarlama stratejilerini yalnızca sosyal medya paylaşımı üzerinden değil, bütünsel şekilde değerlendirmesi gerekiyor."
+      },
+      {
+        "type": "h2",
+        "id": "kurumsal-hedef-kitleyi-dogru-anlamak",
+        "text": "Kurumsal hedef kitleyi doğru anlamak"
+      },
+      {
+        "type": "p",
+        "text": "[Ataşehir](/sosyal-medya-ajansi)’deki işletmelerin önemli bir bölümü beyaz yakalı çalışanlara, şirketlere veya yüksek satın alma gücüne sahip tüketicilere hizmet veriyor."
+      },
+      {
+        "type": "p",
+        "text": "Dolayısıyla her markanın içerik dili ve reklam stratejisi buna göre şekillenmelidir."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin kurumsal bir danışmanlık firmasının kullanacağı dil ile bir restoranın veya güzellik merkezinin kullanacağı dil aynı olmamalıdır."
+      },
+      {
+        "type": "p",
+        "text": "İyi bir dijital pazarlama ajansı önce markanın kimlerle iletişim kurması gerektiğini belirler."
+      },
+      {
+        "type": "h2",
+        "id": "google-ads-ozellikle-hizmet-sektorlerinde-onemli",
+        "text": "Google Ads özellikle hizmet sektörlerinde önemli"
+      },
+      {
+        "type": "p",
+        "text": "Kullanıcı zaten bir hizmet arıyorsa [Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi) güçlü bir kanal olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin:"
+      },
+      {
+        "type": "p",
+        "text": "“[Ataşehir](/sosyal-medya-ajansi) diş kliniği”"
+      },
+      {
+        "type": "p",
+        "text": "“[Ataşehir](/sosyal-medya-ajansi) reklam ajansı”"
+      },
+      {
+        "type": "p",
+        "text": "“[Ataşehir](/sosyal-medya-ajansi) kurumsal catering”"
+      },
+      {
+        "type": "p",
+        "text": "“[Ataşehir](/sosyal-medya-ajansi) toplantı salonu”"
+      },
+      {
+        "type": "p",
+        "text": "gibi aramalar yapan kullanıcıların ihtiyacı daha nettir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle anahtar kelime yapısı doğru kurulmalı ve kullanıcılar ilgili hizmet sayfasına yönlendirilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "meta-ads-talep-olusturabilir",
+        "text": "Meta Ads talep oluşturabilir"
+      },
+      {
+        "type": "p",
+        "text": "Her potansiyel müşteri Google’da arama yapmaz."
+      },
+      {
+        "type": "p",
+        "text": "Instagram ve Facebook reklamları, henüz aktif olarak araştırma yapmayan ancak markanın hedef kitlesine uyan kullanıcılara ulaşmak için kullanılabilir."
+      },
+      {
+        "type": "p",
+        "text": "Burada reklam kreatifleri belirleyici olur."
+      },
+      {
+        "type": "p",
+        "text": "Kurumsal bir firmada güven ve uzmanlık ön planda tutulurken tüketici hizmetlerinde fayda, deneyim ve teklif vurgulanabilir."
+      },
+      {
+        "type": "h2",
+        "id": "sosyal-medya-kurumsal-algiyi-destekler",
+        "text": "Sosyal medya kurumsal algıyı destekler"
+      },
+      {
+        "type": "p",
+        "text": "[Ataşehir](/sosyal-medya-ajansi) gibi profesyonel rekabetin yoğun olduğu bölgelerde sosyal medya yalnızca takipçi kazanmak için kullanılmamalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Potansiyel müşteri veya iş ortağı markanın hesabına girdiğinde güçlü bir ilk izlenim edinmelidir."
+      },
+      {
+        "type": "p",
+        "text": "Hizmetler açıkça anlatılmalı, görsel dil tutarlı olmalı ve içerikler markanın uzmanlık alanını göstermelidir."
+      },
+      {
+        "type": "h2",
+        "id": "linkedin-bazi-markalar-icin-ek-kanal-olabilir",
+        "text": "LinkedIn bazı markalar için ek kanal olabilir"
+      },
+      {
+        "type": "p",
+        "text": "B2B çalışan firmalar için Instagram ve Google’ın yanında LinkedIn de değerlendirilebilir."
+      },
+      {
+        "type": "p",
+        "text": "Özellikle kurumsal hizmet, teknoloji, danışmanlık ve insan kaynakları gibi sektörlerde karar vericilere yönelik içerikler hazırlanabilir."
+      },
+      {
+        "type": "p",
+        "text": "Her kanalda bulunmak zorunlu değildir."
+      },
+      {
+        "type": "p",
+        "text": "Önemli olan markanın hedef kitlesinin bulunduğu kanallara yatırım yapmaktır."
+      },
+      {
+        "type": "h2",
+        "id": "seo-ile-bolgesel-gorunurluk",
+        "text": "SEO ile bölgesel görünürlük"
+      },
+      {
+        "type": "p",
+        "text": "[Ataşehir](/sosyal-medya-ajansi) odaklı hizmet veren işletmeler için [web sitesi](/web-yazilim-ajansi)nde bölgesel arama niyetini karşılayan sayfalar oluşturmak önemlidir."
+      },
+      {
+        "type": "p",
+        "text": "Ancak içerikte “[Ataşehir](/sosyal-medya-ajansi)” kelimesini tekrar tekrar kullanmak yerine kullanıcıya gerçekten faydalı bilgi sunulmalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Hizmet kapsamı, lokasyon avantajları, sık sorulan sorular ve gerçek çalışma örnekleri bölgesel sayfaları güçlendirebilir."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak [Ataşehir](/sosyal-medya-ajansi)’deki markalar için [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi), Google ve Meta reklamları, [SEO–GEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri), kreatif tasarım, web ve prodüksiyon çalışmalarını birlikte planlıyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Markanızın mevcut dijital performansını değerlendirmek için bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Dijital Pazarlama Ajansı](/dijital-pazarlama-ajansi)",
+          "[Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi)",
+          "[Meta Ads](/dijital-pazarlama-ajansi/meta-reklam-yonetimi)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "instagram-reklami-satis-getirmiyor",
+    "title": "Instagram Reklamı Veriyorum Ama Satış Gelmiyor: 10 Olası Neden",
+    "excerpt": "Instagram reklamınız tıklama alıyor ancak satış getirmiyor mu? Hedefleme, kreatif, teklif ve satış sürecindeki 10 önemli problemi inceleyin.",
+    "category": "Dijital Pazarlama",
+    "date": "25 Ağustos",
+    "dateIso": "2026-08-25",
+    "readTime": "5 dk",
+    "imageKey": "marketing",
+    "accent": "#c4b5fd",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Instagram Reklamı Veriyorum Ama Satış Gelmiyor",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/dijital-pazarlama-ajansi/meta-reklam-yonetimi",
+        "label": "Meta Reklam Yönetimi"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/donusum-optimizasyonu",
+        "label": "Dönüşüm Optimizasyonu"
+      },
+      {
+        "href": "/kreatif-tasarim-ajansi/reklam-kreatifi-tasarimi",
+        "label": "Reklam Kreatifi"
+      }
+    ],
+    "relatedSlugs": [
+      "google-ads-mi-meta-ads-mi",
+      "sosyal-medya-yonetimi-nedir",
+      "guzellik-merkezleri-instagram-reklamlari"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "Instagram reklamı açtınız, bütçe harcanıyor, hatta tıklama ve mesaj geliyor. Ancak satış sayısı beklediğiniz seviyede değil."
+      },
+      {
+        "type": "p",
+        "text": "Bu durum reklamın tamamen başarısız olduğu anlamına gelmez."
+      },
+      {
+        "type": "p",
+        "text": "Sorun reklamın farklı aşamalarında olabilir."
+      },
+      {
+        "type": "h2",
+        "id": "1-yanlis-hedef-kitle",
+        "text": "1. Yanlış hedef kitle"
+      },
+      {
+        "type": "p",
+        "text": "Reklam çok kişiye ulaşıyor ancak ürün veya hizmetinizi satın alma ihtimali düşük kullanıcılara gösteriliyorsa sonuç alınması zorlaşır."
+      },
+      {
+        "type": "p",
+        "text": "Hedefleme yalnızca yaş ve lokasyon seçmek değildir."
+      },
+      {
+        "type": "p",
+        "text": "Kullanıcı davranışı, teklif ve kampanya amacı birlikte değerlendirilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "2-kreatif-dikkat-cekmiyor",
+        "text": "2. Kreatif dikkat çekmiyor"
+      },
+      {
+        "type": "p",
+        "text": "Instagram’da kullanıcı reklam görmek için bulunmaz."
+      },
+      {
+        "type": "p",
+        "text": "İlk saniyelerde dikkat çekmeyen video veya görsel hızla geçilir."
+      },
+      {
+        "type": "p",
+        "text": "Kreatifin problemi açık şekilde anlatması ve kullanıcıya içeriğin neden önemli olduğunu göstermesi gerekir."
+      },
+      {
+        "type": "h2",
+        "id": "3-teklif-yeterince-guclu-degil",
+        "text": "3. Teklif yeterince güçlü değil"
+      },
+      {
+        "type": "p",
+        "text": "Aynı hizmeti onlarca rakip sunuyorsa kullanıcı “Neden sizi seçmeliyim?” sorusuna cevap arar."
+      },
+      {
+        "type": "p",
+        "text": "Sadece hizmet adını yazmak yeterli değildir."
+      },
+      {
+        "type": "p",
+        "text": "Avantaj, fark, kampanya veya güven unsuru net olmalıdır."
+      },
+      {
+        "type": "h2",
+        "id": "4-yanlis-kampanya-amaci-kullaniliyor",
+        "text": "4. Yanlış kampanya amacı kullanılıyor"
+      },
+      {
+        "type": "p",
+        "text": "[Web sitesi](/web-yazilim-ajansi) satışı hedefleyen bir işletmenin yalnızca etkileşim odaklı reklamlar kullanması doğru olmayabilir."
+      },
+      {
+        "type": "p",
+        "text": "Kampanya hedefi gerçek iş sonucuyla uyumlu seçilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "5-sosyal-medya-hesabiniz-guven-vermiyor",
+        "text": "5. Sosyal medya hesabınız güven vermiyor"
+      },
+      {
+        "type": "p",
+        "text": "Kullanıcı reklamı gördükten sonra profilinizi ziyaret edebilir."
+      },
+      {
+        "type": "p",
+        "text": "Profilinizde:"
+      },
+      {
+        "type": "p",
+        "text": "düzensiz içerikler,"
+      },
+      {
+        "type": "p",
+        "text": "düşük kaliteli tasarımlar,"
+      },
+      {
+        "type": "p",
+        "text": "açıklanmamış hizmetler,"
+      },
+      {
+        "type": "p",
+        "text": "eski paylaşımlar"
+      },
+      {
+        "type": "p",
+        "text": "varsa kullanıcı reklamdan etkilenmiş olsa bile satın almaktan vazgeçebilir."
+      },
+      {
+        "type": "h2",
+        "id": "6-web-sitesi-donusum-icin-uygun-degil",
+        "text": "6. Web sitesi dönüşüm için uygun değil"
+      },
+      {
+        "type": "p",
+        "text": "Reklam başarılı olabilir ancak kullanıcıyı yönlendirdiğiniz sayfa yavaş, karmaşık veya güven vermiyorsa satış oluşmayabilir."
+      },
+      {
+        "type": "p",
+        "text": "Reklam performansı değerlendirirken yalnızca Meta paneline değil landing page’e de bakılmalıdır."
+      },
+      {
+        "type": "h2",
+        "id": "7-satis-ekibi-gec-donus-yapiyor",
+        "text": "7. Satış ekibi geç dönüş yapıyor"
+      },
+      {
+        "type": "p",
+        "text": "Bu en sık gözden kaçan sorunlardan biridir."
+      },
+      {
+        "type": "p",
+        "text": "Reklamdan WhatsApp talebi geliyor ancak müşteri saatler sonra aranıyorsa potansiyel müşteri rakiple görüşmüş olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Özellikle yüksek rekabetli sektörlerde ilk dönüş süresi önemlidir."
+      },
+      {
+        "type": "h2",
+        "id": "8-yanlis-mesaj-kullaniliyor",
+        "text": "8. Yanlış mesaj kullanılıyor"
+      },
+      {
+        "type": "p",
+        "text": "Kullanıcının ihtiyacını değil yalnızca markayı anlatan reklamlar performansı düşürebilir."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin:"
+      },
+      {
+        "type": "p",
+        "text": "“2018’den beri hizmet veriyoruz.”"
+      },
+      {
+        "type": "p",
+        "text": "yerine kullanıcının problemini merkeze alan bir mesaj daha güçlü olabilir."
+      },
+      {
+        "type": "h2",
+        "id": "9-tek-bir-kreatifle-uzun-sure-reklam-veriliyor",
+        "text": "9. Tek bir kreatifle uzun süre reklam veriliyor"
+      },
+      {
+        "type": "p",
+        "text": "İyi çalışan reklamlar zamanla performans kaybedebilir."
+      },
+      {
+        "type": "p",
+        "text": "Farklı video başlangıçları, görseller, mesajlar ve teklifler test edilmelidir."
+      },
+      {
+        "type": "p",
+        "text": "A/B testleri hangi yaklaşımın hedef kitleye daha iyi cevap verdiğini anlamayı sağlar."
+      },
+      {
+        "type": "h2",
+        "id": "10-sadece-tiklama-maliyetine-bakiyorsunuz",
+        "text": "10. Sadece tıklama maliyetine bakıyorsunuz"
+      },
+      {
+        "type": "p",
+        "text": "Ucuz tıklama başarılı reklam anlamına gelmez."
+      },
+      {
+        "type": "p",
+        "text": "Önemli olan:"
+      },
+      {
+        "type": "p",
+        "text": "nitelikli lead,"
+      },
+      {
+        "type": "p",
+        "text": "satış,"
+      },
+      {
+        "type": "p",
+        "text": "müşteri edinme maliyeti,"
+      },
+      {
+        "type": "p",
+        "text": "reklam yatırımının geri dönüşü"
+      },
+      {
+        "type": "p",
+        "text": "gibi metriklerdir."
+      },
+      {
+        "type": "p",
+        "text": "100 ucuz tıklama hiç satış getirmeyebilirken daha pahalı 20 tıklama gerçek müşteriye dönüşebilir."
+      },
+      {
+        "type": "h2",
+        "id": "reklam-performansi-butun-olarak-degerlendirilmelidir",
+        "text": "Reklam performansı bütün olarak değerlendirilmelidir"
+      },
+      {
+        "type": "p",
+        "text": "Instagram reklamı bir zincirin ilk halkasıdır."
+      },
+      {
+        "type": "p",
+        "text": "Reklam → profil → [web sitesi](/web-yazilim-ajansi) → WhatsApp/form → satış görüşmesi → satış."
+      },
+      {
+        "type": "p",
+        "text": "Bu adımlardan herhangi biri çalışmıyorsa sonuç düşebilir."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak reklam performansını yalnızca kampanya panelinden değerlendirmiyoruz. Kreatif, hedefleme, landing page ve satış sürecini birlikte analiz ediyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Instagram ve [Meta Ads](/dijital-pazarlama-ajansi/meta-reklam-yonetimi) çalışmalarınızın neden satış üretmediğini anlamak için Kiwi Marketing Agency ile iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Meta Reklam Yönetimi](/dijital-pazarlama-ajansi/meta-reklam-yonetimi)",
+          "[Dönüşüm Optimizasyonu](/dijital-pazarlama-ajansi/donusum-optimizasyonu)",
+          "[Reklam Kreatifi](/kreatif-tasarim-ajansi/reklam-kreatifi-tasarimi)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "caddebostan-bagdat-caddesi-sosyal-medya",
+    "title": "Caddebostan ve Bağdat Caddesi’ndeki Markalar İçin Sosyal Medya Yönetimi",
+    "excerpt": "`",
+    "category": "Sosyal Medya",
+    "date": "28 Ağustos",
+    "dateIso": "2026-08-28",
+    "readTime": "5 dk",
+    "imageKey": "social",
+    "accent": "#fcd34d",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Caddebostan ve Bağdat Caddesi’ndeki Markalar İçin Sosyal Medya Yönetimi",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/sosyal-medya-ajansi",
+        "label": "Sosyal Medya Ajansı"
+      },
+      {
+        "href": "/sosyal-medya-ajansi/reel-video-icerik-uretimi",
+        "label": "Reel & Video"
+      },
+      {
+        "href": "/sosyal-medya-ajansi/icerik-uretimi",
+        "label": "İçerik Üretimi"
+      }
+    ],
+    "relatedSlugs": [
+      "kadikoy-sosyal-medya-ajansi",
+      "profesyonel-reel-cekimi",
+      "sosyal-medya-yonetimi-nedir"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "`"
+      },
+      {
+        "type": "p",
+        "text": "Caddebostan ve Bağdat Caddesi hattı; restoran, güzellik, moda, sağlık, dekorasyon ve premium hizmet markalarının yoğun olduğu İstanbul’un en rekabetçi ticari bölgelerinden biri."
+      },
+      {
+        "type": "p",
+        "text": "Bu bölgede kullanıcıların marka tercihinde yalnızca fiyat değil, algı ve deneyim de önemli rol oynar."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle Caddebostan’daki işletmeler için sosyal medya hesabı yalnızca bir paylaşım kanalı değil, markanın konumlandırmasının bir parçasıdır."
+      },
+      {
+        "type": "h2",
+        "id": "premium-hedef-kitle-icin-premium-algi",
+        "text": "Premium hedef kitle için premium algı"
+      },
+      {
+        "type": "p",
+        "text": "Bağdat Caddesi’nde faaliyet gösteren bir işletmenin sosyal medya hesabı markanın fiziksel deneyimiyle aynı kaliteyi yansıtmalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Kullanıcı mekânı veya hizmeti görmeden önce Instagram hesabını inceleyebilir."
+      },
+      {
+        "type": "p",
+        "text": "Profesyonel fotoğraf ve video kullanımı burada özellikle değerlidir."
+      },
+      {
+        "type": "h2",
+        "id": "yerel-hedefleme-avantaji",
+        "text": "Yerel hedefleme avantajı"
+      },
+      {
+        "type": "p",
+        "text": "Caddebostan, Suadiye, Erenköy, Göztepe ve çevresindeki kullanıcılar sosyal medya reklamlarında lokasyon bazlı hedeflenebilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle yerel işletmeler reklam bütçesini Türkiye geneline dağıtmak yerine gerçek müşteri potansiyelinin bulunduğu bölgelere yoğunlaştırabilir."
+      },
+      {
+        "type": "h2",
+        "id": "iceriklerde-hizmet-kadar-deneyim-anlatilmali",
+        "text": "İçeriklerde hizmet kadar deneyim anlatılmalı"
+      },
+      {
+        "type": "p",
+        "text": "Premium tüketici yalnızca ne satın alacağını değil, nasıl bir deneyim yaşayacağını da merak eder."
+      },
+      {
+        "type": "p",
+        "text": "Restoranlarda atmosfer,"
+      },
+      {
+        "type": "p",
+        "text": "güzellik merkezlerinde hijyen ve uzmanlık,"
+      },
+      {
+        "type": "p",
+        "text": "kliniklerde güven,"
+      },
+      {
+        "type": "p",
+        "text": "butiklerde ürün kalitesi,"
+      },
+      {
+        "type": "p",
+        "text": "gayrimenkulde yaşam tarzı"
+      },
+      {
+        "type": "p",
+        "text": "öne çıkarılabilir."
+      },
+      {
+        "type": "p",
+        "text": "Video prodüksiyonu burada önemli bir avantaj sağlar."
+      },
+      {
+        "type": "h2",
+        "id": "google-ve-instagram-birlikte-calisabilir",
+        "text": "Google ve Instagram birlikte çalışabilir"
+      },
+      {
+        "type": "p",
+        "text": "Bir kullanıcı markayı Instagram’da keşfettikten sonra Google’da araştırabilir."
+      },
+      {
+        "type": "p",
+        "text": "Google yorumlarını okuyabilir, [web sitesi](/web-yazilim-ajansi)ne girebilir veya haritadaki konumu kontrol edebilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle yalnızca Instagram hesabını geliştirmek yerine bütün dijital temas noktaları birlikte ele alınmalıdır."
+      },
+      {
+        "type": "h2",
+        "id": "yerel-seo",
+        "text": "Yerel SEO"
+      },
+      {
+        "type": "p",
+        "text": "[Web sitesi](/web-yazilim-ajansi)nde Bağdat Caddesi ve Caddebostan gibi bölgelerle ilgili doğal ve bilgilendirici içerikler oluşturmak yerel görünürlüğü destekleyebilir."
+      },
+      {
+        "type": "p",
+        "text": "Ancak içerikler yalnızca bölge adının değiştirilmiş versiyonları olmamalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak Caddebostan ve Bağdat Caddesi çevresindeki markalar için sosyal medya, [performans reklam](/dijital-pazarlama-ajansi/performans-pazarlamasi)ları, prodüksiyon ve dijital büyüme stratejileri oluşturuyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Markanız için bölgesel dijital pazarlama planı hazırlamak üzere bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Sosyal Medya Ajansı](/sosyal-medya-ajansi)",
+          "[Reel & Video](/sosyal-medya-ajansi/reel-video-icerik-uretimi)",
+          "[İçerik Üretimi](/sosyal-medya-ajansi/icerik-uretimi)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "google-ads-yonetim-ucreti-2026",
+    "title": "Google Ads Yönetim Ücreti Ne Kadar? 2026 Reklam Ajansı Maliyetleri",
+    "excerpt": "`",
+    "category": "Dijital Pazarlama",
+    "date": "30 Ağustos",
+    "dateIso": "2026-08-30",
+    "readTime": "5 dk",
+    "imageKey": "marketing",
+    "accent": "#a9cb18",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Google Ads Yönetim Ücreti Ne Kadar? 2026 Reklam Ajansı Maliyetleri",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi",
+        "label": "Google Ads Reklam Yönetimi"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/performans-pazarlamasi",
+        "label": "Performans Pazarlaması"
+      },
+      {
+        "href": "/iletisim",
+        "label": "Ücretsiz Ön Değerlendirme"
+      }
+    ],
+    "relatedSlugs": [
+      "google-ads-mi-meta-ads-mi",
+      "sosyal-medya-yonetimi-fiyatlari-2026",
+      "dijital-pazarlama-ajansi-ne-is-yapar"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "`"
+      },
+      {
+        "type": "p",
+        "text": "[Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi) kullanmak isteyen işletmeler genellikle iki farklı bütçeyle karşılaşır:"
+      },
+      {
+        "type": "quote",
+        "text": "Google’a ödenen reklam bütçesi** ve **reklam yönetimini yapan ajansa ödenen hizmet bedeli.",
+        "author": "Kiwi Agency"
+      },
+      {
+        "type": "p",
+        "text": "Bu iki rakam birbirinden farklıdır."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin bir işletme [Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi)’e aylık reklam bütçesi ayırırken kampanyaların kurulması, optimizasyonu ve takibi için ayrıca profesyonel yönetim hizmeti satın alabilir."
+      },
+      {
+        "type": "h2",
+        "id": "yonetim-ucretini-ne-belirler",
+        "text": "Yönetim ücretini ne belirler?"
+      },
+      {
+        "type": "p",
+        "text": "[Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi) ajans ücretlerinde standart tek bir rakam bulunmaz."
+      },
+      {
+        "type": "p",
+        "text": "Fiyatı etkileyen faktörler arasında:"
+      },
+      {
+        "type": "p",
+        "text": "kampanya sayısı,"
+      },
+      {
+        "type": "p",
+        "text": "ülke ve bölge sayısı,"
+      },
+      {
+        "type": "p",
+        "text": "reklam bütçesi,"
+      },
+      {
+        "type": "p",
+        "text": "e-ticaret veya lead yapısı,"
+      },
+      {
+        "type": "p",
+        "text": "dönüşüm kurulumu,"
+      },
+      {
+        "type": "p",
+        "text": "raporlama kapsamı,"
+      },
+      {
+        "type": "p",
+        "text": "landing page ihtiyacı"
+      },
+      {
+        "type": "p",
+        "text": "bulunur."
+      },
+      {
+        "type": "p",
+        "text": "Küçük bir yerel işletmenin hesabıyla yüzlerce ürün satan bir e-ticaret markasının hesabı aynı operasyon yüküne sahip değildir."
+      },
+      {
+        "type": "h2",
+        "id": "google-reklam-butcesi-nasil-belirlenir",
+        "text": "Google reklam bütçesi nasıl belirlenir?"
+      },
+      {
+        "type": "p",
+        "text": "Reklam bütçesi sektör rekabetine göre değişir."
+      },
+      {
+        "type": "p",
+        "text": "Bazı alanlarda tıklama başına maliyet düşükken yüksek rekabetli sektörlerde çok daha yüksek olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle yalnızca “aylık 10.000 TL yeter mi?” sorusuyla bütçe belirlemek doğru değildir."
+      },
+      {
+        "type": "p",
+        "text": "Öncelikle hedef anahtar kelimeler, tahmini trafik ve beklenen dönüşüm oranı değerlendirilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "ajans-ne-yapar",
+        "text": "Ajans ne yapar?"
+      },
+      {
+        "type": "p",
+        "text": "Profesyonel [Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi) yönetimi yalnızca kampanya açmak değildir."
+      },
+      {
+        "type": "p",
+        "text": "Çalışmanın içinde:"
+      },
+      {
+        "type": "p",
+        "text": "anahtar kelime analizi,"
+      },
+      {
+        "type": "p",
+        "text": "negatif kelimeler,"
+      },
+      {
+        "type": "p",
+        "text": "reklam metinleri,"
+      },
+      {
+        "type": "p",
+        "text": "kampanya yapısı,"
+      },
+      {
+        "type": "p",
+        "text": "bütçe dağılımı,"
+      },
+      {
+        "type": "p",
+        "text": "dönüşüm takibi,"
+      },
+      {
+        "type": "p",
+        "text": "arama terimleri,"
+      },
+      {
+        "type": "p",
+        "text": "performans optimizasyonu,"
+      },
+      {
+        "type": "p",
+        "text": "raporlama"
+      },
+      {
+        "type": "p",
+        "text": "yer alır."
+      },
+      {
+        "type": "h2",
+        "id": "donusum-takibi-yoksa-ne-olur",
+        "text": "Dönüşüm takibi yoksa ne olur?"
+      },
+      {
+        "type": "p",
+        "text": "Bir reklam hesabında yalnızca tıklamaları takip etmek yeterli değildir."
+      },
+      {
+        "type": "p",
+        "text": "Form gönderimleri, WhatsApp tıklamaları, telefon aksiyonları veya satış gibi gerçek dönüşümler mümkün olduğunca ölçülmelidir."
+      },
+      {
+        "type": "p",
+        "text": "Aksi hâlde hangi anahtar kelimenin işletmeye değer ürettiğini anlamak zorlaşır."
+      },
+      {
+        "type": "h2",
+        "id": "en-ucuz-google-ads-yonetimi-neden-her-zaman-avantajli-degil",
+        "text": "En ucuz Google Ads yönetimi neden her zaman avantajlı değil?"
+      },
+      {
+        "type": "p",
+        "text": "Yanlış anahtar kelime seçimi veya kontrol edilmeyen arama sorguları bütçenin gereksiz kullanıcılar tarafından tüketilmesine yol açabilir."
+      },
+      {
+        "type": "p",
+        "text": "Dolayısıyla profesyonel yönetim ücretini yalnızca ek maliyet olarak değil reklam bütçesinin daha verimli kullanılmasına yönelik yatırım olarak değerlendirmek gerekir."
+      },
+      {
+        "type": "h2",
+        "id": "sabit-ucret-mi-yuzde-modeli-mi",
+        "text": "Sabit ücret mi yüzde modeli mi?"
+      },
+      {
+        "type": "p",
+        "text": "Ajanslar farklı fiyatlandırma modelleri kullanabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bazıları sabit aylık ücretle, bazıları reklam bütçesinin belirli bir yüzdesi üzerinden, bazıları ise hibrit modelle çalışabilir."
+      },
+      {
+        "type": "p",
+        "text": "Burada önemli olan modelden çok hizmet kapsamıdır."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak [Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi) çalışmalarında kampanya yönetiminin yanında dönüşüm takibi, kreatif ihtiyaçları ve landing page performansını da değerlendiriyoruz."
+      },
+      {
+        "type": "p",
+        "text": "[Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi) hesabınız için profesyonel yönetim ve ön analiz almak üzere bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Google Ads Reklam Yönetimi](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi)",
+          "[Performans Pazarlaması](/dijital-pazarlama-ajansi/performans-pazarlamasi)",
+          "[Ücretsiz Ön Değerlendirme](/iletisim)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "maltepe-sosyal-medya-reklam-ajansi",
+    "title": "Maltepe Sosyal Medya ve Dijital Reklam Ajansı Seçimi",
+    "excerpt": "`",
+    "category": "Sosyal Medya",
+    "date": "2 Eylül",
+    "dateIso": "2026-09-02",
+    "readTime": "5 dk",
+    "imageKey": "social",
+    "accent": "#86efac",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Maltepe Sosyal Medya ve Dijital Reklam Ajansı Seçimi",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/sosyal-medya-ajansi",
+        "label": "Sosyal Medya Ajansı"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/meta-reklam-yonetimi",
+        "label": "Meta Reklam Yönetimi"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi",
+        "label": "Dijital Pazarlama Ajansı"
+      }
+    ],
+    "relatedSlugs": [
+      "atasehir-dijital-pazarlama-ajansi",
+      "kadikoy-sosyal-medya-ajansi",
+      "istanbul-dijital-pazarlama-ajansi"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "`"
+      },
+      {
+        "type": "p",
+        "text": "[Maltepe](/dijital-pazarlama-ajansi), hem yoğun konut nüfusu hem de gelişen ticari yapısı sayesinde yerel işletmeler için ciddi bir müşteri potansiyeline sahip."
+      },
+      {
+        "type": "p",
+        "text": "Sağlık merkezleri, veteriner klinikleri, restoranlar, eğitim kurumları ve profesyonel hizmet işletmeleri için sosyal medya ve dijital reklamlar bölgedeki potansiyel müşterilere ulaşmanın etkili yollarından biri olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Ancak yalnızca reklam vermek veya düzenli paylaşım yapmak yeterli değildir."
+      },
+      {
+        "type": "h2",
+        "id": "once-musteri-profili-belirlenmeli",
+        "text": "Önce müşteri profili belirlenmeli"
+      },
+      {
+        "type": "p",
+        "text": "[Maltepe](/dijital-pazarlama-ajansi)’nin farklı bölgelerinde kullanıcı profilleri değişebilir."
+      },
+      {
+        "type": "p",
+        "text": "Altıntepe, Küçükyalı, İdealtepe veya [Maltepe](/dijital-pazarlama-ajansi) merkezde faaliyet gösteren işletmeler farklı kitlelere hitap edebilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle bölgesel hedefleme yapılırken işletmenin gerçek müşteri havzası dikkate alınmalıdır."
+      },
+      {
+        "type": "h2",
+        "id": "sosyal-medya-vitrini-guclendirmeli",
+        "text": "Sosyal medya vitrini güçlendirmeli"
+      },
+      {
+        "type": "p",
+        "text": "Kullanıcıların yerel işletme seçiminde Instagram önemli bir referans noktası olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle hesapta yalnızca kampanya postları bulunmamalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Hizmet açıklamaları, ekip, mekân, süreç, müşteri deneyimi ve uzmanlık içerikleri birlikte kullanılabilir."
+      },
+      {
+        "type": "h2",
+        "id": "reklamda-dogru-aksiyon",
+        "text": "Reklamda doğru aksiyon"
+      },
+      {
+        "type": "p",
+        "text": "Yerel işletmelerde reklamın amacı çoğu zaman:"
+      },
+      {
+        "type": "p",
+        "text": "WhatsApp mesajı,"
+      },
+      {
+        "type": "p",
+        "text": "telefon,"
+      },
+      {
+        "type": "p",
+        "text": "form,"
+      },
+      {
+        "type": "p",
+        "text": "randevu,"
+      },
+      {
+        "type": "p",
+        "text": "rezervasyon"
+      },
+      {
+        "type": "p",
+        "text": "gibi net aksiyonlardır."
+      },
+      {
+        "type": "p",
+        "text": "Kampanya buna göre kurgulanmalıdır."
+      },
+      {
+        "type": "h2",
+        "id": "google-haritalar-ve-yerel-seo",
+        "text": "Google Haritalar ve yerel SEO"
+      },
+      {
+        "type": "p",
+        "text": "Özellikle lokasyon bazlı hizmetlerde Google İşletme Profili önemli bir temas noktasıdır."
+      },
+      {
+        "type": "p",
+        "text": "Güncel bilgiler, doğru kategori, fotoğraflar ve kullanıcı yorumları marka güvenini destekler."
+      },
+      {
+        "type": "h2",
+        "id": "ajans-secimi",
+        "text": "Ajans seçimi"
+      },
+      {
+        "type": "p",
+        "text": "[Maltepe](/dijital-pazarlama-ajansi) sosyal medya ajansı seçerken fiyatın yanında ajansın yerel reklam, prodüksiyon ve dönüşüm odaklı kampanya deneyimi değerlendirilmelidir."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak [Maltepe](/dijital-pazarlama-ajansi) ve Anadolu Yakası’ndaki işletmeler için [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi), dijital reklam, prodüksiyon ve [SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) çalışmalarını birlikte yürütüyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Markanız için bölgesel büyüme planı oluşturmak üzere bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Sosyal Medya Ajansı](/sosyal-medya-ajansi)",
+          "[Meta Reklam Yönetimi](/dijital-pazarlama-ajansi/meta-reklam-yonetimi)",
+          "[Dijital Pazarlama Ajansı](/dijital-pazarlama-ajansi)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "seo-ne-kadar-surede-sonuc-verir",
+    "title": "SEO Ne Kadar Sürede Sonuç Verir?",
+    "excerpt": "`",
+    "category": "SEO",
+    "date": "4 Eylül",
+    "dateIso": "2026-09-04",
+    "readTime": "5 dk",
+    "imageKey": "seo",
+    "accent": "#67e8f9",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "SEO Ne Kadar Sürede Sonuç Verir?",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/dijital-pazarlama-ajansi/seo-geo-hizmetleri",
+        "label": "SEO & GEO Hizmetleri"
+      },
+      {
+        "href": "/web-yazilim-ajansi/seo-geo-uyumlu-web-altyapisi",
+        "label": "SEO Uyumlu Web Altyapısı"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/icerik-pazarlamasi",
+        "label": "İçerik Pazarlaması"
+      }
+    ],
+    "relatedSlugs": [
+      "seo-ve-geo-arasindaki-fark",
+      "yapay-zeka-aramalarinda-marka-gorunurlugu",
+      "istanbul-dijital-pazarlama-ajansi"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "`"
+      },
+      {
+        "type": "p",
+        "text": "[SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) hizmeti almak isteyen markaların en sık sorduğu sorulardan biri:"
+      },
+      {
+        "type": "quote",
+        "text": "“Google’da ne kadar sürede yükseliriz?”",
+        "author": "Kiwi Agency"
+      },
+      {
+        "type": "p",
+        "text": "Bu soruya herkes için geçerli kesin bir süre vermek mümkün değildir."
+      },
+      {
+        "type": "p",
+        "text": "[SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) performansını [web sitesi](/web-yazilim-ajansi)nin mevcut durumu, sektör rekabeti, içerik kalitesi, teknik altyapı ve site otoritesi gibi birçok faktör etkiler."
+      },
+      {
+        "type": "h2",
+        "id": "ilk-ayda-sonuc-gelir-mi",
+        "text": "İlk ayda sonuç gelir mi?"
+      },
+      {
+        "type": "p",
+        "text": "İlk ay genellikle analiz ve altyapı çalışmalarının yoğun olduğu dönemdir."
+      },
+      {
+        "type": "p",
+        "text": "Teknik problemler tespit edilir, anahtar kelime araştırması yapılır, sayfa yapısı gözden geçirilir ve içerik planı hazırlanır."
+      },
+      {
+        "type": "p",
+        "text": "Bazı düşük rekabetli sorgularda erken hareket görülebilir ancak [SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri)’dan birkaç haftada büyük trafik artışı beklemek gerçekçi değildir."
+      },
+      {
+        "type": "h2",
+        "id": "3-6-ay-neden-sik-duyulur",
+        "text": "3–6 ay neden sık duyulur?"
+      },
+      {
+        "type": "p",
+        "text": "[SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri)’da orta vadeli sonuçların görülmeye başlaması birçok projede birkaç ay sürebilir."
+      },
+      {
+        "type": "p",
+        "text": "Google’ın sayfaları yeniden taraması, içeriklerin değerlendirilmesi ve sitenin zaman içinde otorite kazanması gerekir."
+      },
+      {
+        "type": "p",
+        "text": "Ancak bu süre garanti değildir."
+      },
+      {
+        "type": "p",
+        "text": "Yeni alan adlarında süreç daha uzun olabilirken otoritesi bulunan sitelerde bazı değişiklikler daha hızlı sonuç verebilir."
+      },
+      {
+        "type": "h2",
+        "id": "rekabet-onemli",
+        "text": "Rekabet önemli"
+      },
+      {
+        "type": "p",
+        "text": "“[Kadıköy](/dijital-pazarlama-ajansi) veteriner” ile “kredi” kelimesinde sıralama almak aynı zorluk seviyesinde değildir."
+      },
+      {
+        "type": "p",
+        "text": "Rakiplerin site gücü, içerik kalitesi ve backlink profili süreyi etkiler."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle [SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) teklifinde kesin “30 günde ilk sıra” gibi vaatlere dikkat edilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "seo-sadece-blog-degildir",
+        "text": "SEO sadece blog değildir"
+      },
+      {
+        "type": "p",
+        "text": "Başarılı [SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) çalışması:"
+      },
+      {
+        "type": "p",
+        "text": "teknik altyapı,"
+      },
+      {
+        "type": "p",
+        "text": "hizmet sayfaları,"
+      },
+      {
+        "type": "p",
+        "text": "içerikler,"
+      },
+      {
+        "type": "p",
+        "text": "site içi bağlantı,"
+      },
+      {
+        "type": "p",
+        "text": "yerel [SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri),"
+      },
+      {
+        "type": "p",
+        "text": "kullanıcı deneyimi,"
+      },
+      {
+        "type": "p",
+        "text": "marka otoritesi"
+      },
+      {
+        "type": "p",
+        "text": "gibi birçok alanı kapsar."
+      },
+      {
+        "type": "p",
+        "text": "Sadece haftada blog yayımlamak teknik problemleri bulunan bir siteyi otomatik olarak üst sıralara taşımaz."
+      },
+      {
+        "type": "h2",
+        "id": "hangi-metriklere-bakilmali",
+        "text": "Hangi metriklere bakılmalı?"
+      },
+      {
+        "type": "p",
+        "text": "[SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) başarısını yalnızca bir anahtar kelimenin sıralamasıyla ölçmemek gerekir."
+      },
+      {
+        "type": "p",
+        "text": "Organik gösterim,"
+      },
+      {
+        "type": "p",
+        "text": "tıklama,"
+      },
+      {
+        "type": "p",
+        "text": "nitelikli trafik,"
+      },
+      {
+        "type": "p",
+        "text": "form dönüşümü,"
+      },
+      {
+        "type": "p",
+        "text": "telefon ve WhatsApp talebi,"
+      },
+      {
+        "type": "p",
+        "text": "organik satış"
+      },
+      {
+        "type": "p",
+        "text": "gibi metrikler daha değerlidir."
+      },
+      {
+        "type": "h2",
+        "id": "seo-neden-uzun-vadeli-yatirimdir",
+        "text": "SEO neden uzun vadeli yatırımdır?"
+      },
+      {
+        "type": "p",
+        "text": "[Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi)’te reklam bütçesi durdurulduğunda reklam trafiği de durur."
+      },
+      {
+        "type": "p",
+        "text": "[SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri)’da ise zaman içinde güçlenen içerikler uzun süre organik trafik üretmeye devam edebilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle [SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) ve reklam birbirinin alternatifi değil, tamamlayıcısı olarak değerlendirilebilir."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak SEO çalışmalarını teknik optimizasyon, içerik stratejisi, bölgesel [SEO ve GEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) yaklaşımıyla birlikte yürütüyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Web sitenizin mevcut [SEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) durumunu değerlendirmek için bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[SEO & GEO Hizmetleri](/dijital-pazarlama-ajansi/seo-geo-hizmetleri)",
+          "[SEO Uyumlu Web Altyapısı](/web-yazilim-ajansi/seo-geo-uyumlu-web-altyapisi)",
+          "[İçerik Pazarlaması](/dijital-pazarlama-ajansi/icerik-pazarlamasi)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "gayrimenkul-dijital-pazarlama",
+    "title": "Gayrimenkul Projeleri İçin Dijital Pazarlama Nasıl Yapılır?",
+    "excerpt": "`",
+    "category": "Dijital Pazarlama",
+    "date": "6 Eylül",
+    "dateIso": "2026-09-06",
+    "readTime": "5 dk",
+    "imageKey": "marketing",
+    "accent": "#93c5fd",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Gayrimenkul Projeleri İçin Dijital Pazarlama Nasıl Yapılır?",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/dijital-pazarlama-ajansi",
+        "label": "Dijital Pazarlama Ajansı"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/meta-reklam-yonetimi",
+        "label": "Meta Reklam Yönetimi"
+      },
+      {
+        "href": "/web-yazilim-ajansi/gayrimenkul-stok-takip-yazilimi",
+        "label": "Gayrimenkul Stok Yazılımı"
+      }
+    ],
+    "relatedSlugs": [
+      "istanbul-dijital-pazarlama-ajansi",
+      "profesyonel-reel-cekimi",
+      "google-ads-mi-meta-ads-mi"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "`"
+      },
+      {
+        "type": "p",
+        "text": "Gayrimenkulde dijital pazarlama, kullanıcıya yalnızca proje görsellerini göstermekten ibaret değildir."
+      },
+      {
+        "type": "p",
+        "text": "Özellikle yüksek fiyatlı konut ve villa projelerinde satın alma kararı uzun sürebilir."
+      },
+      {
+        "type": "p",
+        "text": "Kullanıcının projeyi tanıması, lokasyonu değerlendirmesi, ödeme koşullarını anlaması ve markaya güvenmesi gerekir."
+      },
+      {
+        "type": "h2",
+        "id": "ilk-asama-dogru-konumlandirma",
+        "text": "İlk aşama: doğru konumlandırma"
+      },
+      {
+        "type": "p",
+        "text": "Her gayrimenkul projesinin güçlü yönleri farklıdır."
+      },
+      {
+        "type": "p",
+        "text": "Lokasyon,"
+      },
+      {
+        "type": "p",
+        "text": "ulaşım,"
+      },
+      {
+        "type": "p",
+        "text": "metrekare,"
+      },
+      {
+        "type": "p",
+        "text": "sosyal alanlar,"
+      },
+      {
+        "type": "p",
+        "text": "ödeme planı,"
+      },
+      {
+        "type": "p",
+        "text": "teslim tarihi,"
+      },
+      {
+        "type": "p",
+        "text": "yatırım potansiyeli"
+      },
+      {
+        "type": "p",
+        "text": "gibi faktörlerden hangilerinin öncelikli olduğu belirlenmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "gorsel-iletisim-cok-onemli",
+        "text": "Görsel iletişim çok önemli"
+      },
+      {
+        "type": "p",
+        "text": "Gayrimenkul satın alan kullanıcı yaşam tarzı satın alır."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle yalnızca dış cephe renderı paylaşmak yerine projenin sunduğu yaşam deneyimini göstermek gerekir."
+      },
+      {
+        "type": "p",
+        "text": "Video içerikleri, drone çekimleri, mimari detaylar, örnek daire ve çevre tanıtımları kullanılabilir."
+      },
+      {
+        "type": "h2",
+        "id": "meta-ads",
+        "text": "Meta Ads"
+      },
+      {
+        "type": "p",
+        "text": "Instagram ve Facebook reklamları projeyi geniş hedef kitlelere tanıtmak ve talep oluşturmak için kullanılabilir."
+      },
+      {
+        "type": "p",
+        "text": "Reklam kreatiflerinde:"
+      },
+      {
+        "type": "p",
+        "text": "lokasyon,"
+      },
+      {
+        "type": "p",
+        "text": "fiyat avantajı,"
+      },
+      {
+        "type": "p",
+        "text": "ödeme seçeneği,"
+      },
+      {
+        "type": "p",
+        "text": "yaşam tarzı,"
+      },
+      {
+        "type": "p",
+        "text": "proje özelliği"
+      },
+      {
+        "type": "p",
+        "text": "gibi farklı mesajlar test edilebilir."
+      },
+      {
+        "type": "h2",
+        "id": "google-ads",
+        "text": "Google Ads"
+      },
+      {
+        "type": "p",
+        "text": "Aktif şekilde villa, konut veya yatırım arayan kullanıcılara Google Search reklamlarıyla ulaşılabilir."
+      },
+      {
+        "type": "p",
+        "text": "Arama niyeti yüksek olduğu için doğru anahtar kelimelerin belirlenmesi önemlidir."
+      },
+      {
+        "type": "h2",
+        "id": "lead-kalitesi",
+        "text": "Lead kalitesi"
+      },
+      {
+        "type": "p",
+        "text": "Gayrimenkulde yalnızca form sayısını artırmak yeterli değildir."
+      },
+      {
+        "type": "p",
+        "text": "Satın alma gücü olmayan yüzlerce form, satış ekibinin zamanını tüketebilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle kampanyalar lead maliyetinin yanında lead kalitesiyle değerlendirilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "crm-ve-satis-ekibi-entegrasyonu",
+        "text": "CRM ve satış ekibi entegrasyonu"
+      },
+      {
+        "type": "p",
+        "text": "Reklamdan gelen talepler hızlı şekilde satış ekibine aktarılmalı ve takip edilmelidir."
+      },
+      {
+        "type": "p",
+        "text": "Hangi kampanyadan gelen lead’in satışa dönüştüğü görülebiliyorsa reklam optimizasyonu daha sağlıklı yapılabilir."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak gayrimenkul projeleri için sosyal medya, [performans reklam](/dijital-pazarlama-ajansi/performans-pazarlamasi)ları, prodüksiyon, kreatif ve lead generation çalışmalarını tek bir stratejide birleştiriyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Projeniz için dijital satış stratejisi oluşturmak üzere bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Dijital Pazarlama Ajansı](/dijital-pazarlama-ajansi)",
+          "[Meta Reklam Yönetimi](/dijital-pazarlama-ajansi/meta-reklam-yonetimi)",
+          "[Gayrimenkul Stok Yazılımı](/web-yazilim-ajansi/gayrimenkul-stok-takip-yazilimi)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "izmir-dijital-pazarlama-ajansi",
+    "title": "İzmir Dijital Pazarlama Ajansı: İşletmeler İçin Dijital Büyüme Rehberi",
+    "excerpt": "`",
+    "category": "Dijital Pazarlama",
+    "date": "8 Eylül",
+    "dateIso": "2026-09-08",
+    "readTime": "5 dk",
+    "imageKey": "marketing",
+    "accent": "#a9cb18",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "İzmir Dijital Pazarlama Ajansı",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/dijital-pazarlama-ajansi",
+        "label": "Dijital Pazarlama Ajansı"
+      },
+      {
+        "href": "/sosyal-medya-ajansi",
+        "label": "Sosyal Medya Ajansı"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/seo-geo-hizmetleri",
+        "label": "SEO & GEO"
+      }
+    ],
+    "relatedSlugs": [
+      "alsancak-karsiyaka-bostanli-dijital-pazarlama",
+      "istanbul-dijital-pazarlama-ajansi",
+      "dijital-pazarlama-ajansi-ne-is-yapar"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "`"
+      },
+      {
+        "type": "p",
+        "text": "İzmir; turizm, sağlık, gastronomi, gayrimenkul, perakende ve hizmet sektörleri açısından Türkiye’nin en hareketli şehirlerinden biri."
+      },
+      {
+        "type": "p",
+        "text": "Bu durum işletmeler için önemli fırsatlar yaratırken dijital rekabeti de artırıyor."
+      },
+      {
+        "type": "p",
+        "text": "İzmir dijital pazarlama ajansı seçerken markanın yalnızca sosyal medya hesaplarını yönetecek değil, müşteri kazanım sürecini bütün olarak ele alabilecek bir yapı tercih edilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "izmir-tek-bir-hedef-kitle-degil",
+        "text": "İzmir tek bir hedef kitle değil"
+      },
+      {
+        "type": "p",
+        "text": "Alsancak’taki bir restoran,"
+      },
+      {
+        "type": "p",
+        "text": "Bayraklı’daki kurumsal firma,"
+      },
+      {
+        "type": "p",
+        "text": "Urla’daki butik otel,"
+      },
+      {
+        "type": "p",
+        "text": "Alaçatı’daki işletme"
+      },
+      {
+        "type": "p",
+        "text": "aynı dijital stratejiyi kullanmamalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Bölgenin müşteri profili, sezon yapısı ve satın alma davranışı analiz edilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "sosyal-medya",
+        "text": "Sosyal medya"
+      },
+      {
+        "type": "p",
+        "text": "Turizm, gastronomi ve lifestyle markalarında kaliteli görsel üretim özellikle önemlidir."
+      },
+      {
+        "type": "p",
+        "text": "Profesyonel [reel](/sosyal-medya-ajansi/reel-video-icerik-uretimi) ve fotoğraflar markanın algısını doğrudan etkileyebilir."
+      },
+      {
+        "type": "h2",
+        "id": "google-ads",
+        "text": "Google Ads"
+      },
+      {
+        "type": "p",
+        "text": "Aktif arama yapan kullanıcılara ulaşmak için [Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi) kullanılabilir."
+      },
+      {
+        "type": "p",
+        "text": "Özellikle lokal hizmetlerde bölge ve arama niyetinin doğru kurgulanması gerekir."
+      },
+      {
+        "type": "h2",
+        "id": "meta-reklamlari",
+        "text": "Meta reklamları"
+      },
+      {
+        "type": "p",
+        "text": "[Meta Ads](/dijital-pazarlama-ajansi/meta-reklam-yonetimi), yeni kullanıcıların markayı keşfetmesini sağlayabilir."
+      },
+      {
+        "type": "p",
+        "text": "İzmir’de yerel hedefleme sayesinde belirli bölgelerde yaşayan veya bulunan kişilere özel kampanyalar hazırlanabilir."
+      },
+      {
+        "type": "h2",
+        "id": "seo-ve-lokal-icerikler",
+        "text": "SEO ve lokal içerikler"
+      },
+      {
+        "type": "p",
+        "text": "İzmir genelinde hizmet veren bir işletme için “İzmir \\+ hizmet” aramalarına yönelik güçlü sayfalar oluşturulabilir."
+      },
+      {
+        "type": "p",
+        "text": "Daha sonra gerçekten müşteri potansiyeli bulunan bölgeler için Alsancak, Karşıyaka, Bostanlı veya Urla gibi lokasyon içerikleri hazırlanabilir."
+      },
+      {
+        "type": "h2",
+        "id": "kiwi-marketing-agency",
+        "text": "Kiwi Marketing Agency"
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak İstanbul merkezli olmamıza rağmen dijital pazarlama çalışmalarını lokasyondan bağımsız şekilde yönetiyor; ihtiyaç halinde profesyonel prodüksiyon süreçlerini de projeye göre planlıyoruz."
+      },
+      {
+        "type": "p",
+        "text": "İzmir’deki markanızın sosyal medya, reklam, [SEO–GEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) ve dijital büyüme ihtiyaçları için bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Dijital Pazarlama Ajansı](/dijital-pazarlama-ajansi)",
+          "[Sosyal Medya Ajansı](/sosyal-medya-ajansi)",
+          "[SEO & GEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "guzellik-merkezleri-instagram-reklamlari",
+    "title": "Güzellik Merkezleri İçin Instagram Reklamları ve Sosyal Medya Yönetimi",
+    "excerpt": "`",
+    "category": "Sosyal Medya",
+    "date": "10 Eylül",
+    "dateIso": "2026-09-10",
+    "readTime": "5 dk",
+    "imageKey": "social",
+    "accent": "#f9a8d4",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Güzellik Merkezleri İçin Instagram Reklamları ve Sosyal Medya Yönetimi",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/dijital-pazarlama-ajansi/meta-reklam-yonetimi",
+        "label": "Meta Reklam Yönetimi"
+      },
+      {
+        "href": "/sosyal-medya-ajansi",
+        "label": "Sosyal Medya Ajansı"
+      },
+      {
+        "href": "/sosyal-medya-ajansi/reel-video-icerik-uretimi",
+        "label": "Reel & Video"
+      }
+    ],
+    "relatedSlugs": [
+      "instagram-reklami-satis-getirmiyor",
+      "profesyonel-reel-cekimi",
+      "sosyal-medya-yonetimi-nedir"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "`"
+      },
+      {
+        "type": "p",
+        "text": "Güzellik sektöründe kullanıcıların karar verme süreci büyük ölçüde görsel deneyim ve güven üzerinden ilerler."
+      },
+      {
+        "type": "p",
+        "text": "Potansiyel müşteri bir güzellik merkezini seçmeden önce sosyal medya hesabını, yapılan işlemleri, ortamı ve kullanıcı yorumlarını inceleyebilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi) sektör için önemli bir satış aracıdır."
+      },
+      {
+        "type": "h2",
+        "id": "once-guven-olusturun",
+        "text": "Önce güven oluşturun"
+      },
+      {
+        "type": "p",
+        "text": "Sürekli kampanya paylaşan bir hesap profesyonel görünmeyebilir."
+      },
+      {
+        "type": "p",
+        "text": "İçerik planında:"
+      },
+      {
+        "type": "p",
+        "text": "uygulama süreçleri,"
+      },
+      {
+        "type": "p",
+        "text": "uzmanlık,"
+      },
+      {
+        "type": "p",
+        "text": "mekân,"
+      },
+      {
+        "type": "p",
+        "text": "hijyen,"
+      },
+      {
+        "type": "p",
+        "text": "sık sorulan sorular,"
+      },
+      {
+        "type": "p",
+        "text": "bilgilendirici içerikler"
+      },
+      {
+        "type": "p",
+        "text": "birlikte kullanılmalıdır."
+      },
+      {
+        "type": "h2",
+        "id": "oncesi-sonrasi-icerikleri",
+        "text": "Öncesi-sonrası içerikleri"
+      },
+      {
+        "type": "p",
+        "text": "Sektörün ve platformların ilgili reklam kuralları dikkate alınarak sonuç gösteren içerikler hazırlanabilir."
+      },
+      {
+        "type": "p",
+        "text": "Burada yanıltıcı vaatlerden ve gerçekçi olmayan sonuç iddialarından kaçınmak önemlidir."
+      },
+      {
+        "type": "h2",
+        "id": "reel-icerikler",
+        "text": "Reel içerikler"
+      },
+      {
+        "type": "p",
+        "text": "Güzellik sektöründe video özellikle etkilidir."
+      },
+      {
+        "type": "p",
+        "text": "İşlem anlatımı,"
+      },
+      {
+        "type": "p",
+        "text": "uzman konuşmaları,"
+      },
+      {
+        "type": "p",
+        "text": "mekân turu,"
+      },
+      {
+        "type": "p",
+        "text": "sık sorulan sorular"
+      },
+      {
+        "type": "p",
+        "text": "[reel](/sosyal-medya-ajansi/reel-video-icerik-uretimi) formatına dönüştürülebilir."
+      },
+      {
+        "type": "h2",
+        "id": "reklam-kreatifleri",
+        "text": "Reklam kreatifleri"
+      },
+      {
+        "type": "p",
+        "text": "Organik sosyal medya videosu ile reklam videosu aynı amaç için hazırlanmamalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Reklamda kullanıcının ihtiyacını hızlı şekilde yakalayan bir hook kullanılabilir."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin fiyat odaklı reklamların yanında kalite ve güven odaklı kreatifler test edilmelidir."
+      },
+      {
+        "type": "h2",
+        "id": "lokasyon-hedeflemesi",
+        "text": "Lokasyon hedeflemesi"
+      },
+      {
+        "type": "p",
+        "text": "Güzellik merkezleri genellikle yakın çevredeki kullanıcılarla çalışır."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle reklamların hizmet bölgesine göre hedeflenmesi gereksiz bütçe kaybını azaltabilir."
+      },
+      {
+        "type": "h2",
+        "id": "whatsapp-ve-lead-yonetimi",
+        "text": "WhatsApp ve lead yönetimi"
+      },
+      {
+        "type": "p",
+        "text": "Reklamdan gelen mesajların hızlı yanıtlanması gerekir."
+      },
+      {
+        "type": "p",
+        "text": "Satış ekibi veya danışma personeli reklam mesajını bilmeli ve gelen kullanıcıya tutarlı şekilde bilgi vermelidir."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak güzellik merkezleri için [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi), profesyonel çekim ve [performans reklam](/dijital-pazarlama-ajansi/performans-pazarlamasi)larını birlikte planlıyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Merkeziniz için müşteri kazanım odaklı sosyal medya stratejisi oluşturmak üzere bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Meta Reklam Yönetimi](/dijital-pazarlama-ajansi/meta-reklam-yonetimi)",
+          "[Sosyal Medya Ajansı](/sosyal-medya-ajansi)",
+          "[Reel & Video](/sosyal-medya-ajansi/reel-video-icerik-uretimi)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "reel-video-cekim-fiyatlari-2026",
+    "title": "Kurumsal Video ve Reel Çekim Fiyatları 2026",
+    "excerpt": "`",
+    "category": "Tasarım",
+    "date": "12 Eylül",
+    "dateIso": "2026-09-12",
+    "readTime": "5 dk",
+    "imageKey": "creative",
+    "accent": "#fcd34d",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Kurumsal Video ve Reel Çekim Fiyatları 2026",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/sosyal-medya-ajansi/reel-video-icerik-uretimi",
+        "label": "Reel & Video İçerik Üretimi"
+      },
+      {
+        "href": "/kreatif-tasarim-ajansi/motion-grafik-video-tasarimi",
+        "label": "Motion Grafik & Video"
+      },
+      {
+        "href": "/iletisim",
+        "label": "Çekim Planı Alın"
+      }
+    ],
+    "relatedSlugs": [
+      "profesyonel-reel-cekimi",
+      "produksiyon-ajansi-secerken",
+      "sosyal-medya-yonetimi-fiyatlari-2026"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "`"
+      },
+      {
+        "type": "p",
+        "text": "Profesyonel video çekimi yaptırmak isteyen markaların en sık sorduğu sorulardan biri çekim fiyatlarının ne kadar olduğudur."
+      },
+      {
+        "type": "p",
+        "text": "Ancak prodüksiyon sektöründe standart bir fiyatlandırma yapmak zordur."
+      },
+      {
+        "type": "p",
+        "text": "Bir sosyal medya reeli ile kapsamlı bir marka filmi aynı prodüksiyon sürecine sahip değildir."
+      },
+      {
+        "type": "h2",
+        "id": "cekim-suresi",
+        "text": "Çekim süresi"
+      },
+      {
+        "type": "p",
+        "text": "Yarım gün, tam gün veya çok günlük prodüksiyonlar farklı fiyatlandırılır."
+      },
+      {
+        "type": "p",
+        "text": "Aylık sosyal medya içerikleri için çoğu marka tek çekim gününde birden fazla video üretmeyi tercih eder."
+      },
+      {
+        "type": "p",
+        "text": "Bu yöntem içerik başına maliyeti düşürebilir."
+      },
+      {
+        "type": "h2",
+        "id": "ekipman",
+        "text": "Ekipman"
+      },
+      {
+        "type": "p",
+        "text": "Kamera,"
+      },
+      {
+        "type": "p",
+        "text": "lens,"
+      },
+      {
+        "type": "p",
+        "text": "gimbal,"
+      },
+      {
+        "type": "p",
+        "text": "ışık,"
+      },
+      {
+        "type": "p",
+        "text": "ses,"
+      },
+      {
+        "type": "p",
+        "text": "drone"
+      },
+      {
+        "type": "p",
+        "text": "gibi ekipman ihtiyaçları prodüksiyon maliyetini etkiler."
+      },
+      {
+        "type": "p",
+        "text": "Ancak pahalı kamera tek başına iyi video anlamına gelmez."
+      },
+      {
+        "type": "p",
+        "text": "Kreatif yaklaşım ve ekip deneyimi daha önemlidir."
+      },
+      {
+        "type": "h2",
+        "id": "ekip-sayisi",
+        "text": "Ekip sayısı"
+      },
+      {
+        "type": "p",
+        "text": "Prodüksiyona göre:"
+      },
+      {
+        "type": "p",
+        "text": "yönetmen,"
+      },
+      {
+        "type": "p",
+        "text": "kameraman,"
+      },
+      {
+        "type": "p",
+        "text": "ışık ekibi,"
+      },
+      {
+        "type": "p",
+        "text": "ses ekibi,"
+      },
+      {
+        "type": "p",
+        "text": "make-up,"
+      },
+      {
+        "type": "p",
+        "text": "oyuncu"
+      },
+      {
+        "type": "p",
+        "text": "gibi farklı ihtiyaçlar olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Sosyal medya çekimlerinde daha küçük ekipler yeterli olabilir."
+      },
+      {
+        "type": "h2",
+        "id": "kurgu",
+        "text": "Kurgu"
+      },
+      {
+        "type": "p",
+        "text": "Kurgu seviyesi fiyatı doğrudan etkiler."
+      },
+      {
+        "type": "p",
+        "text": "Basit [reel](/sosyal-medya-ajansi/reel-video-icerik-uretimi) kurgusu ile motion graphic, özel efekt ve ileri seviye post prodüksiyon aynı iş yüküne sahip değildir."
+      },
+      {
+        "type": "h2",
+        "id": "kac-video-teslim-edilecek",
+        "text": "Kaç video teslim edilecek?"
+      },
+      {
+        "type": "p",
+        "text": "Teklif alırken yalnızca “1 gün çekim” bilgisine bakılmamalıdır."
+      },
+      {
+        "type": "p",
+        "text": "Kaç adet final video teslim edileceği mutlaka belirtilmelidir."
+      },
+      {
+        "type": "p",
+        "text": "Örneğin iyi planlanmış bir çekim gününde farklı konseptlerde birden fazla [reel](/sosyal-medya-ajansi/reel-video-icerik-uretimi) üretilebilir."
+      },
+      {
+        "type": "h2",
+        "id": "senaryo-dahil-mi",
+        "text": "Senaryo dahil mi?"
+      },
+      {
+        "type": "p",
+        "text": "Bazı prodüksiyon firmaları yalnızca çekim yapar."
+      },
+      {
+        "type": "p",
+        "text": "Bazıları ise:"
+      },
+      {
+        "type": "p",
+        "text": "kreatif fikir,"
+      },
+      {
+        "type": "p",
+        "text": "senaryo,"
+      },
+      {
+        "type": "p",
+        "text": "metin,"
+      },
+      {
+        "type": "p",
+        "text": "çekim planı,"
+      },
+      {
+        "type": "p",
+        "text": "kurgu"
+      },
+      {
+        "type": "p",
+        "text": "hizmetlerini birlikte sunar."
+      },
+      {
+        "type": "p",
+        "text": "Bu fark fiyatı önemli ölçüde etkiler."
+      },
+      {
+        "type": "h2",
+        "id": "en-ucuz-teklif-dogru-secim-mi",
+        "text": "En ucuz teklif doğru seçim mi?"
+      },
+      {
+        "type": "p",
+        "text": "Prodüksiyon markanın dışarıya yansıttığı kaliteyi doğrudan etkiler."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle fiyat değerlendirilirken yalnızca çekim günü değil, ortaya çıkacak içeriklerin nerelerde ve ne kadar süreyle kullanılacağı düşünülmelidir."
+      },
+      {
+        "type": "p",
+        "text": "Bir video organik sosyal medya, Meta reklamları, [web sitesi](/web-yazilim-ajansi) ve farklı kampanyalarda kullanılabiliyorsa markaya daha fazla değer sağlayabilir."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Production olarak sosyal medya reellerinden marka filmlerine kadar prodüksiyon sürecini kreatif fikirden final kurguya kadar yönetiyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Markanız için çekim planı ve fiyatlandırma almak üzere Kiwi Marketing Agency ile iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Reel & Video İçerik Üretimi](/sosyal-medya-ajansi/reel-video-icerik-uretimi)",
+          "[Motion Grafik & Video](/kreatif-tasarim-ajansi/motion-grafik-video-tasarimi)",
+          "[Çekim Planı Alın](/iletisim)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
+    "slug": "alsancak-karsiyaka-bostanli-dijital-pazarlama",
+    "title": "Alsancak, Karşıyaka ve Bostanlı’daki Markalar İçin Dijital Pazarlama",
+    "excerpt": "`",
+    "category": "Dijital Pazarlama",
+    "date": "14 Eylül",
+    "dateIso": "2026-09-14",
+    "readTime": "5 dk",
+    "imageKey": "marketing",
+    "accent": "#a9cb18",
+    "gradient": "from-lime-600/30 to-emerald-400/10",
+    "featured": false,
+    "author": "Kiwi Editör",
+    "keyword": "Alsancak, Karşıyaka ve Bostanlı’daki Markalar İçin Dijital Pazarlama",
+    "keywords": [],
+    "relatedServices": [
+      {
+        "href": "/dijital-pazarlama-ajansi",
+        "label": "Dijital Pazarlama Ajansı"
+      },
+      {
+        "href": "/sosyal-medya-ajansi",
+        "label": "Sosyal Medya Ajansı"
+      },
+      {
+        "href": "/dijital-pazarlama-ajansi/performans-pazarlamasi",
+        "label": "Performans Pazarlaması"
+      }
+    ],
+    "relatedSlugs": [
+      "izmir-dijital-pazarlama-ajansi",
+      "istanbul-dijital-pazarlama-ajansi",
+      "kadikoy-sosyal-medya-ajansi"
+    ],
+    "blocks": [
+      {
+        "type": "lead",
+        "text": "`"
+      },
+      {
+        "type": "p",
+        "text": "İzmir’de dijital pazarlama yaparken bütün şehri tek bir hedef kitle olarak değerlendirmek doğru değildir."
+      },
+      {
+        "type": "p",
+        "text": "Alsancak, Karşıyaka ve Bostanlı gibi bölgeler hem yaşam tarzı hem de ticari yapı açısından güçlü marka potansiyeline sahip."
+      },
+      {
+        "type": "p",
+        "text": "Bu bölgelerde restoranlar, kafeler, güzellik ve sağlık işletmeleri, butik markalar ve profesyonel hizmet firmaları yoğun şekilde faaliyet gösteriyor."
+      },
+      {
+        "type": "p",
+        "text": "Dolayısıyla dijital pazarlama stratejisinin bölgenin kullanıcı profiline göre şekillenmesi gerekir."
+      },
+      {
+        "type": "h2",
+        "id": "alsancak",
+        "text": "Alsancak"
+      },
+      {
+        "type": "p",
+        "text": "Alsancak özellikle gastronomi, eğlence, turizm ve lifestyle markaları için yoğun rekabetin bulunduğu bir bölge."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle markaların Instagram’da güçlü bir görsel kimlik oluşturması önemlidir."
+      },
+      {
+        "type": "p",
+        "text": "Mekân deneyimini gösteren profesyonel reeller, kullanıcıların işletmeyi ziyaret etmeden önce fikir edinmesini sağlar."
+      },
+      {
+        "type": "p",
+        "text": "Google Haritalar ve yorum yönetimi de restoran ve yerel hizmetlerde önemli bir temas noktası olabilir."
+      },
+      {
+        "type": "h2",
+        "id": "karsiyaka",
+        "text": "Karşıyaka"
+      },
+      {
+        "type": "p",
+        "text": "Karşıyaka daha geniş bir yerleşik müşteri kitlesine sahip."
+      },
+      {
+        "type": "p",
+        "text": "Buradaki işletmeler yalnızca ziyaretçileri değil çevrede yaşayan düzenli müşterileri hedefleyebilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle reklam stratejisinde müşteri tekrarını destekleyen kampanyalar kullanılabilir."
+      },
+      {
+        "type": "p",
+        "text": "Yeniden pazarlama ve mevcut kullanıcı kitlesine özel kampanyalar değerlendirilebilir."
+      },
+      {
+        "type": "h2",
+        "id": "bostanli",
+        "text": "Bostanlı"
+      },
+      {
+        "type": "p",
+        "text": "Bostanlı’da sosyal yaşamın yoğun olması özellikle gastronomi, spor, güzellik ve butik işletmeler için fırsat yaratır."
+      },
+      {
+        "type": "p",
+        "text": "Bu sektörlerde yalnızca ürün veya hizmeti anlatmak yerine markanın oluşturduğu yaşam tarzını göstermek daha etkili olabilir."
+      },
+      {
+        "type": "h2",
+        "id": "bolgesel-reklamlar",
+        "text": "Bölgesel reklamlar"
+      },
+      {
+        "type": "p",
+        "text": "Meta reklamlarında İzmir geneli yerine işletmenin gerçek hizmet alanına odaklanan kampanyalar oluşturulabilir."
+      },
+      {
+        "type": "p",
+        "text": "Özellikle fiziksel mağaza veya mekânlarda kilometrelerce uzaktaki kullanıcılara reklam göstermek gereksiz harcama oluşturabilir."
+      },
+      {
+        "type": "p",
+        "text": "[Google Ads](/dijital-pazarlama-ajansi/google-ads-reklam-yonetimi) tarafında ise kullanıcıların yaptığı bölgesel aramalar hedeflenebilir."
+      },
+      {
+        "type": "h2",
+        "id": "profesyonel-icerik-fark-yaratir",
+        "text": "Profesyonel içerik fark yaratır"
+      },
+      {
+        "type": "p",
+        "text": "Bu bölgelerde işletme sayısı fazla olduğu için standart stok görseller veya sürekli kampanya tasarımları markayı rakiplerden ayırmakta zorlanabilir."
+      },
+      {
+        "type": "p",
+        "text": "Profesyonel fotoğraf ve video üretimi markanın gerçek atmosferini göstermek açısından önemlidir."
+      },
+      {
+        "type": "p",
+        "text": "Kullanıcıya yalnızca “ne sattığınızı” değil, markayla karşılaştığında “nasıl bir deneyim yaşayacağını” göstermek gerekir."
+      },
+      {
+        "type": "h2",
+        "id": "yerel-seo-destegi",
+        "text": "Yerel SEO desteği"
+      },
+      {
+        "type": "p",
+        "text": "[Web sitesi](/web-yazilim-ajansi)nde gerçek hizmet bölgelerini anlatan özgün içerikler hazırlanabilir."
+      },
+      {
+        "type": "p",
+        "text": "Alsancak, Karşıyaka ve Bostanlı için birbirinin kopyası sayfalar üretmek yerine her bölgenin kullanıcı ve işletme yapısına göre içerik oluşturmak daha sağlıklı bir yaklaşım olur."
+      },
+      {
+        "type": "p",
+        "text": "Bu içerikler Google İşletme Profili, sosyal medya hesapları ve ana hizmet sayfalarıyla desteklenebilir."
+      },
+      {
+        "type": "h2",
+        "id": "ayni-strateji-her-isletmede-calismaz",
+        "text": "Aynı strateji her işletmede çalışmaz"
+      },
+      {
+        "type": "p",
+        "text": "Bostanlı’daki bir restoranla Karşıyaka’daki sağlık merkezi aynı şekilde pazarlanamaz."
+      },
+      {
+        "type": "p",
+        "text": "İlkinde görsel deneyim ve rezervasyon ön planda olabilirken diğerinde güven, uzmanlık ve bilgi ihtiyacı daha önemli olabilir."
+      },
+      {
+        "type": "p",
+        "text": "Bu nedenle önce sektör ve müşteri yolculuğu analiz edilmeli, ardından kullanılacak platformlar belirlenmelidir."
+      },
+      {
+        "type": "p",
+        "text": "Kiwi Marketing Agency olarak İzmir’de faaliyet gösteren markalar için [sosyal medya yönetimi](/dijital-pazarlama-ajansi/sosyal-medya-yonetimi), Meta ve Google reklamları, profesyonel prodüksiyon, [web tasarım](/web-yazilim-ajansi), [SEO ve GEO](/dijital-pazarlama-ajansi/seo-geo-hizmetleri) hizmetlerini tek bir dijital pazarlama stratejisi altında planlıyoruz."
+      },
+      {
+        "type": "p",
+        "text": "Alsancak, Karşıyaka, Bostanlı veya İzmir’in farklı bölgelerinde faaliyet gösteren markanız için dijital büyüme planı oluşturmak üzere bizimle iletişime geçebilirsiniz."
+      },
+      {
+        "type": "h2",
+        "id": "ilgili-hizmetler",
+        "text": "İlgili Kiwi hizmetleri"
+      },
+      {
+        "type": "p",
+        "text": "Anadolu Yakası ve İstanbul genelinde bu konuda destek için ilgili hizmet sayfalarımıza göz atın:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "[Dijital Pazarlama Ajansı](/dijital-pazarlama-ajansi)",
+          "[Sosyal Medya Ajansı](/sosyal-medya-ajansi)",
+          "[Performans Pazarlaması](/dijital-pazarlama-ajansi/performans-pazarlamasi)"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Ücretsiz keşif görüşmesi için [iletişim sayfamızı](/iletisim) ziyaret edebilirsiniz. Kiwi Marketing Agency — İstanbul Anadolu Yakası dijital pazarlama ajansı."
+      }
+    ]
+  },
+  {
     "slug": "sosyal-medya-yonetimi-nedir",
     "title": "Sosyal Medya Yönetimi Nedir, Markanıza Ne Kazandırır?",
     "excerpt": "Sosyal medya yönetiminin kapsamını, markalara sağladığı avantajları ve profesyonel ajans desteğinin neden önemli olduğunu keşfedin.",
@@ -9,7 +3344,7 @@
     "imageKey": "social",
     "accent": "#a9cb18",
     "gradient": "from-lime-600/30 to-emerald-400/10",
-    "featured": true,
+    "featured": false,
     "author": "Kiwi Editör",
     "keyword": "sosyal medya yönetimi",
     "keywords": [

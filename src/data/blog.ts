@@ -30,6 +30,7 @@ export type BlogPost = {
   excerpt: string;
   category: string;
   date: string;
+  dateIso?: string;
   readTime: string;
   image: string;
   accent: string;
@@ -56,6 +57,7 @@ const seoPosts: BlogPost[] = seoBlogs.map((p) => ({
   excerpt: p.excerpt,
   category: p.category,
   date: p.date,
+  dateIso: "dateIso" in p ? (p as { dateIso?: string }).dateIso : undefined,
   readTime: p.readTime,
   image: imageByKey[p.imageKey as keyof typeof imageByKey] ?? images.services.marketing,
   accent: p.accent,

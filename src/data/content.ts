@@ -284,25 +284,25 @@ export const blog = {
   title: "Dijital büyümenize yön verecek trendler ve stratejik içgörüler.",
   posts: [
     {
-      title: "Sosyal Medya Yönetimi Nedir, Markanıza Ne Kazandırır?",
+      title: "İstanbul Dijital Pazarlama Ajansı Seçerken Nelere Dikkat Edilmeli?",
       excerpt:
-        "Sosyal medya yönetiminin kapsamını, markalara sağladığı avantajları ve profesyonel ajans desteğinin neden önemli olduğunu keşfedin.",
-      category: "Sosyal Medya",
-      date: "23 Temmuz 2026",
-    },
-    {
-      title: "Google Ads mi Meta Ads mi? İşletmeniz İçin Hangisi Daha Doğru?",
-      excerpt:
-        "Google Ads ve Meta Ads arasındaki farkları, hangi işletmenin hangi reklam platformunu kullanması gerektiğini karşılaştırmalı olarak öğrenin.",
+        "İstanbul’da dijital pazarlama ajansı seçerken strateji, reklam yönetimi, kreatif üretim, SEO ve raporlama süreçlerinde nelere dikkat etmelisiniz?",
       category: "Dijital Pazarlama",
-      date: "29 Temmuz 2026",
+      date: "15 Ağustos 2026",
     },
     {
-      title: "SEO ve GEO Arasındaki Fark Nedir?",
+      title: "Kadıköy Sosyal Medya Ajansı: Markalar İçin Yerel Dijital Pazarlama Rehberi",
       excerpt:
-        "SEO ve GEO arasındaki farkları, ortak noktalarını ve markaların yapay zekâ destekli aramalarda nasıl görünür olabileceğini öğrenin.",
-      category: "SEO",
-      date: "31 Temmuz 2026",
+        "Kadıköy’deki markalar için sosyal medya yönetimi, yerel reklam, içerik üretimi ve müşteri kazanma stratejileri.",
+      category: "Sosyal Medya",
+      date: "18 Ağustos 2026",
+    },
+    {
+      title: "Ataşehir Dijital Pazarlama Ajansı: İşletmeler İçin Büyüme Stratejileri",
+      excerpt:
+        "Ataşehir’deki işletmeler için sosyal medya, Google Ads, Meta Ads, SEO ve kurumsal dijital pazarlama stratejileri.",
+      category: "Dijital Pazarlama",
+      date: "23 Ağustos 2026",
     },
   ],
 };

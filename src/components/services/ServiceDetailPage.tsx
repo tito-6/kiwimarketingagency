@@ -20,15 +20,28 @@ export function ServiceDetailPageView({ category, service }: Props) {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `${SITE_ORIGIN}${service.url}#service`,
     name: service.title,
     description: service.description[0] ?? service.title,
+    serviceType: service.title,
     provider: {
       "@type": "Organization",
       name: "Kiwi Marketing Agency",
       url: SITE_ORIGIN,
+      telephone: "+905326305713",
     },
-    areaServed: "TR",
+    isRelatedTo: {
+      "@type": "Service",
+      name: category.h1,
+      url: `${SITE_ORIGIN}${category.url}`,
+    },
+    areaServed: [
+      { "@type": "City", name: "İstanbul" },
+      { "@type": "AdministrativeArea", name: "Anadolu Yakası" },
+      { "@type": "Country", name: "Türkiye" },
+    ],
     url: `${SITE_ORIGIN}${service.url}`,
+    inLanguage: "tr-TR",
   };
 
   return (

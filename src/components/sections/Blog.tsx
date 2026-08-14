@@ -12,19 +12,19 @@ import Link from "next/link";
 
 const homeBlogVisuals = [
   {
+    image: images.services.marketing,
+    imageAlt: "İstanbul dijital pazarlama ajansı — Kiwi Marketing Agency",
+    slug: "istanbul-dijital-pazarlama-ajansi",
+  },
+  {
     image: images.services.social,
-    imageAlt: "Sosyal medya yönetimi — Kiwi Marketing Agency",
-    slug: "sosyal-medya-yonetimi-nedir",
+    imageAlt: "Kadıköy sosyal medya ajansı — Kiwi Marketing Agency",
+    slug: "kadikoy-sosyal-medya-ajansi",
   },
   {
     image: images.services.marketing,
-    imageAlt: "Google Ads ve Meta Ads karşılaştırması — Kiwi Marketing Agency",
-    slug: "google-ads-mi-meta-ads-mi",
-  },
-  {
-    image: images.services.seo,
-    imageAlt: "SEO ve GEO farkı — Kiwi Marketing Agency",
-    slug: "seo-ve-geo-arasindaki-fark",
+    imageAlt: "Ataşehir dijital pazarlama ajansı — Kiwi Marketing Agency",
+    slug: "atasehir-dijital-pazarlama-ajansi",
   },
 ] as const;
 
